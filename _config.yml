@@ -1,5 +1,5 @@
-baseurl: "/exothermicrobotics" # the subpath of your site, e.g. /blog
-url: "https://esthermliu.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://exothermicrobotics.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: /blog/:year/:month/:day/:title/
 paginate: 5
