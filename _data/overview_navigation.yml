@@ -1,6 +1,6 @@
 - name: Competitions
-  link: /vex-overview/competition/
+  link: {{site.baseurl}}/vex-overview/competition/
 - name: Events
-  link: /vex-overview/events/
+  link: {{site.baseurl}}/vex-overview/events/
 - name: Programs
-  link: /vex-overview/programs/
+  link: {{site.baseurl}}/vex-overview/programs/

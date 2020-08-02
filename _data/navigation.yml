@@ -1,14 +1,14 @@
 - name: History
-  link: /about/history/
+  link: {{site.baseurl}}/about/history/
 - name: Teams
-  link: /about/teams/
+  link: {{site.baseurl}}/about/teams/
 - name: Join Us
-  link: /about/join/
+  link: {{site.baseurl}}/about/join/
 - name: Outreach
-  link: /about/outreach/
+  link: {{site.baseurl}}/about/outreach/
 - name: Advisors
-  link: /about/advisors/
+  link: {{site.baseurl}}/about/advisors/
 - name: Awards
-  link: /about/awards/
+  link: {{site.baseurl}}/about/awards/
 - name: Challenges
-  link: /about/challenges/
+  link: {{site.baseurl}}/about/challenges/

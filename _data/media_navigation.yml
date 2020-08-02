@@ -1,8 +1,8 @@
 - name: Publicity
-  link: /media/news/
+  link: {{site.baseurl}}/media/news/
 - name: Gallery
-  link: /media/gallery/
+  link: {{site.baseurl}}/media/gallery/
 - name: Website
-  link: /media/website/
+  link: {{site.baseurl}}/media/website/
 - name: Social
-  link: /media/social/
+  link: {{site.baseurl}}/media/social/
