@@ -2,7 +2,7 @@
 ---
 
 .landing {
-	background-image: url("{{ site.baseurl }}/images/WebsiteBackgroundImage.jpg");
+	background-image: url("/images/WebsiteBackgroundImage.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -88,7 +88,7 @@
 }
 
 .secondSection { 
-	background-image: url("{{ site.baseurl }}/images/WebsiteBackground.jpeg") !important;
+	background-image: url("/images/WebsiteBackground.jpeg") !important;
 	background-attachment: fixed;
 	background-position: center;
 	color: white !important;

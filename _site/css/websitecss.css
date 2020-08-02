@@ -1,5 +1,5 @@
 .landing {
-	background-image: url("/exothermicrobotics/images/WebsiteBackgroundImage.jpg");
+	background-image: url("/images/WebsiteBackgroundImage.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -85,7 +85,7 @@
 }
 
 .secondSection { 
-	background-image: url("/exothermicrobotics/images/WebsiteBackground.jpeg") !important;
+	background-image: url("/images/WebsiteBackground.jpeg") !important;
 	background-attachment: fixed;
 	background-position: center;
 	color: white !important;
