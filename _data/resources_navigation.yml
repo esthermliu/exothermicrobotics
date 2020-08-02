@@ -1,12 +1,12 @@
 - name: Building Tips
-  link: {{site.baseurl}}/resources/building-tips/
+  link: /resources/building-tips/
 - name: Notebook Tips
-  link: {{site.baseurl}}/resources/notebook-tips/
+  link: /resources/notebook-tips/
 - name: Coding Tips
-  link: {{site.baseurl}}/resources/coding-tips/
+  link: /resources/coding-tips/
 - name: Game Tips
-  link: {{site.baseurl}}/resources/game-tips/
+  link: /resources/game-tips/
 - name: Website Tips
-  link: {{site.baseurl}}/resources/website-tips/
+  link: /resources/website-tips/
 - name: Other Links
-  link: {{site.baseurl}}/resources/other-links/
+  link: /resources/other-links/

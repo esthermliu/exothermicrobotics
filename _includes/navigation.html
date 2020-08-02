@@ -9,7 +9,7 @@
 				<button class = "dropButtonAbout" onclick="window.location.href = '{{site.baseurl}}/about/'" {% if page.url == "{{site.baseurl}}/about/" %} style = "color: rgb(213,220,59) !important;"{% endif %}> About Us </button>
 				<div class = "dropDownContentAbout">
                     {% for item in site.data.navigation %}
-                        <a href = "{{ item.link }}" {% if page.url contains item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                        <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url contains item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
                     {% endfor %}
 				</div>
 			</div>
@@ -17,7 +17,7 @@
 				<button class = "dropButtonOverview" onclick="window.location.href = '{{site.baseurl}}/vex-overview/'"  {% if page.url == "{{site.baseurl}}/vex-overview/" %} style = "color: rgb(213,220,59) !important;"{% endif %}> VEX Overview </button>
 				<div class = "dropDownContentOverview">
                      {% for item in site.data.overview_navigation %}
-                        <a href = "{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                        <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
                     {% endfor %}
 				</div>
 			</div>
@@ -25,16 +25,16 @@
 				<button class = "dropButtonMedia" onclick="window.location.href = '{{site.baseurl}}/media/'" {% if page.url == "{{site.baseurl}}/media/" %} style = "color: rgb(213,220,59) !important;"{% endif %}> Media </button>
 				<div class = "dropDownContentMedia">
 					{% for item in site.data.media_navigation %}
-                        <a href = "{{ item.link }}" {% if page.url contains item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                        <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url contains item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
                     {% endfor %}
 				</div>
 			</div>
-			<li><a href = "{{site.baseurl}}/blog/" {% if page.url contains "/blog/" %} style = "color: rgb(213,220,59) !important;"{% endif %}> Blog </a></li>
+			<li><a href = "{{site.baseurl}}/blog/" {% if page.url contains "{{site.baseurl}}/blog/" %} style = "color: rgb(213,220,59) !important;"{% endif %}> Blog </a></li>
 			<div class = "dropDownMedia">
 				<button class = "dropButtonMedia" onclick="window.location.href = '{{site.baseurl}}/resources/'" {% if page.url == "{{site.baseurl}}/resources/" %} style = "color: rgb(213,220,59) !important;"{% endif %}> Resources </button>
 				<div class = "dropDownContentMedia">
 					{% for item in site.data.resources_navigation %}
-                        <a href = "{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                        <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
                     {% endfor %}
 				</div>
 			</div>
@@ -53,26 +53,26 @@
     <a href="{{site.baseurl}}/about/" {% if page.url == "{{site.baseurl}}/about/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>About Us</a>
 		<div class="phoneDropdown">
 		    {% for item in site.data.navigation %}
-                <a href = "{{ item.link }}" {% if page.url contains item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url contains item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
             {% endfor %}
 		</div>
 	<a href="{{site.baseurl}}/vex-overview/" {% if page.url == "{{site.baseurl}}/vex-overview/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>VEX Overview</a>
 		<div class="phoneDropdown">
 		    {% for item in site.data.overview_navigation %}
-                <a href = "{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
             {% endfor %}
 		</div>
 	<a href="{{site.baseurl}}/media/" {% if page.url == "{{site.baseurl}}/media/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Media</a>
 		  <div class="phoneDropdown">
 		    {% for item in site.data.media_navigation %}
-                <a href = "{{ item.link }}" {% if page.url contains item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url contains item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
             {% endfor %}
 		  </div>
 	<a href="{{site.baseurl}}/blog/" {% if page.url contains "{{site.baseurl}}/blog/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Blog</a>
 	<a href="{{site.baseurl}}/resources/" {% if page.url == "{{site.baseurl}}/resources/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Resources</a>
 		<div class="phoneDropdown">
 		    {% for item in site.data.resources_navigation %}
-                <a href = "{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
             {% endfor %}
 		  </div>
 		<a href="{{site.baseurl}}/sponsors/" {% if page.url == "{{site.baseurl}}/sponsors/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Sponsors</a>
