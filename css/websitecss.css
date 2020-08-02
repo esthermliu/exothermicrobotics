@@ -1,3 +1,6 @@
+---
+---
+
 .landing {
 	background-image: url("{{ site.baseurl }}/images/WebsiteBackgroundImage.jpg");
 	background-repeat: no-repeat;
