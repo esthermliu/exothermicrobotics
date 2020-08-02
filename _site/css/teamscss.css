@@ -1,5 +1,5 @@
 .landing {
-	background-image: url("{{ site.baseurl }}/images/Gallery106.jpg");
+	background-image: url("/exothermicrobotics/images/Gallery106.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
