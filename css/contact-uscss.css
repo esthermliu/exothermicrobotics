@@ -1,0 +1,134 @@
+.landing {
+	background-image: url("/images/ContactUsBackground.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landingBackground {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(67, 90, 165, 0.4), rgba(64, 116, 133, 0.4));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titleHolder {
+	text-align: center;
+}
+
+.landing h1 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: white;
+	letter-spacing: 5px;
+	line-height: 42px;
+}	
+
+.landing h2 {
+	color: white;
+	font-family: Thin, sans-serif;
+	font-size: 20px;
+	font-weight: 40;
+	line-height: 42px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+
+.firstSection {
+	background-color: #f0f0f0;
+	color: #626262;
+	font-family: Roboto, sans-serif;
+	padding: 8% 25% 8% 25%;
+}
+
+.firstSection h2 {
+	font-size: 45px;
+	text-align: center;
+	font-weight: normal;
+	padding-bottom: 3%;
+}
+
+.firstSection h3 {
+	font-weight: normal;
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.firstSection p {
+	line-height: 30px;
+	margin-bottom: 15px;
+}
+
+.imageHolder {
+	text-align: center;
+}
+
+.imageHolder img {
+	margin-bottom: 15px;
+}
+
+.softwareResources {
+	color: rgb(30, 90, 125);
+}
+
+.robotMesh {
+	color: rgb(24, 156, 171);
+}
+
+.northwestTech {
+	color: rgb(148, 18, 20);
+}
+
+#socialMedia {
+	background-color: white;
+}
+
+.learnMoreButton  {
+  color: #dbb52f;
+  text-transform: uppercase;
+  background-color: rgba(255,255,255,0);
+  border: 2px solid rgb(96, 156, 14);
+  z-index: 2;
+  padding: 15px 15px;
+  color: rgb(96, 156, 14);
+    -webkit-transition-duration: 0.2s; 
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.learnMoreButton:hover  {
+   color: rgb(46, 74, 7);
+}
+
+.learnMoreButton:hover {
+  border-color: rgb(46, 74, 7);
+ }
+
+ .socialButton {
+	background-color: orange;
+ }
+ 
+ .socialButton i {
+	font-size: 40px;
+	color: rgb(213,220,59) !important;
+ }
+ 
+ .firstSection p a {
+	color: rgb(96, 156, 14);
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+ }
+ 
+ .firstSection p a:hover {
+	color: rgb(46, 74, 7);
+ }

@@ -1,0 +1,263 @@
+.landing {
+	background-image: url("/images/OnlineChallengeBackground.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landingBackground {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(67, 90, 165, 0.5), rgba(165, 103, 67, 0.5));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titleHolder {
+	text-align: center;
+}
+
+.titleHolder img {
+	padding-bottom: 3vh;
+}
+
+.landing h1 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: white;
+	letter-spacing: 5px;
+	line-height: 42px;
+}
+
+.landing h2 {
+	color: white;
+	font-family: Thin, sans-serif;
+	font-size: 20px;
+	font-weight: 40;
+	line-height: 42px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+.overallSection {
+	background-color: #f0f0f0;
+	padding-bottom: 8%;
+}
+
+.writtenSection {
+	padding-right: 30px;
+}
+
+.imageHolder {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+
+.imageHolder img {
+	height: 45%;
+	width: 45%;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+	margin-left: 15px;
+}
+
+.firstSection {
+	margin: 0 25% 0 25%;
+	padding-top: 8%;
+	font-family: Roboto, sans-serif;
+	color: #626262;
+	line-height: 30px;
+}
+
+.firstSection p, .TurningPoint p, .theZone p, .challenge11 p, .challenge12 p , .challenge14 p {
+	padding-bottom: 15px;
+}
+
+.firstSection h1 {
+	text-align: center;
+	padding-bottom: 8%;
+	font-family: Roboto, sans-serif;
+	font-weight: normal;
+	color: #626262;
+	font-size: 45px;
+}
+
+.writtenSection h2 {
+	font-weight: 300;
+	padding-bottom: 15px;
+}
+
+.detailSection h2 {
+	font-weight: 300;
+	padding-bottom: 15px;
+	margin-top: 15px;
+}
+
+.detailSection ul {
+	padding-left: 30px;
+}
+
+.scoringTableTower, th, td {
+	border: 1px solid black;
+}
+
+.scoringTableTower {
+	margin-top: 15px;
+}
+
+.scoringTableTower th {
+	font-weight: 300;
+	font-size: 20px;
+	padding: 15px;
+	text-transform: uppercase;
+}
+
+td {
+	padding: 15px;
+}
+
+.scoringSection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.towerTakeoverVideo {
+	width: 100%;
+	height: 500px;
+	padding-top: 45px;
+}
+
+#Hide, #Hide2, #Hide3, #Hide4, #Hide5,  #Hide6 {
+	border: none;
+	color: rgb(98,98,98);
+	background-color: rgba(255,255,255,0);
+	font-size: 20px;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	cursor: pointer;
+	font-weight: normal;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 96%;
+	text-align: left;
+}
+
+#Hide:focus, #Hide2:focus, #Hide3:focus, #Hide4:focus, #Hide5:focus, #Hide6:focus {
+	outline: 0;
+}
+
+ #Hide:hover, #Hide2:hover, #Hide3:hover, #Hide4:hover,  #Hide5:hover, #Hide6:hover {
+  color: rgb(175, 181, 49);
+ }
+ 
+ .TurningPoint, .theZone, .challenge14, .challenge11, .challenge12, .challenge14 {
+   display: none;
+   margin-top: 15px;
+ }
+ 
+.secondSection {
+	border-top: 1px solid black;
+}
+
+.secondSection {
+	margin: 0 25% 0 25%;
+	margin-top: 45px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-family: Roboto, sans-serif;
+	color: #626262;
+	line-height: 30px;
+}
+
+.buttonTopHolder {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.minusHolder p {
+	font-size: 40px;
+}
+
+.minusHolder {
+	height: 40px;
+	width: 4%;
+	display: flex;
+	flex-wrap: no-wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.horizontalMinus, .horizontalMinus2, .horizontalMinus3, .horizontalMinus4, .horizontalMinus5, .horizontalMinus6 {
+	position: absolute;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}
+
+.verticalMinus, .verticalMinus2, .verticalMinus3,  .verticalMinus4, .verticalMinus5, .verticalMinus6 {
+	position: relative;
+	transform: rotate(-90deg);
+	left: 1px;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}
+
+.horizontalMinus:hover, .horizontalMinus2:hover, .horizontalMinus3:hover, .horizontalMinus4:hover, .horizontalMinus5:hover, .horizontalMinus6:hover {
+  color: rgb(175, 181, 49);
+}
+
+.minusHolder:hover {
+  color: rgb(175, 181, 49);
+}
+
+.youtubeVid {
+	display: flex;
+	justify-content: center;
+}
+
+.pictureWebsite {
+	width: 30%;
+	height: 30%;
+}
+
+.writtenSection ul {
+	line-height: 30px;
+	padding-left: 30px;
+	list-style-type: square;
+}
+
+.writtenSection ul li a {
+	color:  rgb(96, 156, 14) !important;
+	transition-duration: 0.2s;
+}
+
+.writtenSection ul li a:hover {
+	color: rgb(46, 74, 7) !important;
+}
+
+#website2016 {
+	margin-top: 30px !important;
+}
+
+.towerTakeoverVideo {
+	padding-top: 45px;
+}
+
+#secondOverview {
+	padding-top: 8%;
+}
+
+
+

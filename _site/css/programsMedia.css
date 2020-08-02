@@ -1,0 +1,19 @@
+@media screen and (max-width: 750px) { 
+
+	.landing {
+		background-attachment: scroll !important;
+	}
+	
+	.firstSection, .nextSection {
+		padding: 25% 5% 25% 5% !important;
+	}
+	
+	.firstSection h2 {
+		padding-bottom: 8%;
+	}
+
+	.programSection h3 {
+		line-height: 30px;
+	}
+
+}

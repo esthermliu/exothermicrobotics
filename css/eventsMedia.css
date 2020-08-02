@@ -1,0 +1,40 @@
+@media screen and (max-width: 750px) {
+
+	.titleHolder h2 {
+		line-height: 30px;
+	}
+	
+	.firstSection {
+		padding: 25% 5% 25% 5%;
+	}
+	
+	.firstSection h2 {
+		padding-bottom: 8%;
+	}
+	
+	.event {
+		flex-wrap: wrap;
+	}
+	
+	.learnMoreContainer {
+		width: 100%;
+		margin-top: 5%;
+	}
+	
+	.location, .learnMoreContainer {
+		width: 100%;
+	}
+	
+	.date {
+		display: block;
+		width: auto !important;
+		margin-bottom: 5%;
+	}
+	
+	.landing {
+		background-attachment: scroll;
+	}
+	
+	
+	
+}

@@ -1,0 +1,39 @@
+@media screen and (max-width: 750px) {
+	.firstSection, #rubrics {
+		padding: 25% 5% 25% 5%;
+	}
+	
+	.firstSection h2 {
+		padding-bottom: 3%;
+	}
+	
+	#rubrics  h2 {
+		padding-bottom: 8% !important;
+	}
+	
+	.section {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 5%;
+		margin-top: 5%;
+	}
+	
+	.imageHolder, .textSection {
+		width: 100%;
+	}
+	
+	.imageHolder {
+		margin-bottom: 5%;
+	}
+	
+	.landing {
+		background-attachment: scroll;
+	}
+	
+	.pdfRubric {
+		display: none;
+	}
+	
+	
+	
+}

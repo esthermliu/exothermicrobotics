@@ -1,0 +1,27 @@
+---
+layout: archive
+title: Exothermic Robotics Archive
+custom_css: 
+    - blogcss
+    - blogMedia
+pagination: 
+    enabled: true
+---
+
+
+{% assign current = "2020" %}
+{% assign currentMonth = "January" %}
+{% for post in site.posts %}
+    {% assign postYear = post.date | date: "%Y" %}
+    {% assign postMonth = post.date  | date: "%B" %}
+
+        {% if postYear == current and postMonth != currentMonth %}
+            <div class = "postMonth">{{ postMonth }} </div>
+        {% endif %}
+
+        {% if postYear == current %}
+         {% include thumbnail-text.html %}
+        {% endif %}
+        {% assign currentMonth = postMonth %}
+{% endfor %}
+				

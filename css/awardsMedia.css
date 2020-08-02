@@ -1,0 +1,45 @@
+@media screen and (max-width: 750px) { 
+	.firstSection {
+		padding: 25% 5% 25% 5% !important;
+	}
+	
+	.landing {
+		background-attachment: scroll !important;
+	}
+	
+	.firstSection h2 {
+		padding-bottom: 8%;
+	}
+	
+	.imageGroupHolder {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	
+	.imageGroupHolder img {
+		width: 100%;
+		height: auto !important;
+		margin-bottom: 8%;
+	}
+	
+	#Hide, #Hide2, #Hide3, #Hide4, #Hide5, #Hide6, #Hide7, #Hide8, #Hide9, #Hide10, #Hide11, #Hide12, #Hide13, #Hide14 {
+		line-height: 30px;
+		width: 90%;
+	}
+	
+	.buttonTopHolder {
+		padding-right: 3%;
+	}
+	
+	.horizontalMinus, .horizontalMinus2, .horizontalMinus3, .horizontalMinus4, .horizontalMinus5, .horizontalMinus6, .horizontalMinus7, .horizontalMinus8, .horizontalMinus9, .horizontalMinus10, .horizontalMinus11, .horizontalMinus12, .horizontalMinus13, .horizontalMinus14 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.groupHolder p {
+		width: 100%;
+	}
+	
+	
+}

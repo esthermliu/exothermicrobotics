@@ -1,0 +1,50 @@
+@media screen and (max-width: 750px) {
+	.landing {
+		background-attachment: scroll;
+	}
+	
+	.vexStatsHolder {
+		flex-wrap: wrap;
+	}
+	
+	.stats {
+		border-right: 0px solid white;
+		border-bottom: 2px solid white;
+	}
+	
+	.backgroundSection, .backgroundSection2 {
+		padding: 25% 5% 25% 5%;
+		margin: 0;
+	}
+	
+	.backgroundSection h2, .backgroundSection2 h2 {
+		padding-bottom: 8%;
+	}
+	
+	.lastWrittenSection {
+		width: 80%;
+	}
+	
+	.learnMoreContainer {
+		flex-wrap: wrap;
+	}
+	
+	.competitionLink, .eventsLink, .programsLink {
+		width: 100%;
+	}
+	
+	.competitionLink, .eventsLink {
+		margin-bottom: 10%;
+	}
+	
+	.titleHolder h2 {
+		line-height: 30px;
+	}
+	
+	.secondSection {
+		background-attachment: scroll;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+}

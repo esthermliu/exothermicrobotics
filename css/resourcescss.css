@@ -1,0 +1,164 @@
+.landing {
+	background-image: url("/images/ResourcesBackground.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landingBackground {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(67, 90, 165, 0.6), rgba(85, 125, 30, 0.4));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titleHolder {
+	text-align: center;
+}
+
+.landing h1 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: white;
+	letter-spacing: 5px;
+	line-height: 42px;
+}	
+
+.landing h2 {
+	color: white;
+	font-family: Thin, sans-serif;
+	font-size: 20px;
+	font-weight: 40;
+	line-height: 42px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+
+.firstSection {
+	background-color: #f0f0f0;	
+	padding: 8% 20% 8% 20%;
+	font-family: Roboto, sans-serif;
+	color: #626262;
+}
+
+.firstSection h2 {
+	font-weight: normal;
+	font-size: 45px;
+	text-align: center;
+	padding-bottom: 3%;
+}
+
+.backgroundSection2 h2 {
+	color: #626262;
+}
+
+.learnMoreContainer {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 3%;
+	flex-wrap: wrap;
+}
+
+.competitionLink, .programsLink, .eventsLink {
+	height: 30vh;
+	width: 30%;
+	margin: 1.5%;
+	margin-bottom: 1.5%;
+}
+
+
+.competitionLink, .eventsLink, .programsLink {
+	background-image: url("/images/FillerPicture.jpg");
+	object-fit: cover;
+	transition: transform 0.2s;
+	background-position: center;
+}
+
+.competitionLink {
+	background-image: url("/images/Gallery103.jpg");
+}
+
+.eventsLink {
+	background-image: url("/images/10CNotebookTOC.jpg");
+}
+
+.programsLink {
+	background-image: url("/images/CodingTipsBackground.jpeg");
+}
+
+#game {
+	background-image: url("/images/Gallery45.jpg");
+}
+
+#websiteTips {
+	background-image: url("/images/littleBoxWebsiteTips.jpeg");
+}
+
+#other {
+	background-image: url("/images/TowerTakeover.jpg");
+}
+
+.competitionLink:hover, .eventsLink:hover, .programsLink:hover {
+	-ms-transform: scale(1.5); /* IE 9 */
+	-webkit-transform: scale(1.5); /* Safari 3-8 */
+	transform: scale(1.1); 
+	transition-duration: 0.3s;
+}
+
+.competitionLink:hover .Filter, .eventsLink:hover .Filter, .programsLink:hover .Filter {
+	background-color: rgba(51,51,51,0.1);
+	height: 25vh;
+	width: 85%;
+	border: 2px solid white;
+}
+
+.competition, .events, .programs {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Filter {
+	height: 30vh;
+	width: 100%;
+	background-color: rgba(51,51,51, 0.4);
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	transition-duration: 0.3s;
+}
+
+.Filter h4 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	letter-spacing: 2px;
+	line-height: 35px;
+	color: white;
+	padding: 15px;
+	text-transform: uppercase;
+}
+
+.writtenSection p {
+	line-height: 30px;
+	margin-bottom: 15px;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+
+
+
+

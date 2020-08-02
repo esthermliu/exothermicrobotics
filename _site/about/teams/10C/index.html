@@ -1,0 +1,1191 @@
+<!DOCTYPE HTML>
+<html lang = "eng">
+<head>
+	<title> Exothermic Robotics 10C </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/HeaderFooter.css">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="/css/HeaderFooterMedia.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="resources/jquery.js"></script>
+	<link rel="icon" type="image/png" href="/images/Favicon.png" size = "20x20"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+     
+        
+        <link rel = "stylesheet" href = "/css/10Ccss.css">
+        
+        <link rel = "stylesheet" href = "/css/individualTeamsMedia.css">
+        
+    
+</head>
+<header id = "secondBox" class = "navbar">
+	<div class = "logoBox">
+		<a class = "homepageLogo" href = "/"><img src = "/images/EXOLogo.png"></a>
+	</div>
+	<nav class = "secondBox">
+		<ul class = "headerList">
+			<li><a href = "/" > Home </a></li>
+			<div class = "dropDownAbout">
+				<button class = "dropButtonAbout" onclick="window.location.href = '/about/'" > About Us </button>
+				<div class = "dropDownContentAbout">
+                    
+                        <a href = "/about/history/" >History</a>
+                    
+                        <a href = "/about/teams/"  style = "color: rgb(213, 220, 59);" >Teams</a>
+                    
+                        <a href = "/about/join/" >Join Us</a>
+                    
+                        <a href = "/about/outreach/" >Outreach</a>
+                    
+                        <a href = "/about/advisors/" >Advisors</a>
+                    
+                        <a href = "/about/awards/" >Awards</a>
+                    
+                        <a href = "/about/challenges/" >Challenges</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownOverview">
+				<button class = "dropButtonOverview" onclick="window.location.href = '/vex-overview/'"  > VEX Overview </button>
+				<div class = "dropDownContentOverview">
+                     
+                        <a href = "/vex-overview/competition/" >Competitions</a>
+                    
+                        <a href = "/vex-overview/events/" >Events</a>
+                    
+                        <a href = "/vex-overview/programs/" >Programs</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/media/'" > Media </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/media/news/" >Publicity</a>
+                    
+                        <a href = "/media/gallery/" >Gallery</a>
+                    
+                        <a href = "/media/website/" >Website</a>
+                    
+                        <a href = "/media/social/" >Social</a>
+                    
+				</div>
+			</div>
+			<li><a href = "/blog/" > Blog </a></li>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/resources/'" > Resources </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/resources/building-tips/" >Building Tips</a>
+                    
+                        <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+                    
+                        <a href = "/resources/coding-tips/" >Coding Tips</a>
+                    
+                        <a href = "/resources/game-tips/" >Game Tips</a>
+                    
+                        <a href = "/resources/website-tips/" >Website Tips</a>
+                    
+                        <a href = "/resources/other-links/" >Other Links</a>
+                    
+				</div>
+			</div>
+			<li><a class = "sponsors" href = "/sponsors/" > Sponsors </a></li>
+			<li><a class = "contactUs" href = "/contact-us/" > Contact Us </a></li>
+		</ul>
+	</nav>
+<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+ <div id="myNav" class="overlay">
+   <span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <div class = "overlayHolder">
+    <a href="/" >Home</a>
+    <a href="/about/" >About Us</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/about/history/" >History</a>
+            
+                <a href = "/about/teams/"  style = "color: rgb(213, 220, 59);" >Teams</a>
+            
+                <a href = "/about/join/" >Join Us</a>
+            
+                <a href = "/about/outreach/" >Outreach</a>
+            
+                <a href = "/about/advisors/" >Advisors</a>
+            
+                <a href = "/about/awards/" >Awards</a>
+            
+                <a href = "/about/challenges/" >Challenges</a>
+            
+		</div>
+	<a href="/vex-overview/" >VEX Overview</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/vex-overview/competition/" >Competitions</a>
+            
+                <a href = "/vex-overview/events/" >Events</a>
+            
+                <a href = "/vex-overview/programs/" >Programs</a>
+            
+		</div>
+	<a href="/media/" >Media</a>
+		  <div class="phoneDropdown">
+		    
+                <a href = "/media/news/" >Publicity</a>
+            
+                <a href = "/media/gallery/" >Gallery</a>
+            
+                <a href = "/media/website/" >Website</a>
+            
+                <a href = "/media/social/" >Social</a>
+            
+		  </div>
+	<a href="/blog/" >Blog</a>
+	<a href="/resources/" >Resources</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/resources/building-tips/" >Building Tips</a>
+            
+                <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+            
+                <a href = "/resources/coding-tips/" >Coding Tips</a>
+            
+                <a href = "/resources/game-tips/" >Game Tips</a>
+            
+                <a href = "/resources/website-tips/" >Website Tips</a>
+            
+                <a href = "/resources/other-links/" >Other Links</a>
+            
+		  </div>
+		<a href="/sponsors/" >Sponsors</a>
+		<a href="/contact-us/" >Contact Us</a>
+	</div>
+	</div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+<script>
+jQuery(document).ready(function($){
+	$('.navbar').css("background-color", "transparent");
+	if ($(this).scrollTop() < 270) {
+		$('.navbar').css("background-color", "transparent");
+		$('.dropDownContentAbout').css("background-color", "transparent");
+		$('.dropDownContentOverview').css("background-color", "transparent");
+		$('.dropDownContentMedia').css("background-color", "transparent");
+		
+		$('.dropDownContentAbout').css("box-shadow", "none");
+		$('.dropDownContentOverview').css("box-shadow", "none");
+		$('.dropDownContentMedia').css("box-shadow", "none");
+	} else {
+		$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+	}
+	$(window).scroll(function(){
+		if ($(this).scrollTop() < 270) {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+			
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		} else {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		}
+		
+		if ($(this).scrollTop() > 270) {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		} else {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+	
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		}
+		
+
+	});
+});
+</script>
+<body>
+    <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+<!--<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+</script>-->
+<script>
+window.onscroll = function() {
+	scrollFunction();
+	myFunction();
+};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+
+</script>
+<script type="text/javascript">
+	$("a[href='#']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+</script>
+
+	<div class = "landing">
+	<div class = "landingBackground">
+		<div class = "titleHolder">
+			<img src = "/images/EXOLogo.png" alt = "Exo logo">
+			<h1> 10C </h1>
+			<h2> Exothermic Creation </h2>
+		</div>
+	</div>
+</div>
+<div class = "firstSection">
+	<div class = "memberSection">
+		<div class = "titleSection">
+			<h2> Current Members </h2>
+		</div>
+		<div class = "memberContainer">
+		<div class = "memberBox">
+			<div class = "pictureSection">
+				<img src = "/images/AnnBoard.jpg">
+			</div>
+			<div class = "writtenSection">
+				<div class = "nameHolder">
+					<h3>Ann Li</h3>
+					<h4>Grade: 9</h4>
+				</div>
+			</div>
+		</div>
+		<div class = "memberBox2">
+			<div class = "pictureSection">
+				<img src = "/images/Di.jpg">
+			</div>
+			<div class = "writtenSection">
+				<div class = "nameHolder">
+					<h3>Di Mao</h3>
+					<h4>Grade: </h4>
+				</div>
+			</div>
+		</div>
+		<div class = "memberBox3">
+			<div class = "pictureSection">
+				<img src = "/images/Liz.jpg">
+			</div>
+			<div class = "writtenSection">
+				<div class = "nameHolder">
+					<h3>Elizabeth Chen</h3>
+					<h4>Grade: 9</h4>
+				</div>
+			</div>
+		</div>
+		<div class = "memberBox4">
+			<div class = "pictureSection">
+				<img src = "/images/Esther.jpg">
+			</div>
+			<div class = "writtenSection">
+				<div class = "nameHolder">
+					<h3>Esther Liu</h3>
+					<h4>Grade: 10</h4>
+				</div>
+			</div>
+		</div>
+		<div class = "memberBox5">
+			<div class = "pictureSection">
+				<img src = "/images/Helena.jpg">
+			</div>
+			<div class = "writtenSection">
+				<div class = "nameHolder">
+					<h3>Helena Zheng</h3>
+					<h4>Grade: 9</h4>
+				</div>
+			</div>
+		</div>
+		<div class = "memberBox6">
+			<div class = "pictureSection">
+				<img src = "/images/Thaisa.jpg">
+			</div>
+			<div class = "writtenSection">
+				<div class = "nameHolder">
+					<h3>Thaisa Andruscavage</h3>
+					<h4>Grade: 9</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class = "secondSection">
+	<div class = "statSection">
+		<div class = "statTitle">
+			<h2>Overview</h2>
+		</div>
+		<div class = "statArticleHolder">
+		<div class = "statArticle">
+		<h3> Statistics </h3>
+			<div class = "statboxFirst">
+				<p>Total Events</p>
+				<div class = "rightSection2">
+					<p>32</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Events This Season</p>
+				<div class = "rightSection2">
+					<p>8</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Rankings Overall</p>
+				<div class = "rightSection2">
+					<p>Best: 1; Average: 15</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Rankings This Season</p>
+				<div class = "rightSection2">
+					<p>Best: 2; Average: 10</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Best Driver Skills Rank</p>
+				<div class = "rightSection2">
+					<p>183 (Tower Takeover)</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Best Programming Skills Rank</p>
+				<div class = "rightSection2">
+					<p>52 (In the Zone)</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Best Robot Skills Rank</p>
+				<div class = "rightSection2">
+					<p>119 (Tower Takeover)</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Current Driver Skills Score</p>
+				<div class = "rightSection2">
+					<p>70 (Rank 183)</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Current Programming Skills Score</p>
+				<div class = "rightSection2">
+					<p>21 (Rank 52)</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Current Robot Skills Score</p>
+				<div class = "rightSection2">
+					<p>91 (Rank 119)</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Total Awards</p>
+				<div class = "rightSection2">
+					<p>14</p>
+				</div>
+			</div>
+		</div>
+		<div class = "statArticle2">
+		<h3> Awards </h3>
+			<div class = "statboxFirst">
+				<p>King of the Tower</p>
+				<div class = "rightSection2">
+					<p>Robot Skills Champion & </p>
+					<p>Excellence Award</p>
+				</div>
+			</div>
+			<div class = "statboxFirst">
+				<p>MTHS VEX Tower Takeover</p>
+				<div class = "rightSection2">
+					<p>Design Award & </p>
+					<p>Tournament Champions </p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>In the Zone In Vancouver</p>
+				<div class = "rightSection2">
+					<p>Tournament Champions & </p>
+					<p>Robot Skills Champion </p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Highland Games</p>
+				<div class = "rightSection2">
+					<p>Excellence Award </p>
+					<p>Tournament Champions</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Winter Bash</p>
+				<div class = "rightSection2">
+					<p>Design Award</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Winter Break Tournament</p>
+				<div class = "rightSection2">
+					<p>Tournament Champions</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>British Colombia VEX Championship</p>
+				<div class = "rightSection2">
+					<p>Excellence Award</p>
+					<p>Tournament Champions</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Oregon VEX Tournament</p>
+				<div class = "rightSection2">
+					<p>Tournament Finalists </p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Oregon VEX Tournament</p>
+				<div class = "rightSection2">
+					<p>Tournament Champions</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class = "toSectionButtons">
+		<div class = "buttonContainer" id = "buttonContainer">
+		<div class = "insideButtonContainer">
+			<a href = "#Tower" class="eventButton"><button>Tower Takeover</button></a>
+			<a href = "#Zone" class="eventButton"><button>In The Zone</button></a>
+			<a href = "#Star" class="eventButton"><button>Starstruck</button></a>
+			<a href = "#Gate" class="eventButton"><button>Gateway</button></a>
+			</div>
+		</div>
+	</div>
+	<script>
+// When the user scrolls the page, execute myFunction 
+
+// Get the header
+var header = document.getElementById("buttonContainer");
+
+// Get the offset position of the navbar
+var sticky = buttonContainer.offsetTop;
+
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    buttonContainer.classList.add("sticky");
+  } else {
+    buttonContainer.classList.remove("sticky");
+  }
+}
+</script>
+	<div class = "eventContainer">
+		<div id = "Tower" class = "towerSection">
+			<div class = "eventList">
+			<h2>Tower Takeover</h2>
+				<h3> Event List </h3>
+				<div class = "statboxFirst2">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Event </p>
+					<p>Date</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Washington State High School VRC Championship</p>
+					<p>2020-03-07</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Exothermic Winter Challenge VRC Tournament</p>
+					<p>2020-02-22</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">King of the Tower VRC League</p>
+					<p>2020-02-05</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Quantum Midseason Mayhem VRC Tournament</p>
+					<p>2020-01-18</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">MTHS VEX Tower Takeover</p>
+					<p>2019-12-07</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Lake Stevens Turkey Trot VRC Competition</p>
+					<p>2019-11-16</p>
+				</div>
+			</div>
+			</div>
+			<div class = "rankingsList">
+				<h3> Rankings </h3>
+			<div class = "statboxFirst2">
+				<div class = "rightSectionEventRankingTitle">
+					<p class = "firstOfSection">Event</p>
+					<p>Rank</p>
+					<p>W-L-T</p>
+					<p>WP/AP/SP</p>
+					<p>Max Score</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">King of the Tower VRC Tournament</p>
+					<p>6</p>
+					<p>4-2-0</p>
+					<p>8/18/150</p>
+					<p>49</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">King of the Tower VRC League</p>
+					<p>2</p>
+					<p>6-2-0</p>
+					<p>12/42/114</p>
+					<p>9</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Cavelero Cup VRC Tournament</p>
+					<p>9</p>
+					<p>5-2-0</p>
+					<p>10/27/139</p>
+					<p>70</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Quantum Midseason Mayhem VRC Tournament</p>
+					<p>13</p>
+					<p>3-2-1</p>
+					<p>7/30/105</p>
+					<p>52</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">MTHS VEX Tower Takeover</p>
+					<p>10</p>
+					<p>3-2-1</p>
+					<p>7/24/76</p>
+					<p>51</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Lake Stevens Turkey Trot VRC Competition</p>
+					<p>21</p>
+					<p>2-4-0</p>
+					<p>4/15/37</p>
+					<p>50</p>
+				</div>
+			</div>
+			</div>
+			<div class = "skills">			
+				<h3> Skills </h3>
+				<div class = "statboxFirst2">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Event</p>
+					<p>Rank</p>
+					<p>Score</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">King of the Tower VRC Tournament</p>
+					<p>1</p>
+					<p>84</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">King of the Tower VRC League</p>
+					<p>3</p>
+					<p>81</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Cavelero Cup VRC Tournament</p>
+					<p>5</p>
+					<p>78</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Quantum Midseason Mayhem VRC Tournament</p>
+					<p>8</p>
+					<p>40</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">MTHS VEX Tower Takeover</p>
+					<p>4</p>
+					<p>27</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Lake Stevens Turkey Trot VRC Competition</p>
+					<p>8</p>
+					<p>25</p>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div id = "Zone" class = "zoneSection">
+			<div class = "turningList">
+				<h2>In The Zone</h2>
+				<h3> Event List </h3>
+				<div class = "statboxFirst2">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Event</p>
+					<p>Date</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">CREATE U.S. Open Robotics Championship</p>
+					<p>2018-04-05 - 2018-04-07</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Washington State High School VRC Championship</p>
+					<p>2018-03-03</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Exothermic Winter VRC Challenge</p>
+					<p>2018-02-17</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Lake Stevens Domo Arigato Mr. Roboto Skills Tournament</p>
+					<p>2018-02-13</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">In the Zone In Vancouver</p>
+					<p>2018-02-10</p>
+				</div>
+			</div>			
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Cavelero Cup</p>
+					<p>2018-02-03</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Highland Games</p>
+					<p>2018-01-13</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Rock and Roll and Robots VRC Qualifier, Seattle Preparatory School</p>
+					<p>2018-01-07</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Winter Bash</p>
+					<p>2018-12-16</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">CWU Technology Education VEX Robotics Competition</p>
+					<p>2017-12-02</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">WA Jump Start Tournament</p>
+					<p>2017-11-18</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Sunnyside Season Opener</p>
+					<p>2017-09-08</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Scrimmage and Open House for VRC</p>
+					<p>2017-09-08</p>
+				</div>
+			</div>
+			</div>
+			<div class = "rankingsList">
+				<h3> Rankings </h3>
+			<div class = "statboxFirst2">
+				<div class = "rightSectionEventRankingTitle">
+					<p class = "firstOfSection">Event</p>
+					<p>Rank</p>
+					<p>W-L-T</p>
+					<p>WP/AP/SP</p>
+					<p>Max Score</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">CREATE U.S. Open Robotics Championship </p>
+					<p>31</p>
+					<p>6-4-0</p>
+					<p>12/50/714</p>
+					<p>137</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Washington State High School VRC Championship</p>
+					<p>33</p>
+					<p>2-5-0</p>
+					<p>4/30/478</p>
+					<p>99</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Exothermic Winter VRC Challenge</p>
+					<p>17</p>
+					<p>4-2-0</p>
+					<p>8/30/173</p>
+					<p>90</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">In the Zone in Vancouver</p>
+					<p>2</p>
+					<p>5-1-0</p>
+					<p>10/50/219</p>
+					<p>96</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Cavelero Cup</p>
+					<p>3</p>
+					<p>7-0-0</p>
+					<p>14/50/230</p>
+					<p>112</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Highland Games</p>
+					<p>10</p>
+					<p>4-3-0</p>
+					<p>8/40/260</p>
+					<p>90</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Rock and Roll and Robots VRC Qualifier, Seattle Preparatory School</p>
+					<p>2</p>
+					<p>6-0-0</p>
+					<p>12/40/222</p>
+					<p>110</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Winter Bash</p>
+					<p>3</p>
+					<p>5-1-0</p>
+					<p>10/20/125</p>
+					<p>80</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">CWU Technology Education VEX Robotics Competition</p>
+					<p>18</p>
+					<p>3-3-0</p>
+					<p>6/10/105</p>
+					<p>96</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">WA Jump Start Tournament</p>
+					<p>6</p>
+					<p>5-1-0</p>
+					<p>10/30/127</p>
+					<p>86</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Sunnyside Season Opener</p>
+					<p>14</p>
+					<p>2-5-0</p>
+					<p>4/0/114</p>
+					<p>56</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Scrimmage and Open House for VRC</p>
+					<p>5</p>
+					<p>4-6-0</p>
+					<p>8/0/123</p>
+					<p>34</p>
+				</div>
+			</div>
+		</div>
+			<div class = "skills">			
+				<h3> Skills </h3>
+				<div class = "statboxFirst2">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Event </p>
+					<p>Rank</p>
+					<p>Score</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Washington State High School VRC Championship</p>
+					<p>5</p>
+					<p>97</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Exothermic Winter VRC Challenge</p>
+					<p>15</p>
+					<p>50</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">In the Zone in Vancouver</p>
+					<p>1</p>
+					<p>96</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Cavelero Cup</p>
+					<p>27</p>
+					<p>25</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Highland Games</p>
+					<p>4</p>
+					<p>72</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Rock and Roll and Robots VRC Qualifier, Seattle Preparatory School</p>
+					<p>10</p>
+					<p>27</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">CWU Technology Education VEX Robotics Competition</p>
+					<p>6</p>
+					<p>40</p>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div id = "Star" class = "starSection">
+			<div class = "turningList">
+				<h2>Starstruck</h2>
+				<h3> Event List </h3>
+				<div class = "statboxFirst2">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Event</p>
+					<p>Date</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">WA State Championship VRC Starstruck High School</p>
+					<p>2017-03-11</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Robot Mesh Skills Only Challenge</p>
+					<p>2017-02-25</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Exothermic Winter VRC Challenge</p>
+					<p>2017-02-17</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Mukilteo Robotics Last Chance Friday Night Tournament</p>
+					<p>2017-02-17</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Cavelero Cup</p>
+					<p>2017-02-04</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Highland Games VEX Tournament</p>
+					<p>2017-01-21</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Rock and Roll and Robots VRC Qualifier, Seattle Preparatory School</p>
+					<p>2017-01-07</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Washington Jump Start Tournament</p>
+					<p>2016-11-19</p>
+				</div>
+			</div>
+			</div>
+			<div class = "rankingsList">
+				<h3> Rankings </h3>
+			<div class = "statboxFirst2">
+				<div class = "rightSectionEventRankingTitle">
+					<p class = "firstOfSection">Event</p>
+					<p>Rank</p>
+					<p>W-L-T</p>
+					<p>WP/AP/SP</p>
+					<p>Max Score</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">WA State Championship VRC Starstruck High School</p>
+					<p>12</p>
+					<p>4-2-0</p>
+					<p>8/20/48</p>
+					<p>44</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Exothermic Winter VRC Challenge</p>
+					<p>18</p>
+					<p>3-5-0</p>
+					<p>6/20/119</p>
+					<p>42</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Mukilteo Robotics Last Chance Friday Night Tournament</p>
+					<p>13</p>
+					<p>3-4-0</p>
+					<p>6/20/96</p>
+					<p>32</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Cavelero Cup</p>
+					<p>49</p>
+					<p>2-5-0</p>
+					<p>4/4/114</p>
+					<p>25</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Highland Games VEX Tournament</p>
+					<p>24</p>
+					<p>0-6-0</p>
+					<p>0/0/93</p>
+					<p>26</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Rock and Roll and Robots VRC Qualifier, Seattle Preparatory School</p>
+					<p>50</p>
+					<p>1-4-1</p>
+					<p>3/4/98</p>
+					<p>27</p>
+				</div>
+			</div>
+		</div>
+			<div class = "skills">			
+				<h3> Skills </h3>
+			<div class = "statboxFirst2">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Event</p>
+					<p>Rank</p>
+					<p>Score</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Robot Mesh Skills Only Challenge</p>
+					<p>7</p>
+					<p>34</p>
+				</div>
+			</div>
+		</div>
+		<div id = "Gate" class = "gateSection">
+			<div class = "turningList">
+				<h2>Gateway</h2>
+				<h3> Event List </h3>
+				<div class = "statboxFirst2">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Event </p>
+					<p>Date</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">British Colombia VEX Championship</p>
+					<p>2012-03-09 - 2012-03-10</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Oregon VEX Tournament</p>
+					<p>2012-03-03</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Washington VRC Championship</p>
+					<p>2012-02-25</p>
+				</div>
+			</div>
+			</div>
+		</div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+$("a[href='#Tower']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Tower").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
+    }, 1000);
+});
+
+
+$("a[href='#Zone']").click(function() {
+    $([document.documentElement, document.body]).animate({
+	      scrollTop: $("#Zone").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
+    }, 1000);
+});
+
+$("a[href='#Star']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Star").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
+    }, 1000);
+});
+
+$("a[href='#Gate']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Gate").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
+    }, 1000);
+});
+</script>
+
+</body>
+<footer>
+	<div class = "leftSection">
+		<div class = "leftTopSection">
+			<div class = "footerLogoHolder">
+				<img src = "/images/EXOLogo.png"/>
+			</div>
+			<div class = "wordsSection">
+				<h4>Exothermic Robotics</h4>
+				<h5>Redmond, Washington</h5>	
+				<a class = "social" href="https://www.facebook.com/exothermicrobotics/" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+				<a class = "social" href="https://www.instagram.com/exothermicrobotics/?igshid=xt1q75v9kzqq" target="_blank" ><i class="fab fa-instagram"></i></a>
+				<a class = "social" href="https://twitter.com/ExothermicRobo1" target="_blank" ><i class="fab fa-twitter"></i></a>
+					<ul class="FooterLinks">
+					<li>
+						<p>&copy; 2019-2020 Exothermic Robotics Club </p>
+					  </li>
+					</ul>				  
+			</div>
+		</div>
+	</div>
+	<div class = "rightSectionFooter">
+		<div class = "blog">
+			<h5>The EXO Blog</h5>
+			<p>A blog featuring announcements and little blurbs about the newest and latest in the Exothermic club. </p>
+		</div>
+		<div class = "blogContainer">
+			<a href = "/blog/" class="blogButton"><button>Check it Out &rarr;</button></a>
+		</div>
+	</div>
+</footer>
+</html>

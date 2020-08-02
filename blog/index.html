@@ -1,0 +1,205 @@
+---
+layout: defaultblog
+title: Exothermic Robotics Blog
+custom_css: 
+    - blogcss
+    - blogMedia
+pagination: 
+    enabled: true
+---
+
+<div class = "firstSection">
+	<h2>Blog</h2>
+	<div class = "overallContainer">
+		<div class = "blogHolder">
+        {% for post in paginator.posts %}
+		  {% include thumbnail-text.html %}
+        {% endfor %}
+		</div>
+	<div id = "paginationHolderPhone" class = "paginationHolder">
+		{% if paginator.total_pages > 1 %}
+        <div class="pagination">
+          {% if paginator.page != 1 %}
+            <a href = "/blog/"> « </a>
+          {% else %}
+            <a style = "visibility: hidden;"> </a>
+          {% endif %}
+
+          {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> < </a>
+          {% else %}
+            <a style = "visibility: hidden;"> < </a>
+          {% endif %}
+
+          {% assign current = paginator.page %}
+          {% assign secondlast = paginator.total_pages | minus: 1 %}
+          {% assign currentmax = paginator.total_pages | minus: 2 %}
+           {% if current == paginator.total_pages or current == secondlast %}
+                {% assign start2 = paginator.total_pages | minus: 4 %}
+                {% for page in (start2..paginator.total_pages) %}
+                    {% if page == paginator.page %}
+                      <a style = "color: rgb(96, 156, 14);">{{ page }}</a>
+                    {% elsif page == 1 %}
+                      <a href="/blog/">{{ page }}</a>
+                    {% else %}
+                      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                    {% endif %}
+                  {% endfor %}
+           {% elsif current >= 3 and current <= currentmax %}
+              {% assign start = paginator.page | minus: 2 %}
+              {% assign end = paginator.page | plus: 2 %}
+
+              {% for page in (start..end) %}
+                {% if page == paginator.page %}
+                  <a style = "color: rgb(96, 156, 14);">{{ page }}</a>
+                {% elsif page == 1 %}
+                  <a href="/blog/">{{ page }}</a>
+                {% else %}
+                  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                {% endif %}
+              {% endfor %}
+            {% elsif current < 3 %}
+                {% assign end2 = 5 %}
+                    {% for page in (1..end2) %}
+                        {% if page == paginator.page %}
+                          <a style = "color: rgb(96, 156, 14);"> {{ page }}</a>
+                        {% elsif page == 1 %}
+                          <a href="/blog/">{{ page }}</a>
+                        {% else %}
+                          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                        {% endif %}
+                      {% endfor %}
+            {% endif %}
+
+
+          {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> > </a>
+          {% else %}
+            <a style = "visibility: hidden;"> > </a>
+          {% endif %}
+
+          {% if paginator.page != paginator.total_pages %}
+            <a href = "{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.total_pages }}"> &raquo; </a>
+          {% else %}
+            <a style = "visibility: hidden;"> </a>
+          {% endif %}     
+        </div>
+        {% endif %}
+    </div>
+		<div class = "postLog">
+			<div class = "recentPosts">
+				<h3>Recent Posts</h3>
+				<div class = "recentPostOverall">
+                    {% for post in site.posts limit: 5 %}
+                        <div class = "recentPostHolder">
+                            <a href = "{{site.baseurl}}{{post.url}}">
+                                {% if post.showThumbnail == false %}
+                                    <img src = "{{site.baseurl}}/images/NoImageIcon.png"/>
+                                {% else %}
+                                    <img src = "{{site.baseurl}}{{post.thumbnail}}"/>
+                                {% endif %}
+                                <h3>{{ post.title }}</h3>
+                            </a>
+				        </div>
+                    {% endfor %}
+				</div>
+			</div>
+			<div class = "archive">
+				<h3>Archive</h3>
+				<div id = "archiveLink" class = "recentPostOverall">
+					<div class = "archiveHolder">
+						<!--<a href = "#">Archive Coming Soon! <br>Our Blog Is Still Under Construction </a>-->
+                        {% assign currentYear = site.time | date: "%Y" %}
+                        {% assign currentMonth = site.time | date: "%B" %}
+                        {% for post in site.posts %}
+
+                            {% assign postYear = post.date | date: "%Y" %}
+                            {% assign postMonth = post.date  | date: "%B" %}
+
+                            {% if forloop.first %}
+                            <li><a href = "{{ "/blog/archive/num" | prepend: site.baseurl | replace: "num", postYear }}"> {{ postYear}}</a></li>
+                            {% endif %}
+
+                            {% if postYear != currentYear %}
+                            <li> <a href = "{{ "/blog/archive/num" | prepend: site.baseurl | replace: "num", postYear }}"> {{ postYear}}</a></li>          
+                            {% endif %}
+                            {% assign currentYear = postYear %}
+                            {% assign currentMonth = postMonth %}
+                        {% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class = "paginationHolder">
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.page != 1 %}
+    <a href = "/blog/"> « </a>
+  {% else %}
+    <a style = "visibility: hidden;"> </a>
+  {% endif %}
+    
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"> < </a>
+  {% else %}
+    <a style = "visibility: hidden;"> < </a>
+  {% endif %}
+
+  {% assign current = paginator.page %}
+  {% assign secondlast = paginator.total_pages | minus: 1 %}
+  {% assign currentmax = paginator.total_pages | minus: 2 %}
+   {% if current == paginator.total_pages or current == secondlast %}
+        {% assign start2 = paginator.total_pages | minus: 4 %}
+        {% for page in (start2..paginator.total_pages) %}
+            {% if page == paginator.page %}
+              <a style = "color: rgb(96, 156, 14);">{{ page }}</a>
+            {% elsif page == 1 %}
+              <a href="/blog/">{{ page }}</a>
+            {% else %}
+              <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+            {% endif %}
+          {% endfor %}
+   {% elsif current >= 3 and current <= currentmax %}
+      {% assign start = paginator.page | minus: 2 %}
+      {% assign end = paginator.page | plus: 2 %}
+        
+      {% for page in (start..end) %}
+        {% if page == paginator.page %}
+          <a style = "color: rgb(96, 156, 14);">{{ page }}</a>
+        {% elsif page == 1 %}
+          <a href="/blog/">{{ page }}</a>
+        {% else %}
+          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        {% endif %}
+      {% endfor %}
+    {% elsif current < 3 %}
+        {% assign end2 = 5 %}
+            {% for page in (1..end2) %}
+                {% if page == paginator.page %}
+                  <a style = "color: rgb(96, 156, 14);"> {{ page }}</a>
+                {% elsif page == 1 %}
+                  <a href="/blog/">{{ page }}</a>
+                {% else %}
+                  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+                {% endif %}
+              {% endfor %}
+    {% endif %}
+        
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"> > </a>
+  {% else %}
+    <a style = "visibility: hidden;"> > </a>
+  {% endif %}
+        
+  {% if paginator.page != paginator.total_pages %}
+    <a href = "{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.total_pages }}"> &raquo; </a>
+  {% else %}
+    <a style = "visibility: hidden;"> </a>
+  {% endif %}     
+</div>
+{% endif %}
+</div>   
+    
+</div>

@@ -1,0 +1,11 @@
+--- 
+layout: post
+custom_css: 
+    - blogcss
+    - blogMedia
+    - blogfirstcss
+thumbnail: /images/LexisNexis.png
+---
+
+Our primary sponsor this year is LexisNexis, a corporation that provides computer-assisted legal research, business research, and risk management services. LexisNexis allowed us to use their facilities and provided sponsorship money as well. We would like to give them a huge thank you and shoutout for everything they've done for us this past year! As a side note, we are always looking for additional support, so please contact us if you are interested in helping!
+

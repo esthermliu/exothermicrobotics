@@ -1,0 +1,8 @@
+- name: Publicity
+  link: /media/news/
+- name: Gallery
+  link: /media/gallery/
+- name: Website
+  link: /media/website/
+- name: Social
+  link: /media/social/

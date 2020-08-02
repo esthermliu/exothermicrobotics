@@ -1,0 +1,572 @@
+<!DOCTYPE HTML>
+<html lang = "eng">
+<head>
+	<title> Exothermic Robotics Social </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/HeaderFooter.css">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="/css/HeaderFooterMedia.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="resources/jquery.js"></script>
+	<link rel="icon" type="image/png" href="/images/Favicon.png" size = "20x20"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+     
+        
+        <link rel = "stylesheet" href = "/css/socialcss.css">
+        
+        <link rel = "stylesheet" href = "/css/socialMedia.css">
+        
+    
+</head>
+<header id = "secondBox" class = "navbar">
+	<div class = "logoBox">
+		<a class = "homepageLogo" href = "/"><img src = "/images/EXOLogo.png"></a>
+	</div>
+	<nav class = "secondBox">
+		<ul class = "headerList">
+			<li><a href = "/" > Home </a></li>
+			<div class = "dropDownAbout">
+				<button class = "dropButtonAbout" onclick="window.location.href = '/about/'" > About Us </button>
+				<div class = "dropDownContentAbout">
+                    
+                        <a href = "/about/history/" >History</a>
+                    
+                        <a href = "/about/teams/" >Teams</a>
+                    
+                        <a href = "/about/join/" >Join Us</a>
+                    
+                        <a href = "/about/outreach/" >Outreach</a>
+                    
+                        <a href = "/about/advisors/" >Advisors</a>
+                    
+                        <a href = "/about/awards/" >Awards</a>
+                    
+                        <a href = "/about/challenges/" >Challenges</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownOverview">
+				<button class = "dropButtonOverview" onclick="window.location.href = '/vex-overview/'"  > VEX Overview </button>
+				<div class = "dropDownContentOverview">
+                     
+                        <a href = "/vex-overview/competition/" >Competitions</a>
+                    
+                        <a href = "/vex-overview/events/" >Events</a>
+                    
+                        <a href = "/vex-overview/programs/" >Programs</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/media/'" > Media </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/media/news/" >Publicity</a>
+                    
+                        <a href = "/media/gallery/" >Gallery</a>
+                    
+                        <a href = "/media/website/" >Website</a>
+                    
+                        <a href = "/media/social/"  style = "color: rgb(213, 220, 59);" >Social</a>
+                    
+				</div>
+			</div>
+			<li><a href = "/blog/" > Blog </a></li>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/resources/'" > Resources </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/resources/building-tips/" >Building Tips</a>
+                    
+                        <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+                    
+                        <a href = "/resources/coding-tips/" >Coding Tips</a>
+                    
+                        <a href = "/resources/game-tips/" >Game Tips</a>
+                    
+                        <a href = "/resources/website-tips/" >Website Tips</a>
+                    
+                        <a href = "/resources/other-links/" >Other Links</a>
+                    
+				</div>
+			</div>
+			<li><a class = "sponsors" href = "/sponsors/" > Sponsors </a></li>
+			<li><a class = "contactUs" href = "/contact-us/" > Contact Us </a></li>
+		</ul>
+	</nav>
+<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+ <div id="myNav" class="overlay">
+   <span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <div class = "overlayHolder">
+    <a href="/" >Home</a>
+    <a href="/about/" >About Us</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/about/history/" >History</a>
+            
+                <a href = "/about/teams/" >Teams</a>
+            
+                <a href = "/about/join/" >Join Us</a>
+            
+                <a href = "/about/outreach/" >Outreach</a>
+            
+                <a href = "/about/advisors/" >Advisors</a>
+            
+                <a href = "/about/awards/" >Awards</a>
+            
+                <a href = "/about/challenges/" >Challenges</a>
+            
+		</div>
+	<a href="/vex-overview/" >VEX Overview</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/vex-overview/competition/" >Competitions</a>
+            
+                <a href = "/vex-overview/events/" >Events</a>
+            
+                <a href = "/vex-overview/programs/" >Programs</a>
+            
+		</div>
+	<a href="/media/" >Media</a>
+		  <div class="phoneDropdown">
+		    
+                <a href = "/media/news/" >Publicity</a>
+            
+                <a href = "/media/gallery/" >Gallery</a>
+            
+                <a href = "/media/website/" >Website</a>
+            
+                <a href = "/media/social/"  style = "color: rgb(213, 220, 59);" >Social</a>
+            
+		  </div>
+	<a href="/blog/" >Blog</a>
+	<a href="/resources/" >Resources</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/resources/building-tips/" >Building Tips</a>
+            
+                <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+            
+                <a href = "/resources/coding-tips/" >Coding Tips</a>
+            
+                <a href = "/resources/game-tips/" >Game Tips</a>
+            
+                <a href = "/resources/website-tips/" >Website Tips</a>
+            
+                <a href = "/resources/other-links/" >Other Links</a>
+            
+		  </div>
+		<a href="/sponsors/" >Sponsors</a>
+		<a href="/contact-us/" >Contact Us</a>
+	</div>
+	</div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+<script>
+jQuery(document).ready(function($){
+	$('.navbar').css("background-color", "transparent");
+	if ($(this).scrollTop() < 270) {
+		$('.navbar').css("background-color", "transparent");
+		$('.dropDownContentAbout').css("background-color", "transparent");
+		$('.dropDownContentOverview').css("background-color", "transparent");
+		$('.dropDownContentMedia').css("background-color", "transparent");
+		
+		$('.dropDownContentAbout').css("box-shadow", "none");
+		$('.dropDownContentOverview').css("box-shadow", "none");
+		$('.dropDownContentMedia').css("box-shadow", "none");
+	} else {
+		$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+	}
+	$(window).scroll(function(){
+		if ($(this).scrollTop() < 270) {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+			
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		} else {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		}
+		
+		if ($(this).scrollTop() > 270) {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		} else {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+	
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		}
+		
+
+	});
+});
+</script>
+<body>
+    <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+<!--<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+</script>-->
+<script>
+window.onscroll = function() {
+	scrollFunction();
+	myFunction();
+};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+
+</script>
+<script type="text/javascript">
+	$("a[href='#']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+</script>
+
+	<div class = "landing">
+	<div class = "landingBackground">
+		<div class = "titleHolder">
+			<img src = "/images/EXOLogo.png" alt = "Exo logo">
+			<h1>Exothermic Social</h1>
+			<h2> Online Connections </h2>
+		</div>
+	</div>
+</div>
+<div class = "socialMediaSection">
+	<h2>Facebook and Instagram </h2>
+	<div class = "wordSection">
+		<p> <a target = "_blank" href = "https://www.facebook.com/exothermicrobotics/">Check out our Facebook account here! </a></p>
+		<p> In addition to our shared Facebook account, every team also has their separate Instagram accounts. Visit each of our teams below! </p>
+		<ul>
+			<li><a target = "_blank" href = "https://www.instagram.com/exo_10a/">Exothermic Actuation (10A) </a></li>
+			<li><a target = "_blank" href = "https://www.instagram.com/exo.10b/">Exothermic Blaze (10B)</a></li>
+			<li><a target = "_blank" href = "https://www.instagram.com/exo10c/">Exothermic Creation (10C) </a></li>
+			<li><a target = "_blank" href = "https://www.instagram.com/exo10d/"> Exothermic Dusk (10D)</a></li>
+			<li><a target = "_blank" href = "https://www.instagram.com/exo10e/"> Exothermic Evolution (10E)</a></li>
+			<li><a target = "_blank" href = "https://www.instagram.com/exo10f/?igshid=19p0th0jx0oc"> Exothermic Fusion (10F)</a></li>
+			<li><a target = "_blank" href = "https://www.instagram.com/exo10n/"> Exothermic Neon (10N)</a></li>
+			<li><a target = "_blank" href = "#"> Exothermic Excess (10X)</a></li>
+		</ul>
+	</div>
+</div>
+<script>
+$(document).ready(function(){
+  $("#Hide").click(function(){ // When you click the words, it will toggle the actual text and the minus sign
+    $(".TurningPoint").toggle(500);
+	$(".verticalMinus").toggle(200);
+  });
+  $("#showMinus").click(function(){ // When you click the minus sign, it will toggle actual text and the minus sign 
+    $(".TurningPoint").toggle(500);
+	$(".verticalMinus").toggle(200);
+  });
+ $("#hideMinus").click(function(){ // When you click the vertical minus sign, it will toggle actual text and the minus sign
+    $(".TurningPoint").toggle(500);
+	$(".verticalMinus").toggle(200);
+  });
+  
+ $("#Hide2").click(function(){ // When you click the words, it will toggle the actual text and the minus sign
+    $(".theZone").toggle(500);
+	$(".verticalMinus2").toggle(200);
+  });
+  $("#showMinus2").click(function(){ // When you click the minus sign, it will toggle actual text and the minus sign 
+    $(".theZone").toggle(500);
+	$(".verticalMinus2").toggle(200);
+  });
+ $("#hideMinus2").click(function(){ // When you click the vertical minus sign, it will toggle actual text and the minus sign
+    $(".theZone").toggle(500);
+	$(".verticalMinus2").toggle(200);
+  });
+  
+  $("#Hide3").click(function(){ // When you click the words, it will toggle the actual text and the minus sign
+    $(".starStruck").toggle(500);
+	$(".verticalMinus3").toggle(200);
+  });
+  $("#showMinus3").click(function(){ // When you click the minus sign, it will toggle actual text and the minus sign 
+    $(".starStruck").toggle(500);
+	$(".verticalMinus3").toggle(200);
+  });
+ $("#hideMinus3").click(function(){ // When you click the vertical minus sign, it will toggle actual text and the minus sign
+    $(".starStruck").toggle(500);
+	$(".verticalMinus3").toggle(200);
+  });
+  
+ $("#Hide4").click(function(){ // When you click the words, it will toggle the actual text and the minus sign
+    $(".net").toggle(500);
+	$(".verticalMinus4").toggle(200);
+  });
+  $("#showMinus4").click(function(){ // When you click the minus sign, it will toggle actual text and the minus sign 
+    $(".net").toggle(500);
+	$(".verticalMinus4").toggle(200);
+  });
+ $("#hideMinus4").click(function(){ // When you click the vertical minus sign, it will toggle actual text and the minus sign
+    $(".net").toggle(500);
+	$(".verticalMinus4").toggle(200);
+  });
+
+  $("#Hide5").click(function(){ // When you click the words, it will toggle the actual text and the minus sign
+    $(".evolution").toggle(500);
+	$(".verticalMinus5").toggle(200);
+  });
+  $("#showMinus5").click(function(){ // When you click the minus sign, it will toggle actual text and the minus sign 
+    $(".evolution").toggle(500);
+	$(".verticalMinus5").toggle(200);
+  });
+ $("#hideMinus5").click(function(){ // When you click the vertical minus sign, it will toggle actual text and the minus sign
+    $(".evolution").toggle(500);
+	$(".verticalMinus5").toggle(200);
+  });
+  
+  $("#Hide6").click(function(){ // When you click the words, it will toggle the actual text and the minus sign
+    $(".fusion").toggle(500);
+	$(".verticalMinus6").toggle(200);
+  });
+  $("#showMinus6").click(function(){ // When you click the minus sign, it will toggle actual text and the minus sign 
+    $(".fusion").toggle(500);
+	$(".verticalMinus6").toggle(200);
+  });
+ $("#hideMinus6").click(function(){ // When you click the vertical minus sign, it will toggle actual text and the minus sign
+    $(".fusion").toggle(500);
+	$(".verticalMinus6").toggle(200);
+  });
+  
+  $("#Hide7").click(function(){ // When you click the words, it will toggle the actual text and the minus sign
+    $(".neon").toggle(500);
+	$(".verticalMinus7").toggle(200);
+  });
+  $("#showMinus7").click(function(){ // When you click the minus sign, it will toggle actual text and the minus sign 
+    $(".neon").toggle(500);
+	$(".verticalMinus7").toggle(200);
+  });
+ $("#hideMinus7").click(function(){ // When you click the vertical minus sign, it will toggle actual text and the minus sign
+    $(".neon").toggle(500);
+	$(".verticalMinus7").toggle(200);
+  });
+  
+  $("#Hide8").click(function(){ // When you click the words, it will toggle the actual text and the minus sign
+    $(".excess").toggle(500);
+	$(".verticalMinus8").toggle(200);
+  });
+  $("#showMinus8").click(function(){ // When you click the minus sign, it will toggle actual text and the minus sign 
+    $(".excess").toggle(500);
+	$(".verticalMinus8").toggle(200);
+  });
+ $("#hideMinus8").click(function(){ // When you click the vertical minus sign, it will toggle actual text and the minus sign
+    $(".excess").toggle(500);
+	$(".verticalMinus8").toggle(200);
+  });
+  
+});
+
+</script>
+<div class = "overallSection"> <!--Overall section-->
+	<div class = "firstSection"> <!--Section for tower takeover-->
+		<h1> Youtube </h1>
+		<div class = "detailSection">
+			<p>Exothermic teams also have their separate Youtube channels where they post videos about the competitions they have attended, reveal videos of their robots, or any other content 
+			related to robotics. Visit their channels below!</p>
+		</div>
+	</div> <!-- End of tower takeover section -->
+	<div class = "secondSection"> <!-- Start of Turning Point Section-->
+		<div class = "buttonTopHolder">
+			<button id="Hide">Exothermic Actuation (10A)</button>
+			<div class = "minusHolder">
+				<p id = "showMinus" class = "horizontalMinus">&minus;</p>
+				<p id = "hideMinus" class = "verticalMinus">&minus;</p>
+			</div>
+		</div>
+		<div class="TurningPoint">
+		<div class = "detailSection">
+			<h2> 10A Channel: <i>Coming Soon!</i></h2>
+		</div>
+		</div>
+	</div> <!-- End of second section for turning point -->
+	<div class = "secondSection"> <!-- Start of In the Zone Section-->
+		<div class = "buttonTopHolder">
+			<button id="Hide2">Exothermic Blaze (10B)</button>
+			<div class = "minusHolder">
+				<p id = "showMinus2" class = "horizontalMinus2">&minus;</p>
+				<p id = "hideMinus2" class = "verticalMinus2">&minus;</p>
+			</div>
+		</div>
+		<div class="theZone">
+		<div class = "detailSection">
+			<h2> 10B Channel: <a target = "_blank" href = "https://www.youtube.com/channel/UCDc5XB12UETfY24ax13Dm-Q/featured">https://tinyurl.com/exothermic-blaze</a></h2>
+		</div>
+		<div class = "youtubeVid">
+		<iframe class = "towerTakeoverVideo" width="560" height="315" src="https://www.youtube.com/embed/pFonoFoGMKQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		</div>
+	</div> <!-- End of third section -->
+	<div class = "secondSection"> <!-- Start of Starstruck Section-->
+		<div class = "buttonTopHolder">
+			<button id="Hide3">Exothermic Creation (10C)</button>
+			<div class = "minusHolder">
+				<p id = "showMinus3" class = "horizontalMinus3">&minus;</p>
+				<p id = "hideMinus3" class = "verticalMinus3">&minus;</p>
+			</div>
+		</div>
+		<div class="starStruck">
+		<div class = "detailSection">
+			<h2> 10C Channel: <a target = "_blank" href = "https://www.youtube.com/channel/UCNyF47H8QV_aMDNT8qZQsfA"> https://tinyurl.com/exothermic-creation</a></h2>
+			<p> Currently, 10C does not have any videos uploaded yet, but it'll be updated soon!</p>
+		</div>
+		</div>
+	</div> <!-- End of fourth section -->
+	<div class = "secondSection"> <!-- Start of Nothing But Net Section-->
+		<div class = "buttonTopHolder">
+			<button id="Hide4">Exothermic Dusk (10D)</button>
+			<div class = "minusHolder">
+				<p id = "showMinus4" class = "horizontalMinus4">&minus;</p>
+				<p id = "hideMinus4" class = "verticalMinus4">&minus;</p>
+			</div>
+		</div>
+		<div class="net">
+		<div class = "detailSection">
+			<h2> 10D Channel: <a target = "_blank" href = "https://www.youtube.com/user/Exothermic10D/videos"> https://tinyurl.com/exothermic-dusk</a> </h2>
+		</div>
+		<div class = "youtubeVid">
+			<iframe class = "towerTakeoverVideo" src="https://www.youtube.com/embed/l9ZWj3SVNHU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe class = "towerTakeoverVideo" src="https://www.youtube.com/embed/481_4EnhZsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		</div>
+	</div> <!-- End of fifth section-->
+	<div class = "secondSection"> <!--Start of 10E Section-->
+		<div class = "buttonTopHolder">
+			<button id="Hide5">Exothermic Evolution (10E)</button>
+			<div class = "minusHolder">
+				<p id = "showMinus5" class = "horizontalMinus5">&minus;</p>
+				<p id = "hideMinus5" class = "verticalMinus5">&minus;</p>
+			</div>
+		</div>
+		<div class="evolution">
+		<div class = "detailSection">
+			<h2> 10E Channel: <a target = "_blank" href = "https://www.youtube.com/channel/UC57PWr_hakcq75peuf0tpyw"> https://tinyurl.com/exothermic-evolution</a> </h2>
+		</div>
+		<div class = "youtubeVid">
+		<iframe class = "towerTakeoverVideo" width="560" height="315" src="https://www.youtube.com/embed/cBNpj8A5cAQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe class = "towerTakeoverVideo" width="560" height="315" src="https://www.youtube.com/embed/oaLKvoa2sPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		</div>
+	</div> <!-- End of 10E section-->
+	<div class = "secondSection"> <!--Start of 10F Section-->
+		<div class = "buttonTopHolder">
+			<button id="Hide6">Exothermic Fusion (10F)</button>
+			<div class = "minusHolder">
+				<p id = "showMinus6" class = "horizontalMinus6">&minus;</p>
+				<p id = "hideMinus6" class = "verticalMinus6">&minus;</p>
+			</div>
+		</div>
+		<div class="fusion">
+		<div class = "detailSection">
+			<h2> 10F Channel: <i>Coming Soon!</i></h2>
+		</div>
+		</div>
+	</div> <!-- End of 10F section-->
+	<div class = "secondSection"> <!--Start of 10N Section-->
+		<div class = "buttonTopHolder">
+			<button id="Hide7">Exothermic Ion (10N)</button>
+			<div class = "minusHolder">
+				<p id = "showMinus7" class = "horizontalMinus7">&minus;</p>
+				<p id = "hideMinus7" class = "verticalMinus7">&minus;</p>
+			</div>
+		</div>
+		<div class="neon">
+		<div class = "detailSection">
+			<h2> 10N Channel:  <a target = "_blank" href = "https://www.youtube.com/channel/UCfRA3Ms4o6O9keMI5PD9njg"> https://tinyurl.com/exothermic-neon</a></h2>
+		</div>
+		<div class = "youtubeVid">
+		<iframe class = "towerTakeoverVideo" width="560" height="315" src="https://www.youtube.com/embed/cC1P51utkt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		</div>
+	</div> <!-- End of 10N section-->
+	<div class = "secondSection"> <!--Start of 10X Section-->
+		<div class = "buttonTopHolder">
+			<button id="Hide8">Exothermic Excess (10X)</button>
+			<div class = "minusHolder">
+				<p id = "showMinus8" class = "horizontalMinus8">&minus;</p>
+				<p id = "hideMinus8" class = "verticalMinus8">&minus;</p>
+			</div>
+		</div>
+		<div class="excess">
+		<div class = "detailSection">
+			<h2> 10X Channel: <i>Coming Soon!</i></h2>
+		</div>
+		</div>
+	</div> <!-- End of 10X section-->
+</div> <!-- End of overall section -->
+
+</body>
+<footer>
+	<div class = "leftSection">
+		<div class = "leftTopSection">
+			<div class = "footerLogoHolder">
+				<img src = "/images/EXOLogo.png"/>
+			</div>
+			<div class = "wordsSection">
+				<h4>Exothermic Robotics</h4>
+				<h5>Redmond, Washington</h5>	
+				<a class = "social" href="https://www.facebook.com/exothermicrobotics/" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+				<a class = "social" href="https://www.instagram.com/exothermicrobotics/?igshid=xt1q75v9kzqq" target="_blank" ><i class="fab fa-instagram"></i></a>
+				<a class = "social" href="https://twitter.com/ExothermicRobo1" target="_blank" ><i class="fab fa-twitter"></i></a>
+					<ul class="FooterLinks">
+					<li>
+						<p>&copy; 2019-2020 Exothermic Robotics Club </p>
+					  </li>
+					</ul>				  
+			</div>
+		</div>
+	</div>
+	<div class = "rightSectionFooter">
+		<div class = "blog">
+			<h5>The EXO Blog</h5>
+			<p>A blog featuring announcements and little blurbs about the newest and latest in the Exothermic club. </p>
+		</div>
+		<div class = "blogContainer">
+			<a href = "/blog/" class="blogButton"><button>Check it Out &rarr;</button></a>
+		</div>
+	</div>
+</footer>
+</html>

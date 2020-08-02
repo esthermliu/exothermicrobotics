@@ -1,0 +1,37 @@
+@media screen and (max-width: 750px) {
+
+.landing {
+	background-attachment: scroll;
+}
+.firstSection {
+	padding: 25% 5% 25% 5% !important;
+}
+
+.textSection {
+	width: 100%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.textSection h4 {
+	font-size: 15px;
+}
+
+.imageHolder  {
+	margin-top: 10%;
+}
+
+.firstSection h2 {
+	padding-bottom: 8%;
+}
+
+.textSection h4 {
+	text-align: center;
+}
+
+.textSection h3 {
+	text-align: center;
+}
+
+
+}

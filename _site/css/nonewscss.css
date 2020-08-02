@@ -1,0 +1,9 @@
+
+.titleHolder h3 {
+	font-weight: normal;
+	text-align: center;
+}
+
+.titleHolder h2 {
+	padding-bottom: 0 !important;
+}

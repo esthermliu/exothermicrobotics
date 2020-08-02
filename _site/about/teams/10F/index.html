@@ -1,0 +1,645 @@
+<!DOCTYPE HTML>
+<html lang = "eng">
+<head>
+	<title> Exothermic Robotics 10F </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/HeaderFooter.css">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="/css/HeaderFooterMedia.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="resources/jquery.js"></script>
+	<link rel="icon" type="image/png" href="/images/Favicon.png" size = "20x20"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+     
+        
+        <link rel = "stylesheet" href = "/css/10Fcss.css">
+        
+        <link rel = "stylesheet" href = "/css/individualTeamsMedia.css">
+        
+    
+</head>
+<header id = "secondBox" class = "navbar">
+	<div class = "logoBox">
+		<a class = "homepageLogo" href = "/"><img src = "/images/EXOLogo.png"></a>
+	</div>
+	<nav class = "secondBox">
+		<ul class = "headerList">
+			<li><a href = "/" > Home </a></li>
+			<div class = "dropDownAbout">
+				<button class = "dropButtonAbout" onclick="window.location.href = '/about/'" > About Us </button>
+				<div class = "dropDownContentAbout">
+                    
+                        <a href = "/about/history/" >History</a>
+                    
+                        <a href = "/about/teams/"  style = "color: rgb(213, 220, 59);" >Teams</a>
+                    
+                        <a href = "/about/join/" >Join Us</a>
+                    
+                        <a href = "/about/outreach/" >Outreach</a>
+                    
+                        <a href = "/about/advisors/" >Advisors</a>
+                    
+                        <a href = "/about/awards/" >Awards</a>
+                    
+                        <a href = "/about/challenges/" >Challenges</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownOverview">
+				<button class = "dropButtonOverview" onclick="window.location.href = '/vex-overview/'"  > VEX Overview </button>
+				<div class = "dropDownContentOverview">
+                     
+                        <a href = "/vex-overview/competition/" >Competitions</a>
+                    
+                        <a href = "/vex-overview/events/" >Events</a>
+                    
+                        <a href = "/vex-overview/programs/" >Programs</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/media/'" > Media </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/media/news/" >Publicity</a>
+                    
+                        <a href = "/media/gallery/" >Gallery</a>
+                    
+                        <a href = "/media/website/" >Website</a>
+                    
+                        <a href = "/media/social/" >Social</a>
+                    
+				</div>
+			</div>
+			<li><a href = "/blog/" > Blog </a></li>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/resources/'" > Resources </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/resources/building-tips/" >Building Tips</a>
+                    
+                        <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+                    
+                        <a href = "/resources/coding-tips/" >Coding Tips</a>
+                    
+                        <a href = "/resources/game-tips/" >Game Tips</a>
+                    
+                        <a href = "/resources/website-tips/" >Website Tips</a>
+                    
+                        <a href = "/resources/other-links/" >Other Links</a>
+                    
+				</div>
+			</div>
+			<li><a class = "sponsors" href = "/sponsors/" > Sponsors </a></li>
+			<li><a class = "contactUs" href = "/contact-us/" > Contact Us </a></li>
+		</ul>
+	</nav>
+<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+ <div id="myNav" class="overlay">
+   <span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <div class = "overlayHolder">
+    <a href="/" >Home</a>
+    <a href="/about/" >About Us</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/about/history/" >History</a>
+            
+                <a href = "/about/teams/"  style = "color: rgb(213, 220, 59);" >Teams</a>
+            
+                <a href = "/about/join/" >Join Us</a>
+            
+                <a href = "/about/outreach/" >Outreach</a>
+            
+                <a href = "/about/advisors/" >Advisors</a>
+            
+                <a href = "/about/awards/" >Awards</a>
+            
+                <a href = "/about/challenges/" >Challenges</a>
+            
+		</div>
+	<a href="/vex-overview/" >VEX Overview</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/vex-overview/competition/" >Competitions</a>
+            
+                <a href = "/vex-overview/events/" >Events</a>
+            
+                <a href = "/vex-overview/programs/" >Programs</a>
+            
+		</div>
+	<a href="/media/" >Media</a>
+		  <div class="phoneDropdown">
+		    
+                <a href = "/media/news/" >Publicity</a>
+            
+                <a href = "/media/gallery/" >Gallery</a>
+            
+                <a href = "/media/website/" >Website</a>
+            
+                <a href = "/media/social/" >Social</a>
+            
+		  </div>
+	<a href="/blog/" >Blog</a>
+	<a href="/resources/" >Resources</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/resources/building-tips/" >Building Tips</a>
+            
+                <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+            
+                <a href = "/resources/coding-tips/" >Coding Tips</a>
+            
+                <a href = "/resources/game-tips/" >Game Tips</a>
+            
+                <a href = "/resources/website-tips/" >Website Tips</a>
+            
+                <a href = "/resources/other-links/" >Other Links</a>
+            
+		  </div>
+		<a href="/sponsors/" >Sponsors</a>
+		<a href="/contact-us/" >Contact Us</a>
+	</div>
+	</div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+<script>
+jQuery(document).ready(function($){
+	$('.navbar').css("background-color", "transparent");
+	if ($(this).scrollTop() < 270) {
+		$('.navbar').css("background-color", "transparent");
+		$('.dropDownContentAbout').css("background-color", "transparent");
+		$('.dropDownContentOverview').css("background-color", "transparent");
+		$('.dropDownContentMedia').css("background-color", "transparent");
+		
+		$('.dropDownContentAbout').css("box-shadow", "none");
+		$('.dropDownContentOverview').css("box-shadow", "none");
+		$('.dropDownContentMedia').css("box-shadow", "none");
+	} else {
+		$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+	}
+	$(window).scroll(function(){
+		if ($(this).scrollTop() < 270) {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+			
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		} else {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		}
+		
+		if ($(this).scrollTop() > 270) {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		} else {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+	
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		}
+		
+
+	});
+});
+</script>
+<body>
+    <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+<!--<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+</script>-->
+<script>
+window.onscroll = function() {
+	scrollFunction();
+	myFunction();
+};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+
+</script>
+<script type="text/javascript">
+	$("a[href='#']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+</script>
+
+	<div class = "landing">
+	<div class = "landingBackground">
+		<div class = "titleHolder">
+			<img src = "/images/EXOLogo.png" alt = "Exo logo">
+			<h1> 10F </h1>
+			<h2> Exothermic Fusion </h2>
+		</div>
+	</div>
+</div>
+<div class = "firstSection">
+	<div class = "memberSection">
+		<div class = "titleSection">
+			<h2> Current Members </h2>
+		</div>
+		<div class = "memberContainer">
+		<div class = "memberBox">
+			<div class = "pictureSection">
+				<img src = "/images/Shashank.jpg">
+			</div>
+			<div class = "writtenSection">
+				<div class = "nameHolder">
+					<h3>Shashank Sreepathi</h3>
+					<h4>Grade: 10</h4>
+				</div>
+			</div>
+		</div>
+		<div class = "memberBox2">
+			<div class = "pictureSection">
+				<img src = "/images/10FLogo.jpg">
+			</div>
+			<div class = "writtenSection">
+				<div class = "nameHolder">
+					<h3>Ritvik Vasisht</h3>
+					<h4>Grade: 10</h4>
+				</div>
+			</div>
+		</div>
+		<div class = "memberBox3">
+			<div class = "pictureSection">
+				<img src = "/images/10FLogo.jpg">
+			</div>
+			<div class = "writtenSection">
+				<div class = "nameHolder">
+					<h3>Sifat Hasan</h3>
+					<h4>Grade: 10</h4>
+				</div>
+			</div>
+		</div>
+		<div class = "memberBox4">
+			<div class = "pictureSection">
+				<img src = "/images/10FLogo.jpg">
+			</div>
+			<div class = "writtenSection">
+				<div class = "nameHolder">
+					<h3>Pranay Annapantula</h3>
+					<h4>Grade: 10</h4>
+				</div>
+			</div>
+		</div>
+		<div class = "memberBox5">
+			<div class = "pictureSection">
+				<img src = "/images/10FLogo.jpg">
+			</div>
+			<div class = "writtenSection">
+				<div class = "nameHolder">
+					<h3>Chirag Verma</h3>
+					<h4>Grade: 10</h4>
+				</div>
+			</div>
+		</div>
+		<div class = "memberBox6">
+			<div class = "pictureSection">
+				<img src = "/images/10FLogo.jpg">
+			</div>
+			<div class = "writtenSection">
+				<div class = "nameHolder">
+					<h3>Arnav Bhalla</h3>
+					<h4>Grade: 10</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class = "secondSection">
+	<div class = "statSection">
+		<div class = "statTitle">
+			<h2>Overview</h2>
+		</div>
+		<div class = "statArticleHolder">
+		<div class = "statArticle">
+		<h3> Statistics </h3>
+			<div class = "statboxFirst">
+				<p>Total Events</p>
+				<div class = "rightSection">
+					<p>6</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Events This Season</p>
+				<div class = "rightSection">
+					<p>6</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Rankings Overall</p>
+				<div class = "rightSection">
+					<p>Best: 1; Average: 19</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Rankings This Season</p>
+				<div class = "rightSection">
+					<p>Best: 1; Average: 19</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Best Driver Skills Rank</p>
+				<div class = "rightSection">
+					<p>1553 (Tower Takeover)</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Best Programming Skills Rank</p>
+				<div class = "rightSection">
+					<p>1762 (Tower Takeover)</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Best Robot Skills Rank</p>
+				<div class = "rightSection">
+					<p>1661 (Tower Takeover)</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Current Driver Skills Score</p>
+				<div class = "rightSection">
+					<p>15 (Rank 1553)</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Current Programming Skills Score</p>
+				<div class = "rightSection">
+					<p>1 (Rank 1762)</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Current Robot Skills Score</p>
+				<div class = "rightSection">
+					<p>15 (Rank 1661)</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<p>Total Awards</p>
+				<div class = "rightSection">
+					<p>1</p>
+				</div>
+			</div>
+		</div>
+		<div class = "statArticle2">
+		<h3> Awards </h3>
+			<div class = "statboxFirst">
+				<p>Spokane Valley Tech VRC Tournament</p>
+				<div class = "rightSection">
+					<p>Excellence Award</p>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class = "toSectionButtons">
+		<div class = "buttonContainer" id = "buttonContainer">
+		<div class = "insideButtonContainer">
+			<a href = "#Tower" class=" eventButton"><button>Tower Takeover</button></a>
+			</div>
+		</div>
+	</div>
+	<script>
+// When the user scrolls the page, execute myFunction 
+
+// Get the header
+var header = document.getElementById("buttonContainer");
+
+// Get the offset position of the navbar
+var sticky = buttonContainer.offsetTop;
+
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    buttonContainer.classList.add("sticky");
+  } else {
+    buttonContainer.classList.remove("sticky");
+  }
+}
+</script>
+	<div class = "eventContainer">
+		<div id = "Tower" class = "towerSection">
+			<div class = "eventList">
+			<h2>Tower Takeover</h2>
+				<h3> Event List </h3>
+				<div class = "statboxFirst2">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Event </p>
+					<p>Date</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Exothermic Winter Challenge VRC Tournament</p>
+					<p>2020-02-22</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Spokane Valley Tech VRC Tournament</p>
+					<p>2020-01-25</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Quantum Midseason Mayhem VRC Tournament</p>
+					<p>2020-01-18</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Highland Games VRC Tournament</p>
+					<p>2020-01-11</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">VEX High Voltage</p>
+					<p>2019-12-07</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Lake Stevens Turkey Trot VRC Competition</p>
+					<p>2019-11-16</p>
+				</div>
+			</div>
+			</div>
+			<div class = "rankingsList">
+				<h3> Rankings </h3>
+			<div class = "statboxFirst2">
+				<div class = "rightSectionEventRankingTitle">
+					<p class = "firstOfSection">Event</p>
+					<p>Rank</p>
+					<p>W-L-T</p>
+					<p>WP/AP/SP</p>
+					<p>Max Score</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Spokane Valley Tech VRC Tournament</p>
+					<p>1</p>
+					<p>6-0-0</p>
+					<p>12/33/43</p>
+					<p>42</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Quantum Midseason Mayhem VRC Tournament</p>
+					<p>29</p>
+					<p>2-4-0</p>
+					<p>4/12/70</p>
+					<p>67</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Highland Games VRC Tournament</p>
+					<p>22</p>
+					<p>3-4-0</p>
+					<p>6/18/61</p>
+					<p>34</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">VEX High Voltage</p>
+					<p>10</p>
+					<p>3-3-0</p>
+					<p>6/24/102</p>
+					<p>91</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Lake Stevens Turkey Trot VRC Competition</p>
+					<p>31</p>
+					<p>0-6-0</p>
+					<p>0/9/53</p>
+					<p>25</p>
+				</div>
+			</div>
+			</div>
+			<div class = "skills">			
+				<h3> Skills </h3>
+				<div class = "statboxFirst2">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Event</p>
+					<p>Rank</p>
+					<p>Score</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Spokane Valley Tech VRC Tournament</p>
+					<p>4</p>
+					<p>15</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Quantum Midseason Mayhem VRC Tournament</p>
+					<p>13</p>
+					<p>13</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Lake Stevens Turkey Trot VRC Competition</p>
+					<p>24</p>
+					<p>2</p>
+				</div>
+			</div>
+			</div>
+		</div>
+		</div>
+
+
+<script type="text/javascript">
+$("a[href='#Tower']").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#Tower").offset().top - $("#buttonContainer").height() -  $("#secondBox").height()
+    }, 1000);
+});
+
+</script>
+
+</body>
+<footer>
+	<div class = "leftSection">
+		<div class = "leftTopSection">
+			<div class = "footerLogoHolder">
+				<img src = "/images/EXOLogo.png"/>
+			</div>
+			<div class = "wordsSection">
+				<h4>Exothermic Robotics</h4>
+				<h5>Redmond, Washington</h5>	
+				<a class = "social" href="https://www.facebook.com/exothermicrobotics/" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+				<a class = "social" href="https://www.instagram.com/exothermicrobotics/?igshid=xt1q75v9kzqq" target="_blank" ><i class="fab fa-instagram"></i></a>
+				<a class = "social" href="https://twitter.com/ExothermicRobo1" target="_blank" ><i class="fab fa-twitter"></i></a>
+					<ul class="FooterLinks">
+					<li>
+						<p>&copy; 2019-2020 Exothermic Robotics Club </p>
+					  </li>
+					</ul>				  
+			</div>
+		</div>
+	</div>
+	<div class = "rightSectionFooter">
+		<div class = "blog">
+			<h5>The EXO Blog</h5>
+			<p>A blog featuring announcements and little blurbs about the newest and latest in the Exothermic club. </p>
+		</div>
+		<div class = "blogContainer">
+			<a href = "/blog/" class="blogButton"><button>Check it Out &rarr;</button></a>
+		</div>
+	</div>
+</footer>
+</html>

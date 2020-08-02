@@ -1,0 +1,263 @@
+.landing {
+	background-image: url("/images/InstagramBackground.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landingBackground {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(67, 90, 165, 0.4), rgba(165, 67, 95, 0.4));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titleHolder {
+	text-align: center;
+}
+
+.landing h1 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: white;
+	letter-spacing: 5px;
+	line-height: 42px;
+}	
+
+.landing h2 {
+	color: white;
+	font-family: Thin, sans-serif;
+	font-size: 20px;
+	font-weight: 40;
+	line-height: 42px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+
+.socialMediaSection {
+	background-color: #f0f0f0;
+	padding: 8% 25% 8% 25%;
+	font-family: Roboto, sans-serif;
+	color: #626262;
+}
+
+.socialMediaSection h2 {
+	font-weight: normal;
+	font-size: 45px;
+	padding-bottom: 3%;
+	text-align: center;
+}
+
+.wordSection a {
+	color: rgb(96, 156, 14);
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+
+.wordSection a:hover {
+	color: rgb(46, 74, 7);
+}
+
+.wordSection p {
+	line-height: 30px;
+	margin-bottom: 15px;
+}
+
+.socialMediaSection ul {
+	line-height: 30px;
+	padding-left: 30px;
+}
+
+#youtube {
+	background-color: white;
+}
+
+.towerTakeoverVideo {
+	width: 100%;
+	height: 500px;
+}
+
+.overallSection {
+	background-color: white;
+	padding-bottom: 8%;
+}
+
+.writtenSection {
+	padding-right: 30px;
+}
+
+.imageHolder img {
+	height: 300px;
+	width: 500px;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+	float: right;
+	margin-left: 15px;
+}
+
+.firstSection {
+	margin: 0 20% 0 20%;
+	padding-top: 8%;
+	font-family: Roboto, sans-serif;
+	color: #626262;
+	line-height: 30px;
+}
+
+.firstSection p, .TurningPoint p, .theZone p, .starStruck p, .net p, .evolution p, .fusion p, .neon p, .excess p {
+	padding-bottom: 15px;
+}
+
+.firstSection h1 {
+	text-align: center;
+	padding-bottom: 8%;
+	font-family: Roboto, sans-serif;
+	font-weight: normal;
+	color: #626262;
+	font-size: 45px;
+}
+
+.writtenSection h2 {
+	font-weight: 300;
+	padding-bottom: 15px;
+}
+
+
+.detailSection h2, .scoringSection h2 {
+	font-weight: 300;
+	padding-bottom: 15px;
+}
+
+.detailSection a {
+	color: rgb(96, 156, 14);
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+
+.detailSection a:hover {
+	color: rgb(175, 181, 49);
+}
+
+.scoringTableTower, th, td {
+	border: 1px solid black;
+}
+
+.scoringTableTower {
+	margin-top: 15px;
+}
+
+.scoringTableTower th {
+	font-weight: 300;
+	font-size: 20px;
+	padding: 15px;
+	text-transform: uppercase;
+}
+
+td {
+	padding: 15px;
+}
+
+.scoringSection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.towerTakeoverVideo {
+	width: 100%;
+	height: 500px;
+	padding-top: 45px;
+}
+
+#Hide, #Hide2, #Hide3, #Hide4, #Hide5, #Hide6, #Hide7, #Hide8 {
+	border: none;
+	color: rgb(98,98,98);
+	background-color: rgba(255,255,255,0);
+	font-size: 20px;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	cursor: pointer;
+	font-weight: normal;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 96%;
+	text-align: left;
+}
+
+#Hide:focus, #Hide2:focus, #Hide3:focus, #Hide4:focus, #Hide5:focus, #Hide6:focus, #Hide7:focus, #Hide8:focus {
+	outline: 0;
+}
+
+ #Hide:hover, #Hide2:hover, #Hide3:hover, #Hide4:hover, #Hide5:hover, #Hide6:hover, #Hide7:hover, #Hide8:hover {
+  color: rgb(175, 181, 49);
+ }
+ 
+ .TurningPoint, .theZone, .starStruck, .net, .evolution, .fusion, .neon, .excess {
+   display: none;
+   margin-top: 15px;
+ }
+ 
+.secondSection {
+	border-top: 1px solid black;
+}
+
+.secondSection {
+	margin: 0 20% 0 20%;
+	margin-top: 45px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-family: Roboto, sans-serif;
+	color: #626262;
+	line-height: 30px;
+}
+
+.buttonTopHolder {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.minusHolder p {
+	font-size: 40px;
+}
+
+.minusHolder {
+	height: 40px;
+	width: 4%;
+	display: flex;
+	flex-wrap: no-wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.horizontalMinus, .horizontalMinus2, .horizontalMinus3, .horizontalMinus4, .horizontalMinus5, .horizontalMinus6, .horizontalMinus7, .horizontalMinus8 {
+	position: absolute;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}
+
+.verticalMinus, .verticalMinus2, .verticalMinus3,  .verticalMinus4, .verticalMinus5, .verticalMinus6, .verticalMinus7, .verticalMinus8 {
+	position: relative;
+	transform: rotate(-90deg);
+	left: 1px;
+	cursor: pointer;
+	transition-duration: 0.2s;
+}
+
+.horizontalMinus:hover, .horizontalMinus2:hover, .horizontalMinus3:hover, .horizontalMinus4:hover, .horizontalMinus5:hover, .horizontalMinus6:hover, .horizontalMinus7:hover, .horizontalMinus8:hover {
+  color: rgb(175, 181, 49);
+}
+
+.minusHolder:hover {
+  color: rgb(175, 181, 49);
+}

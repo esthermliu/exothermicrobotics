@@ -1,0 +1,678 @@
+<!DOCTYPE HTML>
+<html lang = "eng">
+<head>
+	<title> Exothermic Robotics Competition </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/HeaderFooter.css">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="/css/HeaderFooterMedia.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="resources/jquery.js"></script>
+	<link rel="icon" type="image/png" href="/images/Favicon.png" size = "20x20"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+     
+        
+        <link rel = "stylesheet" href = "/css/competitionscss.css">
+        
+        <link rel = "stylesheet" href = "/css/competitionMedia.css">
+        
+    
+</head>
+<header id = "secondBox" class = "navbar">
+	<div class = "logoBox">
+		<a class = "homepageLogo" href = "/"><img src = "/images/EXOLogo.png"></a>
+	</div>
+	<nav class = "secondBox">
+		<ul class = "headerList">
+			<li><a href = "/" > Home </a></li>
+			<div class = "dropDownAbout">
+				<button class = "dropButtonAbout" onclick="window.location.href = '/about/'" > About Us </button>
+				<div class = "dropDownContentAbout">
+                    
+                        <a href = "/about/history/" >History</a>
+                    
+                        <a href = "/about/teams/" >Teams</a>
+                    
+                        <a href = "/about/join/" >Join Us</a>
+                    
+                        <a href = "/about/outreach/" >Outreach</a>
+                    
+                        <a href = "/about/advisors/" >Advisors</a>
+                    
+                        <a href = "/about/awards/" >Awards</a>
+                    
+                        <a href = "/about/challenges/" >Challenges</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownOverview">
+				<button class = "dropButtonOverview" onclick="window.location.href = '/vex-overview/'"  > VEX Overview </button>
+				<div class = "dropDownContentOverview">
+                     
+                        <a href = "/vex-overview/competition/"  style = "color: rgb(213, 220, 59);" >Competitions</a>
+                    
+                        <a href = "/vex-overview/events/" >Events</a>
+                    
+                        <a href = "/vex-overview/programs/" >Programs</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/media/'" > Media </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/media/news/" >Publicity</a>
+                    
+                        <a href = "/media/gallery/" >Gallery</a>
+                    
+                        <a href = "/media/website/" >Website</a>
+                    
+                        <a href = "/media/social/" >Social</a>
+                    
+				</div>
+			</div>
+			<li><a href = "/blog/" > Blog </a></li>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/resources/'" > Resources </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/resources/building-tips/" >Building Tips</a>
+                    
+                        <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+                    
+                        <a href = "/resources/coding-tips/" >Coding Tips</a>
+                    
+                        <a href = "/resources/game-tips/" >Game Tips</a>
+                    
+                        <a href = "/resources/website-tips/" >Website Tips</a>
+                    
+                        <a href = "/resources/other-links/" >Other Links</a>
+                    
+				</div>
+			</div>
+			<li><a class = "sponsors" href = "/sponsors/" > Sponsors </a></li>
+			<li><a class = "contactUs" href = "/contact-us/" > Contact Us </a></li>
+		</ul>
+	</nav>
+<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+ <div id="myNav" class="overlay">
+   <span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <div class = "overlayHolder">
+    <a href="/" >Home</a>
+    <a href="/about/" >About Us</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/about/history/" >History</a>
+            
+                <a href = "/about/teams/" >Teams</a>
+            
+                <a href = "/about/join/" >Join Us</a>
+            
+                <a href = "/about/outreach/" >Outreach</a>
+            
+                <a href = "/about/advisors/" >Advisors</a>
+            
+                <a href = "/about/awards/" >Awards</a>
+            
+                <a href = "/about/challenges/" >Challenges</a>
+            
+		</div>
+	<a href="/vex-overview/" >VEX Overview</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/vex-overview/competition/"  style = "color: rgb(213, 220, 59);" >Competitions</a>
+            
+                <a href = "/vex-overview/events/" >Events</a>
+            
+                <a href = "/vex-overview/programs/" >Programs</a>
+            
+		</div>
+	<a href="/media/" >Media</a>
+		  <div class="phoneDropdown">
+		    
+                <a href = "/media/news/" >Publicity</a>
+            
+                <a href = "/media/gallery/" >Gallery</a>
+            
+                <a href = "/media/website/" >Website</a>
+            
+                <a href = "/media/social/" >Social</a>
+            
+		  </div>
+	<a href="/blog/" >Blog</a>
+	<a href="/resources/" >Resources</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/resources/building-tips/" >Building Tips</a>
+            
+                <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+            
+                <a href = "/resources/coding-tips/" >Coding Tips</a>
+            
+                <a href = "/resources/game-tips/" >Game Tips</a>
+            
+                <a href = "/resources/website-tips/" >Website Tips</a>
+            
+                <a href = "/resources/other-links/" >Other Links</a>
+            
+		  </div>
+		<a href="/sponsors/" >Sponsors</a>
+		<a href="/contact-us/" >Contact Us</a>
+	</div>
+	</div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+<script>
+jQuery(document).ready(function($){
+	$('.navbar').css("background-color", "transparent");
+	if ($(this).scrollTop() < 270) {
+		$('.navbar').css("background-color", "transparent");
+		$('.dropDownContentAbout').css("background-color", "transparent");
+		$('.dropDownContentOverview').css("background-color", "transparent");
+		$('.dropDownContentMedia').css("background-color", "transparent");
+		
+		$('.dropDownContentAbout').css("box-shadow", "none");
+		$('.dropDownContentOverview').css("box-shadow", "none");
+		$('.dropDownContentMedia').css("box-shadow", "none");
+	} else {
+		$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+	}
+	$(window).scroll(function(){
+		if ($(this).scrollTop() < 270) {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+			
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		} else {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		}
+		
+		if ($(this).scrollTop() > 270) {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		} else {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+	
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		}
+		
+
+	});
+});
+</script>
+<body>
+    <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+<!--<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+</script>-->
+<script>
+window.onscroll = function() {
+	scrollFunction();
+	myFunction();
+};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+
+</script>
+<script type="text/javascript">
+	$("a[href='#']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+</script>
+
+	<script>
+$(document).ready(function(){
+  $("#Hide").click(function(){ // When you click the words, it will toggle the actual text and the minus sign
+    $(".TurningPoint").toggle(500);
+	$(".verticalMinus").toggle(200);
+  });
+  $("#showMinus").click(function(){ // When you click the minus sign, it will toggle actual text and the minus sign 
+    $(".TurningPoint").toggle(500);
+	$(".verticalMinus").toggle(200);
+  });
+ $("#hideMinus").click(function(){ // When you click the vertical minus sign, it will toggle actual text and the minus sign
+    $(".TurningPoint").toggle(500);
+	$(".verticalMinus").toggle(200);
+  });
+  
+ $("#Hide2").click(function(){ // When you click the words, it will toggle the actual text and the minus sign
+    $(".theZone").toggle(500);
+	$(".verticalMinus2").toggle(200);
+  });
+  $("#showMinus2").click(function(){ // When you click the minus sign, it will toggle actual text and the minus sign 
+    $(".theZone").toggle(500);
+	$(".verticalMinus2").toggle(200);
+  });
+ $("#hideMinus2").click(function(){ // When you click the vertical minus sign, it will toggle actual text and the minus sign
+    $(".theZone").toggle(500);
+	$(".verticalMinus2").toggle(200);
+  });
+  
+  $("#Hide3").click(function(){ // When you click the words, it will toggle the actual text and the minus sign
+    $(".starStruck").toggle(500);
+	$(".verticalMinus3").toggle(200);
+  });
+  $("#showMinus3").click(function(){ // When you click the minus sign, it will toggle actual text and the minus sign 
+    $(".starStruck").toggle(500);
+	$(".verticalMinus3").toggle(200);
+  });
+ $("#hideMinus3").click(function(){ // When you click the vertical minus sign, it will toggle actual text and the minus sign
+    $(".starStruck").toggle(500);
+	$(".verticalMinus3").toggle(200);
+  });
+  
+    $("#Hide4").click(function(){ // When you click the words, it will toggle the actual text and the minus sign
+    $(".net").toggle(500);
+	$(".verticalMinus4").toggle(200);
+  });
+  $("#showMinus4").click(function(){ // When you click the minus sign, it will toggle actual text and the minus sign 
+    $(".net").toggle(500);
+	$(".verticalMinus4").toggle(200);
+  });
+ $("#hideMinus4").click(function(){ // When you click the vertical minus sign, it will toggle actual text and the minus sign
+    $(".net").toggle(500);
+	$(".verticalMinus4").toggle(200);
+  });
+  
+});
+
+</script>
+<div class = "landing">
+	<div class = "landingBackground">
+		<div class = "titleHolder">
+			<img src = "/images/EXOLogo.png" alt = "Exo logo">
+			<h1> Competitions </h1>
+			<h2> Tower Takeover </h2>
+		</div>
+	</div>
+</div>
+<div class = "overallSection"> <!--Overall section-->
+	<div class = "firstSection"> <!--Section for tower takeover-->
+		<h1> Tower Takeover </h1>
+		<div class = "overviewSection">
+			<div class = "imageHolder">
+				<img src = "/images/TowerField.jpg"/>
+			</div>
+			<div class = "writtenSection">
+				<h2> Overview: </h2>
+				<p> VEX Tower Takeover is played on a 12'x 12' square field, with two (2) Alliances consisting of two (2) Teams each. 
+				The Red and Blue Alliance compete against each other in matches, in which the first fifteen (15) seconds is the Autonomous Period, and the rest of the one minute and forty five seconds (1:45) is the Driver Controlled Period.</p>
+				<p>The objective of the game is to score more points than the other Alliance by stacking more Cubes or placing more Cubes in the Towers.</p>
+			</div>
+		</div>
+		<div class = "detailSection">
+			<h2> Details: </h2>
+			<p>In total, there are sixty-six (66) Cubes (22 Green, 22 Orange, and 22 Purple) on a Tower Takeover Field. There are also seven (7) Towers around the field, five (5) of which are neutral, and two (2) of which are alliance specific.
+			Alliance specific Towers can only used by robots of the same alliance.</p>
+			<p>Cubes can either be placed in Towers or scored in Goals. When Cubes are placed into the Goal zones, they are worth at least 1 point, although their point value may change based off of how many cubes of that color have been placed into the Towers. 
+			When Cubes are placed or removed from Towers, the values of the cubes for both of the Alliances are changed, meaning one Robot could impact the score for not only their Alliance, but also their opposing Alliance.</p>
+			<p>The Alliance that scores the most points during the Autonomous Period is awarded 6 extra points, as well as 2 purple cubes, which can be introduced at any time during the Driver Control Period. </p>
+		</div>
+		<div class = "scoringSection">
+			<table class = "scoringTableTower">
+				<tr>
+					<th colspan = "2"> Scoring </th>
+				</tr>
+				<tr>
+					<td> Each Green Cube Scored In a Goal </td>
+					<td> 1 point + 1 point for every Green Cube Placed in Towers </td>
+				</tr>
+				<tr>
+					<td> Each Orange Cube Scored In a Goal </td>
+					<td> 1 point + 1 point for every Orange Cube Placed in Towers </td>
+				</tr>
+				<tr>
+					<td> Each Purple Cube Scored In a Goal </td>
+					<td> 1 point + 1 point for every Purple Cube Placed in Towers </td>
+				</tr>
+				<tr>
+					<td> Autonomous Bonus </td>
+					<td> 6 Points </td>
+				</tr>
+			</table>
+		</div>
+		<div class = "youtubeVid">
+		<iframe class = "towerTakeoverVideo" src="https://www.youtube.com/embed/_JVQOiw_OUU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div> <!-- End of tower takeover section -->
+	<div id = "firstSectionCompetition" class = "secondSection"> <!-- Start of Turning Point Section-->
+		<div class = "buttonTopHolder">
+			<button id="Hide">Turning Point 2018 - 2019</button>
+			<div class = "minusHolder">
+				<p id = "showMinus" class = "horizontalMinus">&minus;</p>
+				<p id = "hideMinus" class = "verticalMinus">&minus;</p>
+			</div>
+		</div>
+		<div class="TurningPoint">
+		<div class = "overviewSection">
+			<div class = "imageHolder">
+				<img src = "/images/TurningField.png"/>
+			</div>
+			<div class = "writtenSection">
+				<h2> Overview: </h2>
+				<p> Matches are played on a 12' x 12' field set up as illustrated in the image. There are two Alliances, a red Alliance and a blue Alliance, which are composed of two teams each. The objective
+				of the game is to score more points than the other Alliance by scoring Caps, scoring Flags, and by Alliance Parking or Center Parking Robots on the Platforms. </p>
+				<p>The team that wins the Autonomous Period receives a bonus. </p>
+			</div>
+		</div>
+		<div class = "detailSection">
+			<h2> Details: </h2>
+			<p>There are eight (8) Caps. Two (2) of these Caps start in a blue Low Scored position, two (2) of these Caps start in a red Low Scored position, and four (4) that start on Balls in a non-Scored position.</p>
+			<p>There are also nine (9) Flags. Three (3) start in a blue Toggled position, three (3) start in a red Toggled position, and three (3) start in a non-Toggled position.</p>
+			<p>Twenty (20) balls are on the field. Four (4) of them start on the Platforms, eight (8) of them start on the Caps, four (4) start underneath Caps, and four (4) are preloads. Each Alliance receives two (2). </p>
+			<p>Six (6) Posts are used for High Scoring Caps, and there are three (3) Platforms, which are used for Alliance Parking and Center Parking Robots. There are two (2) Alliance platforms, one red and one blue. An additional Center Platform is on the field as well. </p>
+		</div>
+		<div class = "scoringSection">
+			<table class = "scoringTableTower">
+				<tr>
+					<th colspan = "2"> Scoring </th>
+				</tr>
+				<tr>
+					<td> A Toggled High Flag </td>
+					<td> 2 points </td>
+				</tr>
+				<tr>
+					<td> A Toggled Low Flag </td>
+					<td> 1 point </td>
+				</tr>
+				<tr>
+					<td>A High Scored Cap</td>
+					<td> 2 points </td>
+				</tr>
+				<tr>
+					<td> A Low Scored Cap </td>
+					<td> 1 Point </td>
+				</tr>
+				<tr>
+					<td> A Robot which is Alliance Parked </td>
+					<td> 3 Points </td>
+				</tr>
+				<tr>
+					<td> An Alliance that wins the Autonomous Bonus</td>
+					<td> 4 Points </td>
+				</tr>
+				<tr>
+					<td> A Robot which is Center Parked</td>
+					<td> 6 Points </td>
+				</tr>
+			</table>
+		</div>
+		<div class = "youtubeVid">
+		<iframe class = "towerTakeoverVideo" width="560" height="315" src="https://www.youtube.com/embed/CDDGBcs0TFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		</div>
+	</div> <!-- End of second section for turning point -->
+	<div class = "secondSection"> <!-- Start of In the Zone Section-->
+		<div class = "buttonTopHolder">
+			<button id="Hide2">In The Zone 2017 - 2018</button>
+			<div class = "minusHolder">
+				<p id = "showMinus2" class = "horizontalMinus2">&minus;</p>
+				<p id = "hideMinus2" class = "verticalMinus2">&minus;</p>
+			</div>
+		</div>
+		<div class="theZone">
+		<div class = "overviewSection">
+			<div class = "imageHolder">
+				<img src = "/images/ZoneField.png"/>
+			</div>
+			<div class = "writtenSection">
+				<h2> Overview: </h2>
+				<p> Matches are played on a 12' x 12' field set up as illustrated in the image. There are two Alliances, a red Alliance and a blue Alliance, which are composed of two teams each. The objective
+				of the game is to score more points than the other Alliance by Stacking Cones on Goals, Scoring Mobile Goals in Goal Zones, having the Highest Stacks, and by Parking Robots. </p>
+				<p>The team that wins the Autonomous Period by having the most Cone and Goal points at the end receives a bonus. </p>
+			</div>
+		</div>
+		<div class = "detailSection">
+			<h2> Details: </h2>
+			<p>There are ninety (90) Scoring Objects. There are (80) Cones. Each Robot receives a Cones as a preload, and each Alliance receives 12 Cones as Match Loads. Fifty-two (52) cones start at designated
+			locations on the field.</p>
+			<p>There are eight (8) Mobile Goals, with four (4) per Alliance, and two (2) Stationary Goals, one (1) per Alliance.</p>
+			<p>There are also six (6) Goal Zones, three (3) per Alliance. </p>
+			<p>Four (4) Parking Tiles, two (2) per Alliance, may be used to Park Robots.</p>
+		</div>
+		<div class = "scoringSection">
+			<table class = "scoringTableTower">
+				<tr>
+					<th colspan = "2"> Scoring </th>
+				</tr>
+				<tr>
+					<td> A Cone Stacked on a Goal </td>
+					<td> 2 points </td>
+				</tr>
+				<tr>
+					<td> A Mobile Goal Scored in the 5 Point Zone </td>
+					<td> 5 point </td>
+				</tr>
+				<tr>
+					<td>A Mobile Goal Scored in the 10 Point Zone</td>
+					<td> 10 points </td>
+				</tr>
+				<tr>
+					<td> Highest Stack </td>
+					<td> 5 Points </td>
+				</tr>
+				<tr>
+					<td> A Robot Parked at the End of the Match </td>
+					<td> 2 Points </td>
+				</tr>
+				<tr>
+					<td> Winner of the Autonomous Bonus</td>
+					<td> 10 Points </td>
+				</tr>
+			</table>
+		</div>
+		<div class = "youtubeVid">
+		<iframe class = "towerTakeoverVideo" width="560" height="315" src="https://www.youtube.com/embed/1Yo_mlR1VJU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		</div>
+	</div> <!-- End of third section -->
+	<div class = "secondSection"> <!-- Start of Starstruck Section-->
+		<div class = "buttonTopHolder">
+			<button id="Hide3">Starstruck 2016 - 2017</button>
+			<div class = "minusHolder">
+				<p id = "showMinus3" class = "horizontalMinus3">&minus;</p>
+				<p id = "hideMinus3" class = "verticalMinus3">&minus;</p>
+			</div>
+		</div>
+		<div class="starStruck">
+		<div class = "overviewSection">
+			<div class = "imageHolder">
+				<img src = "/images/starField.jpg"/>
+			</div>
+			<div class = "writtenSection">
+				<h2> Overview: </h2>
+				<p> Matches are played on a 12' x 12' field set up as illustrated in the image. There are two Alliances, a red Alliance and a blue Alliance, which are composed of two teams each. The objective
+				of the game is to score more points than the other Alliance by Scoring your Stars and Cubes in your Zones and by Hanging Robots on your Hanging Bar. </p>
+				<p>The team that wins the Autonomous Period receives a bonus. </p>
+			</div>
+		</div>
+		<div class = "detailSection">
+			<h2> Details: </h2>
+			<p>There are twenty-eight (28) Scoring Objects in total, with twenty-four (24) Stars and four (4) Cubes. Each Robot will have one (1) Star available as a Preload before the Match, and each Alliance will have one (1) Cube available as a Driver Control Load during that 
+			last thirty seconds of the Match. At the beginning of the Match, twenty (20) Stars and two (2) Cubes will be located at their designated locations on the field. Additionally, each Alliance has one (1) Hanging Bar from which one (1) Robot can hang. </p>
+		</div>
+		<div class = "scoringSection">
+			<table class = "scoringTableTower">
+				<tr>
+					<th colspan = "2"> Scoring </th>
+				</tr>
+				<tr>
+					<td> A Star Scored in the Near Zone </td>
+					<td> 1 Point </td>
+				</tr>
+				<tr>
+					<td> A Star Scored in the Far Zone </td>
+					<td> 2 points </td>
+				</tr>
+				<tr>
+					<td>A Cube Scored in the Near Zone</td>
+					<td> 2 points </td>
+				</tr>
+				<tr>
+					<td> A Cube Scored in the Far Zone </td>
+					<td> 4 Points </td>
+				</tr>
+				<tr>
+					<td> A Robot that is Low Hanging </td>
+					<td> 4 Points </td>
+				</tr>
+				<tr>
+					<td> A Robot that is High Hanging</td>
+					<td> 12 Points </td>
+				</tr>
+				<tr>
+					<td> Autonomous Winner</td>
+					<td> 4 Points </td>
+				</tr>
+			</table>
+		</div>
+		<div class = "youtubeVid">
+		<iframe class = "towerTakeoverVideo" src="https://www.youtube.com/embed/0t2zstQ84Tw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		</div>
+	</div> <!-- End of fourth section -->
+	<div id = "lastSectionCompetition" class = "secondSection"> <!-- Start of Nothing But Net Section-->
+		<div class = "buttonTopHolder">
+			<button id="Hide4">Nothing But Net 2015 - 2016</button>
+			<div class = "minusHolder">
+				<p id = "showMinus4" class = "horizontalMinus4">&minus;</p>
+				<p id = "hideMinus4" class = "verticalMinus4">&minus;</p>
+			</div>
+		</div>
+		<div class="net">
+		<div class = "overviewSection">
+			<div class = "imageHolder">
+				<img src = "/images/netField.png"/>
+			</div>
+			<div class = "writtenSection">
+				<h2> Overview: </h2>
+				<p> Matches are played on a 12' x 12' field set up as illustrated in the image. There are two Alliances, a red Alliance and a blue Alliance, which are composed of two teams each. The objective
+				of the game is to score more points than the other Alliance by Scoring your Balls and Bonus Balls in your Low and High Goals, and by Elevating Robots in your Climbing Zone. </p>
+				<p>The team that wins the Autonomous Period receives a bonus. </p>
+			</div>
+		</div>
+		<div class = "detailSection">
+			<h2> Details: </h2>
+			<p>There are one hundred and four (104) Scoring Objects in total, with ninety-four (94) Balls and ten (10) Bonus Balls. Each Robot will have four (4) Balls available as Preloads before the Match, and each Alliance will have twenty-four (24) Balls available as a Driver Control Loads during the
+			Driver Control Period. Thirty (30) Balls and ten (10) Bonus Balls will be located at their designated locations on the field. Additionally, each Alliance has one (1) Low Goal and one (1) High Goal for Scoring Objects into. </p>
+		</div>
+		<div class = "scoringSection">
+			<table class = "scoringTableTower">
+				<tr>
+					<th colspan = "2"> Scoring </th>
+				</tr>
+				<tr>
+					<td> A Ball Scored in a Low Goal </td>
+					<td> 1 Point </td>
+				</tr>
+				<tr>
+					<td> A Bonus Ball Scored in a Low Goal </td>
+					<td> 2 points </td>
+				</tr>
+				<tr>
+					<td>A Ball Scored in a High Goal</td>
+					<td> 5 points </td>
+				</tr>
+				<tr>
+					<td> A Bonus Ball Scored in a High Goal</td>
+					<td> 10 Points </td>
+				</tr>
+				<tr>
+					<td> A Robot that is Low Elevated </td>
+					<td> 25 Points </td>
+				</tr>
+				<tr>
+					<td> A Robot that is High Elevated</td>
+					<td> 50 Points </td>
+				</tr>
+				<tr>
+					<td> Autonomous Winner</td>
+					<td> 10 Points </td>
+				</tr>
+			</table>
+		</div>
+		<div class = "youtubeVid">
+		<iframe class = "towerTakeoverVideo" src="https://www.youtube.com/embed/A8daR6qBw3M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		</div>
+	</div> <!-- End of fifth section-->
+</div> <!-- End of overall section -->
+
+</body>
+<footer>
+	<div class = "leftSection">
+		<div class = "leftTopSection">
+			<div class = "footerLogoHolder">
+				<img src = "/images/EXOLogo.png"/>
+			</div>
+			<div class = "wordsSection">
+				<h4>Exothermic Robotics</h4>
+				<h5>Redmond, Washington</h5>	
+				<a class = "social" href="https://www.facebook.com/exothermicrobotics/" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+				<a class = "social" href="https://www.instagram.com/exothermicrobotics/?igshid=xt1q75v9kzqq" target="_blank" ><i class="fab fa-instagram"></i></a>
+				<a class = "social" href="https://twitter.com/ExothermicRobo1" target="_blank" ><i class="fab fa-twitter"></i></a>
+					<ul class="FooterLinks">
+					<li>
+						<p>&copy; 2019-2020 Exothermic Robotics Club </p>
+					  </li>
+					</ul>				  
+			</div>
+		</div>
+	</div>
+	<div class = "rightSectionFooter">
+		<div class = "blog">
+			<h5>The EXO Blog</h5>
+			<p>A blog featuring announcements and little blurbs about the newest and latest in the Exothermic club. </p>
+		</div>
+		<div class = "blogContainer">
+			<a href = "/blog/" class="blogButton"><button>Check it Out &rarr;</button></a>
+		</div>
+	</div>
+</footer>
+</html>

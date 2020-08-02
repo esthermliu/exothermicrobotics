@@ -1,0 +1,56 @@
+@media screen and (max-width: 750px) {
+
+	.landing {
+		background-attachment: scroll !important;
+	}
+	
+	.firstSection {
+		margin: 0;
+		padding: 25% 5% 10% 5% !important;
+	}
+	
+	.firstSection h1 {
+		padding-bottom: 10%;
+	}
+	
+	.imageHolder img {
+		margin-bottom: 10%;
+		height: 100%;
+	}
+	
+	.towerTakeoverVideo {
+		height: 300px;
+	}
+	
+	.secondSection {
+		margin: 8% 5% 0 5% !important;
+	}
+	
+	#Hide, #Hide2, #Hide3, #Hide4 {
+		width: 90%;
+	}
+	
+	.buttonTopHolder {
+		padding-right: 3%;
+	}
+	
+	.horizontalMinus, .horizontalMinus2, .horizontalMinus3, .horizontalMinus4 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.overallSection {
+		padding-bottom: 25%;
+	}
+	
+	#firstSectionCompetition {
+		margin-top: 0 !important;
+	}
+	
+	.verticalMinus, .verticalMinus2, .verticalMinus3, .verticalMinus4 {
+		left: 0.5px !important;
+	}
+	
+	
+}

@@ -1,0 +1,282 @@
+.landing {
+	background-image: url("/images/volunteering/Volunteering1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landingBackground {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(67, 90, 165, 0.5), rgba(165, 103, 67, 0.5));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titleHolder {
+	text-align: center;
+}
+
+.titleHolder img {
+	padding-bottom: 3vh;
+}
+
+.landing h1 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: white;
+	letter-spacing: 5px;
+	line-height: 42px;
+}
+
+.landing h2 {
+	color: white;
+	font-family: Thin, sans-serif;
+	font-size: 20px;
+	font-weight: 40;
+	line-height: 42px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.column {
+	height: 200px;
+	width: 32%;
+	margin-bottom: 2%;
+}
+
+.hover-shadow {
+	width: 98%;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+	height: 100%;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99999999999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  overflow: auto;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  width: 60%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+   animation: opac 0.3s;
+ }
+ 
+ @keyframes opac {
+   from {
+     opacity: 0
+   }
+   to {
+     opacity: 1
+   }
+ }
+
+.download {
+	height: 30px;
+	width: 30px;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+
+.download:hover {
+	opacity: 0.7;
+}
+ 
+.close {
+  color: white;
+  position: absolute;
+  top: 50px;
+  right: 65px;
+  font-size: 70px;
+  font-weight: 300 !important;
+  z-index: 200 !important;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(213,220,59);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 95%;
+  text-align: center;
+  padding: 0;
+}
+
+.slidePicture {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	object-fit: contain;
+	animation: opac 0.6s;
+}
+
+
+.slidePicture img {
+	height: 100%;
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: contain;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+}
+
+.mySlides p {
+	font-family: Roboto, sans-serif;
+	color: white;
+	letter-spacing: 1.5px;
+	padding-top: 15px;
+	line-height: 30px;
+	padding-bottom: 15px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: auto;
+  margin: 50px;
+  padding: 15px;
+  color: white;
+  font-weight: 300 !important;
+  font-size: 40px;
+  transition: 0.2s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  color: rgb(213,220,59) !important;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 1.5px;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.firstSection {
+	background-color: #f0f0f0;
+	padding: 8% 20% 8% 20%;
+	color: #626262;
+}
+
+.firstSection h2 {
+	font-family: Roboto, sans-serif;
+	text-align: center;
+	font-size: 45px;
+	padding-bottom: 5%;
+	font-weight: normal;
+}
+
+
+.Holder {
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.innerHolder {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.mostInnerHolder {
+	height: 70%;
+}
+
+.firstSection h3 {
+	font-family: "Roboto", sans-serif;
+	font-weight: normal;
+	margin-bottom: 3%;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+#white {
+	background-color: white;
+}
+
+.wordOutreachSection {
+	padding-bottom: 5%;
+	font-family: Roboto, sans-serif;
+	line-height: 30px;
+}

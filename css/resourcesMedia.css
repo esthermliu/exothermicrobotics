@@ -1,0 +1,27 @@
+@media screen and (max-width: 750px) {
+	.landing  {
+		background-attachment: scroll;
+	}
+	
+	.firstSection {
+		padding: 25% 5% 25% 5%;
+	}
+	
+	.firstSection h2 {
+		padding-bottom: 8%;
+	}
+	
+	.competitionLink, .eventsLink, .programsLink {
+		width: 100%;
+	}
+	
+	.competitionLink, .eventsLink, .programsLink {
+		margin-bottom: 10%;
+	}
+	
+	#other {
+		margin-bottom: 0 !important;
+	}
+	
+
+}	

@@ -1,0 +1,11 @@
+--- 
+layout: post
+custom_css: 
+    - blogcss
+    - blogMedia
+    - blogfirstcss
+title: 10C Wins in Online Challenge
+thumbnail: /images/WebsiteSecond2.png
+---
+
+The Online Challenge winners are announced today, and we want to congratulate Exothermic Creation (10C) for winning second in the Website Online Challenge! By winning second, they won a $500 dollar gift certificate for the club to buy anything from vexrobotics.com. We want to congratulate all the winners of the online challenges and we’re looking forward to seeing everyone at State this weekend!

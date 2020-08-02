@@ -1,0 +1,155 @@
+.landing {
+	background-image: url("/images/volunteering/Volunteering7.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landingBackground {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(67, 90, 165, 0.4), rgba(67, 90, 165, 0.4));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titleHolder {
+	text-align: center;
+}
+
+.titleHolder img {
+	padding-bottom: 3vh;
+}
+
+.landing h1 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: white;
+	letter-spacing: 5px;
+	line-height: 42px;
+}
+
+.landing h2 {
+	color: white;
+	font-family: Thin, sans-serif;
+	font-size: 20px;
+	font-weight: 40;
+	line-height: 42px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+
+.firstSection, .nextSection {
+	background-color: #f0f0f0;
+	padding: 8% 25% 8% 25%;
+	font-family: Roboto, sans-serif;
+	color: #626262;
+}
+
+.firstSection h2, .nextSection h2 {
+	font-size: 45px;
+	font-weight: normal;
+	text-align: center;
+	padding-bottom: 3%;
+}
+
+.programSection h3 {
+	font-family: Thick, sans-serif;
+	font-size: 20px !important;
+	font-weight: 700 !important;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+
+.programSection {
+	padding-bottom: 15px;
+}
+
+.imageHolder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.programSection img {
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+	margin-bottom: 30px;
+	width: 80%;
+	background-color: white;
+}
+
+.programSection p {
+	margin-bottom: 15px;
+	line-height: 30px;
+}
+
+.programSection ul {
+	padding-left: 30px;
+	list-style-type: square;
+	line-height: 30px;
+	margin-bottom: 15px;
+}
+
+.programSection li a {
+	color: #626262;
+	transition-duration: 0.2s;
+}
+
+.programSection li a:hover {
+	color: rgb(96,156,14);
+}
+
+.nextSection {
+	background-color: white !important;
+}
+
+.learnMoreContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.learnMoreButton button {
+  color: #dbb52f;
+  text-transform: uppercase;
+  background-color: rgba(255,255,255,0);
+  border: 2px solid rgb(96, 156, 14);
+  z-index: 2;
+  padding: 15px 15px;
+  margin: 35px;
+  margin-bottom: 0 !important;
+  color: rgb(96, 156, 14);
+    -webkit-transition-duration: 0.2s; 
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.learnMoreButton:hover button {
+   color: rgb(46, 74, 7);
+}
+
+.learnMoreButton:hover button {
+  border-color: rgb(46, 74, 7);
+ }
+ 
+#tsaSection {
+	background-color: rgb(232, 245, 225) !important;
+ }
+ 
+ .programSection ol {
+	padding-left: 30px;
+	line-height: 30px;
+ }
+ 
+ 
+ 
+ 

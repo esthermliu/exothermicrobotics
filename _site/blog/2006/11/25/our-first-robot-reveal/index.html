@@ -1,0 +1,972 @@
+<!DOCTYPE HTML>
+<html lang = "eng">
+<head>
+	<title> Our First Robot Reveal </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/HeaderFooter.css">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="/css/HeaderFooterMedia.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="resources/jquery.js"></script>
+	<link rel="icon" type="image/png" href="/images/Favicon.png" size = "20x20"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+     
+        
+        <link rel = "stylesheet" href = "/css/blogcss.css">
+        
+        <link rel = "stylesheet" href = "/css/blogMedia.css">
+        
+        <link rel = "stylesheet" href = "/css/blogfirstcss.css">
+        
+    
+</head>
+<header id = "secondBox" class = "navbar">
+	<div class = "logoBox">
+		<a class = "homepageLogo" href = "/"><img src = "/images/EXOLogo.png"></a>
+	</div>
+	<nav class = "secondBox">
+		<ul class = "headerList">
+			<li><a href = "/" > Home </a></li>
+			<div class = "dropDownAbout">
+				<button class = "dropButtonAbout" onclick="window.location.href = '/about/'" > About Us </button>
+				<div class = "dropDownContentAbout">
+                    
+                        <a href = "/about/history/" >History</a>
+                    
+                        <a href = "/about/teams/" >Teams</a>
+                    
+                        <a href = "/about/join/" >Join Us</a>
+                    
+                        <a href = "/about/outreach/" >Outreach</a>
+                    
+                        <a href = "/about/advisors/" >Advisors</a>
+                    
+                        <a href = "/about/awards/" >Awards</a>
+                    
+                        <a href = "/about/challenges/" >Challenges</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownOverview">
+				<button class = "dropButtonOverview" onclick="window.location.href = '/vex-overview/'"  > VEX Overview </button>
+				<div class = "dropDownContentOverview">
+                     
+                        <a href = "/vex-overview/competition/" >Competitions</a>
+                    
+                        <a href = "/vex-overview/events/" >Events</a>
+                    
+                        <a href = "/vex-overview/programs/" >Programs</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/media/'" > Media </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/media/news/" >Publicity</a>
+                    
+                        <a href = "/media/gallery/" >Gallery</a>
+                    
+                        <a href = "/media/website/" >Website</a>
+                    
+                        <a href = "/media/social/" >Social</a>
+                    
+				</div>
+			</div>
+			<li><a href = "/blog/"  style = "color: rgb(213,220,59) !important;"> Blog </a></li>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/resources/'" > Resources </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/resources/building-tips/" >Building Tips</a>
+                    
+                        <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+                    
+                        <a href = "/resources/coding-tips/" >Coding Tips</a>
+                    
+                        <a href = "/resources/game-tips/" >Game Tips</a>
+                    
+                        <a href = "/resources/website-tips/" >Website Tips</a>
+                    
+                        <a href = "/resources/other-links/" >Other Links</a>
+                    
+				</div>
+			</div>
+			<li><a class = "sponsors" href = "/sponsors/" > Sponsors </a></li>
+			<li><a class = "contactUs" href = "/contact-us/" > Contact Us </a></li>
+		</ul>
+	</nav>
+<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+ <div id="myNav" class="overlay">
+   <span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <div class = "overlayHolder">
+    <a href="/" >Home</a>
+    <a href="/about/" >About Us</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/about/history/" >History</a>
+            
+                <a href = "/about/teams/" >Teams</a>
+            
+                <a href = "/about/join/" >Join Us</a>
+            
+                <a href = "/about/outreach/" >Outreach</a>
+            
+                <a href = "/about/advisors/" >Advisors</a>
+            
+                <a href = "/about/awards/" >Awards</a>
+            
+                <a href = "/about/challenges/" >Challenges</a>
+            
+		</div>
+	<a href="/vex-overview/" >VEX Overview</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/vex-overview/competition/" >Competitions</a>
+            
+                <a href = "/vex-overview/events/" >Events</a>
+            
+                <a href = "/vex-overview/programs/" >Programs</a>
+            
+		</div>
+	<a href="/media/" >Media</a>
+		  <div class="phoneDropdown">
+		    
+                <a href = "/media/news/" >Publicity</a>
+            
+                <a href = "/media/gallery/" >Gallery</a>
+            
+                <a href = "/media/website/" >Website</a>
+            
+                <a href = "/media/social/" >Social</a>
+            
+		  </div>
+	<a href="/blog/"  style = "color: rgb(213,220,59) !important;" >Blog</a>
+	<a href="/resources/" >Resources</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/resources/building-tips/" >Building Tips</a>
+            
+                <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+            
+                <a href = "/resources/coding-tips/" >Coding Tips</a>
+            
+                <a href = "/resources/game-tips/" >Game Tips</a>
+            
+                <a href = "/resources/website-tips/" >Website Tips</a>
+            
+                <a href = "/resources/other-links/" >Other Links</a>
+            
+		  </div>
+		<a href="/sponsors/" >Sponsors</a>
+		<a href="/contact-us/" >Contact Us</a>
+	</div>
+	</div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+<body>
+    <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+<!--<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+</script>-->
+<script>
+window.onscroll = function() {
+	scrollFunction();
+	myFunction();
+};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+
+</script>
+<script type="text/javascript">
+	$("a[href='#']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+</script>
+
+	<div class = "firstSection">
+	<h3><a id = "seeRest" onclick = window.history.back()><i>&#10229; Back</i></a></h3>
+	<div class = "overallContainer">
+		<div class = "blogHolder">
+		<h3>Our First Robot Reveal</h3>
+		<h4>November 25, 2006</h4>
+			<div class = "textSection">
+                <p>This is our first robot ever! We’ve affectionately dubbed it “Otis”. It has a tank tread lifter that sucks softballs off the field and then places it onto a tray on top of it. The tray lifts up to place the softballs into the highest goal. Additionally, we are also making another robot just for fun, which we have jokingly named, “The Goat”. The Goat can’t take in many softballs, but it can hang from the bar and score a couple of points. It mainly specializes in defense, ramming other robots around it, preventing them from scoring. Soon, we will be competing Otis in the Bellevue FIRST VEX Challenge Competition and we are really stoked!</p>
+
+<p>Here is a quick video of Otis:</p>
+
+<div class="imageHolderInsideBlog">
+	<iframe class="towerTakeoverVideoBlog" src="https://www.youtube.com/embed/rRxdf-4v6ME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+			</div>
+		</div>
+		<div class = "postLog">
+			<div class = "recentPosts">
+				<h3>Recent Posts</h3>
+				<div class = "recentPostOverall">
+                    
+                        <div class = "recentPostHolder">
+                            <a href = "/blog/2020/04/30/recruiting-for-2020-2021-has-started/">	
+                                
+                                    <img src = "/images/RecruitmentFlyer.jpg"/>
+                                
+                                <h3>Recruiting for 2020 - 2021 Has Started</h3>
+                            </a>
+				        </div>
+                    
+                        <div class = "recentPostHolder">
+                            <a href = "/blog/2020/04/24/exothermic-student-board-announced/">	
+                                
+                                    <img src = "/images/NoImageIcon.png"/>
+                                
+                                <h3>Exothermic Student Board Announced</h3>
+                            </a>
+				        </div>
+                    
+                        <div class = "recentPostHolder">
+                            <a href = "/blog/2020/04/20/2020-2021-exo-president-announced/">	
+                                
+                                    <img src = "/images/Amol.jpg"/>
+                                
+                                <h3>2020 - 2021 EXO President Announced</h3>
+                            </a>
+				        </div>
+                    
+                        <div class = "recentPostHolder">
+                            <a href = "/blog/2020/04/02/vex-worlds-is-now-virtual/">	
+                                
+                                    <img src = "/images/virtual.png"/>
+                                
+                                <h3>VEX Worlds is Now Virtual!</h3>
+                            </a>
+				        </div>
+                    
+                        <div class = "recentPostHolder">
+                            <a href = "/blog/2020/03/08/teams-10E-and-10N-qualify-for-vex-robotics-world-championship/">	
+                                
+                                    <img src = "/images/Gallery264.JPG"/>
+                                
+                                <h3>Teams 10E and 10N Qualify for Vex Robotics World Championship</h3>
+                            </a>
+				        </div>
+                    
+				</div>
+			</div>
+			<div class = "archive">
+				<h3>Archive</h3>
+				<div id = "archiveLink" class = "recentPostOverall">
+					<div class = "archiveHolder">
+                        
+                        
+                        
+
+                            
+                            
+
+                            
+                           <li><a href = "/blog/archive/2020"> 2020</a></li>
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            <li> <a href = "/blog/archive/2019"> 2019</a></li>          
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            <li> <a href = "/blog/archive/2018"> 2018</a></li>          
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            <li> <a href = "/blog/archive/2008"> 2008</a></li>          
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            <li> <a href = "/blog/archive/2007"> 2007</a></li>          
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            <li> <a href = "/blog/archive/2006"> 2006</a></li>          
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<footer>
+	<div class = "leftSection">
+		<div class = "leftTopSection">
+			<div class = "footerLogoHolder">
+				<img src = "/images/EXOLogo.png"/>
+			</div>
+			<div class = "wordsSection">
+				<h4>Exothermic Robotics</h4>
+				<h5>Redmond, Washington</h5>	
+				<a class = "social" href="https://www.facebook.com/exothermicrobotics/" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+				<a class = "social" href="https://www.instagram.com/exothermicrobotics/?igshid=xt1q75v9kzqq" target="_blank" ><i class="fab fa-instagram"></i></a>
+				<a class = "social" href="https://twitter.com/ExothermicRobo1" target="_blank" ><i class="fab fa-twitter"></i></a>
+					<ul class="FooterLinks">
+					<li>
+						<p>&copy; 2019-2020 Exothermic Robotics Club </p>
+					  </li>
+					</ul>				  
+			</div>
+		</div>
+	</div>
+	<div class = "rightSectionFooter">
+		<div class = "blog">
+			<h5>The EXO Blog</h5>
+			<p>A blog featuring announcements and little blurbs about the newest and latest in the Exothermic club. </p>
+		</div>
+		<div class = "blogContainer">
+			<a href = "/blog/" class="blogButton"><button>Check it Out &rarr;</button></a>
+		</div>
+	</div>
+</footer>
+</html>

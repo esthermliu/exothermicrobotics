@@ -1,0 +1,11 @@
+--- 
+layout: post
+custom_css: 
+    - blogcss
+    - blogMedia
+    - blogfirstcss
+title: Recruiting for 2020 - 2021 Has Started
+thumbnail: /images/RecruitmentFlyer.jpg
+---
+
+Hi everyone! Even though we cannot meet everyone in person this year, Exo has started recruiting for the next season. If you will be in 9th-12th grade next year and is looking for a strong, reputable club, we would love you to join the Exo family! No experience required and if you have any questions, feel free to contact any of the student board members or email <a href = "mailto: amolgvaidya@outlook.com"><b>amolgvaidya@outlook.com</b></a>

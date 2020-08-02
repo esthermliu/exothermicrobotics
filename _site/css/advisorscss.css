@@ -1,0 +1,136 @@
+.landing {
+	background-image: url("/images/Gallery73.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landingBackground {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(67, 90, 165, 0.5), rgba(165, 103, 67, 0.5));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titleHolder {
+	text-align: center;
+}
+
+.titleHolder img {
+	padding-bottom: 3vh;
+}
+
+.landing h1 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: white;
+	letter-spacing: 5px;
+	line-height: 42px;
+}
+
+.landing h2 {
+	color: white;
+	font-family: Thin, sans-serif;
+	font-size: 20px;
+	font-weight: 40;
+	line-height: 42px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+
+.firstSection {
+	background-color: #f0f0f0;
+	padding: 8% 23% 8% 23%;
+	color: #626262;
+	font-family: Roboto, sans-serif;
+}
+
+.firstSection h2 {
+	font-size: 45px;
+	font-weight: 300;
+	text-align: center;
+	padding-bottom: 3%;
+}
+
+.mentor  {
+	display: flex;
+	justify-content: space-evenly;
+	padding-bottom: 5%;
+	flex-wrap: wrap;
+	padding-top: 5%;
+	border-bottom: 1px solid #626262;
+}
+
+#lastMentor {
+	border-bottom: 0px solid white;
+}
+
+.imageHolder img {
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.imageHolder {
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.textSection {
+	width: 58%;
+	margin-left: 2%;
+}
+
+.textSection h3 {
+	letter-spacing: 1.5px;
+	text-transform: none !important;
+	font-size: 24px;
+	line-height: 30px;
+	margin-bottom: 5px;
+}
+
+.textSection h4 {
+	font-family: Thick, sans-serif;
+	line-height: 30px;
+	font-weight: 50;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.textSection p {
+	line-height: 30px;
+}
+
+ .firstSection > p {
+	line-height: 30px;
+	margin-bottom: 15px;
+}
+
+
+.textSection p a {
+	color: rgb(96, 156, 14);
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+
+
+.textSection p a:hover {
+	color: rgb(46, 74, 7);
+}
+
+
+

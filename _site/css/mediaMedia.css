@@ -1,0 +1,31 @@
+@media screen and (max-width: 750px) {
+	.landing {
+		background-attachment: scroll !important;
+	}
+
+	.firstSection {
+		padding: 25% 5% 25% 5% !important;
+	}
+	
+	.firstSection h2 {
+		padding-bottom: 8%;
+	}
+	
+	.learnMoreContainer {
+		flex-wrap: wrap;
+	}
+	
+	.competitionLink, .programsLink, .eventsLink {
+		width: 100%;
+		margin-bottom: 10%;
+	}
+	
+	#social {
+		margin-bottom: 0 !important;
+	}
+	
+	.titleHolder  h2{
+		line-height: 30px;
+	}
+	
+}

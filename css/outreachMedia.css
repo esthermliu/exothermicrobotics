@@ -1,0 +1,52 @@
+@media screen and (max-width: 750px) {
+	.landing {
+		background-attachment: scroll;
+	}
+	
+	.firstSection {
+		padding: 25% 5% 25% 5%;
+	}
+	
+	.row {
+		flex-wrap: wrap
+	}
+	
+	.column {
+		width: 100%;
+	}
+	
+	.prev, .next {
+		margin: 10px;
+	}
+	
+	.close {
+		right: 10px;
+	}
+	
+	.innerHolder {
+	width: 100%;
+	height: auto !important;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+	.mostInnerHolder {
+		height: 70%;
+	}
+
+	.firstSection h2 {
+		padding-bottom: 8%;
+	}
+	
+	.mySlides p {
+		line-height: 25px;
+	}
+	
+	.firstSection h3 {
+	margin-left: 0 !important;
+}
+	
+	
+}

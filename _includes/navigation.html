@@ -1,0 +1,93 @@
+<header id = "secondBox" class = "navbar">
+	<div class = "logoBox">
+		<a class = "homepageLogo" href = "/"><img src = "/images/EXOLogo.png"></a>
+	</div>
+	<nav class = "secondBox">
+		<ul class = "headerList">
+			<li><a href = "/" {% if page.url == "/" %} style = "color: rgb(213,220,59) !important;" {% endif %}> Home </a></li>
+			<div class = "dropDownAbout">
+				<button class = "dropButtonAbout" onclick="window.location.href = '/about/'" {% if page.url == "/about/" %} style = "color: rgb(213,220,59) !important;"{% endif %}> About Us </button>
+				<div class = "dropDownContentAbout">
+                    {% for item in site.data.navigation %}
+                        <a href = "{{ item.link }}" {% if page.url contains item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                    {% endfor %}
+				</div>
+			</div>
+			<div class = "dropDownOverview">
+				<button class = "dropButtonOverview" onclick="window.location.href = '/vex-overview/'"  {% if page.url == "/vex-overview/" %} style = "color: rgb(213,220,59) !important;"{% endif %}> VEX Overview </button>
+				<div class = "dropDownContentOverview">
+                     {% for item in site.data.overview_navigation %}
+                        <a href = "{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                    {% endfor %}
+				</div>
+			</div>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/media/'" {% if page.url == "/media/" %} style = "color: rgb(213,220,59) !important;"{% endif %}> Media </button>
+				<div class = "dropDownContentMedia">
+					{% for item in site.data.media_navigation %}
+                        <a href = "{{ item.link }}" {% if page.url contains item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                    {% endfor %}
+				</div>
+			</div>
+			<li><a href = "/blog/" {% if page.url contains "/blog/" %} style = "color: rgb(213,220,59) !important;"{% endif %}> Blog </a></li>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/resources/'" {% if page.url == "/resources/" %} style = "color: rgb(213,220,59) !important;"{% endif %}> Resources </button>
+				<div class = "dropDownContentMedia">
+					{% for item in site.data.resources_navigation %}
+                        <a href = "{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                    {% endfor %}
+				</div>
+			</div>
+			<li><a class = "sponsors" href = "/sponsors/" {% if page.url == "/sponsors/" %} style = "color: rgb(213,220,59) !important;"{% endif %}> Sponsors </a></li>
+			<li><a class = "contactUs" href = "/contact-us/" {% if page.url == "/contact-us/" %} style = "color: rgb(213,220,59) !important;"{% endif %}> Contact Us </a></li>
+		</ul>
+	</nav>
+<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+ <div id="myNav" class="overlay">
+   <span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <div class = "overlayHolder">
+    <a href="/" {% if page.url == "/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Home</a>
+    <a href="/about/" {% if page.url == "/about/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>About Us</a>
+		<div class="phoneDropdown">
+		    {% for item in site.data.navigation %}
+                <a href = "{{ item.link }}" {% if page.url contains item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+            {% endfor %}
+		</div>
+	<a href="/vex-overview/" {% if page.url == "/vex-overview/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>VEX Overview</a>
+		<div class="phoneDropdown">
+		    {% for item in site.data.overview_navigation %}
+                <a href = "{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+            {% endfor %}
+		</div>
+	<a href="/media/" {% if page.url == "/media/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Media</a>
+		  <div class="phoneDropdown">
+		    {% for item in site.data.media_navigation %}
+                <a href = "{{ item.link }}" {% if page.url contains item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+            {% endfor %}
+		  </div>
+	<a href="/blog/" {% if page.url contains "/blog/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Blog</a>
+	<a href="/resources/" {% if page.url == "/resources/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Resources</a>
+		<div class="phoneDropdown">
+		    {% for item in site.data.resources_navigation %}
+                <a href = "{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+            {% endfor %}
+		  </div>
+		<a href="/sponsors/" {% if page.url == "/sponsors/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Sponsors</a>
+		<a href="/contact-us/" {% if page.url == "/contact-us/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Contact Us</a>
+	</div>
+	</div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>

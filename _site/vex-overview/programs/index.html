@@ -1,0 +1,395 @@
+<!DOCTYPE HTML>
+<html lang = "eng">
+<head>
+	<title> Exothermic Robotics Programs </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/HeaderFooter.css">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="/css/HeaderFooterMedia.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="resources/jquery.js"></script>
+	<link rel="icon" type="image/png" href="/images/Favicon.png" size = "20x20"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+     
+        
+        <link rel = "stylesheet" href = "/css/programscss.css">
+        
+        <link rel = "stylesheet" href = "/css/programsMedia.css">
+        
+    
+</head>
+<header id = "secondBox" class = "navbar">
+	<div class = "logoBox">
+		<a class = "homepageLogo" href = "/"><img src = "/images/EXOLogo.png"></a>
+	</div>
+	<nav class = "secondBox">
+		<ul class = "headerList">
+			<li><a href = "/" > Home </a></li>
+			<div class = "dropDownAbout">
+				<button class = "dropButtonAbout" onclick="window.location.href = '/about/'" > About Us </button>
+				<div class = "dropDownContentAbout">
+                    
+                        <a href = "/about/history/" >History</a>
+                    
+                        <a href = "/about/teams/" >Teams</a>
+                    
+                        <a href = "/about/join/" >Join Us</a>
+                    
+                        <a href = "/about/outreach/" >Outreach</a>
+                    
+                        <a href = "/about/advisors/" >Advisors</a>
+                    
+                        <a href = "/about/awards/" >Awards</a>
+                    
+                        <a href = "/about/challenges/" >Challenges</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownOverview">
+				<button class = "dropButtonOverview" onclick="window.location.href = '/vex-overview/'"  > VEX Overview </button>
+				<div class = "dropDownContentOverview">
+                     
+                        <a href = "/vex-overview/competition/" >Competitions</a>
+                    
+                        <a href = "/vex-overview/events/" >Events</a>
+                    
+                        <a href = "/vex-overview/programs/"  style = "color: rgb(213, 220, 59);" >Programs</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/media/'" > Media </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/media/news/" >Publicity</a>
+                    
+                        <a href = "/media/gallery/" >Gallery</a>
+                    
+                        <a href = "/media/website/" >Website</a>
+                    
+                        <a href = "/media/social/" >Social</a>
+                    
+				</div>
+			</div>
+			<li><a href = "/blog/" > Blog </a></li>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/resources/'" > Resources </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/resources/building-tips/" >Building Tips</a>
+                    
+                        <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+                    
+                        <a href = "/resources/coding-tips/" >Coding Tips</a>
+                    
+                        <a href = "/resources/game-tips/" >Game Tips</a>
+                    
+                        <a href = "/resources/website-tips/" >Website Tips</a>
+                    
+                        <a href = "/resources/other-links/" >Other Links</a>
+                    
+				</div>
+			</div>
+			<li><a class = "sponsors" href = "/sponsors/" > Sponsors </a></li>
+			<li><a class = "contactUs" href = "/contact-us/" > Contact Us </a></li>
+		</ul>
+	</nav>
+<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+ <div id="myNav" class="overlay">
+   <span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <div class = "overlayHolder">
+    <a href="/" >Home</a>
+    <a href="/about/" >About Us</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/about/history/" >History</a>
+            
+                <a href = "/about/teams/" >Teams</a>
+            
+                <a href = "/about/join/" >Join Us</a>
+            
+                <a href = "/about/outreach/" >Outreach</a>
+            
+                <a href = "/about/advisors/" >Advisors</a>
+            
+                <a href = "/about/awards/" >Awards</a>
+            
+                <a href = "/about/challenges/" >Challenges</a>
+            
+		</div>
+	<a href="/vex-overview/" >VEX Overview</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/vex-overview/competition/" >Competitions</a>
+            
+                <a href = "/vex-overview/events/" >Events</a>
+            
+                <a href = "/vex-overview/programs/"  style = "color: rgb(213, 220, 59);" >Programs</a>
+            
+		</div>
+	<a href="/media/" >Media</a>
+		  <div class="phoneDropdown">
+		    
+                <a href = "/media/news/" >Publicity</a>
+            
+                <a href = "/media/gallery/" >Gallery</a>
+            
+                <a href = "/media/website/" >Website</a>
+            
+                <a href = "/media/social/" >Social</a>
+            
+		  </div>
+	<a href="/blog/" >Blog</a>
+	<a href="/resources/" >Resources</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/resources/building-tips/" >Building Tips</a>
+            
+                <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+            
+                <a href = "/resources/coding-tips/" >Coding Tips</a>
+            
+                <a href = "/resources/game-tips/" >Game Tips</a>
+            
+                <a href = "/resources/website-tips/" >Website Tips</a>
+            
+                <a href = "/resources/other-links/" >Other Links</a>
+            
+		  </div>
+		<a href="/sponsors/" >Sponsors</a>
+		<a href="/contact-us/" >Contact Us</a>
+	</div>
+	</div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+<script>
+jQuery(document).ready(function($){
+	$('.navbar').css("background-color", "transparent");
+	if ($(this).scrollTop() < 270) {
+		$('.navbar').css("background-color", "transparent");
+		$('.dropDownContentAbout').css("background-color", "transparent");
+		$('.dropDownContentOverview').css("background-color", "transparent");
+		$('.dropDownContentMedia').css("background-color", "transparent");
+		
+		$('.dropDownContentAbout').css("box-shadow", "none");
+		$('.dropDownContentOverview').css("box-shadow", "none");
+		$('.dropDownContentMedia').css("box-shadow", "none");
+	} else {
+		$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+	}
+	$(window).scroll(function(){
+		if ($(this).scrollTop() < 270) {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+			
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		} else {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		}
+		
+		if ($(this).scrollTop() > 270) {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		} else {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+	
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		}
+		
+
+	});
+});
+</script>
+<body>
+    <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+<!--<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+</script>-->
+<script>
+window.onscroll = function() {
+	scrollFunction();
+	myFunction();
+};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+
+</script>
+<script type="text/javascript">
+	$("a[href='#']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+</script>
+
+	<div class = "landing">
+	<div class = "landingBackground">
+		<div class = "titleHolder">
+			<img src = "/images/EXOLogo.png" alt = "Exo logo">
+			<h1>Programs</h1>
+			<h2> VEX Robotics </h2>
+		</div>
+	</div>
+</div>
+<div class = "firstSection">
+	<h2> Programs </h2>
+	<div class = "programSection">
+		<h3>Online Challenges</h3>
+		<div class = "imageHolder">
+			<img src = "/images/OnlineChallenges.jpg"/>
+		</div>
+		<p> There are a variety of online challenges which allow students around the world to display their work,
+		win awards, and even earn a chance to compete at the VEX Robotics World Championship. 
+		Online challenges are arranged by the REC Foundation, and the subjects change from year to year. 
+		This year, the Community Award Online Challenge sponsored by Google was added. The top ten winners of this challenge qualify for Worlds! </p>
+		<p>Any announcements about online challenges will be made at the following websites: </p>
+		<ul>
+			<li><a href = "https://challenges.robotevents.com/" target = "_blank">Robot Events</a></li>
+			<li><a href = "https://www.vexforum.com/t/about-the-online-challenges-online-challenges-official-q-a-category/4151" target = "_blank">VEX Forum Official Q & A Section</a></li>
+			<li><a href = "https://www.vexforum.com/c/vrc-discussion/online-challenges" target = "_blank">VEX Forum Online Challenges Discussion</a></li>
+		</ul>
+		<p> Below is a list of the 2019-2020 Online Challenges: </p>
+		<ul>
+			<li><a href = "https://challenges.robotevents.com/challenge/112/make-it-real-cad-engineering-challenge-sponsored-by-autodesk-copy" target = "_blank">Make It Real CAD Engineering Challenge Sponsored by Autodesk</a></li>
+			<li><a href = "https://challenges.robotevents.com/challenge/105/community-award-online-challenge-sponsored-by-google" target = "_blank">Community Award Online Challenge Sponsored by Google</a></li>
+			<li><a href = "https://challenges.robotevents.com/challenge/106" target = "_blank">Robotics Team Website Challenge Sponsored by Dell</a></li>
+			<li><a href = "https://challenges.robotevents.com/challenge/107" target = "_blank">VEX Photography Online Challenge Sponsored by VEX Robotics</a></li>
+			<li><a href = "https://challenges.robotevents.com/challenge/109" target = "_blank">VRC Promote Award Online Challenge Sponsored by VEX Robotics</a></li>
+			<li><a href = "https://challenges.robotevents.com/challenge/110" target = "_blank">VRC Girl Powered Online Challenge Sponsored by Google</a></li>
+		</ul>
+		<div class = "learnMoreContainer">
+			<a href = "https://challenges.robotevents.com/" target = "_blank" class="learnMoreButton"><button>Learn More About Online Challenges &rarr;</button></a>
+		</div>
+	</div>
+</div>
+<div class = "nextSection">
+	<div class = "programSection">
+		<h3>VEX IQ</h3>
+		<div class = "imageHolder">
+			<img src = "/images/VEXIQLogo.png"/>
+		</div>
+		<p> VEX IQ is a robotics platform that is targeted towards elementary and middle school students. By exposing young children to STEM activities, it can help foster a life-long love and 
+			passion towards engineering and technology.</p>
+		<p>Step-by-step instructions are provided and no experience is needed at all. Additionally, hundreds of competitions are held annually, developing teamwork, leadership, and communications skills. </p>
+		<div class = "learnMoreContainer">
+			<a href = "https://www.vexrobotics.com/vexiq" target = "_blank" class="learnMoreButton"><button>Learn More About VEX IQ &rarr;</button></a>
+		</div>
+	</div>
+</div>
+<div id = "tsaSection"class = "nextSection">
+	<div class = "programSection">
+		<h3>Technology Student Association (TSA)</h3>
+		<div class = "imageHolder">
+			<img src = "/images/TSALogo.png"/>
+		</div>
+		<p>TSA is a national student organization that aims to help students develop their STEM (Science, Technology, Engineering, and Mathematics) skills. It also allows students to practice their 
+			leadership, academic, and management skills. Since VEX and TSA share a common purpose, they naturally partnered together to bring the TSA/VEX Robotics Challenge to life, which allows students to 
+			use their STEM skills practically in a hands-on environment.</p>
+		<p>If you're interested in registering for the TSA VEX competition, here are the steps: </p>
+		<ol>
+			<li>Affiliate with TSA for the 2020-2021 school year</li>
+			<li>Register as a VEX VRC team for the VEX Robotics Competition</li>
+			<li>Pay the VEX registration fee</li>
+		</ol>
+		<div class = "learnMoreContainer">
+			<a href = "https://tsaweb.org/competitions-programs/vex-robotics" target = "_blank" class="learnMoreButton"><button>Learn More About TSA &rarr;</button></a>
+		</div>
+	</div>
+</div>
+<div class = "nextSection">
+	<div class = "programSection">
+		<h3>Project Lead The Way (PLTW)</h3>
+		<div class = "imageHolder">
+			<img src = "/images/PLTW.jpg"/>
+		</div>
+		<p>Project Lead The Way (PLTW) is a nonprofit organization that helps create unforgettable learning experiences for PreK-12 students in more than 11,5000 schools in the United States.
+		They encourage learners to solve real-world problems through hands-on activities and projects.</p>
+		<p>VEX is the only robotics platform that is offered at PLTW schools. Their courses implement VEX EDR and VEX IQ, meaning that their students are exposed to the entire robotics experience, from 
+			designing to building and programming. VEX is a proud supporter of the following PLTW pathways:</p>
+		<ol>
+			<li>PLTW Launch (PreK - Grade 5) </li>
+			<li>PLTW Gateway (Grades 6 - 8)</li>
+			<li>PLTW Computer Science (Grades 9-12)</li>
+			<li>PLTW Engineering (Grades 9-12)</li>
+		</ol>
+		<div class = "learnMoreContainer">
+			<a href = "https://www.vexrobotics.com/pltw" target = "_blank" class="learnMoreButton"><button>Learn More About PLTW &rarr;</button></a>
+		</div>
+	</div>
+</div>
+</body>
+<footer>
+	<div class = "leftSection">
+		<div class = "leftTopSection">
+			<div class = "footerLogoHolder">
+				<img src = "/images/EXOLogo.png"/>
+			</div>
+			<div class = "wordsSection">
+				<h4>Exothermic Robotics</h4>
+				<h5>Redmond, Washington</h5>	
+				<a class = "social" href="https://www.facebook.com/exothermicrobotics/" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+				<a class = "social" href="https://www.instagram.com/exothermicrobotics/?igshid=xt1q75v9kzqq" target="_blank" ><i class="fab fa-instagram"></i></a>
+				<a class = "social" href="https://twitter.com/ExothermicRobo1" target="_blank" ><i class="fab fa-twitter"></i></a>
+					<ul class="FooterLinks">
+					<li>
+						<p>&copy; 2019-2020 Exothermic Robotics Club </p>
+					  </li>
+					</ul>				  
+			</div>
+		</div>
+	</div>
+	<div class = "rightSectionFooter">
+		<div class = "blog">
+			<h5>The EXO Blog</h5>
+			<p>A blog featuring announcements and little blurbs about the newest and latest in the Exothermic club. </p>
+		</div>
+		<div class = "blogContainer">
+			<a href = "/blog/" class="blogButton"><button>Check it Out &rarr;</button></a>
+		</div>
+	</div>
+</footer>
+</html>

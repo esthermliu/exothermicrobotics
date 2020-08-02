@@ -1,0 +1,13 @@
+<div id = "firstBlog" class = "blogContainerActual">
+    <div class = "imageHolder" {% if post.showThumbnail == false %} style = "display: none !important;" {% endif %}>
+            <img src = "{{site.baseurl}}{{post.thumbnail}}"/>
+        </div>
+        <div class = "textSection" {% if post.showThumbnail == false %} id = "noPictureBlogPost" {% endif %}>
+            <h3>{{ post.title }}</h3>
+            <h4>{{ post.date | date: "%B %-d, %Y"  }}</h4>
+            <p>{{post.excerpt | strip_html | truncate: 200 }}</p>
+            <div class = "learnMoreContainer">
+                <a href = "{{site.baseurl}}{{post.url}}" class="learnMoreButton"><button>Read More &rarr;</button></a>
+            </div>
+        </div>
+</div>

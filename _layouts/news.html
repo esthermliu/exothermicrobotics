@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class = "firstSection">
+    <div class = "titleHolder">
+	<h2> {{ page.subtitle }} </h2>
+    {% if page.news == false %}
+        <h3><i>No News For This Year!</i></h3>
+    {% endif %}
+    </div>
+	<div class = "overallSection">
+	<div class = "fixedNewsPhone">
+			<p> <b>Years</b> </p>
+            {% for item in site.data.news_navigation %}
+                    <p><a href = "{{ item.link }}" {% if page.url == item.link %} class = "currentYear" {% endif %}{% if page.url == "/media/news/2008/" %} id = "lastYear" {% endif %}>{% if page.url == item.link %} &rarr; {% endif %} {{ item.name }}</a></p>
+            {% endfor %}
+			
+	</div>
+		<div class = "newsHolder">
+			{{ content }}
+		</div>
+		<div class = "fixedNews">
+			<p> <b>Years</b> </p>
+            {% for item in site.data.news_navigation %}
+                    <p><a href = "{{ item.link }}" {% if page.url == item.link %} class = "currentYear" {% endif %}>{% if page.url == item.link %} &rarr; {% endif %} {{ item.name }}</a></p>
+            {% endfor %}
+		</div>
+	</div>
+</div>

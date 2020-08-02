@@ -1,0 +1,53 @@
+@media screen and (max-width: 750px) {
+	.landing {
+		background-attachment: scroll;
+	}
+	
+	.firstSection {
+		padding: 25% 5% 25% 5%;
+	}
+	
+	.firstSection h2 {
+		padding-bottom: 8%;
+	}
+
+	.secondSectionBackground {
+		padding: 25% 5% 25% 5%;
+		background-attachment: scroll !important;
+	}
+	
+	.secondSectionBackground h2 {
+		padding-bottom: 8%;
+	}
+	
+	.secondSection {
+		background-attachment: scroll !important;
+	}
+	
+	.buildingTipSection {
+		padding: 25% 5% 25% 5%;
+	}
+	
+	.textSection img {
+		width: 100%;
+		margin-bottom: 5%;
+	}
+	
+	.towerTakeoverVideo {
+		height: 300px;
+		padding-top: 15px !important;
+	}
+	
+	.pdfRubric {
+		display: none;
+	}
+	
+	.gearRatios {
+		margin-left: 0 !important;
+	}
+	
+	.pillowLock {
+		margin-right: 0 !important;
+	}
+	
+}

@@ -1,0 +1,1292 @@
+<!DOCTYPE HTML>
+<html lang = "eng">
+<head>
+	<title> Exothermic Robotics Archive </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/HeaderFooter.css">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="/css/HeaderFooterMedia.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="resources/jquery.js"></script>
+	<link rel="icon" type="image/png" href="/images/Favicon.png" size = "20x20"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+     
+        
+        <link rel = "stylesheet" href = "/css/blogcss.css">
+        
+        <link rel = "stylesheet" href = "/css/blogMedia.css">
+        
+    
+</head>
+<header id = "secondBox" class = "navbar">
+	<div class = "logoBox">
+		<a class = "homepageLogo" href = "/"><img src = "/images/EXOLogo.png"></a>
+	</div>
+	<nav class = "secondBox">
+		<ul class = "headerList">
+			<li><a href = "/" > Home </a></li>
+			<div class = "dropDownAbout">
+				<button class = "dropButtonAbout" onclick="window.location.href = '/about/'" > About Us </button>
+				<div class = "dropDownContentAbout">
+                    
+                        <a href = "/about/history/" >History</a>
+                    
+                        <a href = "/about/teams/" >Teams</a>
+                    
+                        <a href = "/about/join/" >Join Us</a>
+                    
+                        <a href = "/about/outreach/" >Outreach</a>
+                    
+                        <a href = "/about/advisors/" >Advisors</a>
+                    
+                        <a href = "/about/awards/" >Awards</a>
+                    
+                        <a href = "/about/challenges/" >Challenges</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownOverview">
+				<button class = "dropButtonOverview" onclick="window.location.href = '/vex-overview/'"  > VEX Overview </button>
+				<div class = "dropDownContentOverview">
+                     
+                        <a href = "/vex-overview/competition/" >Competitions</a>
+                    
+                        <a href = "/vex-overview/events/" >Events</a>
+                    
+                        <a href = "/vex-overview/programs/" >Programs</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/media/'" > Media </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/media/news/" >Publicity</a>
+                    
+                        <a href = "/media/gallery/" >Gallery</a>
+                    
+                        <a href = "/media/website/" >Website</a>
+                    
+                        <a href = "/media/social/" >Social</a>
+                    
+				</div>
+			</div>
+			<li><a href = "/blog/"  style = "color: rgb(213,220,59) !important;"> Blog </a></li>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/resources/'" > Resources </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/resources/building-tips/" >Building Tips</a>
+                    
+                        <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+                    
+                        <a href = "/resources/coding-tips/" >Coding Tips</a>
+                    
+                        <a href = "/resources/game-tips/" >Game Tips</a>
+                    
+                        <a href = "/resources/website-tips/" >Website Tips</a>
+                    
+                        <a href = "/resources/other-links/" >Other Links</a>
+                    
+				</div>
+			</div>
+			<li><a class = "sponsors" href = "/sponsors/" > Sponsors </a></li>
+			<li><a class = "contactUs" href = "/contact-us/" > Contact Us </a></li>
+		</ul>
+	</nav>
+<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+ <div id="myNav" class="overlay">
+   <span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <div class = "overlayHolder">
+    <a href="/" >Home</a>
+    <a href="/about/" >About Us</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/about/history/" >History</a>
+            
+                <a href = "/about/teams/" >Teams</a>
+            
+                <a href = "/about/join/" >Join Us</a>
+            
+                <a href = "/about/outreach/" >Outreach</a>
+            
+                <a href = "/about/advisors/" >Advisors</a>
+            
+                <a href = "/about/awards/" >Awards</a>
+            
+                <a href = "/about/challenges/" >Challenges</a>
+            
+		</div>
+	<a href="/vex-overview/" >VEX Overview</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/vex-overview/competition/" >Competitions</a>
+            
+                <a href = "/vex-overview/events/" >Events</a>
+            
+                <a href = "/vex-overview/programs/" >Programs</a>
+            
+		</div>
+	<a href="/media/" >Media</a>
+		  <div class="phoneDropdown">
+		    
+                <a href = "/media/news/" >Publicity</a>
+            
+                <a href = "/media/gallery/" >Gallery</a>
+            
+                <a href = "/media/website/" >Website</a>
+            
+                <a href = "/media/social/" >Social</a>
+            
+		  </div>
+	<a href="/blog/"  style = "color: rgb(213,220,59) !important;" >Blog</a>
+	<a href="/resources/" >Resources</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/resources/building-tips/" >Building Tips</a>
+            
+                <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+            
+                <a href = "/resources/coding-tips/" >Coding Tips</a>
+            
+                <a href = "/resources/game-tips/" >Game Tips</a>
+            
+                <a href = "/resources/website-tips/" >Website Tips</a>
+            
+                <a href = "/resources/other-links/" >Other Links</a>
+            
+		  </div>
+		<a href="/sponsors/" >Sponsors</a>
+		<a href="/contact-us/" >Contact Us</a>
+	</div>
+	</div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+<body>
+    <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+<!--<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+</script>-->
+<script>
+window.onscroll = function() {
+	scrollFunction();
+	myFunction();
+};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+
+</script>
+<script type="text/javascript">
+	$("a[href='#']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+</script>
+
+	<div class = "firstSection">
+	<h2>Archive</h2>
+	<div class = "overallContainer">
+		<div class = "blogHolder">
+            <div class = "archiveHolder">
+                       
+
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+            <div class = "postMonth">December </div>
+        
+
+        
+         <div id = "firstBlog" class = "blogContainerActual">
+    <div class = "imageHolder" >
+            <img src = "/images/RaisedField.jpg"/>
+        </div>
+        <div class = "textSection" >
+            <h3>New Changes Going Into Winter Break</h3>
+            <h4>December 23, 2019</h4>
+            <p>As Winter Break rolls in, all the EXO teams are starting to use their break time to improve their robot for the more intense second half of the season. Depending on their goals for State and possib...</p>
+            <div class = "learnMoreContainer">
+                <a href = "/blog/2019/12/23/new-changes-going-into-winter-break/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+            </div>
+        </div>
+</div>
+        
+        
+
+    
+    
+
+        
+
+        
+         <div id = "firstBlog" class = "blogContainerActual">
+    <div class = "imageHolder" >
+            <img src = "/images/Gallery108.jpg"/>
+        </div>
+        <div class = "textSection" >
+            <h3>Mattawa Warrior Bash Ties Up The First Half Of The Season</h3>
+            <h4>December 15, 2019</h4>
+            <p>Last Saturday (12/14) teams 10A, 10B, and 10E competed at the Warrior Bash VRC Tournament in Mattawa, WA. This was an exciting competition for the teams since it was the first tournament this seaso...</p>
+            <div class = "learnMoreContainer">
+                <a href = "/blog/2019/12/15/mattawa-warrior-bash-ties-up-the-first-half-of-the-season/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+            </div>
+        </div>
+</div>
+        
+        
+
+    
+    
+
+        
+
+        
+         <div id = "firstBlog" class = "blogContainerActual">
+    <div class = "imageHolder"  style = "display: none !important;" >
+            <img src = ""/>
+        </div>
+        <div class = "textSection"  id = "noPictureBlogPost" >
+            <h3>Robot House Makeover</h3>
+            <h4>December 12, 2019</h4>
+            <p>Hey everyone! Starting Saturday, we are going to be making some pretty big changes to the robot house so we are going to have a full cleaning weekend to make space for the new field risers. This me...</p>
+            <div class = "learnMoreContainer">
+                <a href = "/blog/2019/12/12/robot-house-makeover/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+            </div>
+        </div>
+</div>
+        
+        
+
+    
+    
+
+        
+
+        
+         <div id = "firstBlog" class = "blogContainerActual">
+    <div class = "imageHolder" >
+            <img src = "/images/Gallery110.jpg"/>
+        </div>
+        <div class = "textSection" >
+            <h3>EXO Teams Shine At Weekend Tournament</h3>
+            <h4>December 8, 2019</h4>
+            <p>Yesterday, teams 10B, 10C, 10D, and 10E competed at the MTHS Tower Takeover Tournament while teams 10F, 10N, 10X competed at the Vex High Voltage Tournament. Congratulations to Team 10D for winning...</p>
+            <div class = "learnMoreContainer">
+                <a href = "/blog/2019/12/08/EXO-teams-shine-at-weekend-tournament/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+            </div>
+        </div>
+</div>
+        
+        
+
+    
+    
+
+        
+            <div class = "postMonth">November </div>
+        
+
+        
+         <div id = "firstBlog" class = "blogContainerActual">
+    <div class = "imageHolder" >
+            <img src = "/images/WinningIon.png"/>
+        </div>
+        <div class = "textSection" >
+            <h3>10N Wins Tournament Champion At Local Tournament</h3>
+            <h4>November 23, 2019</h4>
+            <p>Earlier today, Team 10N (Exothermic Ion) competed at the Entropy Thanksgiving VRC Tournament. They won 21-13 in the finals to receive the tournament champions award while paired with team 44777U. A...</p>
+            <div class = "learnMoreContainer">
+                <a href = "/blog/2019/11/23/10N-wins-tournament-champion-at-local-tournament/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+            </div>
+        </div>
+</div>
+        
+        
+
+    
+    
+
+        
+
+        
+         <div id = "firstBlog" class = "blogContainerActual">
+    <div class = "imageHolder" >
+            <img src = "/images/awards/Award126.jpg"/>
+        </div>
+        <div class = "textSection" >
+            <h3>EXO Teams Qualify for State at First Tournaments of the Season</h3>
+            <h4>November 17, 2019</h4>
+            <p>Yesterday, 7 of the 8 EXO teams went to the first competitions in Washington State. Teams 10B, 10C, 10E, 10F, and 10N attended the Lake Stevens Turkey Trot VRC Competition while teams 10A and 10D c...</p>
+            <div class = "learnMoreContainer">
+                <a href = "/blog/2019/11/17/exo-teams-qualify-for-state-at-first-tournaments-of-the-season/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+            </div>
+        </div>
+</div>
+        
+        
+
+    
+    
+
+        
+
+        
+         <div id = "firstBlog" class = "blogContainerActual">
+    <div class = "imageHolder"  style = "display: none !important;" >
+            <img src = ""/>
+        </div>
+        <div class = "textSection"  id = "noPictureBlogPost" >
+            <h3>Freshmen Teams’ First Taste of VEX EDR</h3>
+            <h4>November 13, 2019</h4>
+            <p>Today, three of our freshmen teams (10C, 10D, and 10X) will be competing in their first Vex EDR competition: The King of the Tower League. This league is meant for new and middle school teams, so o...</p>
+            <div class = "learnMoreContainer">
+                <a href = "/blog/2019/11/13/freshmen-teams-first-taste-of-vex-edr/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+            </div>
+        </div>
+</div>
+        
+        
+
+    
+    
+
+        
+
+        
+         <div id = "firstBlog" class = "blogContainerActual">
+    <div class = "imageHolder"  style = "display: none !important;" >
+            <img src = ""/>
+        </div>
+        <div class = "textSection"  id = "noPictureBlogPost" >
+            <h3>Mandatory EXO Clean-Up</h3>
+            <h4>November 11, 2019</h4>
+            <p>Tomorrow, we will have our annual robot house clean up. Each member from every team is expected to come and help clean up our workspace. There is a lot of trash around the house and parts are scatt...</p>
+            <div class = "learnMoreContainer">
+                <a href = "/blog/2019/11/11/mandatory-exo-clean-up/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+            </div>
+        </div>
+</div>
+        
+        
+
+    
+    
+
+        
+            <div class = "postMonth">July </div>
+        
+
+        
+         <div id = "firstBlog" class = "blogContainerActual">
+    <div class = "imageHolder"  style = "display: none !important;" >
+            <img src = ""/>
+        </div>
+        <div class = "textSection"  id = "noPictureBlogPost" >
+            <h3>The Season Starts For New Teams</h3>
+            <h4>July 9, 2019</h4>
+            <p>Today marks the first day new teams are getting together to start brainstorming ideas. As of now, we have 4 new teams and 4 experienced teams (for a total of 8). For some of the more experienced te...</p>
+            <div class = "learnMoreContainer">
+                <a href = "/blog/2019/07/09/the-season-starts-for-new-teams/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+            </div>
+        </div>
+</div>
+        
+        
+
+    
+    
+
+        
+            <div class = "postMonth">June </div>
+        
+
+        
+         <div id = "firstBlog" class = "blogContainerActual">
+    <div class = "imageHolder"  style = "display: none !important;" >
+            <img src = ""/>
+        </div>
+        <div class = "textSection"  id = "noPictureBlogPost" >
+            <h3>Exothermic Robotics Starts Recruiting Members for 2019 - 2020</h3>
+            <h4>June 19, 2019</h4>
+            <p>Hello students and parents! Saturday, June 22 at 2:30 PM at Redmond Library will be Exothermic Robotics’ information meeting for the 2019-2020 season. We encourage everyone who is interested in STE...</p>
+            <div class = "learnMoreContainer">
+                <a href = "/blog/2019/06/19/exothermic-robotics-starts-recruiting-members-for-2019-2020/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+            </div>
+        </div>
+</div>
+        
+        
+
+    
+    
+
+        
+
+        
+         <div id = "firstBlog" class = "blogContainerActual">
+    <div class = "imageHolder" >
+            <img src = "/images/Vishwa.jpg"/>
+        </div>
+        <div class = "textSection" >
+            <h3>President Announced for 2019 - 2020 Season</h3>
+            <h4>June 17, 2019</h4>
+            <p>Hello everyone, we have had our elections for the new president this past weekend and the results are in. I am proud to announce the new president: Vishwa KN! Congratulations to Vishwa, the rest of...</p>
+            <div class = "learnMoreContainer">
+                <a href = "/blog/2019/06/17/president-announced-for-2019-2020/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+            </div>
+        </div>
+</div>
+        
+        
+
+    
+    
+
+        
+
+        
+         <div id = "firstBlog" class = "blogContainerActual">
+    <div class = "imageHolder" >
+            <img src = "/images/stanford.jpeg"/>
+        </div>
+        <div class = "textSection" >
+            <h3>Exothermic Alumnus Continues Passion For Robotics At Stanford</h3>
+            <h4>June 14, 2019</h4>
+            <p>One of our former members, Derian Williams (back row center of the image) was one of the only two students who did both electrical and mechanical for the Stanford University Robotics Mars Rover Tea...</p>
+            <div class = "learnMoreContainer">
+                <a href = "/blog/2019/06/14/exothermic-alumnus-continues-passion-for-robotics-at-stanford/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+            </div>
+        </div>
+</div>
+        
+        
+
+    
+    
+
+        
+            <div class = "postMonth">April </div>
+        
+
+        
+         <div id = "firstBlog" class = "blogContainerActual">
+    <div class = "imageHolder" >
+            <img src = "/images/Gallery30.jpg"/>
+        </div>
+        <div class = "textSection" >
+            <h3>EXO Teams Participate in VRC World Championships 2019</h3>
+            <h4>April 30, 2019</h4>
+            <p>On April 24 – April 27, teams 10B, 10E, and 10N competed at the VRC World Championship. This is the first time these teams qualified for the World Championship. 10B placed 18th in Math Division, 10...</p>
+            <div class = "learnMoreContainer">
+                <a href = "/blog/2019/04/30/exo-teams-participate-in-vrc-world-championships-2019/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+            </div>
+        </div>
+</div>
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+    
+    
+
+        
+
+        
+        
+
+				</div>
+		</div>
+		<div class = "postLog">
+			<div class = "recentPosts">
+				<h3>Recent Posts</h3>
+				<div class = "recentPostOverall">
+                    
+                        <div class = "recentPostHolder">
+                            <a href = "/blog/2020/04/30/recruiting-for-2020-2021-has-started/">	
+                                
+                                    <img src = "/images/RecruitmentFlyer.jpg"/>
+                                
+                                <h3>Recruiting for 2020 - 2021 Has Started</h3>
+                            </a>
+				        </div>
+                    
+                        <div class = "recentPostHolder">
+                            <a href = "/blog/2020/04/24/exothermic-student-board-announced/">	
+                                
+                                    <img src = "/images/NoImageIcon.png"/>
+                                
+                                <h3>Exothermic Student Board Announced</h3>
+                            </a>
+				        </div>
+                    
+                        <div class = "recentPostHolder">
+                            <a href = "/blog/2020/04/20/2020-2021-exo-president-announced/">	
+                                
+                                    <img src = "/images/Amol.jpg"/>
+                                
+                                <h3>2020 - 2021 EXO President Announced</h3>
+                            </a>
+				        </div>
+                    
+                        <div class = "recentPostHolder">
+                            <a href = "/blog/2020/04/02/vex-worlds-is-now-virtual/">	
+                                
+                                    <img src = "/images/virtual.png"/>
+                                
+                                <h3>VEX Worlds is Now Virtual!</h3>
+                            </a>
+				        </div>
+                    
+                        <div class = "recentPostHolder">
+                            <a href = "/blog/2020/03/08/teams-10E-and-10N-qualify-for-vex-robotics-world-championship/">	
+                                
+                                    <img src = "/images/Gallery264.JPG"/>
+                                
+                                <h3>Teams 10E and 10N Qualify for Vex Robotics World Championship</h3>
+                            </a>
+				        </div>
+                    
+				</div>
+			</div>
+			<div class = "archive">
+				<h3>Archive</h3>
+				<div id = "archiveLink" class = "recentPostOverall">
+					<div class = "archiveHolder">
+						<!--<a href = "#">Archive Coming Soon! <br>Our Blog Is Still Under Construction </a>-->
+                        
+                        
+                        
+                            
+                            
+
+                            
+                           <li><a href = "/blog/archive/2020"> 2020</a></li>
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            <li> <a href = "/blog/archive/2019"> 2019</a></li>          
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            <li> <a href = "/blog/archive/2018"> 2018</a></li>          
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            <li> <a href = "/blog/archive/2008"> 2008</a></li>          
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            <li> <a href = "/blog/archive/2007"> 2007</a></li>          
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            <li> <a href = "/blog/archive/2006"> 2006</a></li>          
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</body>
+<footer>
+	<div class = "leftSection">
+		<div class = "leftTopSection">
+			<div class = "footerLogoHolder">
+				<img src = "/images/EXOLogo.png"/>
+			</div>
+			<div class = "wordsSection">
+				<h4>Exothermic Robotics</h4>
+				<h5>Redmond, Washington</h5>	
+				<a class = "social" href="https://www.facebook.com/exothermicrobotics/" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+				<a class = "social" href="https://www.instagram.com/exothermicrobotics/?igshid=xt1q75v9kzqq" target="_blank" ><i class="fab fa-instagram"></i></a>
+				<a class = "social" href="https://twitter.com/ExothermicRobo1" target="_blank" ><i class="fab fa-twitter"></i></a>
+					<ul class="FooterLinks">
+					<li>
+						<p>&copy; 2019-2020 Exothermic Robotics Club </p>
+					  </li>
+					</ul>				  
+			</div>
+		</div>
+	</div>
+	<div class = "rightSectionFooter">
+		<div class = "blog">
+			<h5>The EXO Blog</h5>
+			<p>A blog featuring announcements and little blurbs about the newest and latest in the Exothermic club. </p>
+		</div>
+		<div class = "blogContainer">
+			<a href = "/blog/" class="blogButton"><button>Check it Out &rarr;</button></a>
+		</div>
+	</div>
+</footer>
+</html>

@@ -1,0 +1,66 @@
+---
+layout: defaultblog
+---
+
+<div class = "firstSection">
+	<h3><a id = "seeRest" onclick = window.history.back()><i>&#10229; Back</i></a></h3>
+	<div class = "overallContainer">
+		<div class = "blogHolder">
+		<h3>{{ page.title }}</h3>
+		<h4>{{ page.date | date: "%B %-d, %Y" }}</h4>
+			<div class = "textSection">
+                {{content}}
+                {% for post in site.posts %}
+                <div class = "imageHolderInsideBlog">
+                    {% if post.url == page.url and post.showInside != false %}
+                    <img id = "insideBlogPic" src = "{{ site.baseurl }}{{post.thumbnail}}"/>
+                    {% endif %}
+                </div>
+                {% endfor %}
+			</div>
+		</div>
+		<div class = "postLog">
+			<div class = "recentPosts">
+				<h3>Recent Posts</h3>
+				<div class = "recentPostOverall">
+                    {% for post in site.posts limit: 5 %}
+                        <div class = "recentPostHolder">
+                            <a href = "{{site.baseurl}}{{post.url}}">	
+                                {% if post.showThumbnail == false %}
+                                    <img src = "{{site.baseurl}}/images/NoImageIcon.png"/>
+                                {% else %}
+                                    <img src = "{{site.baseurl}}{{post.thumbnail}}"/>
+                                {% endif %}
+                                <h3>{{ post.title }}</h3>
+                            </a>
+				        </div>
+                    {% endfor %}
+				</div>
+			</div>
+			<div class = "archive">
+				<h3>Archive</h3>
+				<div id = "archiveLink" class = "recentPostOverall">
+					<div class = "archiveHolder">
+                        {% assign currentYear = site.time | date: "%Y" %}
+                        {% assign currentMonth = site.time | date: "%B" %}
+                        {% for post in site.posts %}
+
+                            {% assign postYear = post.date | date: "%Y" %}
+                            {% assign postMonth = post.date  | date: "%B" %}
+
+                            {% if forloop.first %}
+                           <li><a href = "{{ "/blog/archive/num" | prepend: site.baseurl | replace: "num", postYear }}"> {{ postYear}}</a></li>
+                            {% endif %}
+
+                            {% if postYear != currentYear %}
+                            <li> <a href = "{{ "/blog/archive/num" | prepend: site.baseurl | replace: "num", postYear }}"> {{ postYear}}</a></li>          
+                            {% endif %}
+                            {% assign currentYear = postYear %}
+                            {% assign currentMonth = postMonth %}
+                        {% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

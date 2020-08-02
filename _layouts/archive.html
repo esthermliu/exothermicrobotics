@@ -1,0 +1,64 @@
+---
+layout: defaultblog
+title: Exothermic Robotics Archive
+custom_css: 
+    - blogcss
+    - blogMedia
+pagination: 
+    enabled: true
+---
+
+<div class = "firstSection">
+	<h2>Archive</h2>
+	<div class = "overallContainer">
+		<div class = "blogHolder">
+            <div class = "archiveHolder">
+                       {{ content }}
+				</div>
+		</div>
+		<div class = "postLog">
+			<div class = "recentPosts">
+				<h3>Recent Posts</h3>
+				<div class = "recentPostOverall">
+                    {% for post in site.posts limit: 5 %}
+                        <div class = "recentPostHolder">
+                            <a href = "{{site.baseurl}}{{post.url}}">	
+                                {% if post.showThumbnail == false %}
+                                    <img src = "{{site.baseurl}}/images/NoImageIcon.png"/>
+                                {% else %}
+                                    <img src = "{{site.baseurl}}{{post.thumbnail}}"/>
+                                {% endif %}
+                                <h3>{{ post.title }}</h3>
+                            </a>
+				        </div>
+                    {% endfor %}
+				</div>
+			</div>
+			<div class = "archive">
+				<h3>Archive</h3>
+				<div id = "archiveLink" class = "recentPostOverall">
+					<div class = "archiveHolder">
+						<!--<a href = "#">Archive Coming Soon! <br>Our Blog Is Still Under Construction </a>-->
+                        {% assign currentYear = site.time | date: "%Y" %}
+                        {% assign currentMonth = site.time | date: "%B" %}
+                        {% for post in site.posts %}
+                            {% assign postYear = post.date | date: "%Y" %}
+                            {% assign postMonth = post.date  | date: "%B" %}
+
+                            {% if forloop.first %}
+                           <li><a href = "{{ "/blog/archive/num" | prepend: site.baseurl | replace: "num", postYear }}"> {{ postYear}}</a></li>
+                            {% endif %}
+
+                            {% if postYear != currentYear %}
+                            <li> <a href = "{{ "/blog/archive/num" | prepend: site.baseurl | replace: "num", postYear }}"> {{ postYear}}</a></li>          
+                            {% endif %}
+                            {% assign currentYear = postYear %}
+                            {% assign currentMonth = postMonth %}
+                        {% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>

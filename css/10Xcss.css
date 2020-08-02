@@ -1,0 +1,330 @@
+.landing {
+	background-image: url("/images/10XLogo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landingBackground {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(38, 92, 84, 0.5), rgba(179, 123, 55, 0.5));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titleHolder {
+	text-align: center;
+}
+
+.titleHolder img {
+	padding-bottom: 3vh;
+}
+
+.landing h1 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: white;
+	letter-spacing: 5px;
+	line-height: 42px;
+}
+
+.landing h2 {
+	color: white;
+	font-family: Thin, sans-serif;
+	font-size: 20px;
+	font-weight: 40;
+	line-height: 42px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+
+.firstSection {
+	width: 100%;
+	background-color: rgb(232, 245, 225);
+	margin: 0;
+}
+
+.memberSection {
+	height: 100%;
+	padding-top: 8%;
+	padding-bottom: 8%;
+	margin: 0 15% 0 15%;
+}
+
+.titleSection h2 {
+	font-family: "Roboto", sans-serif;
+	color: #626262;
+	font-weight: normal;
+	font-size: 45px;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-bottom: 3%;
+}
+
+.memberBox, .memberBox2, .memberBox3, .memberBox4, .memberBox5, .memberBox6 {
+	display: flex;
+	justify-content: space-between;
+}	
+
+.memberBox, .memberBox2, .memberBox3, .memberBox4, .memberBox5, .memberBox6 {
+	width: 50%;
+}
+
+.memberBox img, .memberBox2 img, .memberBox3 img, .memberBox4 img, .memberBox5 img, .memberBox6 img {
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-bottom: 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.memberContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.writtenSection {
+	padding-left: 4%;
+	font-family: "Roboto", sans-serif;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.writtenSection p {
+	padding-right: 15px;
+	padding-top: 10px;
+}
+
+.writtenSection h3 {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.writtenSection h4 {
+	font-weight: 50;
+}
+
+.secondSection {
+	background-color: white;
+	width: 100%;
+}
+
+.statSection {
+	padding-top: 8%;
+	color: #626262;
+	font-family: "Roboto", sans-serif;
+}
+
+.statTitle {
+	padding-bottom: 3%;
+	letter-spacing: 2px;
+}
+
+.statTitle h2 {
+	font-size: 45px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.statArticle {
+	height: 90%;
+	margin-right: 40px;
+}
+
+.statArticle, .statArticle2 {
+	background-color: #f0f0f0;
+	padding: 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 40px;
+	width: 50%;
+}
+
+.statArticle h3, .statArticle2 h3 {
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.statboxFirst, .statbox, .statboxFirst2 {
+	background-color: #f0f0f0;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 3px solid #3d3939;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 30px;
+}
+
+.statboxFirst p, .statbox p {
+	width: 100%;
+}
+
+.statboxFirst, .statboxFirst2 {
+	border-top: 3px solid #3d3939;
+	padding-top: 10px;
+}
+
+.rightSectionEvent {
+	margin-bottom: 0px;
+	display: flex;
+	width: 100%;
+	margin-right: 10%;
+	margin-left: 10%;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+
+.rightSectionEvent p {
+	width: 100%;
+}
+
+.eventButton button {
+  color: #dbb52f;
+  text-transform: uppercase;
+  background-color: rgba(25,25,25,0);
+  border: 2px solid white;
+  z-index: 2;
+  padding: 15px 15px;
+  color: white;
+    -webkit-transition-duration: 0.2s; 
+  transition-duration: 0.2s;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.eventButton:hover button {
+   color: rgb(213,220,59);
+}
+
+.eventButton:hover button {
+    border-color: rgb(213,220,59);
+ }
+
+ .toSectionButtons {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+ }
+
+ .towerSection, .turningSection {
+	padding-top: 8%;
+ }
+ 
+ .eventList, .rankingsList, .skills, .turningList, .rankingsList2 {
+	font-family: "Roboto", sans-serif;	
+	margin: 0 20% 0 20%;
+ }
+
+.eventList h3, .eventList h2, .rankingsList h3, .rankingsList h2, .rankingsList2 h3, .rankingsList2 h2, .skills h3, .skills h2, .turningList h3, .turningList h2 {
+	color: #626262;
+	font-size: 18.72px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-top: 3%;
+	padding-bottom: 2%;
+ }
+ 
+ .eventList h2, .turningList h2 {
+	font-size: 45px !important;
+	text-transform: none !important;
+	font-weight: normal !important;
+	text-align: center;
+ }
+ 
+ .rightSectionEventRanking, .rightSectionEventRankingTitle {
+	width: 100% !important;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 5%;
+	text-align: center;
+ }
+ 
+ 
+ .rightSectionEventRanking p, .rightSectionEventRankingTitle p {
+	width: 16%;
+ }
+ 
+ 
+ .firstOfSection {
+	padding-left: 5%;
+ }
+ 
+ .statboxFirst2 {
+	background-color: #878686;
+	color: white;
+ }
+ 
+ .towerSection {
+	background-color: rgb(232, 245, 225);
+ }
+ 
+ .skills {
+	padding-bottom: 8%;
+ }
+ 
+ #buttonContainer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-wrap: wrap;
+	padding-top: 80px;
+ }
+ 
+ .insideButtonContainer {
+	display: flex;
+	justify-content: center;
+	background-color: rgba(51, 51, 51, 0.7);
+	width: 100%;
+	flex-wrap: wrap;
+ }
+ 
+ .sticky {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+ }
+ 
+ .statArticleHolder {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 10% 0 10%;
+ }
+ 
+ 
+ .skySection, .starSection, .sackSection, .roundSection {
+	background-color: rgb(232, 245, 225);
+	padding-top: 8%;
+ }
+ 
+ .gateSection, .cleanSection, .netSection, .tossSection {
+	background-color: white;
+	padding-top: 8%;
+ }	
+ 
+ .rankingsList2 {
+	padding-bottom: 8%;
+ }
+ 
+ .sackSection, .gateSection, .roundSection, .cleanSection {
+	padding-bottom: 8%;
+ }
+ 
+ .rightSection2 {
+	width: 50%;
+	margin-right: 0 !important;
+ }

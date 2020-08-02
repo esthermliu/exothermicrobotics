@@ -1,0 +1,145 @@
+@media screen and (max-width: 750px) {
+
+.aboutUsSection {
+	padding: 25% 5% 25% 5%;
+	margin: 0 !important;
+}
+
+.quickStatSection, .teamSection, .boardMemberSection, .eventSection {
+	padding-top: 25%;
+	padding-bottom: 25%;
+}
+
+.randomInfoContainer {
+	flex-wrap: wrap !important;
+}
+
+.firstStart, .location, .slogan, .teamLogo {
+	width: 80%;
+	margin-bottom: 10%;
+}
+
+.slogan {
+	margin-bottom: 0 !important;
+}
+
+.aboutUsTitle, .quickStatsTitle, .teamTitleSection, .boardTitle, .eventTitle {
+	padding-bottom: 8%;
+}
+
+.Circle {
+	margin-bottom: 10%;
+}
+
+.teamLogo {
+	width: 80% !important;
+}
+
+.firstTeamContainer, .secondTeamContainer {
+	flex-wrap: wrap;
+}
+
+.TeamALink, .TeamBLink, .TeamCLink, .TeamDLink, .TeamELink, .TeamFLink, .TeamNLink, .TeamXLink {
+	width: 100%;
+	margin-bottom: 10%;
+	margin-right: 3% !important;
+	background-repeat: no-repeat;
+}
+
+
+
+.TeamXLink, .TeamDLink {
+	margin-right: 3% !important; 
+}
+
+.teamTitleSection, .boardTitle, .eventTitle {
+	text-align: center;
+}
+
+.eventArticle {
+	flex-wrap: wrap;
+}
+
+.event1, .event2, .event3 {
+	width: 100%;
+	margin-bottom: 10%;
+}
+
+#landingVideo {
+	position: fixed !important;
+}
+
+.secondSection, .fifthSection {
+	background-attachment: scroll !important;
+	background-position: center;
+	width: 100%;
+}
+
+.textModal, .textModal2, .textModal3, .textModal4, .textModal5, .textModal6, .textModal7 {
+	width: 100%;
+}
+
+.textHolder h3, .textHolder2 h3, .textHolder3 h3, .textHolder4 h3, .textHolder5 h3, .textHolder6 h3, .textHolder7 h3 {
+	font-size: 30px;
+}
+
+.textHolder h4, .textHolder2 h4, .textHolder3 h4, .textHolder4 h4, .textHolder5 h4, .textHolder6 h4, .textHolder7 h4 {
+	line-height: 30px;
+}
+
+.close, .close2, .close3, .close4, .close5, .close6, .close7 {
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+
+.modalContent, .modalContent2, .modalContent3, .modalContent4, .modalContent5, .modalContent6, .modalContent7 {
+	margin: 25% 15% 20% 15%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.pictureHolder, .pictureHolder2, .pictureHolder3, .pictureHolder4, .pictureHolder5, .pictureHolder6, .pictureHolder7 {
+	width: 100%;
+}
+
+.leftNewSection, .rightNewSection {
+	width: 100%;
+}
+
+.overallNewSection {
+	flex-wrap: wrap;
+}
+
+.teamSection {
+	margin: 0 5% 0 5% !important;
+}
+
+.box2Holder {
+	flex-wrap: wrap;
+}
+
+.newsBox2 {
+	margin: 0 !important;
+	width: 100%;
+}
+
+.rightNewSection {
+	height: 400px;
+}
+
+#tooBig h3 {
+	line-height: 25px;
+}
+
+.newsBox2 {
+	margin-bottom: 8% !important;
+}
+
+.popup {
+	font-size: 12px;
+}
+
+
+
+} /*End of media query*/

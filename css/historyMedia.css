@@ -1,0 +1,47 @@
+@media screen and (max-width: 750px) {
+	.firstSection {
+		padding: 25% 5% 25% 5% !important;
+	}
+	
+	.towerTakeoverVideo {
+		height: 300px;
+	}
+	
+	.notVideo {
+		padding: 25% 5% 25% 5% !important;
+	}
+	
+	.videoHolder {
+		margin: 0 5% 25% 5%;
+	}
+
+	.verticalMinus {
+		left: 1px;
+	}
+	
+	.landingBackground {
+		background-image: linear-gradient(rgba(67, 90, 165, 0.6), rgba(165, 103, 67, 0.6));
+	}
+	
+	.landing {
+		background-attachment: scroll !important;
+	}
+	
+	.firstSection h2 {
+		padding-bottom: 8% !important;
+	}
+	
+	#secondSection h3, #thirdSection h3, #fourthSection h3, #fifthSection h3, #sixthSection h3{
+		padding-bottom: 8%;
+	}
+	
+	#buttonContainer {
+		padding-top: 0;
+	}
+	
+	
+	
+	
+	
+	
+}

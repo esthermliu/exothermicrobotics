@@ -1,0 +1,449 @@
+<!DOCTYPE HTML>
+<html lang = "eng">
+<head>
+	<title> VEX Overview </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/HeaderFooter.css">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="/css/HeaderFooterMedia.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="resources/jquery.js"></script>
+	<link rel="icon" type="image/png" href="/images/Favicon.png" size = "20x20"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+     
+        
+        <link rel = "stylesheet" href = "/css/overviewcss.css">
+        
+        <link rel = "stylesheet" href = "/css/overviewMedia.css">
+        
+    
+</head>
+<header id = "secondBox" class = "navbar">
+	<div class = "logoBox">
+		<a class = "homepageLogo" href = "/"><img src = "/images/EXOLogo.png"></a>
+	</div>
+	<nav class = "secondBox">
+		<ul class = "headerList">
+			<li><a href = "/" > Home </a></li>
+			<div class = "dropDownAbout">
+				<button class = "dropButtonAbout" onclick="window.location.href = '/about/'" > About Us </button>
+				<div class = "dropDownContentAbout">
+                    
+                        <a href = "/about/history/" >History</a>
+                    
+                        <a href = "/about/teams/" >Teams</a>
+                    
+                        <a href = "/about/join/" >Join Us</a>
+                    
+                        <a href = "/about/outreach/" >Outreach</a>
+                    
+                        <a href = "/about/advisors/" >Advisors</a>
+                    
+                        <a href = "/about/awards/" >Awards</a>
+                    
+                        <a href = "/about/challenges/" >Challenges</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownOverview">
+				<button class = "dropButtonOverview" onclick="window.location.href = '/vex-overview/'"   style = "color: rgb(213,220,59) !important;"> VEX Overview </button>
+				<div class = "dropDownContentOverview">
+                     
+                        <a href = "/vex-overview/competition/" >Competitions</a>
+                    
+                        <a href = "/vex-overview/events/" >Events</a>
+                    
+                        <a href = "/vex-overview/programs/" >Programs</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/media/'" > Media </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/media/news/" >Publicity</a>
+                    
+                        <a href = "/media/gallery/" >Gallery</a>
+                    
+                        <a href = "/media/website/" >Website</a>
+                    
+                        <a href = "/media/social/" >Social</a>
+                    
+				</div>
+			</div>
+			<li><a href = "/blog/" > Blog </a></li>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/resources/'" > Resources </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/resources/building-tips/" >Building Tips</a>
+                    
+                        <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+                    
+                        <a href = "/resources/coding-tips/" >Coding Tips</a>
+                    
+                        <a href = "/resources/game-tips/" >Game Tips</a>
+                    
+                        <a href = "/resources/website-tips/" >Website Tips</a>
+                    
+                        <a href = "/resources/other-links/" >Other Links</a>
+                    
+				</div>
+			</div>
+			<li><a class = "sponsors" href = "/sponsors/" > Sponsors </a></li>
+			<li><a class = "contactUs" href = "/contact-us/" > Contact Us </a></li>
+		</ul>
+	</nav>
+<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+ <div id="myNav" class="overlay">
+   <span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <div class = "overlayHolder">
+    <a href="/" >Home</a>
+    <a href="/about/" >About Us</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/about/history/" >History</a>
+            
+                <a href = "/about/teams/" >Teams</a>
+            
+                <a href = "/about/join/" >Join Us</a>
+            
+                <a href = "/about/outreach/" >Outreach</a>
+            
+                <a href = "/about/advisors/" >Advisors</a>
+            
+                <a href = "/about/awards/" >Awards</a>
+            
+                <a href = "/about/challenges/" >Challenges</a>
+            
+		</div>
+	<a href="/vex-overview/"  style = "color: rgb(213,220,59) !important;" >VEX Overview</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/vex-overview/competition/" >Competitions</a>
+            
+                <a href = "/vex-overview/events/" >Events</a>
+            
+                <a href = "/vex-overview/programs/" >Programs</a>
+            
+		</div>
+	<a href="/media/" >Media</a>
+		  <div class="phoneDropdown">
+		    
+                <a href = "/media/news/" >Publicity</a>
+            
+                <a href = "/media/gallery/" >Gallery</a>
+            
+                <a href = "/media/website/" >Website</a>
+            
+                <a href = "/media/social/" >Social</a>
+            
+		  </div>
+	<a href="/blog/" >Blog</a>
+	<a href="/resources/" >Resources</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/resources/building-tips/" >Building Tips</a>
+            
+                <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+            
+                <a href = "/resources/coding-tips/" >Coding Tips</a>
+            
+                <a href = "/resources/game-tips/" >Game Tips</a>
+            
+                <a href = "/resources/website-tips/" >Website Tips</a>
+            
+                <a href = "/resources/other-links/" >Other Links</a>
+            
+		  </div>
+		<a href="/sponsors/" >Sponsors</a>
+		<a href="/contact-us/" >Contact Us</a>
+	</div>
+	</div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</header>
+<script>
+jQuery(document).ready(function($){
+	$('.navbar').css("background-color", "transparent");
+	if ($(this).scrollTop() < 270) {
+		$('.navbar').css("background-color", "transparent");
+		$('.dropDownContentAbout').css("background-color", "transparent");
+		$('.dropDownContentOverview').css("background-color", "transparent");
+		$('.dropDownContentMedia').css("background-color", "transparent");
+		
+		$('.dropDownContentAbout').css("box-shadow", "none");
+		$('.dropDownContentOverview').css("box-shadow", "none");
+		$('.dropDownContentMedia').css("box-shadow", "none");
+	} else {
+		$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+	}
+	$(window).scroll(function(){
+		if ($(this).scrollTop() < 270) {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+			
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		} else {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		}
+		
+		if ($(this).scrollTop() > 270) {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		} else {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+	
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		}
+		
+
+	});
+});
+</script>
+<body>
+    <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+<!--<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+</script>-->
+<script>
+window.onscroll = function() {
+	scrollFunction();
+	myFunction();
+};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+
+</script>
+<script type="text/javascript">
+	$("a[href='#']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+</script>
+
+	<div class = "landing">
+	<div class = "landingBackground">
+		<div class = "titleHolder">
+			<img src = "/images/EXOLogo.png" alt = "Exo logo">
+			<h1> Overview </h1>
+			<h2> Competitions. Events. Programs. </h2>
+		</div>
+	</div>
+</div>
+<div class = "firstSection">
+	<div class = "backgroundSection">
+		<h2> What is VEX? </h2>
+		<div class = "overviewHolder">
+			<h3> Their Mission:</h3>
+			<p> VEX Robotics creates tools that educators and mentors can use to encourage and develop the learners today into the problem solvers of the future. VRC, or the VEX Robotics Competition,
+			is an opportunity to grow your programming and design skills through high school in a competitive environment.</p>
+			<h3> Their Vision: </h3>
+			<p> VEX hopes that one day, every student will have the opportunity to experience the excitement of hands-on STEM learning and creation. Regardless of age or background, VEX wants all people to 
+			feel inspired by technology personally and see the importance of creative problem solving for a better future.</p>
+		<img src = "/images/Gallery12.jpg"/>
+			<h3> A Letter From VEX: </h3>
+			<p> Our world faces a serious problem. It’s a problem
+				that, without explicit and intentional action, will
+				eventually stagnate global progress and lead to
+				a workforce that is unmotivated and ill-equipped
+				to solve its future problems. As the world grows
+				more technologically complex, the challenges
+				we face every day will continue to escalate along
+				with it. A cell phone has more failure modes than a
+				landline. The internals of an electric car are more
+				difficult to comprehend than a V8 combustion
+				engine. Unmanned drone legislation is more
+				nuanced than defining a maximum speed limit.</p>
+				<p>
+				Dubbed “the STEM problem”, the situation is
+				equally simple to understand, yet difficult to
+				solve. In many cases, the traditional methods of
+				teaching science, technology, engineering, and
+				math (STEM) will not be enough to adequately
+				prepare students for this complex world. This is
+				often coupled with the unfortunate reality that by
+				the time they reach an age capable of grasping
+				these critical topics, students may have already
+				determined that they are “not cool” or “boring”.
+				Without the skills or passion necessary to
+				approach these problems in an educated manner,
+				you cannot possibly expect to be productive in
+				making forward progress or even sustaining the
+				status quo. </p>
+				<p>
+				The VEX Robotics Competition exists to solve
+				this problem. Through its uniquely engaging
+				combination of teamwork, problem solving, and
+				scientific discovery, the study of competitive
+				robotics encompasses aspects of STEM. You’re
+				not building VEX EDR robots because your future
+				job will involve tightening shaft collars on a metal
+				bar – you’re executing an engineering design
+				and problem-solving process that resembles the
+				same mindset used by rocket scientists, brain
+				surgeons, and inventors around the world. </p>
+				<p>
+				Robotics Competition Tower Takeover is not just a
+				game that we invented because it is fun to play – it
+				is a vehicle for teaching (and testing) teamwork,
+				perseverance in the face of hardship, and
+				provides a methodology to approach and solve
+				new challenges with confidence.
+				</p>
+				<p>
+				Contained in this manual are the rules that shape
+				VRC Tower Takeover. These rules are designed
+				to simulate the constraints that will outline any
+				real-world project. They are intended to promote
+				creativity without punishing innovation. They are
+				balanced to promote fair play while encouraging
+				competition.</p>
+				<p>
+				We encourage you to keep in mind that a VEX
+				Robotics Competition game is more than just a
+				set of game objects worth varying amounts of
+				points. It is an opportunity to hone the life-long
+				skills that will characterize the problem-solving
+				leaders of tomorrow.
+				</p>
+				<p>
+				Good luck, and we’ll see you on the playing field!</p>
+				<p>
+				Sincerely,</p>
+				<p class = "lastWrittenSection">
+				The VEX Robotics Game Design Committee, comprised of members from the Robotics Education
+				& Competition Foundation, Robomatter, DWAB
+				Technology, and VEX Robotics.</p>
+		</div>
+	</div>
+</div>
+<div class = "secondSection">
+	<div class = "vexStatsHolder">
+		<div class = "stats">
+			<h2> 60+ </h2>
+			<h3> Countries </h3>
+		</div>
+		<div class = "stats">
+			<h2> 22,000+ </h2>
+			<h3> Schools </h3>
+		</div>
+		<div class = "stats">
+			<h2> 24,000+ </h2>
+			<h3> Competition Teams </h3>
+		</div>
+		<div class = "statsLast">
+			<h2> 1,000,000+ </h2>
+			<h3> Students </h3>
+		</div>
+	</div>
+</div>
+<div class = "thirdSection">
+	<div class = "backgroundSection2">
+		<h2> Learn More About VEX </h2>
+		<div class = "learnContainer">
+			<div class = "learnMoreContainer">
+			<a href = "/vex-overview/competition/" class = "competitionLink"> 
+				<div class = "competition">
+					<div class = "Filter">
+						<h4>Competitions</h4>
+					</div>
+				</div>
+			</a>
+			<a href = "/vex-overview/events/" class = "eventsLink">
+				<div class = "events">
+					<div class = "Filter">
+						<h4>Events</h4>
+					</div>
+				</div>
+			</a>
+			<a href = "/vex-overview/programs/" class = "programsLink">
+				<div class = "programs">
+					<div class = "Filter">
+						<h4>Programs</h4>
+					</div>
+				</div>
+			</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+<footer>
+	<div class = "leftSection">
+		<div class = "leftTopSection">
+			<div class = "footerLogoHolder">
+				<img src = "/images/EXOLogo.png"/>
+			</div>
+			<div class = "wordsSection">
+				<h4>Exothermic Robotics</h4>
+				<h5>Redmond, Washington</h5>	
+				<a class = "social" href="https://www.facebook.com/exothermicrobotics/" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+				<a class = "social" href="https://www.instagram.com/exothermicrobotics/?igshid=xt1q75v9kzqq" target="_blank" ><i class="fab fa-instagram"></i></a>
+				<a class = "social" href="https://twitter.com/ExothermicRobo1" target="_blank" ><i class="fab fa-twitter"></i></a>
+					<ul class="FooterLinks">
+					<li>
+						<p>&copy; 2019-2020 Exothermic Robotics Club </p>
+					  </li>
+					</ul>				  
+			</div>
+		</div>
+	</div>
+	<div class = "rightSectionFooter">
+		<div class = "blog">
+			<h5>The EXO Blog</h5>
+			<p>A blog featuring announcements and little blurbs about the newest and latest in the Exothermic club. </p>
+		</div>
+		<div class = "blogContainer">
+			<a href = "/blog/" class="blogButton"><button>Check it Out &rarr;</button></a>
+		</div>
+	</div>
+</footer>
+</html>

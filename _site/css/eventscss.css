@@ -1,0 +1,160 @@
+.landing {
+	background-image: url("/images/Gallery52.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landingBackground {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(67, 90, 165, 0.4), rgba(67, 90, 165, 0.4));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titleHolder {
+	text-align: center;
+}
+
+.titleHolder img {
+	padding-bottom: 3vh;
+}
+
+.landing h1 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: white;
+	letter-spacing: 5px;
+	line-height: 42px;
+}
+
+.landing h2 {
+	color: white;
+	font-family: Thin, sans-serif;
+	font-size: 20px;
+	font-weight: 40;
+	line-height: 42px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+
+.firstSection {
+	background-color: #f0f0f0;
+	padding: 8% 20% 8% 20%;
+	font-family: Roboto, sans-serif;
+	color: #626262;
+}
+
+.firstSection h2 {
+	font-size: 45px;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 3%;
+}
+
+.learnMoreButton button {
+  color: #dbb52f;
+  text-transform: uppercase;
+  background-color: rgba(255,255,255,0);
+  border: 2px solid #626262;
+  z-index: 2;
+  padding: 15px 15px;
+  color: #626262;
+    -webkit-transition-duration: 0.2s; 
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.learnMoreButton:hover button {
+   color: rgb(96, 156, 14);
+}
+
+.learnMoreButton:hover button {
+  border-color: rgb(96, 156, 14);
+ }
+ 
+ .eventHolder {
+	line-height: 30px;
+	margin-bottom: 8% !important;
+ }
+ 
+ .eventHolder h3 {
+	display: flex;
+	align-items: center;
+	font-size: 25px;
+	font-family: Roboto, sans-serif;
+	font-weight: normal;
+ }
+ 
+ .eventHolder p {
+	letter-spacing: 1.5px;
+ }
+ 
+ .event {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 2px solid rgb(96, 156, 14);
+ }
+ 
+ .location {
+	width: 60%;
+ }	
+ 
+.learnMoreContainer {
+	display: flex;
+	align-items: center;
+}
+
+.upcomingEvents {
+	font-family: Thick, sans-serif;
+	font-size: 20px !important;
+	font-weight: 700 !important;
+	text-transform: uppercase;
+}
+
+#pastEvents {
+	border-bottom: 2px solid #d22630 !important;
+}
+
+#pastEventsButton:hover button {
+   color: #d22630 !important;
+}
+
+#pastEventsButton:hover button {
+  border-color: #d22630 !important;
+ }
+ 
+ #upcomingColor {
+	color: rgb(96, 156, 14);
+ }
+ 
+ #pastColor {
+	color: #d22630;
+ }
+ 
+ .date {
+	width: 15%;
+	display: flex;
+	flex-wrap: wrap;
+ }
+ 
+.date h3 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.datePhone {
+	display: none;
+}

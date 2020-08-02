@@ -1,0 +1,218 @@
+.landing {
+	background-image: url("/images/Gallery103.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	max-height: 100vh;
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landingBackground {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(67, 90, 165, 0.6), rgba(85, 125, 30, 0.4));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titleHolder {
+	text-align: center;
+}
+
+.landing h1 {
+	font-size: 24px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: white;
+	letter-spacing: 5px;
+	line-height: 42px;
+}	
+
+.landing h2 {
+	color: white;
+	font-family: Thin, sans-serif;
+	font-size: 20px;
+	font-weight: 40;
+	line-height: 42px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+
+.firstSection {
+	background-color: #f0f0f0;	
+	padding: 8% 25% 8% 25%;
+	font-family: Roboto, sans-serif;
+	color: #626262;
+}
+
+.firstSection h2 {
+	font-weight: normal;
+	font-size: 45px;
+	text-align: center;
+	padding-bottom: 3%;
+}
+
+.writtenSection p {
+	margin-bottom: 15px;
+	line-height: 30px;
+}
+
+.writtenSection ul {
+	line-height: 30px;
+	padding-left: 30px;
+	list-style-type: square;
+}
+
+.secondSection {
+	background-image: url("/images/VEXParts.jpeg");
+	width: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.secondSectionBackground {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(85, 125, 30, 0.4));
+	height: 100%;
+	padding: 8% 25% 8% 25%;
+	font-family: Roboto, sans-serif;
+	color: white;
+}
+
+.secondSectionBackground h2 {
+	font-weight: normal;
+	font-size: 45px;
+	text-align: center;
+	padding-bottom: 3%;
+}
+
+.icon {
+	margin: 30px;
+}
+
+
+.icon img {
+	height: 100px;
+	width: 100px;
+	object-fit: contain;
+	text-align: center;
+}
+
+.secondSectionBackground h3 {
+	font-weight: normal;
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.iconHolder {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.iconHolder a {
+	color: white;
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+
+.iconHolder a:hover {
+	color: rgb(213,220,59);
+}
+
+.imageHolder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+.buildingTipSection {
+	padding: 8% 25% 8% 25%;
+	font-family: Roboto, sans-serif;
+	color: #626262;
+}
+
+.buildingTipSection p {
+	margin-bottom: 15px;
+}
+
+.buildingTipSection h2 {
+	font-size: 45px;
+	font-weight: normal;
+	text-align: center;
+	padding-bottom: 3%;
+}
+
+.textSection {
+	line-height: 30px;
+}
+
+.textSection ul {
+	list-style-type: square;
+	margin-left: 30px;
+}
+
+#Bearings, #Gears, #Axle {
+	background-color: rgb(232, 245, 225);
+}
+
+
+.textSection img {
+	float: right;
+	margin-left: 3%;
+	width: 40%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pillowLock {
+	float: left !important;
+	margin-right: 3%;
+	margin-left: 0 !important;
+}
+
+.gearRatios {
+	margin-bottom: 3%;
+}
+
+.pdfRubric {
+	width: 100%;
+	height: 700px;
+}
+
+.textSection ul {
+	margin-bottom: 15px;
+}
+
+.textSection ul li a {
+	color:  rgb(96, 156, 14) !important;
+	transition-duration: 0.2s;
+}
+
+.textSection ul li a:hover {
+	color: rgb(46, 74, 7) !important;
+}
+
+.youtubeVid {
+	display: flex;
+	justify-content: center;
+}
+
+.towerTakeoverVideo {
+	padding-top: 45px;
+	width: 100%;
+	height: 500px;
+}
+

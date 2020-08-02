@@ -1,0 +1,12 @@
+--- 
+title: "The 2006 - 2007 Season Begins"
+layout: post
+custom_css: 
+    - blogcss
+    - blogMedia
+    - blogfirstcss
+thumbnail: /images/ExoOldLogo.png
+---
+
+Hi guys! We're back, and this time we've returned with a new name, logo, number, and slogan! Our club is now called Exothermic Robotics and our slogan is "It was on fire when we got here". Our logo is no longer The International Combine Harvester from the game. Instead, we proudly present our new logo: A cartoon-style robot drawn by Scott MacDonald, a volunteer at LexisNexis. As for our team numbers, we are now FVC Teams 417 and 418. We have also added Team 575 because more students have joined the club
+

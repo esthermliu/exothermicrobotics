@@ -1,0 +1,37 @@
+@media screen and (max-width: 750px) { 
+	.landing {
+		background-attachment: scroll;
+	}
+	
+	.socialMediaSection {
+		padding: 25% 5% 25% 5%;
+	}
+	
+	.firstSection {
+		margin: 25% 5% 8% 5%;
+	}
+	
+	.secondSection {
+		margin: 8% 5% 8% 5%;
+	}
+	
+	.buttonTopHolder {
+		padding-right: 3%;
+	}
+	
+	#Hide, #Hide2, #Hide3, #Hide4, #Hide5, #Hide6, #Hide7, #Hide8 {
+		width: 90%;
+		line-height: 30px;
+	}
+	
+	.horizontalMinus, .horizontalMinus2, .horizontalMinus3, .horizontalMinus4, .horizontalMinus5, .horizontalMinus6, .horizontalMinus7, .horizontalMinus8 {
+		justify-content: center;
+		align-items: center;
+		height: 30px;
+	}
+	
+	.towerTakeoverVideo {
+		height: 300px;
+	}
+	
+}

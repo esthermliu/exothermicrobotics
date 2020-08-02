@@ -1,0 +1,136 @@
+@media screen and (max-width: 750px) {
+	.landing {
+		background-attachment: scroll;
+	}
+	
+	
+	.recentPostHolder img {
+		width: 100% !important;
+		margin-bottom: 5%;
+	}
+	
+	.recentPostHolder  a{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.firstSection {
+		padding: 25% 5% 25% 5% !important;
+	}	
+	
+	.firstSection h2 {
+		padding-bottom: 8%;
+	}
+	
+	.postLog {
+		width: 100% !important;
+	}
+	
+	.blogHolder {
+		border-right: 0px solid white !important;
+		width: 100% !important;
+	}
+	
+	.overallContainer {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.recentPostHolder a p {
+		width: 55%;
+	}
+	
+	.textSection {
+		padding-bottom: 8%;
+		width: 100%;
+	}
+	
+	.pagination {
+		width: 80%;
+	}
+	
+	.blogContainerActual {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.imageHolder {
+		width: 100%;
+	}
+	
+	.textSection {
+		padding: 0 !important;
+	}
+	
+	.learnMoreContainer {
+		margin-top: 3%;
+		margin-bottom: 3%;
+	}
+	
+	.postLog {
+		margin-top: 10%;
+	}
+	
+	.recentPostHolder p {
+		font-size: 16px !important;
+	}
+	
+	.imageHolderArticle img {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		width: 100%;
+	}
+	
+	.imageHolderInsideBlog img {
+		width: 100% !important;
+	}
+	
+	.blogHolder h4 {
+		margin-bottom: 3%;
+	}
+
+	.imageHolder {
+		margin-bottom: 3%;
+	}
+	
+	#paginationHolderPhone {
+		display: flex;
+		width: 100%;
+		margin-top: 8%;
+	}
+	
+	.paginationHolder {
+		display: none;
+	}
+	
+	.imageHolder img {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+	
+	
+	.recentPostHolder img {
+		width: 100%;
+		height: 100% !important;
+		object-fit: contain !important;
+	}
+	
+	
+	.recentPostHolder a {
+		object-fit: contain !important;
+	}
+	
+	.recentPostHolder h3 {
+		font-size: 1.17em !important;
+		letter-spacing: 1.5px !important;
+		font-family: Roboto, sans-serif !important;
+		margin-left: 0 !important;
+		line-height: 30px !important;
+		font-weight: 700 !important;
+	}
+	
+	.towerTakeoverVideoBlog {
+		height: 300px !important;
+	}
+	
+
+}

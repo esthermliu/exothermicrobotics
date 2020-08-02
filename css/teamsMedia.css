@@ -1,0 +1,34 @@
+@media screen and (max-width: 750px) {
+.landingBackground {
+	background-image: linear-gradient(rgba(67, 90, 165, 0.6), rgba(165, 103, 67, 0.6));
+}
+
+.landing {
+	background-attachment: scroll !important;
+}
+
+.teamSection {
+	padding: 25% 5% 25% 5% !important;
+}
+
+.teamTitleSection h2 {
+	text-align: center;
+}
+
+.teamA, .teamB, .teamC, .teamD, .teamE, .teamF, .teamN, .teamX {
+	flex-wrap: wrap;
+}
+
+.teamA {
+	margin-top: 7%;
+}
+
+.pictureHolder, .textHolder {
+	width: 100%;
+}
+
+.pictureHolder img {
+	margin-bottom: 3%;
+}
+
+}

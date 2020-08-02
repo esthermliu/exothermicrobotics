@@ -1,0 +1,36 @@
+@media screen and (max-width: 750px) {
+	.landing, .secondSection {
+		background-attachment: scroll;
+	}
+	
+	.secondSection {
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	.firstSection , .secondSectionColor {
+		padding: 25% 5% 25% 5%;
+	}
+
+	.holder {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.imageHolder {
+		width: 100%;
+		margin: 0;
+		padding-bottom: 3%;
+	}
+	
+	.imageHolder img {
+		height: 80px;
+		width: 80px;
+	}
+	
+	.secondSectionColor h2 {
+		padding-bottom: 8%;
+	}
+	
+	
+}
