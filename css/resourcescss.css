@@ -1,5 +1,5 @@
 .landing {
-	background-image: url("/images/ResourcesBackground.jpeg");
+	background-image: url("{{ site.baseurl }}/images/ResourcesBackground.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -78,34 +78,34 @@
 
 
 .competitionLink, .eventsLink, .programsLink {
-	background-image: url("/images/FillerPicture.jpg");
+	background-image: url("{{ site.baseurl }}/images/FillerPicture.jpg");
 	object-fit: cover;
 	transition: transform 0.2s;
 	background-position: center;
 }
 
 .competitionLink {
-	background-image: url("/images/Gallery103.jpg");
+	background-image: url("{{ site.baseurl }}/images/Gallery103.jpg");
 }
 
 .eventsLink {
-	background-image: url("/images/10CNotebookTOC.jpg");
+	background-image: url("{{ site.baseurl }}/images/10CNotebookTOC.jpg");
 }
 
 .programsLink {
-	background-image: url("/images/CodingTipsBackground.jpeg");
+	background-image: url("{{ site.baseurl }}/images/CodingTipsBackground.jpeg");
 }
 
 #game {
-	background-image: url("/images/Gallery45.jpg");
+	background-image: url("{{ site.baseurl }}/images/Gallery45.jpg");
 }
 
 #websiteTips {
-	background-image: url("/images/littleBoxWebsiteTips.jpeg");
+	background-image: url("{{ site.baseurl }}/images/littleBoxWebsiteTips.jpeg");
 }
 
 #other {
-	background-image: url("/images/TowerTakeover.jpg");
+	background-image: url("{{ site.baseurl }}/images/TowerTakeover.jpg");
 }
 
 .competitionLink:hover, .eventsLink:hover, .programsLink:hover {

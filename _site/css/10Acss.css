@@ -1,5 +1,5 @@
 .landing {
-	background-image: url("/images/10ALogo.jpg");
+	background-image: url("{{ site.baseurl }}/images/10ALogo.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;

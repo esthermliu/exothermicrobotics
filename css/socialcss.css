@@ -1,5 +1,5 @@
 .landing {
-	background-image: url("/images/InstagramBackground.jpeg");
+	background-image: url("{{ site.baseurl }}/images/InstagramBackground.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;

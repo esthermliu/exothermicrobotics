@@ -1,5 +1,5 @@
 .landing {
-	background-image: url("/images/SocialMediaBackground.jpeg");
+	background-image: url("{{ site.baseurl }}/images/SocialMediaBackground.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -85,26 +85,26 @@
 
 
 .competitionLink, .eventsLink, .programsLink {
-	background-image: url("/images/FillerPicture.jpg");
+	background-image: url("{{ site.baseurl }}/images/FillerPicture.jpg");
 	object-fit: cover;
 	transition: transform 0.2s;
 	background-position: center;
 }
 
 .competitionLink {
-	background-image: url("/images/Gallery39.jpg");
+	background-image: url("{{ site.baseurl }}/images/Gallery39.jpg");
 }
 
 .eventsLink {
-	background-image: url("/images/Gallery100.jpg");
+	background-image: url("{{ site.baseurl }}/images/Gallery100.jpg");
 }
 
 .programsLink {
-	background-image: url("/images/WebsiteBackgroundImage.jpg");
+	background-image: url("{{ site.baseurl }}/images/WebsiteBackgroundImage.jpg");
 }
 
 #social {
-	background-image: url("/images/InstagramBackground.jpeg");
+	background-image: url("{{ site.baseurl }}/images/InstagramBackground.jpeg");
 }
 
 .competitionLink:hover, .eventsLink:hover, .programsLink:hover {

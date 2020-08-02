@@ -39,7 +39,7 @@
 }
 
 .landing {
-	background-image: url("Gallery86.jpg");
+	background-image: url("{{ site.baseurl }}/images/Gallery86.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;

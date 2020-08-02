@@ -1,5 +1,5 @@
 .landing {
-	background-image: url("/images/Gallery103.jpg");
+	background-image: url("{{ site.baseurl }} /images/Gallery103.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -72,7 +72,7 @@
 }
 
 .secondSection {
-	background-image: url("/images/VEXParts.jpeg");
+	background-image: url("{{ site.baseurl }}/images/VEXParts.jpeg");
 	width: 100%;
 	background-attachment: fixed;
 	background-position: center;
