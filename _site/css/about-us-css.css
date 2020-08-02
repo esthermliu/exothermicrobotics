@@ -1,5 +1,5 @@
 .landing {
-	background-image: url("{{ site.baseurl }}/images/AboutUsBackground.JPG");
+	background-image: url("/images/AboutUsBackground.JPG");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -95,7 +95,7 @@
 }
 
 .secondSection, .fourthSection {
-	background-image: url("{{ site.baseurl }}/images/Gears.jpeg");
+	background-image: url("/images/Gears.jpeg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -156,7 +156,7 @@
 }
 
 #future {
-	background-image: url("{{ site.baseurl }}/images/metal.jpeg");
+	background-image: url("/images/metal.jpeg");
 }
 
 #futureBackground {
@@ -222,38 +222,38 @@
 }
 
 .competitionLink, .eventsLink, .programsLink {
-	background-image: url("{{ site.baseurl }}/images/FillerPicture.jpg");
+	background-image: url("/images/FillerPicture.jpg");
 	object-fit: cover;
 	transition: transform 0.2s;
 	background-position: center;
 }
 
 .competitionLink {
-	background-image: url("{{ site.baseurl }}/images/Gallery30.jpg");
+	background-image: url("/images/Gallery30.jpg");
 }
 
 .eventsLink {
-	background-image: url("{{ site.baseurl }}/images/Gallery106.jpg");
+	background-image: url("/images/Gallery106.jpg");
 }
 
 .programsLink {
-	background-image: url("{{ site.baseurl }}/images/JoinUsBackground.jpg");
+	background-image: url("/images/JoinUsBackground.jpg");
 }
 
 #outreach {
-	background-image: url("{{ site.baseurl }}/images/volunteering/Volunteering1.jpg");
+	background-image: url("/images/volunteering/Volunteering1.jpg");
 }
 
 #advisors {
-	background-image: url("{{ site.baseurl }}/images/Gallery73.jpg");
+	background-image: url("/images/Gallery73.jpg");
 }
 
 #awards {
-	background-image: url("{{ site.baseurl }}/images/Gallery104.jpg");
+	background-image: url("/images/Gallery104.jpg");
 }
 
 #challenges {
-	background-image: url("{{ site.baseurl }}/images/OnlineChallengeBackground.jpg");
+	background-image: url("/images/OnlineChallengeBackground.jpg");
 }
 
 .competitionLink:hover, .eventsLink:hover, .programsLink:hover {

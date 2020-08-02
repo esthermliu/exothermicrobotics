@@ -1,5 +1,5 @@
 .landing {
-	background-image: url("{{ site.baseurl }}/images/OverviewLanding.jpeg");
+	background-image: url("/images/OverviewLanding.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -88,7 +88,7 @@
 }
 
 .secondSection {
-	background-image: url("{{ site.baseurl }}/images/metalBackground.jpg");
+	background-image: url("/images/metalBackground.jpg");
 	width: 100%;
 	background-attachment: fixed;
 	background-position: center;
@@ -160,22 +160,22 @@
 }
 
 .competitionLink, .eventsLink, .programsLink {
-	background-image: url("{{ site.baseurl }}/images/FillerPicture.jpg");
+	background-image: url("/images/FillerPicture.jpg");
 	object-fit: cover;
 	transition: transform 0.2s;
 	background-position: center;
 }
 
 .competitionLink {
-	background-image: url("{{ site.baseurl }}/images/Gallery107.jpeg");
+	background-image: url("/images/Gallery107.jpeg");
 }
 
 .eventsLink {
-	background-image: url("{{ site.baseurl }}/images/Gallery52.jpg");
+	background-image: url("/images/Gallery52.jpg");
 }
 
 .programsLink {
-	background-image: url("{{ site.baseurl }}/images/volunteering/Volunteering7.jpg");
+	background-image: url("/images/volunteering/Volunteering7.jpg");
 }
 
 .competitionLink:hover, .eventsLink:hover, .programsLink:hover {

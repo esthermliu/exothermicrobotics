@@ -126,7 +126,7 @@
 }
 
 .secondSection {
-	background-image: url("{{ site.baseurl }}/images/LandingImage.jpg");
+	background-image: url("/images/LandingImage.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -252,36 +252,36 @@
 }
 
 .TeamALink {
-	background-image: url("{{ site.baseurl }}/images/10ALogo.jpg");
+	background-image: url("/images/10ALogo.jpg");
 	object-fit: contain;
 }
 
 .TeamBLink {
-	background-image: url("{{ site.baseurl }}/images/10BLogo.png");
+	background-image: url("/images/10BLogo.png");
 }
 
 .TeamCLink {
-	background-image: url("{{ site.baseurl }}/images/10CLogo.png");
+	background-image: url("/images/10CLogo.png");
 }
 
 .TeamDLink {
-	background-image: url("{{ site.baseurl }}/images/10DLogo.jpg");
+	background-image: url("/images/10DLogo.jpg");
 }
 
 .TeamELink {
-	background-image: url("{{ site.baseurl }}/images/10ELogo.jpg");
+	background-image: url("/images/10ELogo.jpg");
 }
 
 .TeamFLink {
-	background-image: url("{{ site.baseurl }}/images/10FLogo.jpg");
+	background-image: url("/images/10FLogo.jpg");
 }
 
 .TeamNLink {
-	background-image: url("{{ site.baseurl }}/images/10NLogo.png");
+	background-image: url("/images/10NLogo.png");
 }
 
 .TeamXLink {
-	background-image: url("{{ site.baseurl }}/images/10XLogo.jpg");
+	background-image: url("/images/10XLogo.jpg");
 }
 
 .TeamALink:hover, .TeamBLink:hover, .TeamCLink:hover, .TeamDLink:hover, .TeamELink:hover, .TeamFLink:hover, .TeamNLink:hover, .TeamXLink:hover {
@@ -424,7 +424,7 @@
 }
 
 .fifthSection {
-	background-image: url("{{ site.baseurl }}/images/EventBackground.png");
+	background-image: url("/images/EventBackground.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -569,42 +569,42 @@
 
 .pictureHolder, .pictureHolder2, .pictureHolder3, .pictureHolder4, .pictureHolder5, .pictureHolder6, .pictureHolder7, .pictureHolder8 {
 	width: 50%;
-	background-image: url("{{ site.baseurl }}/images/FillerPicture.jpg");
+	background-image: url("/images/FillerPicture.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 .pictureHolder {
-	background-image: url("{{ site.baseurl }}/images/Amol.jpg");
+	background-image: url("/images/Amol.jpg");
 }
 
 .pictureHolder2 {
-	background-image: url("{{ site.baseurl }}/images/Pascal.png");
+	background-image: url("/images/Pascal.png");
 }
 
 .pictureHolder3 {
-	background-image: url("{{ site.baseurl }}/images/Gyan.jpg");
+	background-image: url("/images/Gyan.jpg");
 }
 
 .pictureHolder4 {
-	background-image: url("{{ site.baseurl }}/images/Thorsten.jpg");
+	background-image: url("/images/Thorsten.jpg");
 }
 
 .pictureHolder5 {
-	background-image: url("{{ site.baseurl }}/images/AnnBoard.jpg") !important;
+	background-image: url("/images/AnnBoard.jpg") !important;
 }
 
 .pictureHolder6 {
-	background-image: url("{{ site.baseurl }}/images/HelenBoard.jpg");
+	background-image: url("/images/HelenBoard.jpg");
 }
 
 .pictureHolder7 {
-	background-image: url("{{ site.baseurl }}/images/ShashankBoard.png");
+	background-image: url("/images/ShashankBoard.png");
 }
 
 .pictureHolder8 {
-	background-image: url("{{ site.baseurl }}/images/ArnavBoard.jpg");
+	background-image: url("/images/ArnavBoard.jpg");
 }
 
 .textModal, .textModal2, .textModal3, .textModal4, .textModal5, .textModal6, .textModal7, .textModal8 {
