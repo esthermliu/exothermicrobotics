@@ -85,6 +85,10 @@
 	margin-bottom: 25%;
 }
 
+#notLast {
+    margin-bottom: 5% !important;
+}
+
 @media screen and (max-width: 415px) {
 	.eventButton button {
 		padding: 8px 8px;
