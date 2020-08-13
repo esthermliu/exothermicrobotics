@@ -387,6 +387,8 @@ header nav ul.openMenu {
 .innerNav {
     top: 80px;
     width: 80%;
+    padding-right: 10%;
+    padding-left: 10%;
     overflow: scroll;
 }
 
