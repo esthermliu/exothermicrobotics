@@ -228,8 +228,9 @@ td {
 }
 
 .pictureWebsite {
-	width: 30%;
-	height: 30%;
+	width: 100%;
+	height: 100%;
+    margin-top: 30px;
 }
 
 .writtenSection ul {
@@ -257,6 +258,13 @@ td {
 
 #secondOverview {
 	padding-top: 8%;
+}
+
+.quotes {
+    font-style: italic;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
 }
 
 
