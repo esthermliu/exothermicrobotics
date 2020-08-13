@@ -342,6 +342,7 @@ header nav ul.openMenu {
     width: 100%;
 }
 
+
 #navLinks li {
     list-style-type: none;
     font-size: 25px;
@@ -362,11 +363,11 @@ header nav ul.openMenu {
     
 /* minus holder css */
     
-.minusHolder p {
-	font-size: 25px;
+.minusHolder2 p {
+	font-size: 25px !important;
 }
 
-.minusHolder {
+.minusHolder2 {
 	display: flex;
 	align-items: center;
 	justify-content: center;

@@ -75,31 +75,31 @@
 	width: 100%;
 }
 
-.textModal, .textModal2, .textModal3, .textModal4, .textModal5, .textModal6, .textModal7 {
+.textModal, .textModal2, .textModal3, .textModal4, .textModal5, .textModal6, .textModal7, .textModal8 {
 	width: 100%;
 }
 
-.textHolder h3, .textHolder2 h3, .textHolder3 h3, .textHolder4 h3, .textHolder5 h3, .textHolder6 h3, .textHolder7 h3 {
+.textHolder h3, .textHolder2 h3, .textHolder3 h3, .textHolder4 h3, .textHolder5 h3, .textHolder6 h3, .textHolder7 h3, .textHolder8 h3 {
 	font-size: 30px;
 }
 
-.textHolder h4, .textHolder2 h4, .textHolder3 h4, .textHolder4 h4, .textHolder5 h4, .textHolder6 h4, .textHolder7 h4 {
+.textHolder h4, .textHolder2 h4, .textHolder3 h4, .textHolder4 h4, .textHolder5 h4, .textHolder6 h4, .textHolder7 h4, .textHolder8 h4 {
 	line-height: 30px;
 }
 
-.close, .close2, .close3, .close4, .close5, .close6, .close7 {
+.close, .close2, .close3, .close4, .close5, .close6, .close7, .close8 {
 	padding-right: 10px;
 	padding-top: 10px;
 }
 
 
-.modalContent, .modalContent2, .modalContent3, .modalContent4, .modalContent5, .modalContent6, .modalContent7 {
+.modalContent, .modalContent2, .modalContent3, .modalContent4, .modalContent5, .modalContent6, .modalContent7, .modalContent8 {
 	margin: 25% 15% 20% 15%;
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.pictureHolder, .pictureHolder2, .pictureHolder3, .pictureHolder4, .pictureHolder5, .pictureHolder6, .pictureHolder7 {
+.pictureHolder, .pictureHolder2, .pictureHolder3, .pictureHolder4, .pictureHolder5, .pictureHolder6, .pictureHolder7, .pictureHolder8 {
 	width: 100%;
 }
 
