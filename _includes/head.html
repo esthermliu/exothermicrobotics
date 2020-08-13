@@ -2,12 +2,19 @@
 	<title> {{ page.title }} </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
+    <!-- header and footer css -->
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/HeaderFooter.css">
 	<link rel="stylesheet" media="screen and (max-width: 750px)" href="{{ site.baseurl }}/css/HeaderFooterMedia.css">
+    <!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="resources/jquery.js"></script>
+    <!-- scripts -->
+    <script src="{{site.baseurl}}/scripts/hamburger.js"></script>
+    <script src="{{site.baseurl}}/scripts/navigation.js"></script>
+    <!-- favicon -->
 	<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/Favicon.png" size = "20x20"/>
+    <!-- custom css -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     {% if page.custom_css %} 
         {% for stylesheet in page.custom_css %}

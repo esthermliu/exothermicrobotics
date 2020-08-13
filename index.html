@@ -8,9 +8,6 @@ pagination:
     enabled: true
 ---
 
-
-
-<body>
 <div class="popup" onclick="myFunction()">Are you interested in joining EXO? Click here to learn more!
   <div class="popuptext" id="myPopup"><a href = "https://forms.gle/ArSyr6bgaADLMj6y6" target = "_blank"><img src = "{{site.baseurl}}/images/RecruitmentFlyer.jpg"/></a></div>
 </div>
@@ -111,28 +108,28 @@ function myFunction() {
 	</div>
 	<div class = "teamContainer">
 		<div class = "firstTeamContainer">
-			<a href = "10A.html" class = "TeamALink"> 
+			<a href = "{{ site.baseurl }}/about/teams/10A/" class = "TeamALink"> 
 				<div class = "TeamA">
 					<div class = "Filter">
 						<h4>10A</h4>
 					</div>
 				</div>
 			</a>
-			<a href = "10B.html" class = "TeamBLink">
+			<a href = "{{ site.baseurl }}/about/teams/10B/" class = "TeamBLink">
 				<div class = "TeamB">
 					<div class = "Filter">
 						<h4>10B</h4>
 					</div>
 				</div>
 			</a>
-			<a href = "10C.html" class = "TeamCLink">
+			<a href = "{{ site.baseurl }}/about/teams/10C/" class = "TeamCLink">
 				<div class = "TeamC">
 					<div class = "Filter">
 						<h4>10C</h4>
 					</div>
 				</div>
 			</a>
-			<a href = "10D.html" class = "TeamDLink">
+			<a href = "{{ site.baseurl }}/about/teams/10D/" class = "TeamDLink">
 				<div class = "TeamD">
 					<div class = "Filter">
 						<h4>10D</h4>
@@ -141,28 +138,28 @@ function myFunction() {
 			</a>
 		</div>
 		<div class = "secondTeamContainer">
-		<a href = "10E.html" class = "TeamELink">
+		<a href = "{{ site.baseurl }}/about/teams/10E/" class = "TeamELink">
 			<div class = "TeamE">
 				<div class = "Filter">
 					<h4>10E</h4>
 				</div>
 			</div>
 		</a>
-		<a href = "10F.html" class = "TeamFLink">
+		<a href = "{{ site.baseurl }}/about/teams/10F/" class = "TeamFLink">
 			<div class = "TeamF">
 				<div class = "Filter">
 					<h4>10F</h4>
 				</div>
 			</div>
 		</a>
-		<a href = "10Neon.html" class = "TeamNLink">
+		<a href = "{{ site.baseurl }}/about/teams/10N/" class = "TeamNLink">
 			<div class = "TeamN">
 				<div class = "Filter">
 					<h4>10N</h4>
 				</div>
 			</div>
 		</a>
-		<a href = "10X.html" class = "TeamXLink">
+		<a href = "{{ site.baseurl }}/about/teams/10X/" class = "TeamXLink">
 			<div class = "TeamX">
 				<div class = "Filter">
 					<h4>10X</h4>
@@ -173,7 +170,7 @@ function myFunction() {
 	</div>
 	</div>
 	<div class = "learnMoreContainer">
-	    <a href = "teams.html" class="learnMoreButton"><button>Learn More &rarr;</button></a>
+	    <a href = "{{ site.baseurl }}/about/teams/" class="learnMoreButton"><button>Learn More &rarr;</button></a>
 	</div>
 </div>
 <div class = "fourthSection">	
@@ -211,10 +208,10 @@ function myFunction() {
 		</div>
 		<div class = "circleHolder">
 			<button id = "Circle5" class = "Circle2">
-				<img src = "{{site.baseurl}}/images/Thorsten.jpg"/>
+				<img src = "{{site.baseurl}}/images/AlexTran.jpg"/>
 			</button>
 			<div class = "CircleText">
-				<h2> Thorsten Lannynd</h2>
+				<h2> Alexander Tran </h2>
 				<h3> Programming Advisor</h3>
 			</div>
 		</div>
@@ -306,8 +303,8 @@ function myFunction() {
 		<div class = "textModal4">
 			<div class = "textHolder4">
 				<h4>Programming Advisor</h4>
-				<h3>Thorsten Lannynd</h3>
-				<p> Thorsten Lannynd is a senior doing Running Start at Bellevue College (he used to attend Redmond High School) and is part of Exothermic Evolution (10E). He is currently the Programming Advisor for Exothermic Robotics. Thorsten started VEX as a sophomore and this is his third year of doing VEX. His favorite thing about the program is being able to create top-tier Autonomous routines and seeing them work at competitions. </p>
+				<h3>Alexander Tran</h3>
+				<p> Alexander Tran is a senior at the International Community School and is part of Exothermic Blaze (10B). He is currently the Programming Advisor for Exothermic Robotics. Alex started VEX as a freshman and this is his fourth year of doing VEX. His favorite things about the program are the people he meets, his great teammates, and being able to see his ideas be projected onto a completed product. </p>
 			</div>
 		<span class = "close4">&times;</span>
 	</div>
@@ -417,7 +414,7 @@ function myFunction() {
 		</div>
 	</div>
 	<div class = "learnMoreContainer">
-	    <a href = "blog.html" class="learnMoreButton"><button>Discover More &rarr;</button></a>
+	    <a href = "{{ site.baseurl}}/blog/" class="learnMoreButton"><button>Discover More &rarr;</button></a>
 	</div>
 </div>
 </div>
@@ -603,12 +600,11 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 				</div>
 			</div>-->
 		<div class = "moreEventsContainer">
-			<a href = "events.html" class="moreEventsButton"><button>More Events &rarr;</button></a>
+			<a href = "{{ site.baseurl }}/vex-overview/events/" class="moreEventsButton"><button>More Events &rarr;</button></a>
 		</div>
 		</div>
 	</div>
 </div>
 </article>
-</body>
 
-</html>
+

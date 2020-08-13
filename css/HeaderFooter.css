@@ -304,6 +304,10 @@ footer {
 	display: none;
 }
 
+#hamburgerMenu, #navLinks {
+    display: none;
+}
+
 .Hamburger {
 	display: none;
 }

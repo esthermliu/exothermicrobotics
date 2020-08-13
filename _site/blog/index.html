@@ -4,97 +4,106 @@
 	<title> Exothermic Robotics Blog </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="/exothermicrobotics/css/HeaderFooter.css">
-	<link rel="stylesheet" media="screen and (max-width: 750px)" href="/exothermicrobotics/css/HeaderFooterMedia.css">
+    <!-- header and footer css -->
+	<link rel="stylesheet" href="/css/HeaderFooter.css">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="/css/HeaderFooterMedia.css">
+    <!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="resources/jquery.js"></script>
-	<link rel="icon" type="image/png" href="/exothermicrobotics/images/Favicon.png" size = "20x20"/>
+    <!-- scripts -->
+    <script src="/scripts/hamburger.js"></script>
+    <script src="/scripts/navigation.js"></script>
+    <!-- favicon -->
+	<link rel="icon" type="image/png" href="/images/Favicon.png" size = "20x20"/>
+    <!-- custom css -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
      
         
-        <link rel = "stylesheet" href = "/exothermicrobotics/css/blogcss.css">
+        <link rel = "stylesheet" href = "/css/blogcss.css">
         
-        <link rel = "stylesheet" href = "/exothermicrobotics/css/blogMedia.css">
+        <link rel = "stylesheet" href = "/css/blogMedia.css">
         
     
 </head>
 <header id = "secondBox" class = "navbar">
 	<div class = "logoBox">
-		<a class = "homepageLogo" href = "/exothermicrobotics/"><img src = "/exothermicrobotics/images/EXOLogo.png"></a>
+		<a class = "homepageLogo" href = "/"><img src = "/images/EXOLogo.png"></a>
 	</div>
 	<nav class = "secondBox">
 		<ul class = "headerList">
-			<li><a href = "/exothermicrobotics/" > Home </a></li>
+			<li><a href = "/" > Home </a></li>
 			<div class = "dropDownAbout">
-				<button class = "dropButtonAbout" onclick="window.location.href = '/exothermicrobotics/about/'" > About Us </button>
+				<button class = "dropButtonAbout" onclick="window.location.href = '/about/'" > About Us </button>
 				<div class = "dropDownContentAbout">
                     
-                        <a href = "/exothermicrobotics/about/history/" >History</a>
+                        <a href = "/about/history/" >History</a>
                     
-                        <a href = "/exothermicrobotics/about/teams/" >Teams</a>
+                        <a href = "/about/teams/" >Teams</a>
                     
-                        <a href = "/exothermicrobotics/about/join/" >Join Us</a>
+                        <a href = "/about/join/" >Join Us</a>
                     
-                        <a href = "/exothermicrobotics/about/outreach/" >Outreach</a>
+                        <a href = "/about/outreach/" >Outreach</a>
                     
-                        <a href = "/exothermicrobotics/about/advisors/" >Advisors</a>
+                        <a href = "/about/advisors/" >Advisors</a>
                     
-                        <a href = "/exothermicrobotics/about/awards/" >Awards</a>
+                        <a href = "/about/awards/" >Awards</a>
                     
-                        <a href = "/exothermicrobotics/about/challenges/" >Challenges</a>
+                        <a href = "/about/challenges/" >Challenges</a>
                     
 				</div>
 			</div>
 			<div class = "dropDownOverview">
-				<button class = "dropButtonOverview" onclick="window.location.href = '/exothermicrobotics/vex-overview/'"  > VEX Overview </button>
+				<button class = "dropButtonOverview" onclick="window.location.href = '/vex-overview/'"  > VEX Overview </button>
 				<div class = "dropDownContentOverview">
                      
-                        <a href = "/exothermicrobotics/vex-overview/competition/" >Competitions</a>
+                        <a href = "/vex-overview/competition/" >Competitions</a>
                     
-                        <a href = "/exothermicrobotics/vex-overview/events/" >Events</a>
+                        <a href = "/vex-overview/events/" >Events</a>
                     
-                        <a href = "/exothermicrobotics/vex-overview/programs/" >Programs</a>
+                        <a href = "/vex-overview/programs/" >Programs</a>
                     
 				</div>
 			</div>
 			<div class = "dropDownMedia">
-				<button class = "dropButtonMedia" onclick="window.location.href = '/exothermicrobotics/media/'" > Media </button>
+				<button class = "dropButtonMedia" onclick="window.location.href = '/media/'" > Media </button>
 				<div class = "dropDownContentMedia">
 					
-                        <a href = "/exothermicrobotics/media/news/" >Publicity</a>
+                        <a href = "/media/news/" >Publicity</a>
                     
-                        <a href = "/exothermicrobotics/media/gallery/" >Gallery</a>
+                        <a href = "/media/gallery/" >Gallery</a>
                     
-                        <a href = "/exothermicrobotics/media/website/" >Website</a>
+                        <a href = "/media/website/" >Website</a>
                     
-                        <a href = "/exothermicrobotics/media/social/" >Social</a>
+                        <a href = "/media/social/" >Social</a>
                     
 				</div>
 			</div>
-			<li><a href = "/exothermicrobotics/blog/"  style = "color: rgb(213,220,59) !important;"> Blog </a></li>
+			<li><a href = "/blog/"  style = "color: rgb(213,220,59) !important;"> Blog </a></li>
 			<div class = "dropDownMedia">
-				<button class = "dropButtonMedia" onclick="window.location.href = '/exothermicrobotics/resources/'" > Resources </button>
+				<button class = "dropButtonMedia" onclick="window.location.href = '/resources/'" > Resources </button>
 				<div class = "dropDownContentMedia">
 					
-                        <a href = "/exothermicrobotics/resources/building-tips/" >Building Tips</a>
+                        <a href = "/resources/building-tips/" >Building Tips</a>
                     
-                        <a href = "/exothermicrobotics/resources/notebook-tips/" >Notebook Tips</a>
+                        <a href = "/resources/notebook-tips/" >Notebook Tips</a>
                     
-                        <a href = "/exothermicrobotics/resources/coding-tips/" >Coding Tips</a>
+                        <a href = "/resources/coding-tips/" >Coding Tips</a>
                     
-                        <a href = "/exothermicrobotics/resources/game-tips/" >Game Tips</a>
+                        <a href = "/resources/game-tips/" >Game Tips</a>
                     
-                        <a href = "/exothermicrobotics/resources/website-tips/" >Website Tips</a>
+                        <a href = "/resources/website-tips/" >Website Tips</a>
                     
-                        <a href = "/exothermicrobotics/resources/other-links/" >Other Links</a>
+                        <a href = "/resources/other-links/" >Other Links</a>
                     
 				</div>
 			</div>
-			<li><a class = "sponsors" href = "/exothermicrobotics/sponsors/" > Sponsors </a></li>
-			<li><a class = "contactUs" href = "/exothermicrobotics/contact-us/" > Contact Us </a></li>
+			<li><a class = "sponsors" href = "/sponsors/" > Sponsors </a></li>
+			<li><a class = "contactUs" href = "/contact-us/" > Contact Us </a></li>
 		</ul>
 	</nav>
+    
+<!-- old hamburger menu    
 <span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
  <div id="myNav" class="overlay">
@@ -102,66 +111,66 @@
   <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
   <div class = "overlayHolder">
-    <a href="/exothermicrobotics/" >Home</a>
-    <a href="/exothermicrobotics/about/" >About Us</a>
+    <a href="/" >Home</a>
+    <a href="/about/" >About Us</a>
 		<div class="phoneDropdown">
 		    
-                <a href = "/exothermicrobotics/about/history/" >History</a>
+                <a href = "/about/history/" >History</a>
             
-                <a href = "/exothermicrobotics/about/teams/" >Teams</a>
+                <a href = "/about/teams/" >Teams</a>
             
-                <a href = "/exothermicrobotics/about/join/" >Join Us</a>
+                <a href = "/about/join/" >Join Us</a>
             
-                <a href = "/exothermicrobotics/about/outreach/" >Outreach</a>
+                <a href = "/about/outreach/" >Outreach</a>
             
-                <a href = "/exothermicrobotics/about/advisors/" >Advisors</a>
+                <a href = "/about/advisors/" >Advisors</a>
             
-                <a href = "/exothermicrobotics/about/awards/" >Awards</a>
+                <a href = "/about/awards/" >Awards</a>
             
-                <a href = "/exothermicrobotics/about/challenges/" >Challenges</a>
+                <a href = "/about/challenges/" >Challenges</a>
             
 		</div>
-	<a href="/exothermicrobotics/vex-overview/" >VEX Overview</a>
+	<a href="/vex-overview/" >VEX Overview</a>
 		<div class="phoneDropdown">
 		    
-                <a href = "/exothermicrobotics/vex-overview/competition/" >Competitions</a>
+                <a href = "/vex-overview/competition/" >Competitions</a>
             
-                <a href = "/exothermicrobotics/vex-overview/events/" >Events</a>
+                <a href = "/vex-overview/events/" >Events</a>
             
-                <a href = "/exothermicrobotics/vex-overview/programs/" >Programs</a>
+                <a href = "/vex-overview/programs/" >Programs</a>
             
 		</div>
-	<a href="/exothermicrobotics/media/" >Media</a>
+	<a href="/media/" >Media</a>
 		  <div class="phoneDropdown">
 		    
-                <a href = "/exothermicrobotics/media/news/" >Publicity</a>
+                <a href = "/media/news/" >Publicity</a>
             
-                <a href = "/exothermicrobotics/media/gallery/" >Gallery</a>
+                <a href = "/media/gallery/" >Gallery</a>
             
-                <a href = "/exothermicrobotics/media/website/" >Website</a>
+                <a href = "/media/website/" >Website</a>
             
-                <a href = "/exothermicrobotics/media/social/" >Social</a>
+                <a href = "/media/social/" >Social</a>
             
 		  </div>
-	<a href="/exothermicrobotics/blog/"  style = "color: rgb(213,220,59) !important;" >Blog</a>
-	<a href="/exothermicrobotics/resources/" >Resources</a>
+	<a href="/blog/"  style = "color: rgb(213,220,59) !important;" >Blog</a>
+	<a href="/resources/" >Resources</a>
 		<div class="phoneDropdown">
 		    
-                <a href = "/exothermicrobotics/resources/building-tips/" >Building Tips</a>
+                <a href = "/resources/building-tips/" >Building Tips</a>
             
-                <a href = "/exothermicrobotics/resources/notebook-tips/" >Notebook Tips</a>
+                <a href = "/resources/notebook-tips/" >Notebook Tips</a>
             
-                <a href = "/exothermicrobotics/resources/coding-tips/" >Coding Tips</a>
+                <a href = "/resources/coding-tips/" >Coding Tips</a>
             
-                <a href = "/exothermicrobotics/resources/game-tips/" >Game Tips</a>
+                <a href = "/resources/game-tips/" >Game Tips</a>
             
-                <a href = "/exothermicrobotics/resources/website-tips/" >Website Tips</a>
+                <a href = "/resources/website-tips/" >Website Tips</a>
             
-                <a href = "/exothermicrobotics/resources/other-links/" >Other Links</a>
+                <a href = "/resources/other-links/" >Other Links</a>
             
 		  </div>
-		<a href="/exothermicrobotics/sponsors/" >Sponsors</a>
-		<a href="/exothermicrobotics/contact-us/" >Contact Us</a>
+		<a href="/sponsors/" >Sponsors</a>
+		<a href="/contact-us/" >Contact Us</a>
 	</div>
 	</div>
   </div>
@@ -174,7 +183,153 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
-</script>
+</script>-->
+
+<!-- start of new hamburger menu -->
+<div id="hamburgerMenu" onclick="menuClicked(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+</div>
+<nav>
+    <ul id="navLinks">
+        <div class = "innerNav">
+            <li>
+                <a href="/" class = "firstNav" >Home</a>
+            </li>
+            <li>
+                <a href="/about/" >About Us</a>
+                <div class = "minusHolder">
+                    <p id = "showMinus6" class = "plus">+</p>
+                    <p id = "hideMinus6" class = "minus">&#8211;</p>
+                </div>
+            </li>
+                <div class="phoneDropdown" id = "phone1">
+                    
+                        <li>
+                            <a href = "/about/history/" >History</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/about/teams/" >Teams</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/about/join/" >Join Us</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/about/outreach/" >Outreach</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/about/advisors/" >Advisors</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/about/awards/" >Awards</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/about/challenges/" >Challenges</a>
+                        </li>
+                    
+                </div>
+            <li>
+                <a href="/vex-overview/" >VEX Overview</a>
+                <div class = "minusHolder">
+                    <p id = "showMinus5" class = "plus">+</p>
+                    <p id = "hideMinus5" class = "minus">&#8211;</p>
+                </div>
+            </li>
+                <div class="phoneDropdown" id = "phone2">
+                    
+                        <li>
+                            <a href = "/vex-overview/competition/" >Competitions</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/vex-overview/events/" >Events</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/vex-overview/programs/" >Programs</a>
+                        </li>
+                    
+                </div>
+            <li>
+                <a href="/media/" >Media</a>
+                <div class = "minusHolder">
+                    <p id = "showMinus4" class = "plus">+</p>
+                    <p id = "hideMinus4" class = "minus">&#8211;</p>
+                </div>
+            </li>
+                  <div class="phoneDropdown" id = "phone3">
+                    
+                      <li>  
+                        <a href = "/media/news/" >Publicity</a>
+                      </li>
+                    
+                      <li>  
+                        <a href = "/media/gallery/" >Gallery</a>
+                      </li>
+                    
+                      <li>  
+                        <a href = "/media/website/" >Website</a>
+                      </li>
+                    
+                      <li>  
+                        <a href = "/media/social/" >Social</a>
+                      </li>
+                    
+                  </div>
+            <li>
+                <a href="/blog/"  style = "color: rgb(213,220,59) !important;" >Blog</a>
+            </li>
+            <li>
+                <a href="/resources/" >Resources</a>
+                <div class = "minusHolder">
+                    <p id = "showMinus3" class = "plus">+</p>
+                    <p id = "hideMinus3" class = "minus">&#8211;</p>
+                </div>
+            </li>
+                <div class="phoneDropdown" id = "phone4">
+                    
+                        <li>
+                            <a href = "/resources/building-tips/" >Building Tips</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/resources/coding-tips/" >Coding Tips</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/resources/game-tips/" >Game Tips</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/resources/website-tips/" >Website Tips</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/resources/other-links/" >Other Links</a>
+                        </li>
+                    
+                  </div>
+            <li>
+                <a href="/sponsors/" >Sponsors</a>
+            </li>
+            <li>
+                <a href="/contact-us/" >Contact Us</a>
+            </li>
+        </div> <!-- end of inner nav -->
+    </ul>
+</nav>    
+    
 </header>
 <body>
     <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
@@ -218,70 +373,70 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         
 		  <div id = "firstBlog" class = "blogContainerActual">
     <div class = "imageHolder" >
-            <img src = "/exothermicrobotics/images/RecruitmentFlyer.jpg"/>
+            <img src = "/images/RecruitmentFlyer.jpg"/>
         </div>
         <div class = "textSection" >
             <h3>Recruiting for 2020 - 2021 Has Started</h3>
             <h4>April 30, 2020</h4>
             <p>Hi everyone! Even though we cannot meet everyone in person this year, Exo has started recruiting for the next season. If you will be in 9th-12th grade next year and is looking for a strong, reputab...</p>
             <div class = "learnMoreContainer">
-                <a href = "/exothermicrobotics/blog/2020/04/30/recruiting-for-2020-2021-has-started/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+                <a href = "/blog/2020/04/30/recruiting-for-2020-2021-has-started/" class="learnMoreButton"><button>Read More &rarr;</button></a>
             </div>
         </div>
 </div>
         
 		  <div id = "firstBlog" class = "blogContainerActual">
     <div class = "imageHolder"  style = "display: none !important;" >
-            <img src = "/exothermicrobotics"/>
+            <img src = ""/>
         </div>
         <div class = "textSection"  id = "noPictureBlogPost" >
             <h3>Exothermic Student Board Announced</h3>
             <h4>April 24, 2020</h4>
             <p>Hey everyone! The student board for the 2020-2021 season has been decided. I’d like to make it clear that choosing this was not an easy decision at all, and if you applied for a role but weren’t se...</p>
             <div class = "learnMoreContainer">
-                <a href = "/exothermicrobotics/blog/2020/04/24/exothermic-student-board-announced/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+                <a href = "/blog/2020/04/24/exothermic-student-board-announced/" class="learnMoreButton"><button>Read More &rarr;</button></a>
             </div>
         </div>
 </div>
         
 		  <div id = "firstBlog" class = "blogContainerActual">
     <div class = "imageHolder" >
-            <img src = "/exothermicrobotics/images/Amol.jpg"/>
+            <img src = "/images/Amol.jpg"/>
         </div>
         <div class = "textSection" >
             <h3>2020 - 2021 EXO President Announced</h3>
             <h4>April 20, 2020</h4>
             <p>The voting has concluded, and your 2020-2021 Exothermic Robotics President will be Amol Vaidya! Congrats to Amol and major props to Pascal Stevens for running in just his freshman year. I hope all ...</p>
             <div class = "learnMoreContainer">
-                <a href = "/exothermicrobotics/blog/2020/04/20/2020-2021-exo-president-announced/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+                <a href = "/blog/2020/04/20/2020-2021-exo-president-announced/" class="learnMoreButton"><button>Read More &rarr;</button></a>
             </div>
         </div>
 </div>
         
 		  <div id = "firstBlog" class = "blogContainerActual">
     <div class = "imageHolder" >
-            <img src = "/exothermicrobotics/images/virtual.png"/>
+            <img src = "/images/virtual.png"/>
         </div>
         <div class = "textSection" >
             <h3>VEX Worlds is Now Virtual!</h3>
             <h4>April 2, 2020</h4>
             <p>Due to the current health pandemic, Vex Worlds and CREATE US Open will both be cancelled this year. However, there will be an alternate event, VEX Virtual Worlds and Fantasy Robotics Tournament. Tu...</p>
             <div class = "learnMoreContainer">
-                <a href = "/exothermicrobotics/blog/2020/04/02/vex-worlds-is-now-virtual/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+                <a href = "/blog/2020/04/02/vex-worlds-is-now-virtual/" class="learnMoreButton"><button>Read More &rarr;</button></a>
             </div>
         </div>
 </div>
         
 		  <div id = "firstBlog" class = "blogContainerActual">
     <div class = "imageHolder" >
-            <img src = "/exothermicrobotics/images/Gallery264.JPG"/>
+            <img src = "/images/Gallery264.JPG"/>
         </div>
         <div class = "textSection" >
             <h3>Teams 10E and 10N Qualify for Vex Robotics World Championship</h3>
             <h4>March 8, 2020</h4>
             <p>EXO had a great day yesterday at the Washington State championships. All teams did amazing and all 8 teams ended up in the eliminations. Exothermic Evolution (10E) was a tournament semi-finalist, g...</p>
             <div class = "learnMoreContainer">
-                <a href = "/exothermicrobotics/blog/2020/03/08/teams-10E-and-10N-qualify-for-vex-robotics-world-championship/" class="learnMoreButton"><button>Read More &rarr;</button></a>
+                <a href = "/blog/2020/03/08/teams-10E-and-10N-qualify-for-vex-robotics-world-championship/" class="learnMoreButton"><button>Read More &rarr;</button></a>
             </div>
         </div>
 </div>
@@ -309,30 +464,30 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                         
                       
                         
-                          <a href="/exothermicrobotics/blog/page2/">2</a>
+                          <a href="/blog/page2/">2</a>
                         
                       
                         
-                          <a href="/exothermicrobotics/blog/page3/">3</a>
+                          <a href="/blog/page3/">3</a>
                         
                       
                         
-                          <a href="/exothermicrobotics/blog/page4/">4</a>
+                          <a href="/blog/page4/">4</a>
                         
                       
                         
-                          <a href="/exothermicrobotics/blog/page5/">5</a>
+                          <a href="/blog/page5/">5</a>
                         
                       
             
 
 
           
-            <a href="/exothermicrobotics/blog/page2/"> > </a>
+            <a href="/blog/page2/"> > </a>
           
 
           
-            <a href = "/exothermicrobotics/blog/page9/"> &raquo; </a>
+            <a href = "/blog/page9/"> &raquo; </a>
                
         </div>
         
@@ -343,45 +498,45 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 				<div class = "recentPostOverall">
                     
                         <div class = "recentPostHolder">
-                            <a href = "/exothermicrobotics/blog/2020/04/30/recruiting-for-2020-2021-has-started/">
+                            <a href = "/blog/2020/04/30/recruiting-for-2020-2021-has-started/">
                                 
-                                    <img src = "/exothermicrobotics/images/RecruitmentFlyer.jpg"/>
+                                    <img src = "/images/RecruitmentFlyer.jpg"/>
                                 
                                 <h3>Recruiting for 2020 - 2021 Has Started</h3>
                             </a>
 				        </div>
                     
                         <div class = "recentPostHolder">
-                            <a href = "/exothermicrobotics/blog/2020/04/24/exothermic-student-board-announced/">
+                            <a href = "/blog/2020/04/24/exothermic-student-board-announced/">
                                 
-                                    <img src = "/exothermicrobotics/images/NoImageIcon.png"/>
+                                    <img src = "/images/NoImageIcon.png"/>
                                 
                                 <h3>Exothermic Student Board Announced</h3>
                             </a>
 				        </div>
                     
                         <div class = "recentPostHolder">
-                            <a href = "/exothermicrobotics/blog/2020/04/20/2020-2021-exo-president-announced/">
+                            <a href = "/blog/2020/04/20/2020-2021-exo-president-announced/">
                                 
-                                    <img src = "/exothermicrobotics/images/Amol.jpg"/>
+                                    <img src = "/images/Amol.jpg"/>
                                 
                                 <h3>2020 - 2021 EXO President Announced</h3>
                             </a>
 				        </div>
                     
                         <div class = "recentPostHolder">
-                            <a href = "/exothermicrobotics/blog/2020/04/02/vex-worlds-is-now-virtual/">
+                            <a href = "/blog/2020/04/02/vex-worlds-is-now-virtual/">
                                 
-                                    <img src = "/exothermicrobotics/images/virtual.png"/>
+                                    <img src = "/images/virtual.png"/>
                                 
                                 <h3>VEX Worlds is Now Virtual!</h3>
                             </a>
 				        </div>
                     
                         <div class = "recentPostHolder">
-                            <a href = "/exothermicrobotics/blog/2020/03/08/teams-10E-and-10N-qualify-for-vex-robotics-world-championship/">
+                            <a href = "/blog/2020/03/08/teams-10E-and-10N-qualify-for-vex-robotics-world-championship/">
                                 
-                                    <img src = "/exothermicrobotics/images/Gallery264.JPG"/>
+                                    <img src = "/images/Gallery264.JPG"/>
                                 
                                 <h3>Teams 10E and 10N Qualify for Vex Robotics World Championship</h3>
                             </a>
@@ -402,7 +557,7 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                             
 
                             
-                            <li><a href = "/exothermicrobotics/blog/archive/2020"> 2020</a></li>
+                            <li><a href = "/blog/archive/2020"> 2020</a></li>
                             
 
                             
@@ -576,7 +731,7 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                             
 
                             
-                            <li> <a href = "/exothermicrobotics/blog/archive/2019"> 2019</a></li>          
+                            <li> <a href = "/blog/archive/2019"> 2019</a></li>          
                             
                             
                             
@@ -708,7 +863,7 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                             
 
                             
-                            <li> <a href = "/exothermicrobotics/blog/archive/2018"> 2018</a></li>          
+                            <li> <a href = "/blog/archive/2018"> 2018</a></li>          
                             
                             
                             
@@ -730,7 +885,7 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                             
 
                             
-                            <li> <a href = "/exothermicrobotics/blog/archive/2008"> 2008</a></li>          
+                            <li> <a href = "/blog/archive/2008"> 2008</a></li>          
                             
                             
                             
@@ -742,27 +897,7 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                             
 
                             
-                            <li> <a href = "/exothermicrobotics/blog/archive/2007"> 2007</a></li>          
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
+                            <li> <a href = "/blog/archive/2007"> 2007</a></li>          
                             
                             
                             
@@ -834,7 +969,27 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                             
 
                             
-                            <li> <a href = "/exothermicrobotics/blog/archive/2006"> 2006</a></li>          
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            <li> <a href = "/blog/archive/2006"> 2006</a></li>          
                             
                             
                             
@@ -886,30 +1041,30 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 
               
                 
-                  <a href="/exothermicrobotics/blog/page2/">2</a>
+                  <a href="/blog/page2/">2</a>
                 
               
                 
-                  <a href="/exothermicrobotics/blog/page3/">3</a>
+                  <a href="/blog/page3/">3</a>
                 
               
                 
-                  <a href="/exothermicrobotics/blog/page4/">4</a>
+                  <a href="/blog/page4/">4</a>
                 
               
                 
-                  <a href="/exothermicrobotics/blog/page5/">5</a>
+                  <a href="/blog/page5/">5</a>
                 
               
     
         
 
   
-    <a href="/exothermicrobotics/blog/page2/"> > </a>
+    <a href="/blog/page2/"> > </a>
   
         
   
-    <a href = "/exothermicrobotics/blog/page9/"> &raquo; </a>
+    <a href = "/blog/page9/"> &raquo; </a>
        
 </div>
 
@@ -922,7 +1077,7 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 	<div class = "leftSection">
 		<div class = "leftTopSection">
 			<div class = "footerLogoHolder">
-				<img src = "/exothermicrobotics/images/EXOLogo.png"/>
+				<img src = "/images/EXOLogo.png"/>
 			</div>
 			<div class = "wordsSection">
 				<h4>Exothermic Robotics</h4>
@@ -944,7 +1099,7 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 			<p>A blog featuring announcements and little blurbs about the newest and latest in the Exothermic club. </p>
 		</div>
 		<div class = "blogContainer">
-			<a href = "/exothermicrobotics/blog/" class="blogButton"><button>Check it Out &rarr;</button></a>
+			<a href = "/blog/" class="blogButton"><button>Check it Out &rarr;</button></a>
 		</div>
 	</div>
 </footer>
