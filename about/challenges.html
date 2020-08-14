@@ -10,16 +10,16 @@ custom_css:
 <script>
 $(document).ready(function(){
   $("#Hide").click(function(){ // When you click the words, it will toggle the actual text and the minus sign
-    $(".TurningPoint").toggle(500);
-	$(".verticalMinus").toggle(200);
+    $("#challenge16").toggle(500);
+	$("#hideMinus").toggle(200);
   });
   $("#showMinus").click(function(){ // When you click the minus sign, it will toggle actual text and the minus sign 
-    $(".TurningPoint").toggle(500);
-	$(".verticalMinus").toggle(200);
+    $("#challenge16").toggle(500);
+	$("#hideMinus").toggle(200);
   });
  $("#hideMinus").click(function(){ // When you click the vertical minus sign, it will toggle actual text and the minus sign
-    $(".TurningPoint").toggle(500);
-	$(".verticalMinus").toggle(200);
+    $("#challenge16").toggle(500);
+	$("#hideMinus").toggle(200);
   });
   
  $("#Hide2").click(function(){ // When you click the words, it will toggle the actual text and the minus sign
@@ -86,6 +86,19 @@ $(document).ready(function(){
     $(".challenge14").toggle(500);
 	$(".verticalMinus6").toggle(200);
   });
+    
+  $("#Hide7").click(function(){ // When you click the words, it will toggle the actual text and the minus sign
+    $("#challenge2020").toggle(500);
+	$("#hideMinus7").toggle(200);
+  });
+  $("#showMinus7").click(function(){ // When you click the minus sign, it will toggle actual text and the minus sign 
+    $("#challenge2020").toggle(500);
+	$("#hideMinus7").toggle(200);
+  });
+ $("#hideMinus7").click(function(){ // When you click the vertical minus sign, it will toggle actual text and the minus sign
+    $("#challenge2020").toggle(500);
+	$("#hideMinus7").toggle(200);
+  });
   
 });
 
@@ -100,48 +113,70 @@ $(document).ready(function(){
 	</div>
 </div>
 <div class = "overallSection"> <!--Overall section-->
-	<div class = "firstSection"> <!--Section for tower takeover-->
-		<h1> 2020 Challenges </h1>
+	<div class = "firstSection"> <!--Section for Change Up -->
+		<h1> 2021 Challenges </h1>
 		<div class = "overviewSection">
 			<div class = "writtenSection">
 				<h2> Robotics Team Website Challenge Sponsored by Dell: </h2>
-				<p> In 2016, Exothermic team 10A planned on making a website, although they ultimately did not make one. This year, Exothermic team 10C decided to make a website for not only the 
-					Online Challenge, but also for the club as a whole. This will be Exothermic Robotics' first club website!</p>
-				<p>Exothermic Robotics is one of the longest-standing VEX robotics club in Washington State. The club focuses on providing the infrastructure and resources necessary for teams
-				to succeed in VEX Robotics Competitions. Our teams have competed in Worlds multiple times and have performed exceedingly well. This website
-				focuses on presenting our prestigious history and support network to prospective members!</p>
+				<p> This is Exothermic Robotics' second year with an official club website. Team 10C (Creation) plans to continue updating and improving the website!</p>
+                <!-- replace this with new link later!<ul>
+					<li><a target = "_blank" href = "https://challenges.robotevents.com/challenge/106/robotics-team-website-challenge-sponsored-by-dell/entry/7024">2020 Website Entry </a></li> 
+				</ul>-->
+			</div>
+		</div>
+	 </div> <!-- End of Change Up section -->
+	<!-- start of tower takeover section -->
+    <div class = "secondSection"> 
+		<div class = "buttonTopHolder">
+			<button id="Hide7">2020 Challenges</button>
+			<div class = "minusHolder">
+				<p id = "showMinus7" class = "horizontalMinus">&minus;</p>
+				<p id = "hideMinus7" class = "verticalMinus">&minus;</p>
+			</div>
+		</div>
+		<div id = "challenge2020" class="TurningPoint">
+            <div class = "overviewSection">
+                <div class = "writtenSection">
+                    <h2> Robotics Team Website Challenge Sponsored by Dell: </h2>
+                    <p> In 2016, Exothermic team 10A planned on making a website, although they ultimately did not make one. This year, Exothermic team 10C decided to make a website for not only the 
+                        Online Challenge, but also for the club as a whole. This will be Exothermic Robotics' first club website!</p>
+                    <p>Exothermic Robotics is one of the longest-standing VEX robotics club in Washington State. The club focuses on providing the infrastructure and resources necessary for teams
+                    to succeed in VEX Robotics Competitions. Our teams have competed in Worlds multiple times and have performed exceedingly well. This website
+                    focuses on presenting our prestigious history and support network to prospective members!</p>
+                    <ul>
+                        <li><a target = "_blank" href = "https://challenges.robotevents.com/challenge/106/robotics-team-website-challenge-sponsored-by-dell/entry/7024">2020 Website Entry </a></li> 
+                    </ul>
+                </div>
+            </div>
+            <div class = "detailSection">
+                <h2> Awards: </h2>
                 <ul>
-					<li><a target = "_blank" href = "https://challenges.robotevents.com/challenge/106/robotics-team-website-challenge-sponsored-by-dell/entry/7024">2020 Website Entry </a></li>
-				</ul>
-			</div>
+                    <li>2nd Place: Exothermic Robotics Website</li>
+                </ul>
+            </div>
+            <div class = "youtubeVid">
+                <img class = "pictureWebsite" src = "{{ site.baseurl }}/images/WebsiteHomepage2020.JPG"/>
+            </div>
+            <div id = "secondOverview" class = "overviewSection">
+                <div class = "writtenSection">
+                    <h2>Community Award Online Challenge Sponsored by Google: </h2>
+                    <p> This is a short video outlining the various community outreach activities Exothermic Robotics Team 10C (Creation) has participated in. Some of their most notable accomplishments include giving a presentation at a local library regarding their journey through VEX IQ as well as volunteering at schools to help with their robotics program. </p>
+                    <p class = "quotes">"We are team 10C Exothermic Creation from Exothermic Robotics. We are a group of 6 girls passionate about about sharing our experiences with STEM with the community. Our journey in volunteering and outreach have spanned many seasons, starting from promoting robotics at an elementary school science fair to creating a Vex IQ Workshop for kids in our community. Our goal is to connect our local community using STEM and robotics."</p>
+                    <ul>
+                        <li><a target = "_blank" href = "https://challenges.robotevents.com/challenge/105/community-award-online-challenge-sponsored-by-google/entry/7039">Community Award Online Challenge Entry: Exothermic Creation Outreach</a></li>
+                        <li><a target = "_blank" href = "https://www.youtube.com/watch?v=HqkK_MBXfHM&feature=youtu.be">Exothermic Creation (10C): Outreach Video </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class = "detailSection">
+            </div>
+            <div class = "youtubeVid">
+                <iframe class = "towerTakeoverVideo" src="https://www.youtube.com/embed/HqkK_MBXfHM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
 		</div>
-        <div class = "detailSection">
-			<h2> Awards: </h2>
-			<ul>
-				<li>2nd Place: Exothermic Robotics Website</li>
-			</ul>
-		</div>
-		<div class = "youtubeVid">
-			<img class = "pictureWebsite" src = "{{ site.baseurl }}/images/WebsiteHomepage2020.JPG"/>
-		</div>
-        <div id = "secondOverview" class = "overviewSection">
-			<div class = "writtenSection">
-				<h2>Community Award Online Challenge Sponsored by Google: </h2>
-				<p> This is a short video outlining the various community outreach activities Exothermic Robotics Team 10C (Creation) has participated in. Some of their most notable accomplishments include giving a presentation at a local library regarding their journey through VEX IQ as well as volunteering at schools to help with their robotics program. </p>
-                <p class = "quotes">"We are team 10C Exothermic Creation from Exothermic Robotics. We are a group of 6 girls passionate about about sharing our experiences with STEM with the community. Our journey in volunteering and outreach have spanned many seasons, starting from promoting robotics at an elementary school science fair to creating a Vex IQ Workshop for kids in our community. Our goal is to connect our local community using STEM and robotics."</p>
-				<ul>
-					<li><a target = "_blank" href = "https://challenges.robotevents.com/challenge/105/community-award-online-challenge-sponsored-by-google/entry/7039">Community Award Online Challenge Entry: Exothermic Creation Outreach</a></li>
-					<li><a target = "_blank" href = "https://www.youtube.com/watch?v=HqkK_MBXfHM&feature=youtu.be">Exothermic Creation (10C): Outreach Video </a></li>
-				</ul>
-			</div>
-		</div>
-		<div class = "detailSection">
-		</div>
-		<div class = "youtubeVid">
-			<iframe class = "towerTakeoverVideo" src="https://www.youtube.com/embed/HqkK_MBXfHM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-	 </div> <!-- End of tower takeover section -->
-	<div class = "secondSection"> <!-- Start of Turning Point Section-->
+	</div> 
+    <!-- end of Tower Takeover section -->
+    <div class = "secondSection"> <!-- Start of Turning Point Section-->
 		<div class = "buttonTopHolder">
 			<button id="Hide">2016 Challenges</button>
 			<div class = "minusHolder">
@@ -149,7 +184,7 @@ $(document).ready(function(){
 				<p id = "hideMinus" class = "verticalMinus">&minus;</p>
 			</div>
 		</div>
-		<div class="TurningPoint">
+		<div id = "challenge16" class="TurningPoint">
 		<div class = "overviewSection">
 			<div class = "writtenSection">
 				<h2> Texas Instruments Electronics Online Challenge: </h2>

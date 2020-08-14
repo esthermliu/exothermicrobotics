@@ -137,7 +137,7 @@ td {
 	padding-top: 45px;
 }
 
-#Hide, #Hide2, #Hide3, #Hide4, #Hide5,  #Hide6 {
+#Hide, #Hide2, #Hide3, #Hide4, #Hide5, #Hide6, #Hide7 {
 	border: none;
 	color: rgb(98,98,98);
 	background-color: rgba(255,255,255,0);
@@ -154,11 +154,11 @@ td {
 	text-align: left;
 }
 
-#Hide:focus, #Hide2:focus, #Hide3:focus, #Hide4:focus, #Hide5:focus, #Hide6:focus {
+#Hide:focus, #Hide2:focus, #Hide3:focus, #Hide4:focus, #Hide5:focus, #Hide6:focus, #Hide7:focus {
 	outline: 0;
 }
 
- #Hide:hover, #Hide2:hover, #Hide3:hover, #Hide4:hover,  #Hide5:hover, #Hide6:hover {
+ #Hide:hover, #Hide2:hover, #Hide3:hover, #Hide4:hover,  #Hide5:hover, #Hide6:hover, #Hide7:hover {
   color: rgb(175, 181, 49);
  }
  
