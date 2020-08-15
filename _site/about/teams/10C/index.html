@@ -676,40 +676,7 @@ function myFunction() {
 	<div class = "eventContainer">
 		<div id = "Tower" class = "towerSection">
             <!-- script for api -->
-            <script>
-                /*$(document).ready(function(){
-                    //var company = jQuery.parseJSON( '{"employee_name":"Adam","age":25,"salary":"11,500"}'); 
-                    // $('p').html("<b>Employee Name:</b> " + company.employee_name 
-                   // + ",<br><b>Age:</b> " + company.age +  
-                    //",<br> <b>Sal/Month:</b> " + company.salary); 
-                      var myjson;
-                      $.getJSON("https://api.vexdb.io/v1/get_events?program=VRC&country=United States&team=10C&status=all", function(json){
-                          myjson = json;
-                        $('p').html("<b>Name:</b> " + myjson.name + ",<br><b>Season:</b> " + myjson.season + ",<br> <b>Date:</b> " + myjson.start); 
-                           console.log(myjson);
-                  
-                      });
-                      
-                      //$('p').html("<b>Employee Name:</b> " + parsedj.name + ",<br><b>Age:</b> " + parsedj.season +  ",<br> <b>Sal/Month:</b> " + parsedj.start); 
-                      //$.each(data, function(k, v){
-                      //  $("#display").html('<p> Name: ' + parsedj.name + '</p>');
-                      //});
-                     
-                });*/
-                $.ajax({
-                    url: "https://api.vexdb.io/v1/get_events?program=VRC&country=United States&team=10C&season=Tower Takeover&status=all",
-                    dataType: "json",
-                    type: "get",
-                    cache: false,
-                    success: function(data) {
-                        $(data.result).each(function(index, value) {
-                            console.log(value.name);
-                            var date = value.start.substr(0, 10);
-                            $('.eventList').append('<div class = "statbox"><div class = "rightSectionEvent"> <p class = "firstOfSection">' + value.name + '</p><p>' + date + '</p></div></div>'); 
-                           
-                        });
-                    }
-                });
+            <script src = "/scripts/towertakeover_events_10C.js">
             </script>
             <!-- end of script -->
 			<div class = "eventList">
@@ -758,48 +725,8 @@ function myFunction() {
 				</div>
 			</div>-->
 			</div>
-            <!-- start of api for rankings -->
-            <script>
-            $.ajax({
-                url: "https://api.vexdb.io/v1/get_events?program=VRC&country=United States&team=10C&season=Tower Takeover&status=all",
-                dataType: "json",
-                type: "get",
-                cache: false,
-                success: function(data) {
-                  original(data.result);
-                }
-            });
-
-
-            function original(otherobj) { 
-                console.log(otherobj + "\n\n\n\n\n\n\nhello"); 
-                   $.ajax({
-                        url: "https://api.vexdb.io/v1/get_rankings?team=10C&season=Tower Takeover",
-                        dataType: "json",
-                        type: "get",
-                        cache: false,
-                        success: function(data) {
-                            console.log("over here");
-                            console.log(otherobj);
-                            $(data.result).each(function(index, value) {
-                                $(otherobj).each(function(i, value2) {
-                                      //console.log(name);
-                                      //console.log(value.sku);
-                                      if (data.result[index].sku === otherobj[i].sku) {
-                                          //var name = data.result[index].name;
-                                          //return name;
-                                          data.result[index].name = otherobj[i].name;
-                                          console.log(data.result, "hello");
-                                      }
-                                  console.log(otherobj);
-                                });
-                                console.log(value.rank);
-                                $('#towerTakeoverRanking').append('<div class = "statbox"><div class = "rightSectionEventRanking"> <p class = "firstOfSection">' + value.name + '</p><p>' + value.rank + '</p><p>' + value.wins + '-' + value.losses + '-' + value.ties + '</p><p>' + value.wp + '/' + value.ap + '/' + value.sp + '</p><p>' + value.max_score + '</p></div></div>'); 
-                            });
-                        }
-                   });
-            }                      
-                
+            <!-- start of api for rankings (original) -->
+            <script src = "/scripts/towertakeover_rankings_10C.js">                
                 /*$.ajax({
                     url: "https://api.vexdb.io/v1/get_events?program=VRC&country=United States&team=10C&season=Tower Takeover&status=all",
                     dataType: "json",
@@ -912,48 +839,10 @@ function myFunction() {
 				</div>
 			</div>
                 
-            <!-- start of script for skills -->
-            <script>
-                $.ajax({
-                url: "https://api.vexdb.io/v1/get_events?program=VRC&country=United States&team=10C&season=Tower Takeover&status=all",
-                dataType: "json",
-                type: "get",
-                cache: false,
-                success: function(data) {
-                  original2(data.result);
-                }
-            });
-
-            function original2(otherobj) { 
-                console.log(otherobj + "\n\n\n\n\n\n\nhello"); 
-                   $.ajax({
-                        url: "https://api.vexdb.io/v1/get_skills?team=10C&season=Tower Takeover",
-                        dataType: "json",
-                        type: "get",
-                        cache: false,
-                        success: function(data) {
-                            console.log("over here");
-                            console.log(otherobj);
-                            $(data.result).each(function(index, value) {
-                                $(otherobj).each(function(i, value2) {
-                                      //console.log(name);
-                                      //console.log(value.sku);
-                                      if (data.result[index].sku === otherobj[i].sku) {
-                                          //var name = data.result[index].name;
-                                          //return name;
-                                          data.result[index].name = otherobj[i].name;
-                                          console.log(data.result, "hello");
-                                      }
-                                  console.log(otherobj);
-                                });
-                                console.log(value.rank);
-                                $('#towerTakeoverSkills').append('<div class = "statbox"><div class = "rightSectionEvent"> <p class = "firstOfSection">' + value.name + '</p><p>' + value.rank + '</p><p>' + value.score + '</p></div></div>'); 
-                            });
-                        }
-                   });
-            }
-            </script>
+            <!-- start of script for skills (original2)-->
+            <script src = "/scripts/towertakeover_skills_10C.js"></script>
             <!-- end of script for skills -->
+                
 			<!--<div class = "statbox">
 				<div class = "rightSectionEvent">
 					<p class = "firstOfSection">King of the Tower VRC Tournament</p>
@@ -998,17 +887,22 @@ function myFunction() {
 			</div>-->
 			</div>
 		</div>
+        
+        <!-- start of script for zone events -->
+        <script src = "/scripts/inthezone_events_10C.js"></script>
+        <!-- end of script -->
+        
 		<div id = "Zone" class = "zoneSection">
-			<div class = "turningList">
+			<div id = "zoneEvents" class = "turningList">
 				<h2>In The Zone</h2>
 				<h3> Event List </h3>
 				<div class = "statboxFirst2">
-				<div class = "rightSectionEvent">
-					<p class = "firstOfSection">Event</p>
-					<p>Date</p>
-				</div>
-			</div>
-			<div class = "statbox">
+                    <div class = "rightSectionEvent">
+                        <p class = "firstOfSection">Event</p>
+                        <p>Date</p>
+                    </div>
+			    </div>
+			<!--<div class = "statbox">
 				<div class = "rightSectionEvent">
 					<p class = "firstOfSection">CREATE U.S. Open Robotics Championship</p>
 					<p>2018-04-05 - 2018-04-07</p>
@@ -1085,9 +979,14 @@ function myFunction() {
 					<p class = "firstOfSection">Scrimmage and Open House for VRC</p>
 					<p>2017-09-08</p>
 				</div>
+			</div>-->
 			</div>
-			</div>
-			<div class = "rankingsList">
+            
+            <!-- start of script for zone rankings (original3) -->
+            <script src = "/scripts/inthezone_rankings_10C.js"></script>
+            <!-- end of script-->
+            
+			<div id = "inTheZoneRanking" class = "rankingsList">
 				<h3> Rankings </h3>
 			<div class = "statboxFirst2">
 				<div class = "rightSectionEventRankingTitle">
@@ -1098,7 +997,7 @@ function myFunction() {
 					<p>Max Score</p>
 				</div>
 			</div>
-			<div class = "statbox">
+			<!--<div class = "statbox">
 				<div class = "rightSectionEventRanking">
 					<p class = "firstOfSection">CREATE U.S. Open Robotics Championship </p>
 					<p>31</p>
@@ -1205,9 +1104,14 @@ function myFunction() {
 					<p>8/0/123</p>
 					<p>34</p>
 				</div>
-			</div>
-		</div>
-			<div class = "skills">			
+			</div>-->
+		    </div>
+            
+            <!-- start of script for zone skills (original4) -->
+            <script src = "/scripts/inthezone_skills_10C.js"></script>
+            <!-- end of script -->
+            
+			<div id = "inTheZoneSkills" class = "skills">			
 				<h3> Skills </h3>
 				<div class = "statboxFirst2">
 				<div class = "rightSectionEvent">
@@ -1216,7 +1120,7 @@ function myFunction() {
 					<p>Score</p>
 				</div>
 			</div>
-			<div class = "statbox">
+			<!--<div class = "statbox">
 				<div class = "rightSectionEvent">
 					<p class = "firstOfSection">Washington State High School VRC Championship</p>
 					<p>5</p>
@@ -1264,11 +1168,16 @@ function myFunction() {
 					<p>6</p>
 					<p>40</p>
 				</div>
-			</div>
+			</div>-->
+		    </div>
 		</div>
-		</div>
+        
+        <!-- start of script for starstruck events -->
+        <script src = "/scripts/starstruck_events_10C.js"></script>
+        <!-- end of script -->
+        
 		<div id = "Star" class = "starSection">
-			<div class = "turningList">
+			<div id = "starEvents" class = "turningList">
 				<h2>Starstruck</h2>
 				<h3> Event List </h3>
 				<div class = "statboxFirst2">
@@ -1277,7 +1186,7 @@ function myFunction() {
 					<p>Date</p>
 				</div>
 			</div>
-			<div class = "statbox">
+			<!--<div class = "statbox">
 				<div class = "rightSectionEvent">
 					<p class = "firstOfSection">WA State Championship VRC Starstruck High School</p>
 					<p>2017-03-11</p>
@@ -1324,9 +1233,14 @@ function myFunction() {
 					<p class = "firstOfSection">Washington Jump Start Tournament</p>
 					<p>2016-11-19</p>
 				</div>
+			</div>-->
 			</div>
-			</div>
-			<div class = "rankingsList">
+            
+            <!-- start of script for starstruck rankings (original5) -->
+            <script src = "/scripts/starstruck_rankings_10C.js"></script>
+            <!-- end of script -->
+            
+			<div id = "starstruckRanking" class = "rankingsList">
 				<h3> Rankings </h3>
 			<div class = "statboxFirst2">
 				<div class = "rightSectionEventRankingTitle">
@@ -1337,7 +1251,7 @@ function myFunction() {
 					<p>Max Score</p>
 				</div>
 			</div>
-			<div class = "statbox">
+			<!--<div class = "statbox">
 				<div class = "rightSectionEventRanking">
 					<p class = "firstOfSection">WA State Championship VRC Starstruck High School</p>
 					<p>12</p>
@@ -1390,9 +1304,14 @@ function myFunction() {
 					<p>3/4/98</p>
 					<p>27</p>
 				</div>
-			</div>
-		</div>
-			<div class = "skills">			
+			</div>-->
+		  </div>
+            
+            <!-- start of script for starstruck skills (original6) -->
+            <script src = "/scripts/starstruck_skills_10C.js"></script>
+            <!-- end of script -->
+            
+			<div id = "starstruckSkills" class = "skills">			
 				<h3> Skills </h3>
 			<div class = "statboxFirst2">
 				<div class = "rightSectionEvent">
@@ -1401,13 +1320,13 @@ function myFunction() {
 					<p>Score</p>
 				</div>
 			</div>
-			<div class = "statbox">
+			<!--<div class = "statbox">
 				<div class = "rightSectionEvent">
 					<p class = "firstOfSection">Robot Mesh Skills Only Challenge</p>
 					<p>7</p>
 					<p>34</p>
 				</div>
-			</div>
+			</div>-->
 		</div>
 		<div id = "Gate" class = "gateSection">
 			<div class = "turningList">
