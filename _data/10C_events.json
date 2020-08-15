@@ -1,0 +1,26 @@
+[
+	{
+		"name":"Apple",
+		"description":"This is the Apple product.",
+		"price":9.99,
+		"qty":13409
+	},	
+	{
+		"name":"Banana",
+		"description":"This is the Banana product.",
+		"price":4.99,
+		"qty":1409
+	},	
+	{
+		"name":"Cherry",
+		"description":"This is the Cherry product.",
+		"price":9.99,
+		"qty":0
+	},	
+	{
+		"name":"Donut",
+		"description":"This is the Donut product.",
+		"price":19.99,
+		"qty":923
+	}
+] 
