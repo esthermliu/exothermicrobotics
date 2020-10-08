@@ -1,0 +1,19 @@
+--- 
+layout: post
+custom_css: 
+    - blogcss
+    - blogMedia
+    - blogfirstcss
+title: Virtual Interest Meeting Held Over Zoom
+thumbnail: /images/VirtualMeeting1.jpg
+---
+
+Hi everyone! We hope you had a great summer. We are happy to announce that Exothermic Robotics has officially start recruiting for the 2020-2021 VRC season! If you are currently in 9th – 12th grade and is looking for a strong, reputable club, we would love for you to join the Exo family! We will be having a Zoom info meeting this Saturday and Sunday (*Sept. 5th and 6th). If you are interested in joining, please fill out the interest form (link in bio). No experience necessary and if you have any questions, feel free to DM us or check out our website at exothermicrobotics.org!
+
+*You only need to attend one of the meetings.
+
+Note: The above message comes from the caption of our recruiting Instagram post. We welcome you to check out our club’s official Instagram @exothermicrobotics (click on the Instagram icon on the footer of the website!). You can also find each team’s individual Instagram on the Social page under Media.
+
+<div class = "imageHolderInsideBlog" style = "padding-bottom: 5%;">
+    <img id = "insideBlogPic" src = "/images/VirtualMeeting2.jpg"/>
+</div>

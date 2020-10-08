@@ -1,0 +1,11 @@
+--- 
+layout: post
+custom_css: 
+    - blogcss
+    - blogMedia
+    - blogfirstcss
+title: Introducing New Teams to Robot House
+thumbnail: /images/NewTeams.png
+---
+
+Today, we welcomed one of our new freshmen teams to the robot house! We made sure there are no more than 5 people in the room to make sure we are following our local government regulations. Shown in the picture below are our programming advisor Alex Tran and parts manager Arnav Narula teaching our freshmen about the basics of VRC! We can’t wait for multiple teams to meet at the robot house again. Stay strong everyone!
