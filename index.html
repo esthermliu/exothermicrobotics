@@ -377,7 +377,7 @@ function myFunction() {
             {% for post in site.posts limit: 1 %}
                 <a href = "{{ post.url }}" class = "newsBox1">
                     <div class = "newsBoxInner1">
-                        <div id = "news1" class = "newsImageBackground" {% if post.showThumbnail == false %} style = "background-image: url(/images/NoImageIcon.png);" {% else %} style = "background-image: url({{ post.thumbnail }});" {% endif %}>
+                        <div id = "news1" class = "newsImageBackground" {% if post.showThumbnail == false %} style = "background-image: url(/images/EXOLogoBlack.png);" {% else %} style = "background-image: url({{ post.thumbnail }});" {% endif %}>
                             <div class = "filterInside">
                             </div>
                         </div>
@@ -389,7 +389,7 @@ function myFunction() {
                 {% for post in site.posts offset: 1 limit: 2 %}
 				<a href = "{{ post.url }}" id = "marginRight" class = "newsBox2" >
 				<div class = "newsBoxInner1">
-                    <div class = "newsImageBackground" {% if post.showThumbnail == false %} style = "background-image: url(/images/NoImageIcon.png);" {% else %} style = "background-image: url({{ post.thumbnail }});" {% endif %}>
+                    <div class = "newsImageBackground" {% if post.showThumbnail == false %} style = "background-image: url(/images/EXOLogoBlack.png);" {% else %} style = "background-image: url({{ post.thumbnail }});" {% endif %}>
                         <div class = "filterInside">
                         </div>
                     </div>
@@ -403,7 +403,7 @@ function myFunction() {
             {% for post in site.posts offset: 3 limit: 1 %}
                 <a href = "{{ post.url }}"  class = "newsBox3">
                 <div class = "newsBoxInner2">
-                        <div class = "newsImageBackground2" {% if post.showThumbnail == false %} style = "background-image: url(/images/NoImageIcon.png);" {% else %} style = "background-image: url({{ post.thumbnail }});" {% endif %}>
+                        <div class = "newsImageBackground2" {% if post.showThumbnail == false %} style = "background-image: url(/images/EXOLogoBlack.png);" {% else %} style = "background-image: url({{ post.thumbnail }});" {% endif %}>
                             <div class = "filterInside">
                             </div>
                         </div>
@@ -550,55 +550,55 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 		<div class = "eventSection">
 			<div class = "eventTitle">
 				<h2> Upcoming Events </h2>
-				<h3><i>No Upcoming Events!</i></h3>
+				<!--<h3><i>No Upcoming Events!</i></h3>-->
 			</div>
 			<div class = "eventArticle">
-				<!--<div class = "event1">
+				<div class = "event1">
 					<div id = "tooBig" class = "holder">
-						<h3>Washington State High School Championship</h3>
+						<h3>Whatcom VEX League</h3>
 					</div>
 					<div class = "eventBottom3">
 						<h4>Date: </h4>
-						<h3>March 7, 2020</h3>
+						<h3>Nov 7, 2020</h3>
 						<h4>Location: </h4>
-						<h3>Sunnyside, WA</h3>
+						<h3>Bellingham, WA</h3>
 						<h4>Capacity: </h4>
-						<h3>46 Teams</h3>
+						<h3>32 Teams</h3>
 						<h4>Price: </h4>
-						<h3>$125</h3>
+						<h3>$25</h3>
 					</div>
 				</div>
 				<div class = "event2">
 					<div id = "tooBig" class = "holder">
-						<h3>CREATE U.S. Open Robotics Championship</h3>
+						<h3>Remote Robot Skills-Only Event</h3>
 					</div>
 					<div class = "eventBottom3">
 						<h4>Date: </h4>
-						<h3>April 2, 2020</h3>
+						<h3>Nov 21, 2020</h3>
 						<h4>Location: </h4>
-						<h3>Iowa, U.S.</h3>
+						<h3>Bellevue, WA</h3>
 						<h4>Capacity: </h4>
-						<h3>220 Teams</h3>
+						<h3>16 Teams</h3>
 						<h4>Price: </h4>
-						<h3>$650</h3>
+						<h3>$70</h3>
 					</div>
 				</div>
 				<div class = "event3">
 					<div id = "tooBig" class = "holder">
-						<h3>2020 VEX Robotics World Championship</h3>
+						<h3>Bellingham ROBO-BASH VRC Tournament</h3>
 					</div>
 					<div class = "eventBottom3">
 						<h4>Date: </h4>
-						<h3>April 22 - 25, 2020</h3>
+						<h3>Jan 9, 2021</h3>
 						<h4>Location: </h4>
-						<h3>Louisville, Kentucky</h3>
+						<h3>Bellingham, WA</h3>
 						<h4>Capacity: </h4>
-						<h3>720 Teams</h3>
+						<h3>54 Teams</h3>
 						<h4>Price: </h4>
-						<h3>$975</h3>
+						<h3>$65</h3>
 					</div>
 				</div>
-			</div>-->
+			</div>
 		<div class = "moreEventsContainer">
 			<a href = "{{ site.baseurl }}/vex-overview/events/" class="moreEventsButton"><button>More Events &rarr;</button></a>
 		</div>
