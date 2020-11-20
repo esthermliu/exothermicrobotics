@@ -1,0 +1,1185 @@
+<!DOCTYPE HTML>
+<html lang = "eng">
+<head>
+	<title> New Covid-19 Restrictions </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+    <!-- header and footer css -->
+	<link rel="stylesheet" href="/css/HeaderFooter.css">
+	<link rel="stylesheet" media="screen and (max-width: 750px)" href="/css/HeaderFooterMedia.css">
+    <!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- scripts -->
+    <script src="/scripts/hamburger.js"></script>
+    <script src="/scripts/navigation.js"></script>
+    <!-- favicon -->
+	<link rel="icon" type="image/png" href="/images/Favicon.png" size = "20x20"/>
+    <!-- custom css -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+     
+        
+        <link rel = "stylesheet" href = "/css/blogcss.css">
+        
+        <link rel = "stylesheet" href = "/css/blogMedia.css">
+        
+        <link rel = "stylesheet" href = "/css/blogfirstcss.css">
+        
+    
+</head>
+<header id = "secondBox" class = "navbar">
+	<div class = "logoBox">
+		<a class = "homepageLogo" href = "/"><img src = "/images/EXOLogo.png"></a>
+	</div>
+	<nav class = "secondBox">
+		<ul class = "headerList">
+			<li><a href = "/" > Home </a></li>
+			<div class = "dropDownAbout">
+				<button class = "dropButtonAbout" onclick="window.location.href = '/about/'" > About Us </button>
+				<div class = "dropDownContentAbout">
+                    
+                        <a href = "/about/history/" >History</a>
+                    
+                        <a href = "/about/teams/" >Teams</a>
+                    
+                        <a href = "/about/join/" >Join Us</a>
+                    
+                        <a href = "/about/outreach/" >Outreach</a>
+                    
+                        <a href = "/about/advisors/" >Advisors</a>
+                    
+                        <a href = "/about/awards/" >Awards</a>
+                    
+                        <a href = "/about/challenges/" >Challenges</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownOverview">
+				<button class = "dropButtonOverview" onclick="window.location.href = '/vex-overview/'"  > VEX Overview </button>
+				<div class = "dropDownContentOverview">
+                     
+                        <a href = "/vex-overview/competition/" >Competitions</a>
+                    
+                        <a href = "/vex-overview/events/" >Events</a>
+                    
+                        <a href = "/vex-overview/programs/" >Programs</a>
+                    
+				</div>
+			</div>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/media/'" > Media </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/media/news/" >Publicity</a>
+                    
+                        <a href = "/media/gallery/" >Gallery</a>
+                    
+                        <a href = "/media/website/" >Website</a>
+                    
+                        <a href = "/media/social/" >Social</a>
+                    
+				</div>
+			</div>
+			<li><a href = "/blog/"  style = "color: rgb(213,220,59) !important;"> Blog </a></li>
+			<div class = "dropDownMedia">
+				<button class = "dropButtonMedia" onclick="window.location.href = '/resources/'" > Resources </button>
+				<div class = "dropDownContentMedia">
+					
+                        <a href = "/resources/building-tips/" >Building Tips</a>
+                    
+                        <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+                    
+                        <a href = "/resources/coding-tips/" >Coding Tips</a>
+                    
+                        <a href = "/resources/game-tips/" >Game Tips</a>
+                    
+                        <a href = "/resources/website-tips/" >Website Tips</a>
+                    
+                        <a href = "/resources/other-links/" >Other Links</a>
+                    
+				</div>
+			</div>
+			<li><a class = "sponsors" href = "/sponsors/" > Sponsors </a></li>
+			<li><a class = "contactUs" href = "/contact-us/" > Contact Us </a></li>
+		</ul>
+	</nav>
+    
+<!-- old hamburger menu    
+<span id = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+ <div id="myNav" class="overlay">
+   <span id  = "Hamburger" class="Hamburger" style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  <a href="javascript:void(0)" id = "CloseButton" class="CloseButton" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+  <div class = "overlayHolder">
+    <a href="/" >Home</a>
+    <a href="/about/" >About Us</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/about/history/" >History</a>
+            
+                <a href = "/about/teams/" >Teams</a>
+            
+                <a href = "/about/join/" >Join Us</a>
+            
+                <a href = "/about/outreach/" >Outreach</a>
+            
+                <a href = "/about/advisors/" >Advisors</a>
+            
+                <a href = "/about/awards/" >Awards</a>
+            
+                <a href = "/about/challenges/" >Challenges</a>
+            
+		</div>
+	<a href="/vex-overview/" >VEX Overview</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/vex-overview/competition/" >Competitions</a>
+            
+                <a href = "/vex-overview/events/" >Events</a>
+            
+                <a href = "/vex-overview/programs/" >Programs</a>
+            
+		</div>
+	<a href="/media/" >Media</a>
+		  <div class="phoneDropdown">
+		    
+                <a href = "/media/news/" >Publicity</a>
+            
+                <a href = "/media/gallery/" >Gallery</a>
+            
+                <a href = "/media/website/" >Website</a>
+            
+                <a href = "/media/social/" >Social</a>
+            
+		  </div>
+	<a href="/blog/"  style = "color: rgb(213,220,59) !important;" >Blog</a>
+	<a href="/resources/" >Resources</a>
+		<div class="phoneDropdown">
+		    
+                <a href = "/resources/building-tips/" >Building Tips</a>
+            
+                <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+            
+                <a href = "/resources/coding-tips/" >Coding Tips</a>
+            
+                <a href = "/resources/game-tips/" >Game Tips</a>
+            
+                <a href = "/resources/website-tips/" >Website Tips</a>
+            
+                <a href = "/resources/other-links/" >Other Links</a>
+            
+		  </div>
+		<a href="/sponsors/" >Sponsors</a>
+		<a href="/contact-us/" >Contact Us</a>
+	</div>
+	</div>
+  </div>
+  <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>-->
+
+<!-- start of new hamburger menu -->
+<div id="hamburgerMenu" onclick="menuClicked(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+</div>
+<nav>
+    <ul id="navLinks">
+        <div class = "innerNav">
+            <li>
+                <a href="/" class = "firstNav" >Home</a>
+            </li>
+            <li>
+                <a href="/about/" >About Us</a>
+                <div class = "minusHolder2">
+                    <p id = "plus6" class = "plus" >+</p>
+                    <p id = "minus6" class = "minus" >&#8211;</p>
+                </div>
+            </li>
+                <div class="phoneDropdown" id = "phone1" >
+                    
+                        <li>
+                            <a href = "/about/history/" >History</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/about/teams/" >Teams</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/about/join/" >Join Us</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/about/outreach/" >Outreach</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/about/advisors/" >Advisors</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/about/awards/" >Awards</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/about/challenges/" >Challenges</a>
+                        </li>
+                    
+                </div>
+            <li>
+                <a href="/vex-overview/" >VEX Overview</a>
+                <div class = "minusHolder2">
+                    <p id = "plus5" class = "plus" >+</p>
+                    <p id = "minus5" class = "minus" >&#8211;</p>
+                </div>
+            </li>
+                <div class="phoneDropdown" id = "phone2" >
+                    
+                        <li>
+                            <a href = "/vex-overview/competition/" >Competitions</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/vex-overview/events/" >Events</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/vex-overview/programs/" >Programs</a>
+                        </li>
+                    
+                </div>
+            <li>
+                <a href="/media/" >Media</a>
+                <div class = "minusHolder2">
+                    <p id = "plus4" class = "plus" >+</p>
+                    <p id = "minus4" class = "minus" >&#8211;</p>
+                </div>
+            </li>
+                  <div class="phoneDropdown" id = "phone3" >
+                    
+                      <li>  
+                        <a href = "/media/news/" >Publicity</a>
+                      </li>
+                    
+                      <li>  
+                        <a href = "/media/gallery/" >Gallery</a>
+                      </li>
+                    
+                      <li>  
+                        <a href = "/media/website/" >Website</a>
+                      </li>
+                    
+                      <li>  
+                        <a href = "/media/social/" >Social</a>
+                      </li>
+                    
+                  </div>
+            <li>
+                <a href="/blog/"  style = "color: rgb(213,220,59) !important;" >Blog</a>
+            </li>
+            <li>
+                <a href="/resources/" >Resources</a>
+                <div class = "minusHolder2">
+                    <p id = "plus3" class = "plus" >+</p>
+                    <p id = "minus3" class = "minus" >&#8211;</p>
+                </div>
+            </li>
+                <div class="phoneDropdown" id = "phone4" >
+                    
+                        <li>
+                            <a href = "/resources/building-tips/" >Building Tips</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/resources/notebook-tips/" >Notebook Tips</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/resources/coding-tips/" >Coding Tips</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/resources/game-tips/" >Game Tips</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/resources/website-tips/" >Website Tips</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/resources/other-links/" >Other Links</a>
+                        </li>
+                    
+                  </div>
+            <li>
+                <a href="/sponsors/" >Sponsors</a>
+            </li>
+            <li>
+                <a href="/contact-us/" >Contact Us</a>
+            </li>
+        </div> <!-- end of inner nav -->
+    </ul>
+</nav>    
+    
+</header>
+<body>
+    <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
+<!--<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+</script>-->
+<script>
+window.onscroll = function() {
+	scrollFunction();
+	myFunction();
+};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+	document.getElementById("mybtn").style.display = "block";
+  } else {
+	document.getElementById("mybtn").style.display = "none";
+  }
+}
+
+</script>
+<script type="text/javascript">
+	$("a[href='#']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+</script>
+
+	<div class = "firstSection">
+	<h3><a id = "seeRest" onclick = window.history.back()><i>&#10229; Back</i></a></h3>
+	<div class = "overallContainer">
+		<div class = "blogHolder">
+		<h3>New Covid-19 Restrictions</h3>
+		<h4>November 15, 2020</h4>
+			<div class = "textSection">
+                <p>For those who haven’t seen yet, Jay Inslee recently made an announcement banning indoor gatherings starting tomorrow. You can learn more through this <a href="https://www.seattletimes.com/seattle-news/health/inslee-to-ban-indoor-gatherings-and-dining-plus-issue-more-covid-19-restrictions-for-washington-state-industry-sources-say/"><b>Seattle Times article</b></a>. This means we’re going to have to revert to how Exo was run during the last stay-at-home order. For teams who weren’t in Exo back then, this means the Robot House is now closed for the foreseeable future. Teams are no longer allowed to work there under any circumstances. For teams who still want to work on their robots, we are allowing teams to take their robots and parts they need home.</p>
+
+<p>On the date your team I normally reserved at the robot house, take the time to gather all the parts you think you’ll need. Record how many goals, balls, and tools you take home and who’s house that parts are going to be at and send it to the #home_parts channel of the Exo Discord. Limit the amount of game/field elements to 3 tiles, 3 balls, and 1 goal. Please don’t take more than you need and leave parts for teams coming after you. Don’t take the vice, hacksaw, Dremel, sizing tool, or any other parts we only have a few of. Let @Student Board know if you have any questions.</p>
+
+<p>10B, 10C, and 10D are all signed up for a skills-only competition on the 21st which as of now does not seem to be cancelled. On the days that these teams are reserved at the robot house, they can have one last day to work on their robots and use the field with a limit of 3 members. After that, no teams will be allowed to spend time working at the root house and should only use it to gather parts.</p>
+
+<p>Update 11/17: The Blaze Comp on the 21st is now postponed to 01/02/2021.</p>
+
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                        <img id = "insideBlogPic"  style = "display: none !important;"  src = ""/>
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+                <div class = "imageHolderInsideBlog">
+                    
+                </div>
+                
+			</div>
+		</div>
+		<div class = "postLog">
+			<div class = "recentPosts">
+				<h3>Recent Posts</h3>
+				<div class = "recentPostOverall">
+                    
+                        <div class = "recentPostHolder">
+                            <a href = "/blog/2020/11/15/new-covid-19-restrictions/">	
+                                
+                                    <img src = "/images/EXOLogoBlack.png"/>
+                                
+                                <h3>New Covid-19 Restrictions</h3>
+                            </a>
+				        </div>
+                    
+                        <div class = "recentPostHolder">
+                            <a href = "/blog/2020/10/25/first-competition-of-the-virtual-season/">	
+                                
+                                    <img src = "/images/VirtualCompetition.jpg"/>
+                                
+                                <h3>First Competition of the [Virtual] Season!</h3>
+                            </a>
+				        </div>
+                    
+                        <div class = "recentPostHolder">
+                            <a href = "/blog/2020/09/20/introducing-new-teams-to-robot-house/">	
+                                
+                                    <img src = "/images/NewTeams.png"/>
+                                
+                                <h3>Introducing New Teams to Robot House</h3>
+                            </a>
+				        </div>
+                    
+                        <div class = "recentPostHolder">
+                            <a href = "/blog/2020/09/05/virtual-interest-meeting-held-over-zoom/">	
+                                
+                                    <img src = "/images/VirtualMeeting1.jpg"/>
+                                
+                                <h3>Virtual Interest Meeting Held Over Zoom</h3>
+                            </a>
+				        </div>
+                    
+                        <div class = "recentPostHolder">
+                            <a href = "/blog/2020/04/30/recruiting-for-2020-2021-has-started/">	
+                                
+                                    <img src = "/images/RecruitmentFlyer.jpg"/>
+                                
+                                <h3>Recruiting for 2020 - 2021 Has Started</h3>
+                            </a>
+				        </div>
+                    
+				</div>
+			</div>
+			<div class = "archive">
+				<h3>Archive</h3>
+				<div id = "archiveLink" class = "recentPostOverall">
+					<div class = "archiveHolder">
+                        
+                        
+                        
+
+                            
+                            
+
+                            
+                           <li><a href = "/blog/archive/2020"> 2020</a></li>
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            <li> <a href = "/blog/archive/2019"> 2019</a></li>          
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            <li> <a href = "/blog/archive/2018"> 2018</a></li>          
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            <li> <a href = "/blog/archive/2008"> 2008</a></li>          
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            <li> <a href = "/blog/archive/2007"> 2007</a></li>          
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            <li> <a href = "/blog/archive/2006"> 2006</a></li>          
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+
+                            
+                            
+
+                            
+
+                            
+                            
+                            
+                        
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<footer>
+	<div class = "leftSection">
+		<div class = "leftTopSection">
+			<div class = "footerLogoHolder">
+				<img src = "/images/EXOLogo.png"/>
+			</div>
+			<div class = "wordsSection">
+				<h4>Exothermic Robotics</h4>
+				<h5>Redmond, Washington</h5>	
+				<a class = "social" href="https://www.facebook.com/exothermicrobotics/" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+				<a class = "social" href="https://www.instagram.com/exothermicrobotics/?igshid=xt1q75v9kzqq" target="_blank" ><i class="fab fa-instagram"></i></a>
+				<a class = "social" href="https://twitter.com/ExothermicRobo1" target="_blank" ><i class="fab fa-twitter"></i></a>
+					<ul class="FooterLinks">
+					<li>
+						<p>&copy; 2020-2021 Exothermic Robotics Club </p>
+					  </li>
+					</ul>				  
+			</div>
+		</div>
+	</div>
+	<div class = "rightSectionFooter">
+		<div class = "blog">
+			<h5>The EXO Blog</h5>
+			<p>A blog featuring announcements and little blurbs about the newest and latest in the Exothermic club. </p>
+		</div>
+		<div class = "blogContainer">
+			<a href = "/blog/" class="blogButton"><button>Check it Out &rarr;</button></a>
+		</div>
+	</div>
+</footer>
+</html>
