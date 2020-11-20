@@ -148,6 +148,7 @@
 	width: 15%;
 	display: flex;
 	flex-wrap: wrap;
+    align-self: center;
  }
  
 .date h3 {
