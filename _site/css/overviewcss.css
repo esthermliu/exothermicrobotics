@@ -32,7 +32,7 @@
 	font-size: 24px;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	color: white;
 	letter-spacing: 5px;
 	line-height: 42px;
@@ -49,17 +49,18 @@
 }
 
 .firstSection {
-	background-color: #f0f0f0;
+	background-color: white;
 	font-family: Roboto, sans-serif;
-	color: #626262;
+	color: #323232;
 }
 
 .firstSection h2, .thirdSection h2 {
-	font-weight: normal;
-	font-size: 45px;
+	font-weight: 400;
+	font-size: 40px;
 	text-align: center;
-	padding-bottom: 3%;
 	font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 .backgroundSection {
@@ -71,6 +72,7 @@
 .overviewHolder p {
 	line-height: 30px;
 	padding-bottom: 15px;
+    letter-spacing: 0.4px;
 }
 
 .overviewHolder h3 {
@@ -85,6 +87,10 @@
 	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 	margin-top: 15px;
 	margin-bottom: 45px;
+}
+
+.overviewHolder {
+    padding-top: 8%;
 }
 
 .secondSection {
@@ -143,7 +149,11 @@
 }
 
 .backgroundSection2 h2 {
-	color: #626262;
+	color: #323232;
+}
+
+.learnContainer {
+    padding-top: 8%;
 }
 
 .learnMoreContainer {
@@ -198,6 +208,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 
 .Filter {
@@ -224,4 +235,23 @@
 .lastWrittenSection {
 	width: 50%;
 	font-style: italic;
+}
+
+/* title after */
+.titleSection {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.titleSection h2:after   {
+	position: absolute;
+	content: '';
+	height: 3px;
+	bottom: -15px;
+	margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 10%;
+	background: rgb(213,220,59);
 }

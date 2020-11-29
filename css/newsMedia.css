@@ -3,12 +3,10 @@
 		padding: 25% 5% 25% 5% !important;
 	}
 	
-	.firstSection h2 {
-		padding-bottom: 8%;
-	}
 	
 	.overallSection {
 		flex-wrap: wrap;
+        padding-top: 8%;
 	}
 	
 	.fixedNewsPhone {
@@ -38,7 +36,7 @@
 	}
 
 	.fixedNewsPhone a:hover {
-		color: rgb(96, 156, 14);
+		color: rgb(158, 163, 60);
 	}
 
 	.fixedNews {
@@ -51,7 +49,6 @@
 	
 	.titleHolder {
 		width: 100% !important;
-		padding-bottom: 8%;
 	}
 	
 	.newsHolder {

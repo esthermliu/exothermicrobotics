@@ -32,7 +32,7 @@
 	font-size: 24px;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	color: white;
 	letter-spacing: 5px;
 	line-height: 42px;
@@ -49,28 +49,29 @@
 }
 
 .firstSection {
-	background-color: #f0f0f0;
+	background-color: white;
 	padding: 8% 25% 8% 25%;
 	font-family: Roboto, sans-serif;
-	color: #626262;
+	color: #323232;
 }
 
-.firstSection  h2{
-	font-size: 45px;
-	font-weight: 300;
+.awardTitle h2 {
+	font-size: 40px;
+	font-weight: 400;
 	text-align: center;
-	padding-bottom: 3%;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 
 .wordSection a {
-	color: #626262;
+	color: #323232;
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
 }
 
 .wordSection a:hover {
-	color: rgb(96, 156, 14);
+	color: rgb(158, 163, 60);
 }
 
 .wordSection p {
@@ -106,7 +107,7 @@
 	padding-bottom: 8%;
 	font-family: Roboto, sans-serif;
 	font-weight: normal;
-	color: #626262;
+	color: #323232;
 	font-size: 45px;
 }
 
@@ -128,7 +129,7 @@
 }
 
 .detailSection a {
-	color: rgb(96, 156, 14);
+	color: rgb(158, 163, 60);
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
 }
@@ -140,7 +141,7 @@
 
 #Hide, #Hide2, #Hide3, #Hide4, #Hide5, #Hide6, #Hide7, #Hide8, #Hide9, #Hide10, #Hide11, #Hide12, #Hide13, #Hide14 {
 	border: none;
-	color: rgb(98,98,98);
+	color: #323232;
 	background-color: rgba(255,255,255,0);
 	font-size: 20px;
 	-webkit-transition-duration: 0.3s;
@@ -152,7 +153,7 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 	width: 96%;
-	text-align: left;
+	text-align: center;
 }
 
 #Hide:focus, #Hide2:focus, #Hide3:focus, #Hide4:focus, #Hide5:focus, #Hide6:focus, #Hide7:focus, #Hide8:focus, #Hide9:focus, #Hide10:focus, #Hide11:focus, #Hide12:focus, #Hide13:focus, #Hide14:focus {
@@ -164,7 +165,6 @@
  }
  
  .TurningPoint, .theZone, .starStruck, .net, .evolution, .fusion, .neon, .excess, .twenty16, .twenty17, .twenty18, .twenty19, .twenty20, .twenty21 {
-   display: none;
    margin-top: 15px;
 }
 
@@ -174,7 +174,7 @@
 	padding-top: 15px;
 	padding-bottom: 15px;
 	font-family: Roboto, sans-serif;
-	color: #626262;
+	color: #323232;
 	line-height: 30px;
 }
 
@@ -220,7 +220,7 @@
 }
 
 .detailSection img {
-	width: 40%;
+	width: 46%;
 	margin-top: 3%;
 	margin-bottom: 5%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -228,20 +228,21 @@
 
 .imageHolder {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 }
 
 .imageGroupHolder {
-	margin-top: 3%;
+	margin-top: 5%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+    flex-wrap: wrap;
 }
 
 .imageGroupHolder img {
-	height: 500px;
+	width: 48%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -250,8 +251,91 @@
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 	line-height: 42px;
+    margin-top: 8%;
 }
 
 .groupHolder p {
 	line-height: 30px;
+    letter-spacing: 0.4px;
+}
+
+/* title after */
+.awardTitle {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.awardTitle h2:after   {
+	position: absolute;
+	content: '';
+	height: 3px;
+	bottom: -15px;
+	margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 10%;
+	background: rgb(213,220,59);
+}
+
+.noTop {
+    border-top: 0px solid black !important;
+}
+
+/* backgrounds man i hate this */
+
+.bruh {
+    background-image: url("/images/Gallery170.JPG");
+}
+
+.bruh2 {
+    background-image: url("/images/Gallery12.jpg");
+}
+
+.bruh3 {
+    background-image: url("/images/Gallery2.jpg");
+}
+
+.bruh4 {
+    background-image: url("/images/Gallery78.jpg");
+}
+
+.bruh5 {
+    background-image: url("/images/Gallery74.jpg");
+}
+
+.bruh6 {
+    background-image: url("/images/Gallery72.jpg");
+}
+
+.bruh7 {
+    background-image: url("/images/awards/Award55.jpg");
+}
+
+.bruh8 {
+    background-image: url("/images/Gallery62.jpg");
+}
+
+.bruh9 {
+    background-image: url("/images/Gallery60.jpg");
+}
+
+.bruh10 {
+    background-image: url("/images/RoundUpAward.jpeg");
+}
+
+.bruh11 {
+    background-image: url("/images/Gallery59.jpg");
+}
+
+.bruh12 {
+    background-image: url("/images/awards/Award5.jpg");
+}
+
+.bruh13 {
+    background-image: url("/images/BridgeBattleField.png");
+}
+
+.bruh14 {
+    background-image: url("/images/Goat.png");
 }

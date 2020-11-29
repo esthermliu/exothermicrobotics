@@ -32,7 +32,7 @@
 	font-size: 24px;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	color: white;
 	letter-spacing: 5px;
 	line-height: 42px;
@@ -49,30 +49,34 @@
 }
 
 .firstSection {
-	background-color: #f0f0f0;
+	background-color: white;
 	padding: 8% 20% 8% 20%;
 	font-family: Roboto, sans-serif;
-	color: #626262;
+	color: #323232;
 }
 
 .firstSection h2 {
-	font-size: 45px;
-	font-weight: normal;
+	font-size: 40px;
+	font-weight: 400;
 	text-align: center;
-	margin-bottom: 3%;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 .learnMoreButton button {
   color: #dbb52f;
   text-transform: uppercase;
   background-color: rgba(255,255,255,0);
-  border: 2px solid #626262;
+  border: 2px solid #323232;
   z-index: 2;
-  padding: 15px 15px;
-  color: #626262;
+  padding: 20px 15px;
+  color: #323232;
     -webkit-transition-duration: 0.2s; 
   transition-duration: 0.2s;
   cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    border-radius: 4px;
+    letter-spacing: 2px;
 }
 
 .learnMoreButton:hover button {
@@ -86,6 +90,7 @@
  .eventHolder {
 	line-height: 30px;
 	margin-bottom: 8% !important;
+     margin-top: 8% !important;
  }
  
  .eventHolder h3 {
@@ -158,4 +163,23 @@
 
 .datePhone {
 	display: none;
+}
+
+/* title after */
+.titleSection {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.titleSection h2:after   {
+	position: absolute;
+	content: '';
+	height: 3px;
+	bottom: -15px;
+	margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 10%;
+	background: rgb(213,220,59);
 }

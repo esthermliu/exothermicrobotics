@@ -9,6 +9,11 @@
 	<link rel="stylesheet" media="screen and (max-width: 750px)" href="/css/HeaderFooterMedia.css">
     <!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- scripts -->
@@ -27,11 +32,188 @@
     
 </head>
 <header id = "secondBox" class = "navbar">
-	<div class = "logoBox">
-		<a class = "homepageLogo" href = "/"><img src = "/images/EXOLogo.png"></a>
-	</div>
 	<nav class = "secondBox">
-		<ul class = "headerList">
+        <ul class = "headerList">
+            <div class = "logoBox">
+                <a class = "homepageLogo" href = "/"><img src = "/images/EXOLogo.png"></a>
+            </div>
+            <div class = "dropDownMedia">
+                <button class = "dropButtonMedia" onclick="window.location.href = '/'"><a href = "/"  class = "otherwiseMedia" > Home </a></button>
+            </div>
+            <div class = "dropDownAbout">
+                <button class = "dropButtonAbout" onclick="window.location.href = '/about/'"><a href = "/about/"  class = "otherwiseMedia" > About Us</a> </button>
+                <div class = "dropDownContentAbout fade-in">
+                    <div class = "test1">
+                    <button class = "insideButtonAbout shorter fade-in" onclick="window.location.href = '/about/history/'"><a id = "firstDropLink" href = "/about/history/"  class = "name" > History </a><a href = "/about/history/"><i id = "rightArrow" class="fa fa-angle-right"></i></a></button>
+                       <div class = "dropDownInsideAbout fade-in">
+                            <div id = "third" class = "iHateThis">
+                                <a href = "/about/history/tower-takeover/"  class = "name2" id = "rllyLong" > Tower Takeover <br>2019 - 2020</a>
+                                <a href = "/about/history/turning-point/"  class = "name2" id = "rllyLong" > Turning Point <br>2018 - 2019</a>
+                                <a href = "/about/history/in-the-zone/"  class = "name2" id = "rllyLong" > In the Zone <br>2017 - 2018 </a>
+                                <a href = "/about/history/starstruck/"  class = "name2" id = "rllyLong" > Starstruck <br>2016 - 2017</a>
+                                <a href = "/about/history/nothing-but-net/"  class = "name2" id = "rllyLong" > Nothing But Net <br>2015 - 2016</a>
+                            </div>
+                            <div id = "third" class = "why">
+                                <a href = "/about/history/skyrise/"  class = "name2" id = "rllyLong" > Skyrise <br>2014 - 2015</a>
+                                <a href = "/about/history/toss-up/"  class = "name2" id = "rllyLong" > Toss Up <br>2013 - 2014</a>
+                                <a href = "/about/history/sack-attack/"  class = "name2" id = "rllyLong" > Sack Attack <br>2012 - 2013</a>
+                                <a href = "/about/history/gateway/"  class = "name2" id = "rllyLong" > Gateway <br>2011 - 2012</a>
+                                <a href = "/about/history/round-up/"  class = "name2" id = "rllyLong" > Round Up <br>2010 - 2011</a>
+                            </div>
+                            <div id = "third" class = "why">
+                                <a href = "/about/history/clean-sweep/"  class = "name2" id = "rllyLong" > Clean Sweep <br>2009 - 2010</a>
+                                <a href = "/about/history/elevation-face-off/"  class = "name2" id = "rllyLong" > Elevation <br>2008 - 2009</a>
+                                <a href = "/about/history/bridge-battle-quad-quandary/"  class = "name2" id = "rllyLong" > Bridge Battle<br>2007 - 2008</a>
+                                <a href = "/about/history/hangin-around/"  class = "name2" id = "rllyLong" > Hangin' Around<br>2006 - 2007</a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class = "test2">
+                    <button class = "insideButtonAbout2 shorter fade-in" onclick="window.location.href = '/about/teams/'"><a href = "/about/teams/"  class = "name" > Teams </a><a href = "/about/teams/"><i id = "rightArrow" class="fa fa-angle-right"></i></a></button>
+                        <div class = "dropDownInsideAbout2 fade-in">
+                            <div class = "iHateThis">
+                                <a href = "/about/teams/10A/"  class = "name2" id = "rllyLong" > 10A </a>
+                                <a href = "/about/teams/10B/"href = "/about/teams/10B/"  class = "name2" id = "rllyLong" > 10B </a>
+                                <a href = "/about/teams/10C/"href = "/about/teams/10C/"  class = "name2" id = "rllyLong" > 10C </a>
+                                <a href = "/about/teams/10D/"href = "/about/teams/10D/"  class = "name2" id = "rllyLong" > 10D </a> 
+                            </div>
+                            <div class = "why">
+                                <a href = "/about/teams/10E/"href = "/about/teams/10E/"  class = "name2" id = "rllyLong" > 10E </a>
+                                <a href = "/about/teams/10F/"href = "/about/teams/10F/"  class = "name2" id = "rllyLong" > 10F </a>
+                                <a href = "/about/teams/10X/"href = "/about/teams/10X/"  class = "name2" id = "rllyLong" > 10X </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "test5">
+                    <button class = "insideButtonAbout5 shorter fade-in" onclick="window.location.href = '/about/awards/'"><a href = "/about/awards/"  class = "name" > Awards </a><a href = "/about/awards/"><i id = "rightArrow" class="fa fa-angle-right"></i></a></button>
+                        <div class = "dropDownInsideAbout5">
+                            <div id = "third" class = "iHateThis">
+                                <a href = "/about/awards/change-up/"  class = "name2" id = "rllyLong" > Change Up <br>2020 - 2021</a>
+                                <a href = "/about/awards/tower-takeover/"  class = "name2" id = "rllyLong" > Tower Takeover <br>2019 - 2020</a>
+                                <a href = "/about/awards/turning-point/"  class = "name2" id = "rllyLong" > Turning Point <br>2018 - 2019</a>
+                                <a href = "/about/awards/in-the-zone/"  class = "name2" id = "rllyLong" > In the Zone <br>2017 - 2018 </a>
+                                <a href = "/about/awards/starstruck/"  class = "name2" id = "rllyLong" > Starstruck <br>2016 - 2017</a>
+                            </div>
+                            <div id = "third" class = "why">
+                                <a href = "/about/awards/nothing-but-net/"  class = "name2" id = "rllyLong" > Nothing But Net <br>2015 - 2016</a>
+                                <a href = "/about/awards/skyrise/"  class = "name2" id = "rllyLong" > Skyrise <br>2014 - 2015</a>
+                                <a href = "/about/awards/toss-up/"  class = "name2" id = "rllyLong" > Toss Up <br>2013 - 2014</a>
+                                <a href = "/about/awards/sack-attack/"  class = "name2" id = "rllyLong" > Sack Attack <br>2012 - 2013</a>
+                                <a href = "/about/awards/gateway/"  class = "name2" id = "rllyLong" > Gateway <br>2011 - 2012</a>
+                            </div>
+                            <div id = "third" class = "why">
+                                <a href = "/about/awards/round-up/"  class = "name2" id = "rllyLong" > Round Up <br>2010 - 2011</a>
+                                <a href = "/about/awards/clean-sweep/"  class = "name2" id = "rllyLong" > Clean Sweep <br>2009 - 2010</a>
+                                <a href = "/about/awards/elevation-face-off/"  class = "name2" id = "rllyLong" > Elevation<br>2008 - 2009</a>
+                                <a href = "/about/awards/bridge-battle-quad-quandary/"  class = "name2" id = "rllyLong" > Bridge Battle<br>2007 - 2008</a>
+                                <a href = "/about/awards/hangin-around/"  class = "name2" id = "rllyLong" > Hangin' Around<br>2006 - 2007</a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class = "test3">
+                    <button class = "insideButtonAbout3 shorter fade-in" onclick="window.location.href = '/about/outreach/'"><a href = "/about/outreach/"  class = "name" > Outreach </a><a href = "/about/outreach/"><i id = "rightArrow" class="fa fa-angle-right"></i></a></button>
+                        <div class = "dropDownInsideAbout3">
+                            <a href = "/about/outreach/exothermic-winter-challenge-2020/"  class = "name2" id = "rllyLong" > Exothermic Winter Challenge 2020</a>
+                            <a href = "/about/outreach/timberline-middle-school/"  class = "name2" id = "rllyLong" > Timberline Middle School</a>
+                            <a href = "/about/outreach/international-community-school/"  class = "name2" id = "rllyLong" > International Community School </a>
+                        </div>
+                    </div>
+                    <div class = "test4">
+                    <button class = "insideButtonAbout4 shorter fade-in" onclick="window.location.href = '/about/advisors/'"><a href = "/about/advisors/"  class = "name" > Advisors </a><a href = "/about/advisors/"><i id = "rightArrow" class="fa fa-angle-right"></i></a></button>
+                        <div class = "dropDownInsideAbout4">
+                            <a href = "/about/advisors/past-advisors/"  class = "name2" id = "rllyLong" > Past Advisors </a>
+                        </div>
+                    </div>
+                    <div class = "test5">
+                    <button class = "insideButtonAbout5 shorter fade-in" onclick="window.location.href = '/about/challenges/'"><a href = "/about/challenges/"  class = "name" > Online Challenges </a><a href = "/about/challenges/"><i id = "rightArrow" class="fa fa-angle-right"></i></a></button>
+                        <div class = "dropDownInsideAbout5">
+                            <div class = "iHateThis">
+                                <a href = "/about/challenges/2021-challenges/"  class = "name2" id = "rllyLong" > 2021 Challenges </a>
+                                <a href = "/about/challenges/2020-challenges/"  class = "name2" id = "rllyLong" > 2020 Challenges </a>
+                                <a href = "/about/challenges/2016-challenges/"  class = "name2" id = "rllyLong" > 2016 Challenges </a>
+                                <a href = "/about/challenges/2014-challenges/"  class = "name2" id = "rllyLong" > 2014 Challenges </a> 
+                            </div>
+                            <div class = "why">
+                                <a href = "/about/challenges/2013-challenges/"  class = "name2" id = "rllyLong" > 2013 Challenges </a>
+                                <a href = "/about/challenges/2012-challenges/"  class = "name2" id = "rllyLong" > 2012 Challenges </a>
+                                <a href = "/about/challenges/2011-challenges/"  class = "name2" id = "rllyLong" > 2011 Challenges </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "dropDownOverview">
+                <button class = "dropButtonOverview" onclick="window.location.href = '/vex-overview/'"><a href = "/vex-overview/"  class = "otherwiseMedia" >VEX Overview</a></button>
+                <div class = "dropDownContentOverview fade-in">
+                    <div class = "test6">
+                    <button class = "insideButtonAbout6 shorter fade-in" onclick="window.location.href = '/vex-overview/competition/'"><a href = "/vex-overview/competition/"  class = "name" > Competitions </a><a href = "/vex-overview/competition/"><i id = "rightArrow" class="fa fa-angle-right"></i></a></button>
+                        <div class = "dropDownInsideAbout6">
+                            <div class = "iHateThis">
+                                <a href = "/vex-overview/competition/change-up-2020-2021/"  class = "name2" id = "rllyLong" > Change Up 2020 - 2021 </a>
+                                <a href = "/vex-overview/competition/tower-takeover-2019-2020/"  class = "name2" id = "rllyLong" > Tower Takeover 2019 - 2020 </a>
+                                <a href = "/vex-overview/competition/turning-point-2018-2019/"  class = "name2" id = "rllyLong" > Turning Point 2018 - 2019 </a>
+                            </div>
+                            <div class = "why">
+                                <a href = "/vex-overview/competition/in-the-zone-2017-2018/"  class = "name2" id = "rllyLong" > In the Zone 2017 - 2018 </a>
+                                <a href = "/vex-overview/competition/starstruck-2016-2017/"  class = "name2" id = "rllyLong" > Starstruck 2016 - 2017 </a>
+                                <a href = "/vex-overview/competition/nothing-but-net-2015-2016/"  class = "name2" id = "rllyLong" > Nothing But Net 2015 - 2016 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "test7">
+                        <button class = "insideButtonAbout7 shorter fade-in" onclick="window.location.href = '/vex-overview/events/'"><a href = "/vex-overview/events/"  class = "name" > Events </a><a href = "/vex-overview/events/"><!--<i id = "rightArrow" class="fa fa-angle-right"></i>--></a></button>
+                        <!--<div class = "dropDownInsideAbout7">
+                            <a class = "name2 fade-in" href = "sammy-urtzal.html"> Individual Therapy and Psychiatry  </a>
+                            <a class = "name2 fade-in" href = "peyton-everlue.html"> Couples Therapy </a>
+                            <a class = "name2 fade-in" href = "joselyn-sputak.html"> Family Therapy </a>
+                            <a class = "name2 fade-in" href = "joselyn-sputak.html"> Speech Therapy </a>
+                            <a class = "name2 fade-in" href = "joselyn-sputak.html"> Occupational Therapy </a>
+                        </div>-->
+                    </div>
+                    <div class = "test4">
+                    <button class = "insideButtonAbout4 shorter fade-in" onclick="window.location.href = '/vex-overview/programs/'"><a href = "/vex-overview/programs/"  class = "name" > Programs </a><a href = "/vex-overview/programs/"><!--<i id = "rightArrow" class="fa fa-angle-right"></i>--></a></button>
+                        <!--<div class = "dropDownInsideAbout4">
+                            <a class = "name2 fade-in" href = "sammy-urtzal.html"> COVID-19 Testing </a>
+                            <a class = "name2 fade-in" href = "peyton-everlue.html"> COVID-19 Screening and Treatment</a>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class = "dropDownMedia">
+                <button class = "dropButtonMedia" onclick="window.location.href = '/media/'"><a href = "/media/"  class = "otherwiseMedia" > Media </a></button>
+                <div id = "Ownership"  class = "dropDownContentMedia medialonger fade-in">
+                    <a href = "/media/news/"  class = "ownName" > Publicity </a>
+                    <a href = "/media/gallery/"  class = "ownName" > Gallery </a>
+                    <a href = "/media/website/"  class = "ownName" > Website </a>
+                    <a href = "/media/social/"  class = "ownName" > Social </a>
+                </div>
+            </div>
+            <div class = "dropDownMedia">
+                <button class = "dropButtonMedia" onclick="window.location.href = '/blog/'"><a href = "/blog/"  class = "otherwiseMedia" > Blog </a></button>
+            </div>
+            <div class = "dropDownMedia">
+                <button class = "dropButtonMedia" onclick="window.location.href = '/resources/'"><a href = "/resources/"  class = "otherwiseMedia" > Resources </a></button>
+                <div id = "Ownership"  class = "dropDownContentMedia fade-in">
+                    <a href = "/resources/building-tips/"  class = "active5"  > Building Tips </a>
+                    <a href = "/resources/notebook-tips/"  class = "ownName" > Notebook Tips </a>
+                    <a href = "/resources/coding-tips/"  class = "ownName" > Coding Tips </a>
+                    <a href = "/resources/game-tips/"  class = "ownName" > Competition Tips </a>
+                    <a href = "/resources/website-tips/"  class = "ownName" > Website Tips </a>
+                    <a href = "/resources/other-links/"  class = "ownName" > Other Links </a>
+                </div>
+            </div>
+            <div class = "dropDownMedia">
+                <button class = "dropButtonMedia" onclick="window.location.href = '/sponsors/'"><a href = "/sponsors/"  class = "otherwiseMedia" > Sponsors </a></button>
+            </div>
+            <div class = "dropDownMedia">
+                <button class = "dropButtonMedia" onclick="window.location.href = '/contact-us/'"><a href = "/contact-us/"  class = "otherwiseMedia" > Contact Us </a></button>
+                <div id = "Ownership"  class = "dropDownContentMedia mediaShorter fade-in">
+                    <a href = "/contact-us/join/"  class = "ownName" > Join Us </a>
+                    <a href = "/contact-us/FAQs/"  class = "ownName" > FAQ </a>
+                </div>
+            </div>
+        </ul>
+		<!--<ul class = "headerList">
 			<li><a href = "/" > Home </a></li>
 			<div class = "dropDownAbout">
 				<button class = "dropButtonAbout" onclick="window.location.href = '/about/'" > About Us </button>
@@ -57,8 +239,6 @@
 				<button class = "dropButtonOverview" onclick="window.location.href = '/vex-overview/'"  > VEX Overview </button>
 				<div class = "dropDownContentOverview">
                      
-                        <a href = "/vex-overview/competition/" >Competitions</a>
-                    
                         <a href = "/vex-overview/events/" >Events</a>
                     
                         <a href = "/vex-overview/programs/" >Programs</a>
@@ -76,7 +256,7 @@
                         <a href = "/media/website/" >Website</a>
                     
                         <a href = "/media/social/" >Social</a>
-                    
+                     
 				</div>
 			</div>
 			<li><a href = "/blog/" > Blog </a></li>
@@ -90,7 +270,7 @@
                     
                         <a href = "/resources/coding-tips/" >Coding Tips</a>
                     
-                        <a href = "/resources/game-tips/" >Game Tips</a>
+                        <a href = "/resources/game-tips/" >Competition Tips</a>
                     
                         <a href = "/resources/website-tips/" >Website Tips</a>
                     
@@ -100,7 +280,7 @@
 			</div>
 			<li><a class = "sponsors" href = "/sponsors/" > Sponsors </a></li>
 			<li><a class = "contactUs" href = "/contact-us/" > Contact Us </a></li>
-		</ul>
+		</ul>-->
 	</nav>
     
 <!-- old hamburger menu    
@@ -133,8 +313,6 @@
 	<a href="/vex-overview/" >VEX Overview</a>
 		<div class="phoneDropdown">
 		    
-                <a href = "/vex-overview/competition/" >Competitions</a>
-            
                 <a href = "/vex-overview/events/" >Events</a>
             
                 <a href = "/vex-overview/programs/" >Programs</a>
@@ -162,7 +340,7 @@
             
                 <a href = "/resources/coding-tips/" >Coding Tips</a>
             
-                <a href = "/resources/game-tips/" >Game Tips</a>
+                <a href = "/resources/game-tips/" >Competition Tips</a>
             
                 <a href = "/resources/website-tips/" >Website Tips</a>
             
@@ -186,11 +364,16 @@ function closeNav() {
 </script>-->
 
 <!-- start of new hamburger menu -->
-<div id="hamburgerMenu" onclick="menuClicked(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-</div>
+<div class = "AGH">
+    <div class = "logoBox hamLogo">
+        <a class = "homepageLogo" href = "/"><img src = "/images/EXOLogo.png"></a>
+    </div>
+    <div id="hamburgerMenu" onclick="menuClicked(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+    </div>
+</div>    
 <nav>
     <ul id="navLinks">
         <div class = "innerNav">
@@ -205,7 +388,251 @@ function closeNav() {
                 </div>
             </li>
                 <div class="phoneDropdown" id = "phone1" >
-                    
+                    <li> <!-- history dropdown -->
+                        <a href="/about/history/" >History</a>
+                        <div class = "minusHolder2 lilMinus">
+                            <p id = "plus7" class = "plus" >+</p>
+                            <p id = "minus7" class = "minus" >&#8211;</p>
+                        </div>
+                    </li>
+                    <div class="phoneDropdown evenSmaller" id = "phone5" >
+                        
+                            <li>
+                                <a href = "/about/history/tower-takeover/" >Tower Takeover 2019 - 2020</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/history/turning-point/" >Turning Point 2018 - 2019</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/history/in-the-zone/" >In the Zone 2017 - 2018</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/history/starstruck/" >Starstruck 2016 - 2017</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/history/nothing-but-net/" >Nothing But Net 2015 - 2016</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/history/skyrise/" >Skyrise 2014 - 2015</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/history/toss-up/" >Toss Up 2013 - 2014</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/history/sack-attack/" >Sack Attack 2012 - 2013</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/history/gateway/" >Gateway 2011 - 2012</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/history/round-up/" >Round Up 2010 - 2011</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/history/clean-sweep/" >Clean Sweep 2009 - 2010</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/history/elevation-face-off/" >Elevation 2008 - 2009</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/history/bridge-battle-quad-quandary/" >Bridge Battle 2008 - 2009</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/history/hangin-around/" >Hangin' Around 2006 - 2007</a>
+                            </li>
+                        
+                    </div> <!-- end of history dropdown -->
+                    <li> <!-- teams dropdown -->
+                        <a href="/about/teams/" >Teams</a>
+                        <div class = "minusHolder2 lilMinus">
+                            <p id = "plus8" class = "plus" >+</p>
+                            <p id = "minus8" class = "minus" >&#8211;</p>
+                        </div>
+                    </li>
+                    <div class="phoneDropdown evenSmaller" id = "phone6" >
+                        
+                            <li>
+                                <a href = "/about/teams/10A/" >10A</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/teams/10B/" >10B</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/teams/10C/" >10C</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/teams/10D/" >10D</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/teams/10E/" >10E</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/teams/10F/" >10F</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/teams/10X/" >10X</a>
+                            </li>
+                        
+                    </div> <!-- end of teams dropdown -->
+                    <li> <!-- awards dropdown -->
+                        <a href="/about/awards/" >Awards</a>
+                        <div class = "minusHolder2 lilMinus">
+                            <p id = "plus9" class = "plus" >+</p>
+                            <p id = "minus9" class = "minus" >&#8211;</p>
+                        </div>
+                    </li>
+                    <div class="phoneDropdown evenSmaller" id = "phone7" >
+                        
+                            <li>
+                                <a href = "/about/awards/tower-takeover/" >Tower Takeover 2019 - 2020</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/awards/turning-point/" >Turning Point 2018 - 2019</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/awards/in-the-zone/" >In the Zone 2017 - 2018</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/awards/starstruck/" >Starstruck 2016 - 2017</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/awards/nothing-but-net/" >Nothing But Net 2015 - 2016</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/awards/skyrise/" >Skyrise 2014 - 2015</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/awards/toss-up/" >Toss Up 2013 - 2014</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/awards/sack-attack/" >Sack Attack 2012 - 2013</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/awards/gateway/" >Gateway 2011 - 2012</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/awards/round-up/" >Round Up 2010 - 2011</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/awards/clean-sweep/" >Clean Sweep 2009 - 2010</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/awards/elevation-face-off/" >Elevation 2008 - 2009</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/awards/bridge-battle-quad-quandary/" >Bridge Battle 2008 - 2009</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/awards/hangin-around/" >Hangin' Around 2006 - 2007</a>
+                            </li>
+                        
+                    </div> <!-- end of awards dropdown -->
+                    <li> <!-- outreach dropdown -->
+                        <a href="/about/outreach/" >Outreach</a>
+                        <div class = "minusHolder2 lilMinus">
+                            <p id = "plus10" class = "plus" >+</p>
+                            <p id = "minus10" class = "minus" >&#8211;</p>
+                        </div>
+                    </li>
+                    <div class="phoneDropdown evenSmaller" id = "phone8" >
+                        
+                            <li>
+                                <a href = "/about/outreach/exothermic-winter-challenge-2020/" >Exothermic Winter Challenge 2020</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/outreach/timberline-middle-school/" >Timberline Middle School</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/outreach/international-community-school/" >International Community School</a>
+                            </li>
+                        
+                    </div> <!-- end of outreach dropdown -->
+                    <li> <!-- advisors dropdown -->
+                        <a href="/about/advisors/" >Advisors</a>
+                        <div class = "minusHolder2 lilMinus">
+                            <p id = "plus11" class = "plus" >+</p>
+                            <p id = "minus11" class = "minus" >&#8211;</p>
+                        </div>
+                    </li>
+                    <div class="phoneDropdown evenSmaller" id = "phone9" >
+                        
+                            <li>
+                                <a href = "/about/advisors/past-advisors/" >Past Advisors</a>
+                            </li>
+                        
+                    </div> <!-- end of advisors dropdown -->
+                    <li> <!-- online challenges dropdown -->
+                        <a href="/about/challenges/" >Online Challenges</a>
+                        <div class = "minusHolder2 lilMinus">
+                            <p id = "plus12" class = "plus" >+</p>
+                            <p id = "minus12" class = "minus" >&#8211;</p>
+                        </div>
+                    </li>
+                    <div class="phoneDropdown evenSmaller" id = "phone10" >
+                        
+                            <li>
+                                <a href = "/about/challenges/2021-challenges/" >2021 Challenges</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/challenges/2020-challenges/" >2020 Challenges</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/challenges/2016-challenges/" >2016 Challenges</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/challenges/2014-challenges/" >2014 Challenges</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/challenges/2013-challenges/" >2013 Challenges</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/challenges/2012-challenges/" >2012 Challenges</a>
+                            </li>
+                        
+                            <li>
+                                <a href = "/about/challenges/2011-challenges/" >2011 Challenges</a>
+                            </li>
+                        
+                    </div> <!-- end of online challenges dropdown -->
+                    <!--
                         <li>
                             <a href = "/about/history/" >History</a>
                         </li>
@@ -233,7 +660,7 @@ function closeNav() {
                         <li>
                             <a href = "/about/challenges/" >Challenges</a>
                         </li>
-                    
+                    -->
                 </div>
             <li>
                 <a href="/vex-overview/" >VEX Overview</a>
@@ -241,12 +668,42 @@ function closeNav() {
                     <p id = "plus5" class = "plus" >+</p>
                     <p id = "minus5" class = "minus" >&#8211;</p>
                 </div>
-            </li>
+            </li> 
                 <div class="phoneDropdown" id = "phone2" >
+                    <li> <!-- Competitions dropdown -->
+                    <a href="/vex-overview/competition/" >Competitions</a>
+                    <div class = "minusHolder2 lilMinus">
+                        <p id = "plus13" class = "plus" >+</p>
+                        <p id = "minus13" class = "minus" >&#8211;</p>
+                    </div>
+                </li>
+                <div class="phoneDropdown evenSmaller" id = "phone11" >
                     
                         <li>
-                            <a href = "/vex-overview/competition/" >Competitions</a>
+                            <a href = "/vex-overview/competition/change-up-2020-2021/" >Change Up 2020 - 2021</a>
                         </li>
+                    
+                        <li>
+                            <a href = "/vex-overview/competition/tower-takeover-2019-2020/" >Tower Takeover 2019 - 2020</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/vex-overview/competition/turning-point-2018-2019/" >Turning Point 2018 - 2019</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/vex-overview/competition/in-the-zone-2017-2018/" >In the Zone 2017 - 2018</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/vex-overview/competition/starstruck-2016-2017/" >Starstruck 2016 - 2017</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/vex-overview/competition/nothing-but-net-2015-2016/" >Nothing But Net 2015 - 2016</a>
+                        </li>
+                    
+                </div> <!-- end of competitions dropdown -->
                     
                         <li>
                             <a href = "/vex-overview/events/" >Events</a>
@@ -308,7 +765,7 @@ function closeNav() {
                         </li>
                     
                         <li>
-                            <a href = "/resources/game-tips/" >Game Tips</a>
+                            <a href = "/resources/game-tips/" >Competition Tips</a>
                         </li>
                     
                         <li>
@@ -319,19 +776,34 @@ function closeNav() {
                             <a href = "/resources/other-links/" >Other Links</a>
                         </li>
                     
-                  </div>
+                </div>
             <li>
                 <a href="/sponsors/" >Sponsors</a>
             </li>
             <li>
                 <a href="/contact-us/" >Contact Us</a>
+                <div class = "minusHolder2">
+                    <p id = "plus14" class = "plus" >+</p>
+                    <p id = "minus14" class = "minus" >&#8211;</p>
+                </div>
             </li>
+                <div class="phoneDropdown" id = "phone12" >
+                    
+                        <li>
+                            <a href = "/contact-us/join/" >Join Us</a>
+                        </li>
+                    
+                        <li>
+                            <a href = "/contact-us/FAQs/" >FAQ</a>
+                        </li>
+                    
+                </div>
         </div> <!-- end of inner nav -->
     </ul>
 </nav>    
     
 </header>
-<script>
+<!--<script>
 jQuery(document).ready(function($){
 	$('.navbar').css("background-color", "transparent");
 	if ($(this).scrollTop() < 270) {
@@ -385,6 +857,104 @@ jQuery(document).ready(function($){
 
 	});
 });
+</script>-->
+<script>
+jQuery(document).ready(function($){
+	$('.navbar').css("background-color", "transparent");
+	if ($(this).scrollTop() < 190) {
+		$('.navbar').css("background-color", "transparent");
+        $('.navbar').css("height", "110px");
+        $('.navbar').css("box-shadow", "0 0px 0px 0px rgba(0,0,0,.6)");
+        $('.dropDownContentAbout').css("transform", "translate(0px, 0px)");
+        $('.dropDownContentOverview').css("transform", "translate(0px, 0px)");
+        $('.dropDownContentMedia').css("transform", "translate(0px, 0px)");
+        
+		$('.dropDownContentAbout').css("background-color", "rgb(54,54,54)");
+		$('.dropDownContentOverview').css("background-color", "rgb(54,54,54)");
+		$('.dropDownContentMedia').css("background-color", "rgb(54,54,54)");
+		
+		$('.dropDownContentAbout').css("box-shadow", "none");
+		$('.dropDownContentOverview').css("box-shadow", "none");
+		$('.dropDownContentMedia').css("box-shadow", "none");
+	} else {
+		$('.navbar').css("background-color", "rgb(50,50,50)");
+        $('.dropDownContentAbout').css("transform", "translate(0px, -13px)");
+        $('.dropDownContentOverview').css("transform", "translate(0px, -13px)");
+        $('.dropDownContentMedia').css("transform", "translate(0px, -13px)");
+        $('.navbar').css("height", "85px");
+        
+        $('.navbar').css("box-shadow", "0 4px 10px -10px rgba(0,0,0,.6)");
+        
+        $('.dropDownContentAbout').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+		$('.dropDownContentOverview').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+		$('.dropDownContentMedia').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+	}
+	$(window).scroll(function(){
+		if ($(this).scrollTop() < 190) {
+			$('.navbar').css("background-color", "transparent");
+            $('.navbar').css("height", "110px");
+            $('.navbar').css("box-shadow", "0 0px 0px 0px rgba(0,0,0,.6)");
+            $('.dropDownContentAbout').css("transform", "translate(0px, 0px)");
+            $('.dropDownContentOverview').css("transform", "translate(0px, 0px)");
+            $('.dropDownContentMedia').css("transform", "translate(0px, 0px)");
+            
+			$('.dropDownContentAbout').css("background-color", "rgb(54,54,54)");
+			$('.dropDownContentOverview').css("background-color", "rgb(54,54,54)");
+			$('.dropDownContentMedia').css("background-color", "rgb(54,54,54)");
+            
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		} else {
+			$('.navbar').css("background-color", "rgb(50,50,50)");
+            $('.navbar').css("height", "85px");
+            $('.dropDownContentAbout').css("transform", "translate(0px, -13px)");
+            $('.dropDownContentOverview').css("transform", "translate(0px, -13px)");
+            $('.dropDownContentMedia').css("transform", "translate(0px, -13px)");
+            
+            $('.navbar').css("box-shadow", "0 4px 10px -10px rgba(0,0,0,.6)");
+            
+            $('.dropDownContentAbout').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+		    $('.dropDownContentOverview').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+		    $('.dropDownContentMedia').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+		    
+			/*$('.dropDownContentAbout').css("background-color", "rgba(225, 225, 225, 1)");
+			$('.dropDownContentOverview').css("background-color", "rgba(225, 225, 225, 1)");
+			$('.dropDownContentMedia').css("background-color", "rgba(225, 225, 225, 1)");*/
+		}
+		
+		if ($(this).scrollTop() > 190) {
+			$('.navbar').css("background-color", "rgb(50,50,50)");
+            $('.navbar').css("height", "85px");
+            $('.dropDownContentAbout').css("transform", "translate(0px, -13px)");
+            $('.dropDownContentOverview').css("transform", "translate(0px, -13px)");
+            $('.dropDownContentMedia').css("transform", "translate(0px, -13px)");
+            
+            $('.navbar').css("box-shadow", "0 4px 10px -10px rgba(0,0,0,.6)");
+            
+            $('.dropDownContentAbout').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+		    $('.dropDownContentOverview').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+		    $('.dropDownContentMedia').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+		} else {
+			$('.navbar').css("background-color", "transparent");
+            $('.navbar').css("height", "110px");
+            $('.navbar').css("box-shadow", "0 0px 0px 0px rgba(0,0,0,.6)");
+            $('.dropDownContentAbout').css("transform", "translate(0px, 0px)");
+            $('.dropDownContentOverview').css("transform", "translate(0px, 0px)");
+            $('.dropDownContentMedia').css("transform", "translate(0px, 0px)");
+            
+			$('.dropDownContentAbout').css("background-color", "rgb(54,54,54)");
+			$('.dropDownContentOverview').css("background-color", "rgb(54,54,54)");
+			$('.dropDownContentMedia').css("background-color", "rgb(54,54,54)");
+			
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		}
+		
+
+	});
+});
 </script>
 <body>
     <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
@@ -424,37 +994,41 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 	<div class = "landing">
 	<div class = "landingBackground">
 		<div class = "titleHolder">
-			<img src = "/images/EXOLogo.png" alt = "Exo logo">
-			<h1>Building Tips</h1>
-			<h2>The Do's and Don'ts</h2>
+			<img class = "show-on-scroll-down" src = "/images/EXOLogo.png" alt = "Exo logo">
+			<h1 class = "show-on-scroll-up">Building Tips</h1>
+			<h2 class = "show-on-scroll-up">The Do's and Don'ts</h2>
 		</div>
 	</div>
 </div>
 <div class = "firstSection">
-	<h2>Building Tips</h2>
+    <div class = "titleSection show-on-scroll-up">
+	   <h2>Building Tips</h2>
+    </div>
 	<div class = "writtenSection">
-		<p>Here are some general building tips submitted by the Exothermic Robotics club:</p>
+		<p class = "show-on-scroll-right">Here are some general building tips submitted by the Exothermic Robotics club:</p>
 		<ul>
-			<li><b>Always make multiple designs</b> because the design that looked good in the beginning might not be the best one after testing.</li>
-			<li><b>Do not cut unless you know exactly how long you want it to be.</b> It can always be shorter, but it's hard to make it longer again.</li>
-			<li><b>A reliable and efficient robot</b> always beats a fancy but flimsy robot.</li>
-			<li><b>Check to make sure your robot stays in the size limit as you go.</b> A good 
+			<li class = "show-on-scroll-right"><b>Always make multiple designs</b> because the design that looked good in the beginning might not be the best one after testing.</li>
+			<li class = "show-on-scroll-right"><b>Do not cut unless you know exactly how long you want it to be.</b> It can always be shorter, but it's hard to make it longer again.</li>
+			<li class = "show-on-scroll-right"><b>A reliable and efficient robot</b> always beats a fancy but flimsy robot.</li>
+			<li class = "show-on-scroll-right"><b>Check to make sure your robot stays in the size limit as you go.</b> A good 
 			rule of thumb is to build 1 inch under the size limit. You don't want to spend a lot of time making a robot, only to be disqualified because it's over the size limit! </li>
-			<li><b>If there is something big that needs to be done have at least two people working on it.</b> One can be working on building the actual thing while the other can hold things in place.</li>
-			<li><b>Get everyone's opinion in the planning process before building.</b> You're working as a team for a reason! Someone might bring up a point you haven't thought about yet.</li>
-			<li><b>In between different competitions, rebuild!</b> It might seem intimidating at first, but that's the only way to improve your robot and perform better at the next competition.</li>
-			<li><b>Do research before building! </b> Watch tutorials or read stuff online to help you build. Otherwise, you might find yourself having to rebuild constantly because of mistakes made along the way.</li>
-			<li><b>Always try to build a Worlds-worthy robot.</b> Try to make a robot that can do everything quickly and efficiently. For first year builders, it is often times not a good idea to focus too much on one specific task 
+			<li class = "show-on-scroll-right"><b>If there is something big that needs to be done have at least two people working on it.</b> One can be working on building the actual thing while the other can hold things in place.</li>
+			<li class = "show-on-scroll-right"><b>Get everyone's opinion in the planning process before building.</b> You're working as a team for a reason! Someone might bring up a point you haven't thought about yet.</li>
+			<li class = "show-on-scroll-right"><b>In between different competitions, rebuild!</b> It might seem intimidating at first, but that's the only way to improve your robot and perform better at the next competition.</li>
+			<li class = "show-on-scroll-right"><b>Do research before building! </b> Watch tutorials or read stuff online to help you build. Otherwise, you might find yourself having to rebuild constantly because of mistakes made along the way.</li>
+			<li class = "show-on-scroll-right"><b>Always try to build a Worlds-worthy robot.</b> Try to make a robot that can do everything quickly and efficiently. For first year builders, it is often times not a good idea to focus too much on one specific task 
 				that your robot can do.</li>
-			<li><b>If you're hesitant about an idea, sometimes you just have to go for it! </b>How else are you going to find out if it works? At the same time though, don't be rash regarding all your decisions.</li>
-			<li><b>Take pictures as you build. </b>You might not think about this while you're building, but all these photos will come in handy later when you're compiling your engineering notebook.</li>
+			<li class = "show-on-scroll-right"><b>If you're hesitant about an idea, sometimes you just have to go for it! </b>How else are you going to find out if it works? At the same time though, don't be rash regarding all your decisions.</li>
+			<li class = "show-on-scroll-right"><b>Take pictures as you build. </b>You might not think about this while you're building, but all these photos will come in handy later when you're compiling your engineering notebook.</li>
 		</ul>
 	</div>
 </div>
 <div class = "secondSection">
 	<div class = "secondSectionBackground">
-		<h2>A VEX Robotics Parts Guide</h2>
-	<div class = "iconHolder">
+        <div class = "titleSection show-on-scroll-up">
+		  <h2>A VEX Robotics Parts Guide</h2>
+        </div>
+	<div class = "iconHolder show-on-scroll-up">
 		<a href = "#Nut">
 			<div class = "icon">
 				<div class = "imageHolder">
@@ -515,88 +1089,102 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 	</div>
 </div>
 <div id = "Nut" class = "buildingTipSection">
-	<h2>Nuts</h2>
+    <div class = "titleSection show-on-scroll-up">
+	   <h2>Nuts</h2>
+    </div>
 	<div class = "textSection">
-		<p>There are three different types of nuts: Nylock nuts, Thin Nylock nuts, and Keps nuts. </p>
-		<p><b>Nylock Nuts: </b>Nylock nuts have a nylon lock inside of it and are bulkier than Thin Nylock nuts and Keps nuts. They also take longer to put on and take off although they make strong, permanent connections. It is typically recommended to use Nylocks on any moving or vibrating part of the robot. They are also good for making low maintenance robots as they rarely come loose, although they are quite a bit heavier than the other nuts, which may be something to consider as you use them.</p>
-		<p><b>Hex Nuts:</b> Hex nuts are about 30% less weight than Nylocks and are versatile. They have a nylon insert that allows them to lock onto screws and don't need a threadlock. Even though they are smaller than Nylock nuts, they are made of steel so they are just as strong as Nylocks. Additionally, they can fit into tighter spaces because of their smaller size. </p>
-		<p><b>Keps Nuts: </b>Keps nuts have an outer tooth lock washer and are easily removable. They have an internal Nylock nut that prevents them from falling off. They are good for prototyping because they are non-locking. Often times, it is recommended that you build with keps nuts, and once the whole thing is done, rebuild with Nylocks. Keps nuts are also good for plastics because the teeth grip the plastic and create a firm hold.</p>
-		<p>Below from left to right: Nylock, Hex, and Keps nuts</p>
+		<p class = "show-on-scroll-left">There are three different types of nuts: Nylock nuts, Thin Nylock nuts, and Keps nuts. </p>
+		<p class = "show-on-scroll-left"><b>Nylock Nuts: </b>Nylock nuts have a nylon lock inside of it and are bulkier than Thin Nylock nuts and Keps nuts. They also take longer to put on and take off although they make strong, permanent connections. It is typically recommended to use Nylocks on any moving or vibrating part of the robot. They are also good for making low maintenance robots as they rarely come loose, although they are quite a bit heavier than the other nuts, which may be something to consider as you use them.</p>
+		<p class = "show-on-scroll-left"><b>Hex Nuts:</b> Hex nuts are about 30% less weight than Nylocks and are versatile. They have a nylon insert that allows them to lock onto screws and don't need a threadlock. Even though they are smaller than Nylock nuts, they are made of steel so they are just as strong as Nylocks. Additionally, they can fit into tighter spaces because of their smaller size. </p>
+		<p class = "show-on-scroll-left"><b>Keps Nuts: </b>Keps nuts have an outer tooth lock washer and are easily removable. They have an internal Nylock nut that prevents them from falling off. They are good for prototyping because they are non-locking. Often times, it is recommended that you build with keps nuts, and once the whole thing is done, rebuild with Nylocks. Keps nuts are also good for plastics because the teeth grip the plastic and create a firm hold.</p>
+		<p class = "show-on-scroll-left">Below from left to right: Nylock, Hex, and Keps nuts</p>
 		<div class = "imageHolder">
-			<img class = "gearRatios" src = "/images/NylockNuts.jpg"/>
-			<img class = "gearRatios" src = "/images/HexNuts.jpg"/>
-			<img class = "gearRatios" src = "/images/KepsNuts.jpg"/>
+			<img class = "gearRatios show-on-scroll-right" src = "/images/NylockNuts.jpg"/>
+			<img class = "gearRatios show-on-scroll-left" src = "/images/HexNuts.jpg"/>
+			<img class = "gearRatios show-on-scroll-up" src = "/images/KepsNuts.jpg"/>
 		</div>
 	</div>
 </div>
 <div id = "Bearings" class = "buildingTipSection">
-	<h2>Bearings </h2>
+    <div class = "titleSection show-on-scroll-up">
+	   <h2>Bearings </h2>
+    </div>
 	<div class = "textSection">
-		<p>Another important part to a stable robot is the bearing. The main purposes of bearings are to reduce friction between moving parts and to constrain the motion. There are five main types of bearings for Vex EDR that mostly differ on the type of center hole it has, and the thickness of the bearing. Each different bearing serves a different purpose. The types of bearings are: </p>
-			<img src = "/images/BearingFlat.jpg"/>
-		<p><b>Bearing Flats:</b> Bearing flats are the most common bearings and consist of three circular holes of equal sizes. They can be mounted directly on a VEX structure, and a shaft can be strung through it perpendicularly. It is typically recommended that bearing flats are used along with 0.5" screws and keps nuts. </p>
-		<p>Bearing flats are useful as they help reduce friction and allow shafts to spin more smoothly. If you put your shaft in the motor and through a C-channel, it will still work, although it definitely won't be ideal. The shaft will move around, make noises, and wear out your parts quicker. Additionally, less power will be transferred from the motor to where you need it. This is where bearing flats come in. Their round holes allow the shaft to spin around in it and keep it centered without making weird noises and wearing out the metal. If you are using a shaft that goes through a C-channel completely, you will have to use two bearing flats, one on each side.</p>
-			<img src = "/images/HighStrengthBearing.jpg"/>
-		<p><b>High Strength Shaft Bearings:</b> High Strength Shaft Bearings are essentially the same as Flat Bearings, but with the center hole slightly raised. They are large enough to hold 1/4 inch High Strength Shafts, and do not fit 1/8 inch shafts. They mount directly onto VEX structures and allow shafts to turn smoothly by lowering friction.  </p>
-			<img class = "pillowLock" src = "/images/PillowLock.jpg"/>
-		<p><b>Pillow Block Bearings:</b> Pillow Block Bearings have two flat, circular holes on each side and the center hole perpendicular to the side holes. They support a shaft which is offset above, below, or located to the side of the structure. Typically, when high strength shafts are used, you would have to drill your metal, cut the shafts, or solve the spacing issues that the shaft would cause. This is where Pillow Block Bearings become useful as they solve the aforementioned issues and allow you to mount the shafts off of a piece of metal. </p>
-		<p><b>Lock Bar Bearings:</b> Lock Bar Bearings have the same flat holes on the side as a Pillow Block Bearing, but the center hole consists of a rotatable square hole that fits axles. Lock Bars lock any VEX parts to a shaft so that they will spin with the shaft.</p>
-		<p>These different types of bearings are used in very different types of situations, but all serve the same purpose of stabilizing or reducing friction on a joint. </p>
+		<p class = "show-on-scroll-right">Another important part to a stable robot is the bearing. The main purposes of bearings are to reduce friction between moving parts and to constrain the motion. There are five main types of bearings for Vex EDR that mostly differ on the type of center hole it has, and the thickness of the bearing. Each different bearing serves a different purpose. The types of bearings are: </p>
+			<img class = "show-on-scroll-left" src = "/images/BearingFlat.jpg"/>
+		<p class = "show-on-scroll-right"><b>Bearing Flats:</b> Bearing flats are the most common bearings and consist of three circular holes of equal sizes. They can be mounted directly on a VEX structure, and a shaft can be strung through it perpendicularly. It is typically recommended that bearing flats are used along with 0.5" screws and keps nuts. </p>
+		<p class = "show-on-scroll-right">Bearing flats are useful as they help reduce friction and allow shafts to spin more smoothly. If you put your shaft in the motor and through a C-channel, it will still work, although it definitely won't be ideal. The shaft will move around, make noises, and wear out your parts quicker. Additionally, less power will be transferred from the motor to where you need it. This is where bearing flats come in. Their round holes allow the shaft to spin around in it and keep it centered without making weird noises and wearing out the metal. If you are using a shaft that goes through a C-channel completely, you will have to use two bearing flats, one on each side.</p>
+			<img class = "show-on-scroll-left" src = "/images/HighStrengthBearing.jpg"/>
+		<p class = "show-on-scroll-right"><b>High Strength Shaft Bearings:</b> High Strength Shaft Bearings are essentially the same as Flat Bearings, but with the center hole slightly raised. They are large enough to hold 1/4 inch High Strength Shafts, and do not fit 1/8 inch shafts. They mount directly onto VEX structures and allow shafts to turn smoothly by lowering friction.  </p>
+			<img class = "pillowLock show-on-scroll-right" src = "/images/PillowLock.jpg"/>
+		<p class = "show-on-scroll-right"><b>Pillow Block Bearings:</b> Pillow Block Bearings have two flat, circular holes on each side and the center hole perpendicular to the side holes. They support a shaft which is offset above, below, or located to the side of the structure. Typically, when high strength shafts are used, you would have to drill your metal, cut the shafts, or solve the spacing issues that the shaft would cause. This is where Pillow Block Bearings become useful as they solve the aforementioned issues and allow you to mount the shafts off of a piece of metal. </p>
+		<p class = "show-on-scroll-right"><b>Lock Bar Bearings:</b> Lock Bar Bearings have the same flat holes on the side as a Pillow Block Bearing, but the center hole consists of a rotatable square hole that fits axles. Lock Bars lock any VEX parts to a shaft so that they will spin with the shaft.</p>
+		<p class = "show-on-scroll-right">These different types of bearings are used in very different types of situations, but all serve the same purpose of stabilizing or reducing friction on a joint. </p>
 	</div>
 </div>
 <div id = "Standoffs" class = "buildingTipSection">
-	<h2>Standoffs</h2>
+    <div class = "titleSection show-on-scroll-up">
+	   <h2>Standoffs</h2>
+    </div>
 	<div class = "textSection">
 	<ul>
-		<li><a target = "_blank" href = "http://challenges.robotevents.com/uploads/0001136_original.pdf">Standoffs: An Explanation by 10V (PDF) </a></li>
-		<li><a target = "_blank" href = "https://www.youtube.com/watch?v=kDyJ9v0M6oo">Standoffs: An Educational Video by 10V </a></li>
+		<li class = "show-on-scroll-right"><a target = "_blank" href = "http://challenges.robotevents.com/uploads/0001136_original.pdf">Standoffs: An Explanation by 10V (PDF) </a></li>
+		<li class = "show-on-scroll-right"><a target = "_blank" href = "https://www.youtube.com/watch?v=kDyJ9v0M6oo">Standoffs: An Educational Video by 10V </a></li>
 	</ul>
-		<iframe class = "pdfRubric" src = "/images/StandoffPDF.pdf"> Sorry, your browser does not support PDFs. Please download the PDF to view it. </iframe>
-		<div class = "youtubeVid">
+		<iframe class = "pdfRubric show-on-scroll-right" src = "/images/StandoffPDF.pdf"> Sorry, your browser does not support PDFs. Please download the PDF to view it. </iframe>
+		<div class = "youtubeVid show-on-scroll-right">
 			<iframe class = "towerTakeoverVideo" width="560" height="315" src="https://www.youtube.com/embed/kDyJ9v0M6oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	</div>
 </div>
 <div id = "Gears" class = "buildingTipSection">
-	<h2>Gears</h2>
+    <div class = "titleSection show-on-scroll-up">
+	   <h2>Gears</h2>
+    </div>
 	<div class = "textSection">
-		<p>Gears are another crucial part of the robot. Gears have several purposes including rotating several components at once, allowing two components to rotate in opposite directions, and most importantly, adding more speed or torque to the motor rotation.</p>
-		<p>There are four sizes of gears that are used in VEX EDR: 1, 3, 5, and 7. They are named by the number of dozens of teeth they have (so size 1 has 12, size 3 has 36, etc.).</p>
+		<p class = "show-on-scroll-left">Gears are another crucial part of the robot. Gears have several purposes including rotating several components at once, allowing two components to rotate in opposite directions, and most importantly, adding more speed or torque to the motor rotation.</p>
+		<p class = "show-on-scroll-left">There are four sizes of gears that are used in VEX EDR: 1, 3, 5, and 7. They are named by the number of dozens of teeth they have (so size 1 has 12, size 3 has 36, etc.).</p>
 		<div class = "imageHolder">
-			<img class = "gearRatios" src = "/images/GearRatios.jpg"/>
-			<img class = "gearRatios" src = "/images/GearRatiosPic.jpeg"/>
+			<img class = "gearRatios show-on-scroll-right" src = "/images/GearRatios.jpg"/>
+			<img class = "gearRatios show-on-scroll-left" src = "/images/GearRatiosPic.jpeg"/>
 		</div>
-		<p>Different combinations of sizes of gears leads to either more speed or more torque. If the gear the motor is directly spinning (the leading gear) is larger than the gear it leads to, than there will be more torque, or force. If the leading gear is smaller than the gear it leads to, than the component will spin faster. If you want two components to rotate at the same speed, use gears of the same size. </p>
-		<p>The ratios are named by the size of the gears, for example, a 1:3 gear ratio would be a gear ratio that provides more torque. Additionally, make sure to keep track of the number of gears used. If the number is odd, the two components will rotate in the same direction, which is useful for drivetrains. On the other hand, if the number is even, then the two components will rotate in opposite directions, which is useful for claws and DR4Bs. </p>
-		<p>Overall, gears are an important component for a great robot. </p>
+		<p class = "show-on-scroll-left">Different combinations of sizes of gears leads to either more speed or more torque. If the gear the motor is directly spinning (the leading gear) is larger than the gear it leads to, than there will be more torque, or force. If the leading gear is smaller than the gear it leads to, than the component will spin faster. If you want two components to rotate at the same speed, use gears of the same size. </p>
+		<p class = "show-on-scroll-left">The ratios are named by the size of the gears, for example, a 1:3 gear ratio would be a gear ratio that provides more torque. Additionally, make sure to keep track of the number of gears used. If the number is odd, the two components will rotate in the same direction, which is useful for drivetrains. On the other hand, if the number is even, then the two components will rotate in opposite directions, which is useful for claws and DR4Bs. </p>
+		<p class = "show-on-scroll-left">Overall, gears are an important component for a great robot. </p>
 	</div>
 </div>
 <div id = "Channel" class = "buildingTipSection">
-	<h2>C-Channels</h2>
+    <div class = "titleSection show-on-scroll-up">
+	   <h2>C-Channels</h2>
+    </div>
 	<div class = "textSection">
-		<p>There are many different sizes of VEX C-Channels. These C-Channels have holes on 0.5" increments. Their strength and resistance to bending make them great for building reliable robots. C-Channels also come in two different materials: steel or aluminum. </p>
-		<div class = "imageHolder">
+		<p class = "show-on-scroll-right">There are many different sizes of VEX C-Channels. These C-Channels have holes on 0.5" increments. Their strength and resistance to bending make them great for building reliable robots. C-Channels also come in two different materials: steel or aluminum. </p>
+		<div class = "imageHolder show-on-scroll-left">
 			<img src = "/images/Channel.jpeg"/>
 		</div>
 	</div>
 </div>
 <div id = "Axle" class = "buildingTipSection">
-	<h2>Axles</h2>
+    <div class = "titleSection show-on-scroll-up">
+	   <h2>Axles</h2>
+    </div>
 	<div class = "textSection">
-		<p>There are many different sizes of VEX axles. Axles are inserted into motors so they can turn something. There are different sizes of axles. High strength axles work together with high strength bearings, and can be used to reinforce gears. Additionally, axles can be cut to any size desired. </p>
+		<p class = "show-on-scroll-left">There are many different sizes of VEX axles. Axles are inserted into motors so they can turn something. There are different sizes of axles. High strength axles work together with high strength bearings, and can be used to reinforce gears. Additionally, axles can be cut to any size desired. </p>
 		<div class = "imageHolder">
-			<img src = "/images/Shafts.jpg"/>
+			<img class = "show-on-scroll-right" src = "/images/Shafts.jpg"/>
 		</div>
 	</div>
 </div>
 <div id = "Spacer" class = "buildingTipSection">
-	<h2>Spacers</h2>
+    <div class = "titleSection show-on-scroll-up">
+	   <h2>Spacers</h2>
+    </div>
 	<div class = "textSection">
-		<p>Spacers come in two different colors: white and black. Both white and black spacers come in different sizes. </p>
-		<p>White spacers can be used to separate two pieces of metal when you create a joint with a long screw and a nut. Additionally, white spacers are sized in exact fractions of inches, so if you want a spacer that is exactly the same as the distance betwen holes in C-Channels, then white ones are the better choice. Since they have a larger diameter, chains run over them smoothly and they can be easily used to make chain tensioners. </p>
-		<p>On the other hand, black spacers are sized metrically, so in some situations, you may have to use washers along with the black spacers. However, they are advantageous in that they have a smaller diameter and can fit into tighter locations.</p>
+		<p class = "show-on-scroll-left">Spacers come in two different colors: white and black. Both white and black spacers come in different sizes. </p>
+		<p class = "show-on-scroll-left">White spacers can be used to separate two pieces of metal when you create a joint with a long screw and a nut. Additionally, white spacers are sized in exact fractions of inches, so if you want a spacer that is exactly the same as the distance betwen holes in C-Channels, then white ones are the better choice. Since they have a larger diameter, chains run over them smoothly and they can be easily used to make chain tensioners. </p>
+		<p class = "show-on-scroll-left">On the other hand, black spacers are sized metrically, so in some situations, you may have to use washers along with the black spacers. However, they are advantageous in that they have a smaller diameter and can fit into tighter locations.</p>
 		<div class = "imageHolder">
-			<img src = "/images/Spacers.jpg"/>
+			<img class = "show-on-scroll-left" src = "/images/Spacers.jpg"/>
 		</div>
 	</div>
 </div>
@@ -645,6 +1233,84 @@ $("a[href='#Spacer']").click(function() {
 </script>
 
 </body>
+<script>
+var scroll = window.requestAnimationFrame ||
+             // IE Fallback
+             function(callback){ window.setTimeout(callback, 1000/60)};
+var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+var elementsToShowLeft = document.querySelectorAll('.show-on-scroll-left'); 
+var elementsToShowRight = document.querySelectorAll('.show-on-scroll-right'); 
+var elementsToShowUp = document.querySelectorAll('.show-on-scroll-up'); 
+var elementsToShowDown = document.querySelectorAll('.show-on-scroll-down'); 
+
+function loop() {
+
+    Array.prototype.forEach.call(elementsToShow, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('is-visible');
+      } //else {
+        //element.classList.remove('is-visible');
+      //}
+    });
+    
+    Array.prototype.forEach.call(elementsToShowLeft, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('fadeInLeft');
+      } //else {
+        //element.classList.remove('is-visible');
+      //}
+    });
+    
+    Array.prototype.forEach.call(elementsToShowRight, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('fadeInRight');
+      } //else {
+        //element.classList.remove('is-visible');
+      //}
+    });
+    
+    Array.prototype.forEach.call(elementsToShowUp, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('fadeInUp');
+      } //else {
+        //element.classList.remove('is-visible');
+      //}
+    });
+    
+    Array.prototype.forEach.call(elementsToShowDown, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('fadeInDown');
+      } //else {
+        //element.classList.remove('is-visible');
+      //}
+    });
+
+
+    scroll(loop);
+}
+
+// Call the loop for the first time
+loop();
+
+// Helper function from: http://stackoverflow.com/a/7557433/274826
+function isElementInViewport(el) {
+  // special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+  var rect = el.getBoundingClientRect();
+  return (
+    (rect.top <= 0
+      && rect.bottom >= 0)
+    ||
+    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+  );
+}
+</script>
 <footer>
 	<div class = "leftSection">
 		<div class = "leftTopSection">

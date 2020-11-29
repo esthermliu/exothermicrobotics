@@ -30,7 +30,7 @@
 	font-size: 24px;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	color: white;
 	letter-spacing: 5px;
 	line-height: 42px;
@@ -50,18 +50,19 @@
 	background-color: #f0f0f0;
 	padding: 8% 25% 8% 25%;
 	font-family: Roboto, sans-serif;
-	color: #626262;
+	color: #323232;
 }
 
 .socialMediaSection h2 {
-	font-weight: normal;
-	font-size: 45px;
-	padding-bottom: 3%;
+	font-weight: 400;
+	font-size: 40px;
 	text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .wordSection a {
-	color: rgb(96, 156, 14);
+	color: rgb(175, 181, 49);
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
 }
@@ -73,6 +74,12 @@
 .wordSection p {
 	line-height: 30px;
 	margin-bottom: 15px;
+    letter-spacing: 0.4px;
+}
+
+.wordSection {
+    padding-top: 8%;
+    letter-spacing: 0.4px;
 }
 
 .socialMediaSection ul {
@@ -110,21 +117,22 @@
 	margin: 0 20% 0 20%;
 	padding-top: 8%;
 	font-family: Roboto, sans-serif;
-	color: #626262;
-	line-height: 30px;
+	color: #323232;
 }
 
 .firstSection p, .TurningPoint p, .theZone p, .starStruck p, .net p, .evolution p, .fusion p, .neon p, .excess p {
 	padding-bottom: 15px;
+    line-height: 30px;
 }
 
 .firstSection h1 {
 	text-align: center;
-	padding-bottom: 8%;
 	font-family: Roboto, sans-serif;
-	font-weight: normal;
-	color: #626262;
-	font-size: 45px;
+	font-weight: 400;
+	color: #323232;
+	font-size: 40px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .writtenSection h2 {
@@ -138,8 +146,16 @@
 	padding-bottom: 15px;
 }
 
+.detailSection {
+    letter-spacing: 0.4px;
+}
+
+.specialDetail {
+    padding-top: 8%;
+}
+
 .detailSection a {
-	color: rgb(96, 156, 14);
+	color: rgb(175, 181, 49);
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
 }
@@ -219,7 +235,7 @@ td {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	font-family: Roboto, sans-serif;
-	color: #626262;
+	color: #323232;
 	line-height: 30px;
 }
 
@@ -262,4 +278,21 @@ td {
 
 .minusHolder:hover {
   color: rgb(175, 181, 49);
+}
+
+/* title after */
+.titleSection, .actualTitle {
+	position: relative;
+}
+
+.titleSection h2:after, .titleSection h1:after    {
+	position: absolute;
+	content: '';
+	height: 3px;
+	bottom: -15px;
+	margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 10%;
+	background: rgb(213,220,59);
 }

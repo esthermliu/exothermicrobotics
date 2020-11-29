@@ -1,5 +1,5 @@
 .landing {
-	background-image: url("/images/Gallery100.jpg");
+	background-image: url("/images/Gallery277.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -28,7 +28,7 @@
 	font-size: 24px;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	color: white;
 	letter-spacing: 5px;
 	line-height: 42px;
@@ -48,11 +48,12 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+    padding-top: 5%;
 }
 
 .column {
 	height: 200px;
-	width: 30%;
+	width: 23%;
 	margin-bottom: 2%;
 }
 
@@ -229,15 +230,17 @@ img.hover-shadow {
 
 .firstSection {
 	background-color: #f0f0f0;
-	padding: 8% 20% 8% 20%;
-	color: #626262;
+	padding: 8% 8% 8% 8%;
+	color: #323232;
 }
 
 .firstSection h2 {
 	font-family: Roboto, sans-serif;
 	text-align: center;
-	font-size: 45px;
-	font-weight: normal;
+	font-size: 40px;
+	font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 
@@ -248,8 +251,7 @@ img.hover-shadow {
 	letter-spacing: 1.5px;
 	font-family: Roboto, sans-serif;
 	text-align: center;
-	font-weight: normal;
-	padding-bottom: 3%;
+	font-weight: 400;
 }
 
 .galleryTitleFirst {
@@ -261,7 +263,7 @@ img.hover-shadow {
 }
 
 #Tower, #Net, #Round , #Clean {
-	background-color: rgb(232,245,225);
+	background-color: white;
 }
 
 .sticky {
@@ -275,15 +277,13 @@ img.hover-shadow {
 	justify-content: center;
 	width: 100%;
 	flex-wrap: wrap;
-	padding-top: 80px;
-	background-color: rgba(232, 245, 225, 0.9) !important;
+	padding-top: 5%;
  }
 
  
  .insideButtonContainer {
 	display: flex;
 	justify-content: center;
-	background-color: Transparent;
 	width: 100%;
 	flex-wrap: wrap;
  }
@@ -295,20 +295,24 @@ img.hover-shadow {
   background-color: rgba(25,25,25,0);
   border: 2px solid black;
   z-index: 2;
-  padding: 15px 15px;
+  padding: 20px 15px;
   color: black;
     -webkit-transition-duration: 0.2s; 
   transition-duration: 0.2s;
   cursor: pointer;
   margin: 15px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    font-size: 10px;
 }
 
 .eventButton:hover button {
-   color: rgb(96, 156, 14);
+   color: rgb(158, 163, 60);
 }
 
 .eventButton:hover button {
-    border-color: rgb(96, 156, 14);
+    border-color: rgb(158, 163, 60);
  }
 
  .toSectionButtons {
@@ -318,10 +322,14 @@ img.hover-shadow {
  }
  
  .toSectionButtons {
-	color: #626262;
-	background-color: #f0f0f0;
+	color: #323232;
  }
  
+.activeGallery button {
+    color: rgb(158, 163, 60) !important;
+    border-color: rgb(158, 163, 60) !important;
+}
+
  .toSectionButtons h2 {
 	padding-top: 8%;
 	font-family: Roboto, sans-serif;
@@ -337,8 +345,59 @@ img.hover-shadow {
 	background-color: white;
  }	
  
- .gallery {
-	padding-bottom: 3%;
- }
+/* title after */
+.titleSection, .actualTitle {
+	position: relative;
+}
+
+.titleSection h2:after, .actualTitle h2:after    {
+	position: absolute;
+	content: '';
+	height: 3px;
+	bottom: -15px;
+	margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 10%;
+	background: rgb(213,220,59);
+}
+
+.turningLand {
+    background-image: url("/images/Gallery32.jpg");
+}
+
+.zoneLand {
+    background-image: url("/images/Gallery88.jpg");
+}
+
+.starLand {
+    background-image: url("/images/Gallery77.jpg");
+}
+
+.netLand {
+    background-image: url("/images/Gallery74.jpg");
+}
+
+.skyLand {
+    background-image: url("/images/Gallery72.jpg");
+}
+
+.sackLand {
+    background-image: url("/images/Gallery63.jpg");
+}
+
+.galLand {
+    background-image: url("/images/Gallery60.jpg");
+}
+
+.cleanLand {
+    background-image: url("/images/Gallery59.jpg");
+}
+
+.towerLand {
+    background-image: url("/images/Gallery100.jpg");
+}
+
+ 
  
  

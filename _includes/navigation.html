@@ -1,9 +1,186 @@
 <header id = "secondBox" class = "navbar">
-	<div class = "logoBox">
-		<a class = "homepageLogo" href = "{{site.baseurl}}/"><img src = "{{site.baseurl}}/images/EXOLogo.png"></a>
-	</div>
 	<nav class = "secondBox">
-		<ul class = "headerList">
+        <ul class = "headerList">
+            <div class = "logoBox">
+                <a class = "homepageLogo" href = "{{site.baseurl}}/"><img src = "{{site.baseurl}}/images/EXOLogo.png"></a>
+            </div>
+            <div class = "dropDownMedia">
+                <button class = "dropButtonMedia" onclick="window.location.href = '{{site.baseurl}}/'"><a href = "{{site.baseurl}}/" {% if page.url == "/" %} class = "active"  {% else %} class = "otherwiseMedia" {% endif %}> Home </a></button>
+            </div>
+            <div class = "dropDownAbout">
+                <button class = "dropButtonAbout" onclick="window.location.href = '{{site.baseurl}}/about/'"><a href = "{{site.baseurl}}/about/" {% if page.url == "/about/" %} class = "active"  {% else %} class = "otherwiseMedia" {% endif %}> About Us</a> </button>
+                <div class = "dropDownContentAbout fade-in">
+                    <div class = "test1">
+                    <button class = "insideButtonAbout shorter fade-in" onclick="window.location.href = '{{site.baseurl}}/about/history/'"><a id = "firstDropLink" href = "{{site.baseurl}}/about/history/" {% if page.url == "/about/history/" %} class = "active2"  {% else %} class = "name" {% endif %}> History </a><a href = "{{site.baseurl}}/about/history/"><i id = "rightArrow" class="fa fa-angle-right"></i></a></button>
+                       <div class = "dropDownInsideAbout fade-in">
+                            <div id = "third" class = "iHateThis">
+                                <a href = "{{site.baseurl}}/about/history/tower-takeover/" {% if page.url == "/about/history/tower-takeover/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Tower Takeover <br>2019 - 2020</a>
+                                <a href = "{{site.baseurl}}/about/history/turning-point/" {% if page.url == "/about/history/turning-point/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Turning Point <br>2018 - 2019</a>
+                                <a href = "{{site.baseurl}}/about/history/in-the-zone/" {% if page.url == "/about/history/in-the-zone/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> In the Zone <br>2017 - 2018 </a>
+                                <a href = "{{site.baseurl}}/about/history/starstruck/" {% if page.url == "/about/history/starstruck/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Starstruck <br>2016 - 2017</a>
+                                <a href = "{{site.baseurl}}/about/history/nothing-but-net/" {% if page.url == "/about/history/nothing-but-net/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Nothing But Net <br>2015 - 2016</a>
+                            </div>
+                            <div id = "third" class = "why">
+                                <a href = "{{site.baseurl}}/about/history/skyrise/" {% if page.url == "/about/history/skyrise/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Skyrise <br>2014 - 2015</a>
+                                <a href = "{{site.baseurl}}/about/history/toss-up/" {% if page.url == "/about/history/toss-up/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Toss Up <br>2013 - 2014</a>
+                                <a href = "{{site.baseurl}}/about/history/sack-attack/" {% if page.url == "/about/history/sack-attack/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Sack Attack <br>2012 - 2013</a>
+                                <a href = "{{site.baseurl}}/about/history/gateway/" {% if page.url == "/about/history/gateway/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Gateway <br>2011 - 2012</a>
+                                <a href = "{{site.baseurl}}/about/history/round-up/" {% if page.url == "/about/history/round-up/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Round Up <br>2010 - 2011</a>
+                            </div>
+                            <div id = "third" class = "why">
+                                <a href = "{{site.baseurl}}/about/history/clean-sweep/" {% if page.url == "/about/history/clean-sweep/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Clean Sweep <br>2009 - 2010</a>
+                                <a href = "{{site.baseurl}}/about/history/elevation-face-off/" {% if page.url == "/about/history/elevation-face-off/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Elevation <br>2008 - 2009</a>
+                                <a href = "{{site.baseurl}}/about/history/bridge-battle-quad-quandary/" {% if page.url == "/about/history/bridge-battle-quad-quandary/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Bridge Battle<br>2007 - 2008</a>
+                                <a href = "{{site.baseurl}}/about/history/hangin-around/" {% if page.url == "/about/history/hangin-around/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Hangin' Around<br>2006 - 2007</a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class = "test2">
+                    <button class = "insideButtonAbout2 shorter fade-in" onclick="window.location.href = '{{site.baseurl}}/about/teams/'"><a href = "{{site.baseurl}}/about/teams/" {% if page.url == "/about/teams/" %} class = "active2"  {% else %} class = "name" {% endif %}> Teams </a><a href = "{{site.baseurl}}/about/teams/"><i id = "rightArrow" class="fa fa-angle-right"></i></a></button>
+                        <div class = "dropDownInsideAbout2 fade-in">
+                            <div class = "iHateThis">
+                                <a href = "{{site.baseurl}}/about/teams/10A/" {% if page.url == "/about/teams/10A/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> 10A </a>
+                                <a href = "{{site.baseurl}}/about/teams/10B/"href = "{{site.baseurl}}/about/teams/10B/" {% if page.url == "/about/teams/10B/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> 10B </a>
+                                <a href = "{{site.baseurl}}/about/teams/10C/"href = "{{site.baseurl}}/about/teams/10C/" {% if page.url == "/about/teams/10C/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> 10C </a>
+                                <a href = "{{site.baseurl}}/about/teams/10D/"href = "{{site.baseurl}}/about/teams/10D/" {% if page.url == "/about/teams/10D/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> 10D </a> 
+                            </div>
+                            <div class = "why">
+                                <a href = "{{site.baseurl}}/about/teams/10E/"href = "{{site.baseurl}}/about/teams/10E/" {% if page.url == "/about/teams/10E/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> 10E </a>
+                                <a href = "{{site.baseurl}}/about/teams/10F/"href = "{{site.baseurl}}/about/teams/10F/" {% if page.url == "/about/teams/10F/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> 10F </a>
+                                <a href = "{{site.baseurl}}/about/teams/10X/"href = "{{site.baseurl}}/about/teams/10X/" {% if page.url == "/about/teams/10X/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> 10X </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "test5">
+                    <button class = "insideButtonAbout5 shorter fade-in" onclick="window.location.href = '{{site.baseurl}}/about/awards/'"><a href = "{{site.baseurl}}/about/awards/" {% if page.url == "/about/awards/" %} class = "active2"  {% else %} class = "name" {% endif %}> Awards </a><a href = "{{site.baseurl}}/about/awards/"><i id = "rightArrow" class="fa fa-angle-right"></i></a></button>
+                        <div class = "dropDownInsideAbout5">
+                            <div id = "third" class = "iHateThis">
+                                <a href = "{{site.baseurl}}/about/awards/change-up/" {% if page.url == "/about/awards/change-up/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Change Up <br>2020 - 2021</a>
+                                <a href = "{{site.baseurl}}/about/awards/tower-takeover/" {% if page.url == "/about/awards/tower-takeover/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Tower Takeover <br>2019 - 2020</a>
+                                <a href = "{{site.baseurl}}/about/awards/turning-point/" {% if page.url == "/about/awards/turning-point/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Turning Point <br>2018 - 2019</a>
+                                <a href = "{{site.baseurl}}/about/awards/in-the-zone/" {% if page.url == "/about/awards/in-the-zone/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> In the Zone <br>2017 - 2018 </a>
+                                <a href = "{{site.baseurl}}/about/awards/starstruck/" {% if page.url == "/about/awards/starstruck/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Starstruck <br>2016 - 2017</a>
+                            </div>
+                            <div id = "third" class = "why">
+                                <a href = "{{site.baseurl}}/about/awards/nothing-but-net/" {% if page.url == "/about/awards/nothing-but-net/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Nothing But Net <br>2015 - 2016</a>
+                                <a href = "{{site.baseurl}}/about/awards/skyrise/" {% if page.url == "/about/awards/skyrise/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Skyrise <br>2014 - 2015</a>
+                                <a href = "{{site.baseurl}}/about/awards/toss-up/" {% if page.url == "/about/awards/toss-up/" %} class = "active2  shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Toss Up <br>2013 - 2014</a>
+                                <a href = "{{site.baseurl}}/about/awards/sack-attack/" {% if page.url == "/about/awards/sack-attack/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Sack Attack <br>2012 - 2013</a>
+                                <a href = "{{site.baseurl}}/about/awards/gateway/" {% if page.url == "/about/awards/gateway/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Gateway <br>2011 - 2012</a>
+                            </div>
+                            <div id = "third" class = "why">
+                                <a href = "{{site.baseurl}}/about/awards/round-up/" {% if page.url == "/about/awards/round-up/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Round Up <br>2010 - 2011</a>
+                                <a href = "{{site.baseurl}}/about/awards/clean-sweep/" {% if page.url == "/about/awards/clean-sweep/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Clean Sweep <br>2009 - 2010</a>
+                                <a href = "{{site.baseurl}}/about/awards/elevation-face-off/" {% if page.url == "/about/awards/elevation-face-off/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Elevation<br>2008 - 2009</a>
+                                <a href = "{{site.baseurl}}/about/awards/bridge-battle-quad-quandary/" {% if page.url == "/about/awards/bridge-battle-quad-quandary/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Bridge Battle<br>2007 - 2008</a>
+                                <a href = "{{site.baseurl}}/about/awards/hangin-around/" {% if page.url == "/about/awards/hangin-around/" %} class = "active2 shortActive"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Hangin' Around<br>2006 - 2007</a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class = "test3">
+                    <button class = "insideButtonAbout3 shorter fade-in" onclick="window.location.href = '{{site.baseurl}}/about/outreach/'"><a href = "{{site.baseurl}}/about/outreach/" {% if page.url == "/about/outreach/" %} class = "active2"  {% else %} class = "name" {% endif %}> Outreach </a><a href = "{{site.baseurl}}/about/outreach/"><i id = "rightArrow" class="fa fa-angle-right"></i></a></button>
+                        <div class = "dropDownInsideAbout3">
+                            <a href = "{{site.baseurl}}/about/outreach/exothermic-winter-challenge-2020/" {% if page.url == "/about/outreach/exothermic-winter-challenge-2020/" %} class = "active4"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Exothermic Winter Challenge 2020</a>
+                            <a href = "{{site.baseurl}}/about/outreach/timberline-middle-school/" {% if page.url == "/about/outreach/timberline-middle-school/" %} class = "active4"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Timberline Middle School</a>
+                            <a href = "{{site.baseurl}}/about/outreach/international-community-school/" {% if page.url == "/about/outreach/international-community-school/" %} class = "active4"  {% else %} class = "name2" id = "rllyLong" {% endif %}> International Community School </a>
+                        </div>
+                    </div>
+                    <div class = "test4">
+                    <button class = "insideButtonAbout4 shorter fade-in" onclick="window.location.href = '{{site.baseurl}}/about/advisors/'"><a href = "{{site.baseurl}}/about/advisors/" {% if page.url == "/about/advisors/" %} class = "active2"  {% else %} class = "name" {% endif %}> Advisors </a><a href = "{{site.baseurl}}/about/advisors/"><i id = "rightArrow" class="fa fa-angle-right"></i></a></button>
+                        <div class = "dropDownInsideAbout4">
+                            <a href = "{{site.baseurl}}/about/advisors/past-advisors/" {% if page.url == "/about/advisors/past-advisors/" %} class = "active4"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Past Advisors </a>
+                        </div>
+                    </div>
+                    <div class = "test5">
+                    <button class = "insideButtonAbout5 shorter fade-in" onclick="window.location.href = '{{site.baseurl}}/about/challenges/'"><a href = "{{site.baseurl}}/about/challenges/" {% if page.url == "/about/challenges/" %} class = "active2"  {% else %} class = "name" {% endif %}> Online Challenges </a><a href = "{{site.baseurl}}/about/challenges/"><i id = "rightArrow" class="fa fa-angle-right"></i></a></button>
+                        <div class = "dropDownInsideAbout5">
+                            <div class = "iHateThis">
+                                <a href = "{{site.baseurl}}/about/challenges/2021-challenges/" {% if page.url == "/about/challenges/2021-challenges/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> 2021 Challenges </a>
+                                <a href = "{{site.baseurl}}/about/challenges/2020-challenges/" {% if page.url == "/about/challenges/2020-challenges/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> 2020 Challenges </a>
+                                <a href = "{{site.baseurl}}/about/challenges/2016-challenges/" {% if page.url == "/about/challenges/2016-challenges/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> 2016 Challenges </a>
+                                <a href = "{{site.baseurl}}/about/challenges/2014-challenges/" {% if page.url == "/about/challenges/2014-challenges/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> 2014 Challenges </a> 
+                            </div>
+                            <div class = "why">
+                                <a href = "{{site.baseurl}}/about/challenges/2013-challenges/" {% if page.url == "/about/challenges/2013-challenges/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> 2013 Challenges </a>
+                                <a href = "{{site.baseurl}}/about/challenges/2012-challenges/" {% if page.url == "/about/challenges/2012-challenges/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> 2012 Challenges </a>
+                                <a href = "{{site.baseurl}}/about/challenges/2011-challenges/" {% if page.url == "/about/challenges/2011-challenges/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> 2011 Challenges </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "dropDownOverview">
+                <button class = "dropButtonOverview" onclick="window.location.href = '{{site.baseurl}}/vex-overview/'"><a href = "{{site.baseurl}}/vex-overview/" {% if page.url == "/vex-overview/" %} class = "active"  {% else %} class = "otherwiseMedia" {% endif %}>VEX Overview</a></button>
+                <div class = "dropDownContentOverview fade-in">
+                    <div class = "test6">
+                    <button class = "insideButtonAbout6 shorter fade-in" onclick="window.location.href = '{{site.baseurl}}/vex-overview/competition/'"><a href = "{{site.baseurl}}/vex-overview/competition/" {% if page.url == "/vex-overview/competition/" %} class = "active2"  {% else %} class = "name" {% endif %}> Competitions </a><a href = "{{site.baseurl}}/vex-overview/competition/"><i id = "rightArrow" class="fa fa-angle-right"></i></a></button>
+                        <div class = "dropDownInsideAbout6">
+                            <div class = "iHateThis">
+                                <a href = "{{site.baseurl}}/vex-overview/competition/change-up-2020-2021/" {% if page.url == "/vex-overview/competition/change-up-2020-2021/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Change Up 2020 - 2021 </a>
+                                <a href = "{{site.baseurl}}/vex-overview/competition/tower-takeover-2019-2020/" {% if page.url == "/vex-overview/competition/tower-takeover-2019-2020/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Tower Takeover 2019 - 2020 </a>
+                                <a href = "{{site.baseurl}}/vex-overview/competition/turning-point-2018-2019/" {% if page.url == "/vex-overview/competition/turning-point-2018-2019/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Turning Point 2018 - 2019 </a>
+                            </div>
+                            <div class = "why">
+                                <a href = "{{site.baseurl}}/vex-overview/competition/in-the-zone-2017-2018/" {% if page.url == "/vex-overview/competition/in-the-zone-2017-2018/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> In the Zone 2017 - 2018 </a>
+                                <a href = "{{site.baseurl}}/vex-overview/competition/starstruck-2016-2017/" {% if page.url == "/vex-overview/competition/starstruck-2016-2017/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Starstruck 2016 - 2017 </a>
+                                <a href = "{{site.baseurl}}/vex-overview/competition/nothing-but-net-2015-2016/" {% if page.url == "/vex-overview/competition/nothing-but-net-2015-2016/" %} class = "active3"  {% else %} class = "name2" id = "rllyLong" {% endif %}> Nothing But Net 2015 - 2016 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "test7">
+                        <button class = "insideButtonAbout7 shorter fade-in" onclick="window.location.href = '{{site.baseurl}}/vex-overview/events/'"><a href = "{{site.baseurl}}/vex-overview/events/" {% if page.url == "/vex-overview/events/" %} class = "active2"  {% else %} class = "name" {% endif %}> Events </a><a href = "{{site.baseurl}}/vex-overview/events/"><!--<i id = "rightArrow" class="fa fa-angle-right"></i>--></a></button>
+                        <!--<div class = "dropDownInsideAbout7">
+                            <a class = "name2 fade-in" href = "sammy-urtzal.html"> Individual Therapy and Psychiatry  </a>
+                            <a class = "name2 fade-in" href = "peyton-everlue.html"> Couples Therapy </a>
+                            <a class = "name2 fade-in" href = "joselyn-sputak.html"> Family Therapy </a>
+                            <a class = "name2 fade-in" href = "joselyn-sputak.html"> Speech Therapy </a>
+                            <a class = "name2 fade-in" href = "joselyn-sputak.html"> Occupational Therapy </a>
+                        </div>-->
+                    </div>
+                    <div class = "test4">
+                    <button class = "insideButtonAbout4 shorter fade-in" onclick="window.location.href = '{{site.baseurl}}/vex-overview/programs/'"><a href = "{{site.baseurl}}/vex-overview/programs/" {% if page.url == "/vex-overview/programs/" %} class = "active2"  {% else %} class = "name" {% endif %}> Programs </a><a href = "{{site.baseurl}}/vex-overview/programs/"><!--<i id = "rightArrow" class="fa fa-angle-right"></i>--></a></button>
+                        <!--<div class = "dropDownInsideAbout4">
+                            <a class = "name2 fade-in" href = "sammy-urtzal.html"> COVID-19 Testing </a>
+                            <a class = "name2 fade-in" href = "peyton-everlue.html"> COVID-19 Screening and Treatment</a>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class = "dropDownMedia">
+                <button class = "dropButtonMedia" onclick="window.location.href = '{{site.baseurl}}/media/'"><a href = "{{site.baseurl}}/media/" {% if page.url == "/media/" %} class = "active"  {% else %} class = "otherwiseMedia" {% endif %}> Media </a></button>
+                <div id = "Ownership"  class = "dropDownContentMedia medialonger fade-in">
+                    <a href = "{{site.baseurl}}/media/news/" {% if page.url == "/media/news/" %} class = "active5"  {% else %} class = "ownName" {% endif %}> Publicity </a>
+                    <a href = "{{site.baseurl}}/media/gallery/" {% if page.url contains "/media/gallery/" %} class = "active5"  {% else %} class = "ownName" {% endif %}> Gallery </a>
+                    <a href = "{{site.baseurl}}/media/website/" {% if page.url == "/media/website/" %} class = "active5"  {% else %} class = "ownName" {% endif %}> Website </a>
+                    <a href = "{{site.baseurl}}/media/social/" {% if page.url == "/media/social/" %} class = "active5"  {% else %} class = "ownName" {% endif %}> Social </a>
+                </div>
+            </div>
+            <div class = "dropDownMedia">
+                <button class = "dropButtonMedia" onclick="window.location.href = '{{site.baseurl}}/blog/'"><a href = "{{site.baseurl}}/blog/" {% if page.url contains "/blog/" %} class = "active"  {% else %} class = "otherwiseMedia" {% endif %}> Blog </a></button>
+            </div>
+            <div class = "dropDownMedia">
+                <button class = "dropButtonMedia" onclick="window.location.href = '{{site.baseurl}}/resources/'"><a href = "{{site.baseurl}}/resources/" {% if page.url == "/resources/" %} class = "active"  {% else %} class = "otherwiseMedia" {% endif %}> Resources </a></button>
+                <div id = "Ownership"  class = "dropDownContentMedia fade-in">
+                    <a href = "{{site.baseurl}}/resources/building-tips/" {% if page.url == "/resources/building-tips/" %} class = "active5"  {% else %} class = "ownName" {% endif %}> Building Tips </a>
+                    <a href = "{{site.baseurl}}/resources/notebook-tips/" {% if page.url == "/resources/notebook-tips/" %} class = "active5"  {% else %} class = "ownName" {% endif %}> Notebook Tips </a>
+                    <a href = "{{site.baseurl}}/resources/coding-tips/" {% if page.url == "/resources/coding-tips/" %} class = "active5"  {% else %} class = "ownName" {% endif %}> Coding Tips </a>
+                    <a href = "{{site.baseurl}}/resources/game-tips/" {% if page.url == "/resources/game-tips/" %} class = "active5"  {% else %} class = "ownName" {% endif %}> Competition Tips </a>
+                    <a href = "{{site.baseurl}}/resources/website-tips/" {% if page.url == "/resources/website-tips/" %} class = "active5"  {% else %} class = "ownName" {% endif %}> Website Tips </a>
+                    <a href = "{{site.baseurl}}/resources/other-links/" {% if page.url == "/resources/other-links/" %} class = "active5"  {% else %} class = "ownName" {% endif %}> Other Links </a>
+                </div>
+            </div>
+            <div class = "dropDownMedia">
+                <button class = "dropButtonMedia" onclick="window.location.href = '{{site.baseurl}}/sponsors/'"><a href = "{{site.baseurl}}/sponsors/" {% if page.url == "/sponsors/" %} class = "active"  {% else %} class = "otherwiseMedia" {% endif %}> Sponsors </a></button>
+            </div>
+            <div class = "dropDownMedia">
+                <button class = "dropButtonMedia" onclick="window.location.href = '{{site.baseurl}}/contact-us/'"><a href = "{{site.baseurl}}/contact-us/" {% if page.url == "/contact-us/" %} class = "active"  {% else %} class = "otherwiseMedia" {% endif %}> Contact Us </a></button>
+                <div id = "Ownership"  class = "dropDownContentMedia mediaShorter fade-in">
+                    <a href = "{{site.baseurl}}/contact-us/join/" {% if page.url == "/contact-us/join/" %} class = "active5"  {% else %} class = "ownName" {% endif %}> Join Us </a>
+                    <a href = "{{site.baseurl}}/contact-us/FAQs/" {% if page.url == "/contact-us/FAQs/" %} class = "active5"  {% else %} class = "ownName" {% endif %}> FAQ </a>
+                </div>
+            </div>
+        </ul>
+		<!--<ul class = "headerList">
 			<li><a href = "{{site.baseurl}}/" {% if page.url == "/" %} style = "color: rgb(213,220,59) !important;" {% endif %}> Home </a></li>
 			<div class = "dropDownAbout">
 				<button class = "dropButtonAbout" onclick="window.location.href = '{{site.baseurl}}/about/'" {% if page.url == "/about/" %} style = "color: rgb(213,220,59) !important;"{% endif %}> About Us </button>
@@ -26,7 +203,7 @@
 				<div class = "dropDownContentMedia">
 					{% for item in site.data.media_navigation %}
                         <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url contains item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
-                    {% endfor %}
+                    {% endfor %} 
 				</div>
 			</div>
 			<li><a href = "{{site.baseurl}}/blog/" {% if page.url contains "/blog/" %} style = "color: rgb(213,220,59) !important;"{% endif %}> Blog </a></li>
@@ -40,7 +217,7 @@
 			</div>
 			<li><a class = "sponsors" href = "{{site.baseurl}}/sponsors/" {% if page.url == "/sponsors/" %} style = "color: rgb(213,220,59) !important;"{% endif %}> Sponsors </a></li>
 			<li><a class = "contactUs" href = "{{site.baseurl}}/contact-us/" {% if page.url == "/contact-us/" %} style = "color: rgb(213,220,59) !important;"{% endif %}> Contact Us </a></li>
-		</ul>
+		</ul>-->
 	</nav>
     
 <!-- old hamburger menu    
@@ -94,11 +271,16 @@ function closeNav() {
 </script>-->
 
 <!-- start of new hamburger menu -->
-<div id="hamburgerMenu" onclick="menuClicked(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-</div>
+<div class = "AGH">
+    <div class = "logoBox hamLogo">
+        <a class = "homepageLogo" href = "{{site.baseurl}}/"><img src = "{{site.baseurl}}/images/EXOLogo.png"></a>
+    </div>
+    <div id="hamburgerMenu" onclick="menuClicked(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+    </div>
+</div>    
 <nav>
     <ul id="navLinks">
         <div class = "innerNav">
@@ -113,11 +295,95 @@ function closeNav() {
                 </div>
             </li>
                 <div class="phoneDropdown" id = "phone1" {% if page.url contains "/about/" %} style = "display: block !important;" {% endif %}>
-                    {% for item in site.data.navigation %}
+                    <li> <!-- history dropdown -->
+                        <a href="{{site.baseurl}}/about/history/" {% if page.url == "/about/history/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>History</a>
+                        <div class = "minusHolder2 lilMinus">
+                            <p id = "plus7" class = "plus" {% if page.url contains "/about/history/" %} style = "display: none !important;" {% endif %}>+</p>
+                            <p id = "minus7" class = "minus" {% if page.url contains "/about/history/" %} style = "display: block !important;" {% endif %}>&#8211;</p>
+                        </div>
+                    </li>
+                    <div class="phoneDropdown evenSmaller" id = "phone5" {% if page.url contains "/about/history/" %} style = "display: block !important;" {% endif %}>
+                        {% for item in site.data.history_navigation %}
+                            <li>
+                                <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                            </li>
+                        {% endfor %}
+                    </div> <!-- end of history dropdown -->
+                    <li> <!-- teams dropdown -->
+                        <a href="{{site.baseurl}}/about/teams/" {% if page.url == "/about/teams/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Teams</a>
+                        <div class = "minusHolder2 lilMinus">
+                            <p id = "plus8" class = "plus" {% if page.url contains "/about/teams/" %} style = "display: none !important;" {% endif %}>+</p>
+                            <p id = "minus8" class = "minus" {% if page.url contains "/about/teams/" %} style = "display: block !important;" {% endif %}>&#8211;</p>
+                        </div>
+                    </li>
+                    <div class="phoneDropdown evenSmaller" id = "phone6" {% if page.url contains "/about/teams/" %} style = "display: block !important;" {% endif %}>
+                        {% for item in site.data.teams_navigation %}
+                            <li>
+                                <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                            </li>
+                        {% endfor %}
+                    </div> <!-- end of teams dropdown -->
+                    <li> <!-- awards dropdown -->
+                        <a href="{{site.baseurl}}/about/awards/" {% if page.url == "/about/awards/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Awards</a>
+                        <div class = "minusHolder2 lilMinus">
+                            <p id = "plus9" class = "plus" {% if page.url contains "/about/awards/" %} style = "display: none !important;" {% endif %}>+</p>
+                            <p id = "minus9" class = "minus" {% if page.url contains "/about/awards/" %} style = "display: block !important;" {% endif %}>&#8211;</p>
+                        </div>
+                    </li>
+                    <div class="phoneDropdown evenSmaller" id = "phone7" {% if page.url contains "/about/awards/" %} style = "display: block !important;" {% endif %}>
+                        {% for item in site.data.awards_navigation %}
+                            <li>
+                                <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                            </li>
+                        {% endfor %}
+                    </div> <!-- end of awards dropdown -->
+                    <li> <!-- outreach dropdown -->
+                        <a href="{{site.baseurl}}/about/outreach/" {% if page.url == "/about/outreach/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Outreach</a>
+                        <div class = "minusHolder2 lilMinus">
+                            <p id = "plus10" class = "plus" {% if page.url contains "/about/outreach/" %} style = "display: none !important;" {% endif %}>+</p>
+                            <p id = "minus10" class = "minus" {% if page.url contains "/about/outreach/" %} style = "display: block !important;" {% endif %}>&#8211;</p>
+                        </div>
+                    </li>
+                    <div class="phoneDropdown evenSmaller" id = "phone8" {% if page.url contains "/about/outreach/" %} style = "display: block !important;" {% endif %}>
+                        {% for item in site.data.outreach_navigation %}
+                            <li>
+                                <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                            </li>
+                        {% endfor %}
+                    </div> <!-- end of outreach dropdown -->
+                    <li> <!-- advisors dropdown -->
+                        <a href="{{site.baseurl}}/about/advisors/" {% if page.url == "/about/advisors/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Advisors</a>
+                        <div class = "minusHolder2 lilMinus">
+                            <p id = "plus11" class = "plus" {% if page.url contains "/about/advisors/" %} style = "display: none !important;" {% endif %}>+</p>
+                            <p id = "minus11" class = "minus" {% if page.url contains "/about/advisors/" %} style = "display: block !important;" {% endif %}>&#8211;</p>
+                        </div>
+                    </li>
+                    <div class="phoneDropdown evenSmaller" id = "phone9" {% if page.url contains "/about/advisors/" %} style = "display: block !important;" {% endif %}>
+                        {% for item in site.data.advisors_navigation %}
+                            <li>
+                                <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                            </li>
+                        {% endfor %}
+                    </div> <!-- end of advisors dropdown -->
+                    <li> <!-- online challenges dropdown -->
+                        <a href="{{site.baseurl}}/about/challenges/" {% if page.url == "/about/challenges/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Online Challenges</a>
+                        <div class = "minusHolder2 lilMinus">
+                            <p id = "plus12" class = "plus" {% if page.url contains "/about/challenges/" %} style = "display: none !important;" {% endif %}>+</p>
+                            <p id = "minus12" class = "minus" {% if page.url contains "/about/challenges/" %} style = "display: block !important;" {% endif %}>&#8211;</p>
+                        </div>
+                    </li>
+                    <div class="phoneDropdown evenSmaller" id = "phone10" {% if page.url contains "/about/challenges/" %} style = "display: block !important;" {% endif %}>
+                        {% for item in site.data.challenges_navigation %}
+                            <li>
+                                <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                            </li>
+                        {% endfor %}
+                    </div> <!-- end of online challenges dropdown -->
+                    <!--{% for item in site.data.navigation %}
                         <li>
                             <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url contains item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
                         </li>
-                    {% endfor %}
+                    {% endfor %}-->
                 </div>
             <li>
                 <a href="{{site.baseurl}}/vex-overview/" {% if page.url == "/vex-overview/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>VEX Overview</a>
@@ -125,8 +391,22 @@ function closeNav() {
                     <p id = "plus5" class = "plus" {% if page.url contains "/vex-overview/" %} style = "display: none !important;" {% endif %}>+</p>
                     <p id = "minus5" class = "minus" {% if page.url contains "/vex-overview/" %} style = "display: block !important;" {% endif %}>&#8211;</p>
                 </div>
-            </li>
+            </li> 
                 <div class="phoneDropdown" id = "phone2" {% if page.url contains "/vex-overview/" %} style = "display: block !important;" {% endif %}>
+                    <li> <!-- Competitions dropdown -->
+                    <a href="{{site.baseurl}}/vex-overview/competition/" {% if page.url == "/vex-overview/competition/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Competitions</a>
+                    <div class = "minusHolder2 lilMinus">
+                        <p id = "plus13" class = "plus" {% if page.url contains "/vex-overview/competition/" %} style = "display: none !important;" {% endif %}>+</p>
+                        <p id = "minus13" class = "minus" {% if page.url contains "/vex-overview/competition/" %} style = "display: block !important;" {% endif %}>&#8211;</p>
+                    </div>
+                </li>
+                <div class="phoneDropdown evenSmaller" id = "phone11" {% if page.url contains "/vex-overview/competition/" %} style = "display: block !important;" {% endif %}>
+                    {% for item in site.data.competitions_navigation %}
+                        <li>
+                            <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                        </li>
+                    {% endfor %}
+                </div> <!-- end of competitions dropdown -->
                     {% for item in site.data.overview_navigation %}
                         <li>
                             <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
@@ -163,13 +443,24 @@ function closeNav() {
                             <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
                         </li>
                     {% endfor %}
-                  </div>
+                </div>
             <li>
                 <a href="{{site.baseurl}}/sponsors/" {% if page.url == "/sponsors/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Sponsors</a>
             </li>
             <li>
                 <a href="{{site.baseurl}}/contact-us/" {% if page.url == "/contact-us/" %} style = "color: rgb(213,220,59) !important;" {% endif %}>Contact Us</a>
+                <div class = "minusHolder2">
+                    <p id = "plus14" class = "plus" {% if page.url contains "/contact-us/" %} style = "display: none !important;" {% endif %}>+</p>
+                    <p id = "minus14" class = "minus" {% if page.url contains "/contact-us/" %} style = "display: block !important;" {% endif %}>&#8211;</p>
+                </div>
             </li>
+                <div class="phoneDropdown" id = "phone12" {% if page.url contains "/contact-us/" %} style = "display: block !important;" {% endif %}>
+                    {% for item in site.data.contact_navigation %}
+                        <li>
+                            <a href = "{{site.baseurl}}{{ item.link }}" {% if page.url == item.link %} style = "color: rgb(213, 220, 59);" {% endif %}>{{ item.name }}</a>
+                        </li>
+                    {% endfor %}
+                </div>
         </div> <!-- end of inner nav -->
     </ul>
 </nav>    

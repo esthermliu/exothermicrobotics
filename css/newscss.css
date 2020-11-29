@@ -32,7 +32,7 @@
 	font-size: 24px;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	color: white;
 	letter-spacing: 5px;
 	line-height: 42px;
@@ -49,17 +49,18 @@
 }
 
 .firstSection {
-	background-color: #f0f0f0;
+	background-color: white;
 	padding: 8% 20% 8% 20%;
 	font-family: Roboto, sans-serif;
-	color: #626262;
+	color: #323232;
 }
 
 .firstSection h2 {
-	font-weight: normal;
-	font-size: 45px;
+	font-weight: 400;
+	font-size: 40px;
 	text-align: center;
-	padding-bottom: 3%;	
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .overallSection {
@@ -77,6 +78,7 @@
 
 .news p {
 	text-align: justify;
+    letter-spacing: 0.4px;
 }
 
 #news1 {
@@ -92,13 +94,13 @@
 }
 
 .writtenSection a {
-    color: #626262;
+    color: #323232;
     transition-duration: 0.3s;
     -webkit-transition-duration: 0.3s;
 }
 
 .writtenSection a:hover {
-    color: rgb(96, 156, 14);
+    color: rgb(158, 163, 60);
 }
 
 .writtenSection {
@@ -116,7 +118,7 @@
 }
 
 .fixedNews {
-	border-left: 1px solid #626262;
+	border-left: 1px solid #323232;
 	width: 15%;
 	text-align: center;
 	line-height: 30px;
@@ -125,12 +127,12 @@
 }
 
 .fixedNews a {
-	color: #626262;
+	color: #323232;
 	transition-duration: 0.2s;
 }
 
 .fixedNews a:hover {
-	color: rgb(96, 156, 14);
+	color: rgb(158, 163, 60);
 }
 
 .fixedNewsPhone {
@@ -138,7 +140,7 @@
 }
 
 .writtenSection h4, .writtenSection h3 {
-	font-weight: 300;
+	font-weight: 400;
 	line-height: 25px !important;
 }
 
@@ -148,7 +150,7 @@
 
 .writtenSection h3 {
 	letter-spacing: 1.5px;
-	font-weight: 700 !important;
+	font-weight: 500 !important;
 	margin-bottom: 10px;
 }
 
@@ -158,16 +160,18 @@
 }
 
 .learnMoreButton button {
-  color: #dbb52f;
   text-transform: uppercase;
   background-color: rgba(255,255,255,0);
-  border: 2px solid rgb(96, 156, 14);
+  border: 2px solid rgb(158, 163, 60);
   z-index: 2;
-  padding: 15px 15px;
-  color: rgb(96, 156, 14);
+  padding: 20px 15px;
+  color: rgb(158, 163, 60);
     -webkit-transition-duration: 0.2s; 
   transition-duration: 0.2s;
   cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    border-radius: 4px;
 }
 
 .learnMoreButton:hover button {
@@ -181,10 +185,11 @@
  
  .newsHolder {
 	width: 82%;
+    padding-top: 8%;
  }
  
  .currentYear {
-	color: rgb(96, 156, 14) !important;
+	color: rgb(158, 163, 60) !important;
  }
  
  .noDrop {
@@ -194,3 +199,21 @@
  #noPicture {
 	width: 100%;
  }
+
+/* title after */
+.titleSection, .actualTitle {
+	position: relative;
+}
+
+.titleSection h2:after, .actualTitle h2:after    {
+	position: absolute;
+	content: '';
+	height: 3px;
+	bottom: -15px;
+	margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 10%;
+	background: rgb(213,220,59);
+}
+

@@ -9,7 +9,7 @@
 	font-size: 24px;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	color: white;
 	letter-spacing: 5px;
 	line-height: 42px;
@@ -34,7 +34,7 @@
 }
 
 .firstSection, .sixthSection {
-	background-color: #f0f0f0;
+	background-color: white;
 }
 
 .aboutUsSection {
@@ -47,8 +47,8 @@
 	display: flex;
 	justify-content: center;
 	font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 	font-size: 30px !important;
-	padding-bottom: 3%;
 }
 
 .eventTitle {
@@ -63,18 +63,26 @@
 }
 
 .aboutUsTitle h2, .teamTitleSection h2, .boardTitle h2 {
-	font-weight: normal;
-	color: #626262;
+	font-weight: 400;
+	color: #323232;
+    text-transform: uppercase;
+    font-size: 40px !important;
+    letter-spacing: 1.5px;
 }
 
 .quickStatsTitle h2 {
-	font-weight: normal;
+	font-weight: 400;
 	color: white;
+    text-transform: uppercase;
+    font-size: 40px !important;
+    letter-spacing: 1.5px;
 }
 
 .aboutUsArticle, .quickStatsArticle {
 	font-family: "Roboto", sans-serif;
 	line-height: 30px;
+    padding-top: 8%;
+    letter-spacing: 0.4px;
 }
 
 .aboutUsArticle p, .quickStatsArticle p {
@@ -82,7 +90,8 @@
 }
 
 .aboutUsArticle p {
-	color: #626262;
+	color: #323232;
+    text-align: center;
 }
 
 .landingBackground {
@@ -105,7 +114,6 @@
 }
 
 .titleHolder h1 {
-	display: flex;
 	text-align: center;
 }
 
@@ -114,12 +122,6 @@
 	min-width: 100%;
 	position: fixed;
 	z-index: -1;
-}
-
-.titleHolder img {
-	padding-bottom: 3vh;
-	height: 121px;
-	width: 120px;
 }
 
 .navbar {
@@ -135,7 +137,7 @@
 }
 
 .secondSectionBackground {
-	background-image: linear-gradient(rgba(67, 90, 165, 0.4), rgba(165, 67, 95, 0.5));
+	background-image: linear-gradient(rgba(67, 90, 165, 0.6), rgba(165, 67, 95, 0.6));
 	width: 100%;
 }
 
@@ -207,14 +209,14 @@
 
 .firstStart h2, .location h2, .slogan h2, .teamLogo h2 {
 	font-family: "Roboto", sans-serif;
-	font-size: 30px;
+	font-size: 25px;
 	letter-spacing: 1.5px;
 	line-height: 42px;
 	font-weight: 300;
 }
 
 .thirdSection {
-	background-color: rgb(232, 245, 225);
+	background-color: white;
 }
 
 .teamSection, .boardMemberSection, .eventSection {
@@ -227,6 +229,10 @@
 .firstTeamContainer, .secondTeamContainer {
 	display: flex;
 	justify-content: space-evenly;
+}
+
+.firstTeamContainer {
+    padding-top: 8%;
 }
 
 .TeamALink, .TeamCLink, .TeamFLink, .TeamXLink {
@@ -305,6 +311,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 
 .Filter {
@@ -318,11 +325,11 @@
 }
 
 .Filter h4 {
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto Condensed", sans-serif;
 	font-weight: 300;
-	font-size: 35px;
-	letter-spacing: 2px;
-	line-height: 35px;
+	font-size: 25px;
+	letter-spacing: 5px;
+	line-height: 30px;
 	color: white;
 	padding: 15px;
 }
@@ -339,35 +346,38 @@
 }
 
 .fourthSection {
-	background-color: white;
+	background-color: rgb(232, 245, 225);
 }
 
 .learnMoreButton button {
-  color: #dbb52f;
   text-transform: uppercase;
   background-color: rgba(255,255,255,0);
-  border: 2px solid rgb(96, 156, 14);
+  border: 2px solid rgb(175, 181, 49);
   z-index: 2;
-  padding: 15px 15px;
+  padding: 20px 20px;
   margin: 35px;
-  color: rgb(96, 156, 14);
+  color: rgb(175, 181, 49);
     -webkit-transition-duration: 0.2s; 
   transition-duration: 0.2s;
   cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    border-radius: 4px;
 }
 
 .learnMoreButton:hover button {
-   color: rgb(46, 74, 7);
+   color: #6d8700;
 }
 
 .learnMoreButton:hover button {
-  border-color: rgb(46, 74, 7);
+  border-color: #6d8700;
  }
  
 .circleContainerBoard {
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
+    padding-top: 8%;
 }
 
 .Circle2 {
@@ -413,7 +423,7 @@
 	font-weight: 50;
 	line-height: 30px;
 	text-transform: uppercase;
-	color: #626262;
+	color: #323232;
 	border: none;
 }
 
@@ -421,7 +431,8 @@
 	font-family: "Roboto", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
-	color: #626262;
+	color: #323232;
+    letter-spacing: 1px;
 }
 
 .fifthSection {
@@ -433,7 +444,7 @@
 }
 
 .fifthSectionBackground {
-	background-image: linear-gradient(rgba(165, 67, 95, 0.3), rgba(136, 173, 83, 0.3));
+	background-image: linear-gradient(rgba(165, 67, 95, 0.6), rgba(136, 173, 83, 0.4));
 	height: 100%;
 	width: 100%;
 }
@@ -443,12 +454,16 @@
 } 
 
 .eventTitle h2 {
-	font-weight: normal;
+	font-weight: 400;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 1.5px !important;
 }
 
 .eventArticle {
 	display: flex;
 	justify-content: space-evenly;
+    padding-top: 8%;
 }
 
 .event1, .event2, .event3 {
@@ -474,7 +489,7 @@
 	font-family: "Roboto", sans-serif;
 	font-size: 24px;
 	text-transform: uppercase;
-	font-weight: 50;
+	font-weight: 500;
 	line-height: 42px;
 	letter-spacing: 1.5px;
 }
@@ -496,6 +511,7 @@
 	margin-top: 0 !important;
 	text-transform: none;
 	padding-bottom: 4%;
+    font-weight: 400 !important;
 }
 
 .eventSection {
@@ -515,12 +531,15 @@
   background-color: rgba(255,255,255,0);
   border: 2px solid white;
   z-index: 2;
-  padding: 15px 15px;
+  padding: 20px 20px;
   margin: 35px;
   color: white;
     -webkit-transition-duration: 0.2s; 
   transition-duration: 0.2s;
   cursor: pointer;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
 }
 
 
@@ -637,7 +656,7 @@
 .textHolder h3, .textHolder2 h3, .textHolder3 h3, .textHolder4 h3, .textHolder5 h3, .textHolder6 h3, .textHolder7 h3, .textHolder8 h3  {
 	font-family: "Roboto", sans-serif;
 	font-size: 45px;
-	font-weight: 50;
+	font-weight: 400;
 	letter-spacing: 1.5px;
 }
 
@@ -665,7 +684,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-top: 3%;
+	padding-top: 5%;
 } 
 
 .imageHolder img {
@@ -676,6 +695,7 @@
 .overallNewSection {
 	display: flex;
 	justify-content: space-between;
+    padding-top: 8%;
 }
 
 .overallNewSectionEvent {
@@ -794,13 +814,6 @@
 	overflow: hidden;
 }
 
-#marginRight {
-	margin-right: 3%;
-}
-
- 
-
-
 .popup {
 	background-color: #e5e5e5;
 	position: fixed;
@@ -868,5 +881,190 @@
   to {opacity:1 ;}
 }
 	
- 
- 
+/* fade in white */
+html {
+    background-color: black;
+}
+
+html.white {
+    background-color: black;	
+}
+
+body {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+/* fade up and down animations */
+
+.titleHolder img, .titleHolder h1, .titleHolder h2 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateY(-40px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateY(0);
+    }
+ }
+         
+ @keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateY(-40px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ }
+
+ .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+ }
+
+/* fade up */
+
+@-webkit-keyframes fadeInUp {
+    0% {
+       opacity: 0;
+       /*-webkit-transform: translateY(20px);*/
+    }
+    100% {
+       opacity: 1;
+      /* -webkit-transform: translateY(0px);*/
+    }
+ }
+         
+ @keyframes fadeInUp {
+    0% {
+       opacity: 0;
+       transform: translateY(20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0px);
+    }
+ }
+
+ .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+ }
+
+
+/* fade in left */
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateX(80px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateX(0);
+    }
+ }
+
+ @keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(80px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }
+
+/* fade in right */
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateX(-80px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateX(0);
+    }
+ }
+
+ @keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(-80px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }
+
+
+
+/* show on scroll */
+.show-on-scroll, .show-on-scroll-left, .show-on-scroll-right, .show-on-scroll-up, .show-on-scroll-down {
+    opacity: 0;
+	transition: transform 4s 0.25s cubic-bezier(0,1,.3,1),
+              opacity .3s 0.25s ease-out;
+	will-change: transform, opacity;
+}
+
+.show-on-scroll-left, .show-on-scroll-right, .show-on-scroll-up, .show-on-scroll-down {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.is-visible {
+    opacity: 1 !important;
+}
+
+/* title underline */
+
+
+.aboutUsTitle, .quickStatsTitle, .teamTitleSection, .boardTitle, .eventTitle {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.aboutUsTitle h2:after, .quickStatsTitle h2:after, .teamTitleSection h2:after, .boardTitle h2:after, .eventTitle h2:after   {
+	position: absolute;
+	content: '';
+	height: 3px;
+	bottom: -15px;
+	margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 10%;
+	background: rgb(213,220,59);
+}
+
+.quickStatsTitle h2:after {
+    width: 8% !important;
+}
+

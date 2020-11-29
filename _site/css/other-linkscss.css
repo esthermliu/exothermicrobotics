@@ -28,7 +28,7 @@
 	font-size: 24px;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	color: white;
 	letter-spacing: 5px;
 	line-height: 42px;
@@ -48,14 +48,15 @@
 	background-color: #f0f0f0;	
 	padding: 8% 20% 8% 20%;
 	font-family: Roboto, sans-serif;
-	color: #626262;
+	color: #323232;
 }
 
 .firstSection h2 {
-	font-weight: normal;
-	font-size: 45px;
+	font-weight: 400;
+	font-size: 40px;
 	text-align: center;
-	padding-bottom: 3%;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 .section {
@@ -63,11 +64,15 @@
 	justify-content: space-between;
 	padding-bottom: 3%;
 	padding-top: 3%;
-	border-bottom: 1px solid #626262;
+	border-bottom: 1px solid #323232;
 }
 
 .textSection {
 	width: 47%;
+}
+
+.overallSection {
+    padding-top: 8%;
 }
 
 .imageHolder {
@@ -96,16 +101,22 @@
 }
 
 .learnMoreButton button {
-  color: #dbb52f;
   text-transform: uppercase;
   background-color: rgba(255,255,255,0);
-  border: 2px solid rgb(96, 156, 14);
+  border: 2px solid rgb(175, 181, 49);
   z-index: 2;
-  padding: 15px 15px;
-  color: rgb(96, 156, 14);
+  padding: 20px 15px;
+  color: rgb(175, 181, 49);
     -webkit-transition-duration: 0.2s; 
   transition-duration: 0.2s;
   cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    border-radius: 4px;
+}
+
+p {
+    letter-spacing: 0.4px;
 }
 
 .learnMoreButton:hover button {
@@ -121,6 +132,7 @@
 	letter-spacing: 1.5px;
 	margin-bottom: 10px;
 	text-transform: uppercase;
+    font-weight: 500 !important;
 }
 
 .textSection p {
@@ -133,9 +145,11 @@
 }
 
 #rubrics h3 {
-	font-weight: normal;
+	font-weight: 500;
 	font-size: 24px;
 	margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 
@@ -151,7 +165,7 @@
 }
 
 .textSectionRubric a {
-	color: rgb(96, 156, 14)
+	color: rgb(175, 181, 49);
 }
 
 
@@ -166,11 +180,32 @@
 }
 
 .textSectionRubric p a {
-		color: rgb(96, 156, 14);
-		transition-duration: 0.2s;
-		-webkit-transition-duration: 0.2s;
-	}
+    color: rgb(175, 181, 49);
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+}
 	
-	.textSectionRubric p a:hover {
-		color: rgb(46, 74, 7)
-	}
+.textSectionRubric p a:hover {
+    color: rgb(46, 74, 7)
+}
+
+/* title after */
+.titleSection, .actualTitle {
+	position: relative;
+}
+
+.titleSection h2:after, .titleSection h1:after    {
+	position: absolute;
+	content: '';
+	height: 3px;
+	bottom: -15px;
+	margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 10%;
+	background: rgb(213,220,59);
+}
+
+.padYea {
+    padding-top: 8%;
+}

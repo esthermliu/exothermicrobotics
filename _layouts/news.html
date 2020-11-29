@@ -3,14 +3,14 @@ layout: default
 ---
 
 <div class = "firstSection">
-    <div class = "titleHolder">
+    <div class = "titleHolder actualTitle show-on-scroll-up">
 	<h2> {{ page.subtitle }} </h2>
     {% if page.news == false %}
         <h3><i>No News For This Year!</i></h3>
     {% endif %}
     </div>
 	<div class = "overallSection">
-	<div class = "fixedNewsPhone">
+	<div class = "fixedNewsPhone show-on-scroll-right">
 			<p> <b>Years</b> </p>
             {% for item in site.data.news_navigation %}
                     <p><a href = "{{ item.link }}" {% if page.url == item.link %} class = "currentYear" {% endif %}{% if page.url == "/media/news/2008/" %} id = "lastYear" {% endif %}>{% if page.url == item.link %} &rarr; {% endif %} {{ item.name }}</a></p>
@@ -20,7 +20,7 @@ layout: default
 		<div class = "newsHolder">
 			{{ content }}
 		</div>
-		<div class = "fixedNews">
+		<div class = "fixedNews show-on-scroll-left">
 			<p> <b>Years</b> </p>
             {% for item in site.data.news_navigation %}
                     <p><a href = "{{ item.link }}" {% if page.url == item.link %} class = "currentYear" {% endif %}>{% if page.url == item.link %} &rarr; {% endif %} {{ item.name }}</a></p>

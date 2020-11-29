@@ -32,7 +32,7 @@
 	font-size: 24px;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	color: white;
 	letter-spacing: 5px;
 	line-height: 42px;
@@ -49,22 +49,28 @@
 }
 
 .firstSection {
-	background-color: #f0f0f0;
+	background-color: white;
 	font-family: Roboto, sans-serif;
 	padding: 8% 25% 8% 25%;
-	color: #626262;
+	color: #323232;
 }
 
 .firstSection h2 {
-	font-weight: normal;
-	font-size: 45px;
-	text-align: center;
-	padding-bottom: 3%;
+    font-weight: 400;
+    color: #323232;
+    text-transform: uppercase;
+    font-size: 40px !important;
+    letter-spacing: 1.5px;
+    text-align: center;
 }
 
 .firstSection p {
 	line-height: 30px;
 	margin-bottom: 15px;
+}
+
+.historyHolder {
+    padding-top: 8%;
 }
 
 #secondSection  {
@@ -108,7 +114,6 @@
 	text-align: center;
 	font-weight: 300;
 	letter-spacing: 1.5px;
-	padding-bottom: 3%;
 }
 
 .textSection h4 {
@@ -121,9 +126,9 @@
 	margin-bottom: 15px;
 }
 
-#thirdSection , #fifthSection, #seventhSection, #ninthSection, #eleventhSection, #thirteenthSection, #fifteenthSection {
+/*#thirdSection , #fifthSection, #seventhSection, #ninthSection, #eleventhSection, #thirteenthSection, #fifteenthSection {
 	background-color: rgb(232, 245, 225);
-}
+}*/
 
 #eighthSection, #tenthSection, #twelvethSection, #fourteenthSection {
 	background-color: white;	
@@ -134,7 +139,7 @@
 	justify-content: center;
     align-items: center;
     transform: rotate(135deg);
-    box-shadow: -2px 2px 0 #626262;
+    box-shadow: -2px 2px 0 #323232;
     border: none;
     outline: none;
     cursor: pointer;
@@ -155,20 +160,23 @@
   background-color: rgba(25,25,25,0);
   border: 2px solid rgb(51, 51, 51);
   z-index: 2;
-  padding: 15px 15px;
+  padding: 20px 20px;
   color: rgb(51, 51, 51);
     -webkit-transition-duration: 0.2s; 
   transition-duration: 0.2s;
   cursor: pointer;
   margin: 15px;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
 }
 
 .eventButton:hover button {
-   color: rgb(213,220,59);
+   color: #bac600;
 }
 
 .eventButton:hover button {
-    border-color: rgb(213,220,59);
+    border-color: #bac600;
  }
 
  .toSectionButtons {
@@ -203,14 +211,19 @@
 	margin-bottom: 15px;
 }
 
+.textSection p {
+    letter-spacing: 0.4px;
+}
+
 .imageHolder img {
-	margin-bottom: 30px;
+	margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 .towerTakeoverVideo {
 	width: 100%;
 	height: 500px;
-	padding-top: 15px;
+	padding-top: 5%;
 }
 
 #Hide, #Hide2, #Hide3, #Hide4, #Hide5, #Hide6, #Hide7, #Hide8 {
@@ -249,7 +262,7 @@
 	padding-top: 15px;
 	padding-bottom: 15px;
 	font-family: Roboto, sans-serif;
-	color: #626262;
+	color: #323232;
 	line-height: 30px;
 }
 
@@ -287,7 +300,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	top: 19%;
 }
 
 .horizontalMinus:hover, .horizontalMinus2:hover, .horizontalMinus3:hover, .horizontalMinus4:hover, .horizontalMinus5:hover, .horizontalMinus6:hover, .horizontalMinus7:hover, .horizontalMinus8:hover {
@@ -307,17 +319,17 @@
 }
 
 .videoHolder {
-	margin: 0% 25% 8% 25%;
+	margin: 0% 25% 0% 25%;
 	border-top: 1px solid black; 
 	padding-top: 15px;
 	padding-bottom: 15px;
 	font-family: Roboto, sans-serif;
-	color: #626262;
+	color: #323232;
 	line-height: 30px;
 }
 
 .detailSection a {
-	color: #626262;
+	color: #323232;
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
 }
@@ -328,4 +340,95 @@
 
 #sixthSection {
 	background-color: white;
+}
+
+
+/* title after */
+.titleSection. .historyTitle {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.titleSection h2:after, .historyTitle h3:after   {
+	position: absolute;
+	content: '';
+	height: 3px;
+	bottom: -20px;
+	margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 15%;
+	background: rgb(213,220,59);
+}
+
+.activeButton button {
+    color: #bac600;
+    border-color: #bac600;
+}
+
+.extraMargin {
+    margin: 0% 25% 8% 25%;
+}
+
+.beforeImage {
+    margin-bottom: 0 !important;
+}
+
+/* landing background images */
+
+.year1 {
+    background-image: url("/images/Gallery89.jpg");
+}
+
+.year2 {
+    background-image: url("/images/Gallery90.jpg");
+}
+
+.year3 {
+    background-image: url("/images/Gallery80.jpg");
+}
+
+.year4 {
+    background-image: url("/images/Gallery69.jpg");
+}
+
+.year5 {
+    background-image: url("/images/RoundUp.jpeg");
+}
+
+.year6 {
+    background-image: url("/images/Gallery61.jpg");
+}
+
+.year7 {
+    background-image: url("/images/Gallery63.jpg");
+}
+
+.year8 {
+    background-image: url("/images/TossUp.jpeg");
+}
+
+.year9 {
+    background-image: url("/images/Gallery72.jpg");
+}
+
+.year10 {
+    background-image: url("/images/Gallery74.jpg");
+}
+
+.year11 {
+    background-image: url("/images/Gallery76.jpg");
+}
+
+.year12 {
+    background-image: url("/images/Gallery90.jpg");
+}
+
+.year13 {
+    background-image: url("/images/Gallery43.jpg");
+}
+
+.year14 {
+    background-image: url("/images/Gallery161.JPG");
 }

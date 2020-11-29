@@ -28,7 +28,7 @@
 	font-size: 24px;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	color: white;
 	letter-spacing: 5px;
 	line-height: 42px;
@@ -45,17 +45,18 @@
 }
 
 .firstSection {
-	background-color: #f0f0f0;
-	color: #626262;
+	background-color: white;
+	color: #323232;
 	font-family: Roboto, sans-serif;
 	padding: 8% 25% 8% 25%;
 }
 
 .firstSection h2 {
-	font-size: 45px;
+	font-weight: 400;
+	font-size: 40px;
 	text-align: center;
-	font-weight: normal;
-	padding-bottom: 3%;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 .firstSection h3 {
@@ -67,6 +68,11 @@
 .firstSection p {
 	line-height: 30px;
 	margin-bottom: 15px;
+}
+
+.textBlock {
+    padding-top: 8%;
+    letter-spacing: 0.4px;
 }
 
 .imageHolder {
@@ -124,14 +130,32 @@
  }
  
  .firstSection p a {
-	color: rgb(96, 156, 14);
-	transition-duration: 0.2s;
-	-webkit-transition-duration: 0.2s;
+	color: rgb(175, 181, 49);
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
  }
  
  .firstSection p a:hover {
 	color: rgb(46, 74, 7);
  }
+
+/* title after */
+.titleSection, .actualTitle {
+	position: relative;
+}
+
+.titleSection h2:after, .titleSection h1:after    {
+	position: absolute;
+	content: '';
+	height: 3px;
+	bottom: -15px;
+	margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 10%;
+	background: rgb(213,220,59);
+}
+
 
 .mapouter {
 	width: 100%;

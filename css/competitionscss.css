@@ -1,5 +1,5 @@
 .landing {
-	background-image: url("/images/Gallery107.jpeg");
+	background-image: url("/images/ChangeUp.JPG");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -32,7 +32,7 @@
 	font-size: 24px;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	color: white;
 	letter-spacing: 5px;
 	line-height: 42px;
@@ -49,7 +49,7 @@
 }
 
 .overallSection {
-	background-color: #f0f0f0;
+	background-color: white;
 	padding-bottom: 8%;
 }
 
@@ -65,35 +65,40 @@
 	margin-left: 15px;
 }
 
+.fitDiff {
+    height: auto !important;
+}
+
 .firstSection {
 	margin: 0 20% 0 20%;
 	padding-top: 8%;
 	font-family: Roboto, sans-serif;
-	color: #626262;
-	line-height: 30px;
+	color: #323232;
 }
 
 .firstSection p, .TurningPoint p, .theZone p, .starStruck p, .net p {
 	padding-bottom: 15px;
+    line-height: 30px;
 }
 
 .firstSection h1 {
 	text-align: center;
-	padding-bottom: 8%;
 	font-family: Roboto, sans-serif;
-	font-weight: normal;
-	color: #626262;
-	font-size: 45px;
+	font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+	color: #323232;
+	font-size: 40px;
 }
 
 .writtenSection h2 {
-	font-weight: 300;
+	font-weight: 400;
 	padding-bottom: 15px;
 }
 
 
 .detailSection h2, .scoringSection h2 {
-	font-weight: 300;
+	font-weight: 400;
 	padding-bottom: 15px;
 }
 
@@ -103,6 +108,7 @@
 
 .scoringTableTower {
 	margin-top: 15px;
+    line-height: 30px;
 }
 
 .scoringTableTower th {
@@ -168,7 +174,7 @@ td {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	font-family: Roboto, sans-serif;
-	color: #626262;
+	color: #323232;
 	line-height: 30px;
 }
 
@@ -224,3 +230,168 @@ td {
 	float: right;
 	transform: rotate(-90deg);
 }*/
+
+/* title after */
+.titleSection {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.titleSection h1:after   {
+	position: absolute;
+	content: '';
+	height: 3px;
+	bottom: -15px;
+	margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 10%;
+	background: rgb(213,220,59);
+}
+
+.overviewSection {
+    padding-top: 8%;
+}
+
+.skinnier {
+    margin-left: 25% !important;
+    margin-right: 25% !important;
+}
+
+.detailSection ul {
+    line-height: 30px;
+    padding-left: 30px;
+    list-style-type: square;
+}
+
+.imageActual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.imageActual img {
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.turning {
+    background-image: url("/images/Gallery9.jpg");
+}
+
+.zone {
+    background-image: url("/images/Gallery94.jpg");
+}
+
+.star {
+    background-image: url("/images/starstruckField.jpg");
+}
+
+.netLand {
+    background-image: url("/images/Net.jpg");
+}
+
+.changeLand {
+    background-image: url("/images/ChangeUpField2.JPG");
+}
+
+.towerLand {
+    background-image: url("/images/Gallery107.jpeg");
+}
+
+.learnMoreContainer {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 5%;
+	flex-wrap: wrap;
+    padding-right: 18%;
+    padding-left: 18%;
+}
+
+.competitionLink, .programsLink, .eventsLink {
+	height: 30vh;
+	width: 30%;
+	margin-right: 2%;
+	margin-bottom: 2.5%;
+}
+
+.competitionLink, .eventsLink, .programsLink {
+	background-image: url("/images/FillerPicture.jpg");
+	object-fit: cover;
+	transition: transform 0.2s;
+	background-position: center;
+}
+
+.competitionLink {
+	background-image: url("/images/ChangeUpField2.JPG");
+}
+
+.eventsLink {
+	background-image: url("/images/ChangeUp.JPG");
+}
+
+.programsLink {
+	background-image: url("/images/Gallery9.jpg");
+}
+
+#outreach {
+	background-image: url("/images/Gallery94.jpg");
+}
+
+#advisors {
+	background-image: url("/images/starstruckField.jpg");
+}
+
+#awards {
+	background-image: url("/images/Net.jpg");
+}
+
+#challenges {
+	background-image: url("/images/OnlineChallengeBackground.jpg");
+}
+
+.competitionLink:hover, .eventsLink:hover, .programsLink:hover {
+	-ms-transform: scale(1.5); /* IE 9 */
+	-webkit-transform: scale(1.5); /* Safari 3-8 */
+	transform: scale(1.1); 
+	transition-duration: 0.3s;
+}
+
+.competitionLink:hover .Filter, .eventsLink:hover .Filter, .programsLink:hover .Filter {
+	background-color: rgba(51,51,51,0.1);
+	height: 25vh;
+	width: 85%;
+	border: 2px solid white;
+}
+
+.competition, .events, .programs {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.Filter {
+	height: 30vh;
+	width: 100%;
+	background-color: rgba(51,51,51, 0.4);
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	transition-duration: 0.3s;
+}
+
+.Filter h4 {
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 2px;
+	line-height: 35px;
+	color: white;
+	padding: 15px;
+	text-transform: uppercase;
+    text-align: center;
+}

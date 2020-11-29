@@ -46,7 +46,17 @@
 	
 	.firstSection h3 {
 	margin-left: 0 !important;
-}
+    }
+    
+    .learnMoreContainer {
+        flex-wrap: wrap;
+    }
+    .competitionLink, .eventsLink, .programsLink {
+        width: 100%;
+        margin-bottom: 10%;
+        margin-right: 0 !important;
+    }
+
 	
 	
 }

@@ -1,0 +1,1705 @@
+---
+layout: default
+title: Exothermic Robotics Gallery
+custom_css: 
+    - gallerycss
+    - galleryMedia
+---
+
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+   document.documentElement.style.overflow = 'hidden';  // firefox, chrome
+   document.body.scroll = "no"; // ie only
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+  document.documentElement.style.overflow = 'auto';  // firefox, chrome
+  document.body.scroll = "yes"; // ie only
+}
+
+
+var slideIndex = 0;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<div class = "landing sackLand">
+	<div class = "landingBackground">
+		<div class = "titleHolder">
+			<img class = "show-on-scroll-down" src = "{{ site.baseurl }}/images/EXOLogo.png" alt = "Exo logo">
+			<h1 class = "show-on-scroll-up">Gallery</h1>
+			<h2 class = "show-on-scroll-up"> Sack Attack 2012 - 2013</h2>
+		</div>
+	</div>
+</div>
+
+<div id = "Tower" class = "firstSection">
+    <div class = "titleSection show-on-scroll-up">
+        <h2 class = "gallery">Sack Attack</h2>
+    </div>
+    <div id = "toSectionButtons" class = "toSectionButtons show-on-scroll-right">
+		<div class = "buttonContainer" id = "buttonContainer">
+		    <div id = "heightButtonContainer" class = "insideButtonContainer">
+                <a href = "{{ site.baseurl }}/media/gallery/" class="eventButton"><button>Change Up</button></a>
+                <a href = "{{ site.baseurl }}/media/gallery/tower-takeover/" class="eventButton"><button>Tower Takeover</button></a>
+                <a href = "{{ site.baseurl }}/media/gallery/turning-point/" class="eventButton"><button>Turning Point</button></a>
+                <a href = "{{ site.baseurl }}/media/gallery/in-the-zone/" class="eventButton"><button>In The Zone</button></a>
+                <a href = "{{ site.baseurl }}/media/gallery/starstruck/" class="eventButton"><button>Starstruck</button></a>
+                <a href = "{{ site.baseurl }}/media/gallery/nothing-but-net/" class="eventButton"><button>Nothing But Net</button></a>
+                <a href = "{{ site.baseurl }}/media/gallery/skyrise/" class="eventButton"><button>Skyrise</button></a>
+                <a href = "{{ site.baseurl }}/media/gallery/sack-attack/" class="eventButton activeGallery"><button>Sack Attack</button></a>
+                <a href = "{{ site.baseurl }}/media/gallery/gateway/" class="eventButton"><button>Gateway</button></a>
+                <a href = "{{ site.baseurl }}/media/gallery/clean-sweep/" class="eventButton"><button>Clean Sweep</button></a>
+			</div>
+		</div>
+	</div>
+    <div class="row show-on-scroll-up">
+		<div class="column">
+		<img src="{{ site.baseurl }}/images/Gallery62.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+          </div>
+         <div class="column">
+            <img src="{{ site.baseurl }}/images/Gallery63.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="{{ site.baseurl }}/images/Gallery67.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="{{ site.baseurl }}/images/Gallery68.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+          <div class="column">
+            <img src="{{ site.baseurl }}/images/Gallery70.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </div>
+	</div>
+</div>
+<!--<div class = "firstSection">-->
+<div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<a class="prev" onclick="plusSlides(1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(-1)">&#10095;</a>
+  <div class="modal-content">
+  
+  	<!--<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery69.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery59.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery66.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery65.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery61.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery60.jpg">
+		</div>
+    </div>-->
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery70.jpg">
+		</div>
+    </div>
+	
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery68.jpg">
+		</div>
+    </div>
+  
+  	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery67.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery63.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery62.jpg">
+		</div>
+    </div>
+	
+	<!--<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery73.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery72.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery71.png">
+		</div>
+    </div>-->
+	
+	<!--<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery74.jpg">
+		</div>
+    </div>-->
+	
+	<!--<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery86.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery85.png">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery84.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery83.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery82.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery81.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery80.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery79.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery78.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery77.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery76.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery75.jpg">
+		</div>
+    </div>-->
+	
+  <!--<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery94.jpg">
+		</div>
+    </div>
+  
+  	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery93.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery92.jpg">
+		</div>
+    </div>
+	
+    <div class="mySlides">
+	<div class = "slidePicture">
+		<img src="{{ site.baseurl }}/images/Gallery91.jpg">
+	  </div>
+    </div>
+
+    <div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery90.jpg">
+	</div>
+	</div>
+
+    <div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery89.jpg">
+	</div>
+    </div>
+
+    <div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery88.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img  src="{{ site.baseurl }}/images/Gallery87.jpg">
+	 </div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/GALLERY8.JPG">
+	 </div>
+    </div>
+
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/GALLERY7.JPG">
+	 </div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/GALLERY3.JPG">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery2.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery1.jpg">
+	</div>
+    </div>-->
+	
+	<!--<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery55.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery54.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery53.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery52.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery51.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery50.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery49.jpg">
+	 </div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery48.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery45.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery44.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery43.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery42.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery41.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery40.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery39.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery38.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery37.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery36.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery35.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery34.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery33.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery32.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery31.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery30.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery29.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery28.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery27.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery26.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery25.jpeg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery24.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery23.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery22.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery21.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery20.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery19.jpeg">
+	</div>
+    </div>
+
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery18.jpg">
+	</div>
+    </div>
+
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery17.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery16.jpg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+	<div class = "slidePicture">
+      <img src="{{ site.baseurl }}/images/Gallery15.jpeg">
+	</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery14.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery13.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery12.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery11.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery10.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery9.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery6.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery5.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery4.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery47.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery46.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery58.jpeg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery95.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery96.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery97.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery98.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery99.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery100.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery101.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery102.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery103.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery104.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery105.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery106.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery107.jpeg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery108.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery109.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery110.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery111.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery112.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery113.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery114.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery115.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery116.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery117.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery118.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery119.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery120.png">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/awards/Award129.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery121.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery122.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery126.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery127.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery128.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery129.jpg">
+		</div>
+    </div>
+
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery130.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery131.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/AboutUsBackground.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery132.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery133.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery134.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery135.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery136.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery137.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery138.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery139.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery140.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery141.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery142.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery143.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery144.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery145.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery146.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery147.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery148.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery149.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery150.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery151.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery152.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery153.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery154.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery155.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery156.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery157.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery158.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery159.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery160.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery161.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery162.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery163.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery164.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery165.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery166.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery167.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery168.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery169.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery170.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery171.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery172.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery173.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery174.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery175.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery176.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery177.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery178.jpg">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery179.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery180.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery181.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery182.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery183.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery184.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery185.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery186.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery187.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery188.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery189.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery190.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery191.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery192.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery193.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery194.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery195.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery196.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery197.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery198.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery199.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery200.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery201.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery202.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery203.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery204.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery205.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery206.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery207.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery208.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery209.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery210.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery211.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery212.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery213.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery214.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery215.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery216.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery217.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery218.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery219.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery220.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery221.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery222.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery223.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery224.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery225.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery226.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery227.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery228.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery229.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery230.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery231.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery232.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery233.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery234.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery235.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery236.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery237.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery238.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery239.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery240.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery241.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery242.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery243.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery244.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery245.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery246.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery247.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery248.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery249.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery250.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery251.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery252.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery253.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery254.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery255.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery256.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery257.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery258.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery259.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery260.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery261.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery262.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery263.JPG">
+		</div>
+    </div>
+	
+	<div class="mySlides">
+		<div class = "slidePicture">
+		  <img src="{{ site.baseurl }}/images/Gallery264.JPG">
+		</div>
+    </div>-->
+	
+  </div>
+</div>
+<!--</div>-->
+
+<!--<div id = "Gate" class = "firstSection">
+	<h2 class = "galleryTitleFirst">Gateway 2011 - 2012</h2>
+	<div class="row">
+	  <div class="column">
+		<img src="{{ site.baseurl }}/images/Gallery60.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="{{ site.baseurl }}/images/Gallery61.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="{{ site.baseurl }}/images/Gallery65.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="{{ site.baseurl }}/images/Gallery66.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	  </div>
+	</div>
+</div>
+<div id = "Clean" class = "firstSection">
+	<h2 class = "galleryTitleFirst">Clean Sweep 2009 - 2010</h2>
+	<div class="row">
+	  <div class="column">
+		<img src="{{ site.baseurl }}/images/Gallery59.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	  </div>
+	  <div class="column">
+		<img src="{{ site.baseurl }}/images/Gallery69.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	  </div>
+	</div>
+</div>
+-->
+

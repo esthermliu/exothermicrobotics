@@ -3,8 +3,16 @@
 	padding: 0;
 }
 
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 header {
-	height: 80px;
+	height: 110px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -21,29 +29,416 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 7%;
-	margin-right: 2%;
+    margin-right: 1%;
 }
 
 .logoBox a {
 	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	height: 100%;
 }
 
 .logoBox a img {
 	object-fit: contain;
-	height: 100%;
+	height: 85%;
 }
 
 .secondBox {
-	width: 85%;
-	margin-right: 5%;
+	width: 80%;
 }
 
 .headerList {
+	height: 70px; 
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	height: 70px;
+	width: 100%;
+    justify-content: space-between;
+}
+
+
+.active {
+	/*color: rgb(213,220,59) !important; */
+}
+
+.active2 {
+    width: 100%;
+}
+
+.active5 {
+    width: 100%;
+}
+
+.active::after {
+    content: '';
+    display: block;
+    width: 100% !important;
+    height: 2px;
+    background: rgb(213,220,59) !important;
+    transition: width .3s;
+    margin-top: 2px;
+}
+
+.active2::after {
+    content: '';
+    display: block;
+    width: 100% !important;
+    height: 2px;
+    background: rgb(213,220,59) !important;
+    transition: width .3s;
+	margin-top: 10px;
+}
+
+.shortActive::after {
+    width: 70% !important;
+}
+
+.active3::after {
+    content: '';
+    display: block;
+    width: 85% !important;
+    height: 2px;
+    background: rgb(213,220,59) !important;
+    transition: width .3s;
+	margin-top: 10px;
+}
+
+.active4::after {
+    content: '';
+    display: block;
+    width: 77% !important;
+    height: 2px;
+    background: rgb(213,220,59) !important;
+    transition: width .3s;
+	margin-top: 10px;
+}
+
+.active5::after {
+    content: '';
+    display: block;
+    width: 70% !important;
+    height: 2px;
+    background: rgb(213,220,59) !important;
+    transition: width .3s;
+	margin-top: 10px;
+}
+
+
+.dropButtonAbout, .dropButtonOverview, .dropButtonMedia {
+	border: none;
+	background-color: Transparent;
+	height: 110px;
+	padding-right: 13px;
+	padding-left: 13px;
+	color: white;
+	font-family: Roboto, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-stretch: condensed;
+	font-weight: 500 !important;
+	text-transform: uppercase;
+	cursor: pointer;
+    letter-spacing: 1.5px;
+}
+
+.dropButtonAbout:focus, .dropButtonOverview:focus, .dropButtonMedia:focus {
+	outline: 0;
+}
+
+.dropDownAbout, .dropDownOverview, .dropDownMedia {
+    position: relative;
+}
+
+.insideButtonAbout, .insideButtonAbout2, .insideButtonAbout3, .insideButtonAbout4, .insideButtonAbout5, .insideButtonAbout6, .insideButtonAbout7 {
+	border: none;
+	background-color: Transparent;
+	font-family: Roboto, sans-serif;
+	font-size: 12px !important;
+	font-style: normal;
+	letter-spacing: 1px;
+	cursor: pointer;
+	width: 100%;
+	text-align: left;
+	display: flex !important;
+	justify-content: space-between;
+}
+
+.shorter {
+    width: 35% !important;
+}
+
+#rightArrow {
+	width: 5px;
+}
+
+.test1:hover .fa-angle-right, .test2:hover .fa-angle-right, .test3:hover .fa-angle-right, .test4:hover .fa-angle-right, .test5:hover .fa-angle-right, .test6:hover .fa-angle-right, .test7:hover .fa-angle-right{
+	color: rgb(213,220,59) !important;
+}
+
+
+
+.name, .name2 {
+	width: 100%;
+	font-size: 12px !important;
+    letter-spacing: 1px;
+    height: 10px;
+}
+
+.dropDownContentMedia a {
+	font-family: Roboto, sans-serif;
+	font-size: 12px !important;
+	font-style: normal;
+    text-transform: none !important;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+
+.dropDownContentAbout .name::after , .dropDownContentOverview .name::after, .dropDownContentMedia .name::after, #Ownership a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(213,220,59) !important;
+    transition: width .3s;
+	margin-top: 10px;
+}
+
+.dropDownContentAbout .name:hover::after, #mediaLong .name:hover::after, .dropDownContentOverview .name:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.ownName:hover::after {
+	width: 90% !important;
+}
+
+
+
+.dropDownContentAbout .name2::after , .dropDownContentOverview .name2::after, .dropDownContentMedia .name2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(213,220,59) !important;
+    transition: width .3s;
+	margin-top: 10px;
+}
+
+.dropDownContentAbout .name2:hover::after , .dropDownContentOverview .name2:hover::after, .dropDownContentMedia .name2:hover::after {
+    width: 40%;
+    transition: width .3s;
+}
+
+.dropDownContentAbout #rllyLong:hover::after, .dropDownContentOverview #rllyLong:hover::after {
+    width: 70% !important;
+    transition: width .3s;
+}
+
+
+.dropButtonAbout a, .dropButtonOverview a, .dropButtonMedia a {
+	color: white;
+    transition-duration: 0.3s;
+}  
+
+
+.otherwiseMedia::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(213,220,59) !important;
+    transition: width .3s;
+    margin-top: 2px;
+}
+
+/* might work */
+.dropDownAbout:hover .otherwiseMedia::after, .dropDownOverview:hover .otherwiseMedia::after, .dropDownMedia:hover .otherwiseMedia::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.dropDownContentAbout a, .dropDownContentOverview a, .dropDownContentMedia a {
+	-webkit-transition-duration: 0.3s; 
+	transition: 0.3s;
+}
+
+.dropDownContentAbout {
+    width: 750% !important;
+    left: -8% !important;
+}
+
+.dropDownContentOverview {
+    width: 535% !important;
+    left: -5% !important;
+}
+
+.dropDownContentMedia {
+    width: 190% !important;
+    left: -5% !important;
+}
+
+.mediaShorter {
+    width: 150% !important;
+}
+
+.medialonger {
+    width: 250% !important;
+}
+
+.dropDownContentAbout, .dropDownContentOverview, .dropDownContentMedia {
+	display: none;
+	box-shadow: 0 55px 80px -40px rgba(0,0,0,.45);
+	z-index: 100;
+	position: absolute;
+	background-color: rgb(54, 54, 54);
+	font-size: 17px;
+	width: 80%;
+	left: 10%;
+	padding-left: 1.5%;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+    transition-duration: 0.3s;
+}
+
+.dropDownContentAbout a, .dropDownContentOverview a, .dropDownContentMedia a {
+	display: block;
+	padding: 20px 20px 20px 20px;
+	color: white;
+	cursor: pointer;
+    height: 19.5px;
+}
+
+
+
+.dropDownContentAbout button {
+	display: block;
+}
+
+.dropDownContentAbout a:hover, .dropDownContentOverview a:hover, .dropDownContentMedia a:hover {
+	cursor: pointer;
+}
+
+.dropDownAbout:hover .dropDownContentAbout, .dropDownOverview:hover .dropDownContentOverview, .dropDownMedia:hover .dropDownContentMedia {
+	display: block;
+	cursor: pointer;
+}
+
+/* testing some stuff */
+
+.iHateThis, .why {
+    width: 50% !important;
+}
+
+#third {
+    width: 31% !important;
+}
+
+.dropDownInsideAbout, .dropDownInsideAbout2, .dropDownInsideAbout3, .dropDownInsideAbout4, .dropDownInsideAbout5, .dropDownInsideAbout6, .dropDownInsideAbout7 {
+	display: none;
+	z-index: 100;
+	position: absolute;
+	font-size: 12px;
+	width: 65%;
+	right: 0;
+	top: 0;
+	height: 89%;
+    /*background-color: purple;*/
+    padding-top: 0.5%;
+    padding-bottom: 1.5%;
+}
+
+.dropDownInsideAbout a , .dropDownInsideAbout2 a, .dropDownInsideAbout3 a, .dropDownInsideAbout4 a, .dropDownInsideAbout5 a , .dropDownInsideAbout6 a, .dropDownInsideAbout7 a     {
+	display: block;
+	padding: 20px 20px 20px 20px;
+	color: white;
+	cursor: pointer;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+
+.dropDownInsideAbout a:hover , .dropDownInsideAbout2 a:hover, .dropDownInsideAbout3 a:hover, .dropDownInsideAbout4 a:hover, .dropDownInsideAbout5 a:hover, .dropDownInsideAbout6 a:hover, .dropDownInsideAbout7 a:hover  {
+	cursor: pointer;
+}
+
+.test1:hover .dropDownInsideAbout, .test3:hover .dropDownInsideAbout3, .test4:hover .dropDownInsideAbout4, .test5:hover .dropDownInsideAbout5, .test7:hover .dropDownInsideAbout7 {
+	display: block;
+	cursor: pointer;
+}
+
+.test1:hover .dropDownInsideAbout, .test2:hover .dropDownInsideAbout2, .test6:hover .dropDownInsideAbout6, .test7:hover .dropDownInsideAbout7, .test5:hover .dropDownInsideAbout5   {
+    display: flex;
+    cursor: pointer;
+}
+
+/* fade-in animation */
+
+.fade-in {
+  animation: fadeIn ease 0.3s;
+  -webkit-animation: fadeIn ease 0.3s;
+  -moz-animation: fadeIn ease 0.3s;
+  -o-animation: fadeIn ease 0.3s;
+  -ms-animation: fadeIn ease 0.3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+.homepageLogo, .homepageLogo p, .homepageLogo i {
+    transition-duration: 0.3s;
+}
+
+.homepageLogo {
+    display: flex;
+    align-items: center;
+}
+    
+
+
+/*.headerList {
 	height: 70px; 
 	list-style-type: none;
 	display: flex;
@@ -51,6 +446,7 @@ header {
 	align-items: center;
 	height: 70px;
 	width: 100%;
+    font-weight: 500 !important;
 }
 
 
@@ -82,6 +478,7 @@ header {
 	font-size: 15px;
 	text-transform: uppercase;
 	cursor: pointer;
+    font-weight: 500;
 }
 
 .dropButtonAbout:focus, .dropButtonOverview:focus, .dropButtonMedia:focus {
@@ -119,7 +516,7 @@ header {
 	display: block;
 	cursor: pointer;
 }
-
+*/
 
 a:link {
 	text-decoration: none;
@@ -173,7 +570,7 @@ footer {
 }
 
 .wordsSection h4, .wordsSection h5 {
-	font-weight: 50;
+	font-weight: 400;
 }
 
 .wordsSection h4 {
@@ -222,12 +619,15 @@ footer {
   background-color: rgba(255,255,255,0);
   border: 2px solid white;
   z-index: 2;
-  padding: 15px 15px;
+  padding: 20px 20px;
   color: white;
     -webkit-transition-duration: 0.2s; 
   transition-duration: 0.2s;
   cursor: pointer;
   margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    border-radius: 4px;
 }
 
 .blogButton:hover button {
@@ -280,7 +680,7 @@ footer {
   background-color: rgba(255,255,255,0);
    -webkit-transition-duration: 0.3s; 
   transition-duration: 0.3s;
-  z-index: 9999999999 !important;
+  z-index: 2 !important;
 }
 
 #mybtn:hover {
@@ -292,6 +692,8 @@ footer {
 }
 
 .navbar {
+    display: flex;
+    justify-content: center;
 	transition-duration: 0.3s;
 }
 
@@ -318,15 +720,156 @@ footer {
 
 .titleHolder img {
 	padding-bottom: 3vh;
-	height: 121px;
-	width: 120px;
+    width: 120px;
 }
 
 .footerLogoHolder img {
-	height: 121px;
 	width: 120px;
 }
 
 .footerLogoHolder {
 	margin-right: 2%;
+}
+
+.hamLogo {
+    display: none !important;
+}
+
+
+/* fade up and down animations */
+
+
+
+@-webkit-keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateY(-40px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateY(0);
+    }
+ }
+         
+ @keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateY(-40px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ }
+
+ .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+ }
+
+/* fade up */
+
+@-webkit-keyframes fadeInUp {
+    0% {
+       opacity: 0;
+       /*-webkit-transform: translateY(20px);*/
+    }
+    100% {
+       opacity: 1;
+      /* -webkit-transform: translateY(0px);*/
+    }
+ }
+         
+ @keyframes fadeInUp {
+    0% {
+       opacity: 0;
+       transform: translateY(20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0px);
+    }
+ }
+
+ .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+ }
+
+
+/* fade in left */
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateX(80px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateX(0);
+    }
+ }
+
+ @keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(80px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }
+
+/* fade in right */
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       -webkit-transform: translateX(-80px);
+    }
+    100% {
+       opacity: 1;
+       -webkit-transform: translateX(0);
+    }
+ }
+
+ @keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(-80px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }
+
+
+
+/* show on scroll */
+.show-on-scroll, .show-on-scroll-left, .show-on-scroll-right, .show-on-scroll-up, .show-on-scroll-down {
+    opacity: 0;
+	transition: transform 4s 0.25s cubic-bezier(0,1,.3,1),
+              opacity .3s 0.25s ease-out;
+	will-change: transform, opacity;
+}
+
+.show-on-scroll-left, .show-on-scroll-right, .show-on-scroll-up, .show-on-scroll-down {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.is-visible {
+    opacity: 1 !important;
 }

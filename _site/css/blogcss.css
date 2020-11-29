@@ -45,17 +45,26 @@
 }
 
 .firstSection {
-	background-color: #f0f0f0;	
+	background-color: white;	
 	padding: 8% 20% 8% 20%;
 	font-family: Roboto, sans-serif;
-	color: #626262;
+	color: #323232;
+}
+
+.firstSection a {
+    transition-duration: 0.3s;
+}
+
+.firstSection a:hover {
+	color: rgb(158, 163, 60);
 }
 
 .firstSection h2 {
-	font-weight: normal;
-	font-size: 45px;
+	font-weight: 400;
+	font-size: 40px;
 	text-align: center;
-	padding-bottom: 3%;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 #seeRest i {
@@ -73,16 +82,19 @@
 }
 
 .learnMoreButton button {
-  color: #dbb52f;
+  color: rgb(158, 163, 60);
   text-transform: uppercase;
   background-color: rgba(255,255,255,0);
-  border: 2px solid rgb(96, 156, 14);
+  border: 2px solid rgb(158, 163, 60);
   z-index: 2;
-  padding: 15px 15px;
-  color: rgb(96, 156, 14);
+  padding: 20px 20px;
+  color: rgb(158, 163, 60);
     -webkit-transition-duration: 0.2s; 
   transition-duration: 0.2s;
   cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    border-radius: 4px;
 }
 
 .learnMoreButton:hover button {
@@ -94,21 +106,22 @@
  }
  
  .blogHolder {
-	border-right: 1px solid #626262;
+	border-right: 1px solid #323232;
 	width: 78%;
  }
  
  .navbar {
-	background-color: rgba(51,51,51,0.8);
+	background-color: rgb(50,50,50);
+    height: 85px !important;
  }
  
  .blogContainerActual {
 	display: flex;
 	justify-content: space-between;
-	color: #626262;
+	color: #323232;
 	padding-bottom: 3%;
 	padding-top: 3%;
-	/*border-bottom: 1px solid #626262;*/
+	/*border-bottom: 1px solid #323232;*/
  }
  
  .textSection {
@@ -117,6 +130,7 @@
  
  .textSection p {
 	padding-right: 3%;
+    letter-spacing: 0.4px;
  }
 
  .imageHolder {
@@ -150,12 +164,16 @@
 	justify-content: space-between;
  }
  
+.specialBlog {
+    padding-top: 8%;
+}
+
  .postLog {
 	width: 20%;
  }
  
  .postLog h3 {
-	font-weight: 300;
+	font-weight: 400;
  }
  
  .paginationHolder {
@@ -176,14 +194,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #626262;
-	border-right: 1px solid #626262;
+	color: #323232;
+	border-right: 1px solid #323232;
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
  }
  
  .pagination a:hover {
-	color: rgb(96, 156, 14);
+	color: rgb(158, 163, 60);
  }
  
  .nextButton {
@@ -191,16 +209,16 @@
  }
  
  .nextButtonFirst {
-	border-left: 1px solid #626262;
+	border-left: 1px solid #323232;
 	font-size: 12px !important;
  }
  
  .firstNumber {
-	border-left: 1px solid #626262;
+	border-left: 1px solid #323232;
  }
  
  #activeBlog {
-	color: rgb(96, 156, 14);
+	color: rgb(158, 163, 60);
  }
  
  .recentPostHolder img {
@@ -212,7 +230,7 @@
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 10%;
-	color: #626262;
+	color: #323232;
  }
  
  .recentPostHolder p {
@@ -221,7 +239,7 @@
  
  .recentPostOverall {
 	padding-top: 3%;
-	border-top: 1px dotted #626262;
+	border-top: 1px dotted #323232;
 	margin-top: 3%;
  }
  
@@ -230,14 +248,14 @@
  }
  
 #archiveLink a {
-	color: #626262;
+	color: #323232;
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
     line-height: 30px;
 }
 
 #archiveLink a:hover {
-	color: rgb(96, 156, 14);
+	color: rgb(158, 163, 60);
 }
 
 .archiveHolder {
@@ -278,7 +296,8 @@
 
 
 .dropDownContentAbout, .dropDownContentOverview, .dropDownContentMedia {
-	background-color: rgba(51,51,51,0.8) !important;
+	background-color: rgb(54,54,54) !important;
+    transform: translate(0px, -13px);
 }
 
 .imageHolderArticle {
@@ -301,6 +320,7 @@
 .textSection h3 {
 	letter-spacing: 1.5px;
 	line-height: 30px;
+    font-weight: 500;
 }
 
 .recentPostHolder h3 {
@@ -325,4 +345,23 @@
 
 .archiveHolder li {
     list-style-type: none;
+}
+
+/* title after */
+.titleSection {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.titleSection h2:after   {
+	position: absolute;
+	content: '';
+	height: 3px;
+	bottom: -15px;
+	margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 10%;
+	background: rgb(213,220,59);
 }

@@ -9,9 +9,6 @@
 		padding: 25% 5% 10% 5% !important;
 	}
 	
-	.firstSection h1 {
-		padding-bottom: 10%;
-	}
 	
 	.imageHolder img {
 		margin-bottom: 10%;
@@ -54,6 +51,23 @@
 	.verticalMinus, .verticalMinus2, .verticalMinus3, .verticalMinus4 {
 		left: 0.5px !important;
 	}
+    
+    .skinnier {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    
+    .learnMoreContainer {
+        flex-wrap: wrap;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    .competitionLink, .eventsLink, .programsLink {
+        width: 100%;
+        margin-bottom: 10%;
+        margin-right: 0 !important;
+    }
+
 	
 	
 }

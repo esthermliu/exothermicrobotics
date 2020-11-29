@@ -3,9 +3,9 @@
 		padding: 25% 5% 25% 5%;
 	}
 	
-	.firstSection h2 {
-		padding-bottom: 8%;
-	}	
+    .writtenSection {
+        padding-top: 10%;
+    }
 	
 	.landing {
 		background-attachment: scroll;

@@ -9,26 +9,28 @@ custom_css:
 <div class = "landing">
 	<div class = "landingBackground">
 		<div class = "titleHolder">
-			<img src = "/images/EXOLogo.png" alt = "Exo logo">
-			<h1>Exothermic Social</h1>
-			<h2> Online Connections </h2>
+			<img class = "show-on-scroll-down" src = "/images/EXOLogo.png" alt = "Exo logo">
+			<h1 class = "show-on-scroll-up">Exothermic Social</h1>
+			<h2 class = "show-on-scroll-up"> Online Connections </h2>
 		</div>
 	</div>
 </div>
 <div class = "socialMediaSection">
-	<h2>Facebook and Instagram </h2>
+    <div class = "titleSection show-on-scroll-up">
+	   <h2>Facebook and Instagram </h2>
+    </div>
 	<div class = "wordSection">
-		<p> <a target = "_blank" href = "https://www.facebook.com/exothermicrobotics/">Check out our Facebook account here! </a></p>
-		<p> In addition to our shared Facebook account, every team also has their separate Instagram accounts. Visit each of our teams below! </p>
+		<p class = "show-on-scroll-right"> <a target = "_blank" href = "https://www.facebook.com/exothermicrobotics/">Check out our Facebook account here! </a></p>
+		<p class = "show-on-scroll-right"> In addition to our shared Facebook account, every team also has their separate Instagram accounts. Visit each of our teams below! </p>
 		<ul>
-			<li><a target = "_blank" href = "https://www.instagram.com/exo_10a/">Exothermic Actuation (10A) </a></li>
-			<li><a target = "_blank" href = "https://www.instagram.com/exo.10b/">Exothermic Blaze (10B)</a></li>
-			<li><a target = "_blank" href = "https://www.instagram.com/exo10c/">Exothermic Creation (10C) </a></li>
-			<li><a target = "_blank" href = "https://www.instagram.com/exo10d/"> Exothermic Dusk (10D)</a></li>
-			<li><a target = "_blank" href = "https://www.instagram.com/exo10e/"> Exothermic Evolution (10E)</a></li>
-			<li><a target = "_blank" href = "https://www.instagram.com/exo10f/?igshid=19p0th0jx0oc"> Exothermic Fusion (10F)</a></li>
-			<li><a target = "_blank" href = "https://www.instagram.com/exo10n/"> Exothermic Neon (10N)</a></li>
-			<li><a target = "_blank" href = "#"> Exothermic Excess (10X)</a></li>
+			<li class = "show-on-scroll-right"><a target = "_blank" href = "https://www.instagram.com/exo_10a/">Exothermic Actuation (10A) </a></li>
+			<li class = "show-on-scroll-right"><a target = "_blank" href = "https://www.instagram.com/exo.10b/">Exothermic Blaze (10B)</a></li>
+			<li class = "show-on-scroll-right"><a target = "_blank" href = "https://www.instagram.com/exo10c/">Exothermic Creation (10C) </a></li>
+			<li class = "show-on-scroll-right"><a target = "_blank" href = "https://www.instagram.com/exo10d/"> Exothermic Dusk (10D)</a></li>
+			<li class = "show-on-scroll-right"><a target = "_blank" href = "https://www.instagram.com/exo10e/"> Exothermic Evolution (10E)</a></li>
+			<li class = "show-on-scroll-right"><a target = "_blank" href = "https://www.instagram.com/exo10f/?igshid=19p0th0jx0oc"> Exothermic Fusion (10F)</a></li>
+			<li class = "show-on-scroll-right"><a target = "_blank" href = "https://www.instagram.com/exo10n/"> Exothermic Neon (10N)</a></li>
+			<li class = "show-on-scroll-right"><a target = "_blank" href = "#"> Exothermic Excess (10X)</a></li>
 		</ul>
 	</div>
 </div>
@@ -143,35 +145,37 @@ $(document).ready(function(){
 </script>
 <div class = "overallSection"> <!--Overall section-->
 	<div class = "firstSection"> <!--Section for tower takeover-->
-		<h1> Youtube </h1>
-		<div class = "detailSection">
+        <div class = "titleSection show-on-scroll-up">
+		  <h1> Youtube </h1>
+        </div>
+		<div class = "detailSection specialDetail show-on-scroll-right">
 			<p>Exothermic teams also have their separate Youtube channels where they post videos about the competitions they have attended, reveal videos of their robots, or any other content 
 			related to robotics. Visit their channels below!</p>
 		</div>
 	</div> <!-- End of tower takeover section -->
 	<div class = "secondSection"> <!-- Start of Turning Point Section-->
-		<div class = "buttonTopHolder">
+		<div class = "buttonTopHolder show-on-scroll-left">
 			<button id="Hide">Exothermic Actuation (10A)</button>
 			<div class = "minusHolder">
 				<p id = "showMinus" class = "horizontalMinus">&minus;</p>
 				<p id = "hideMinus" class = "verticalMinus">&minus;</p>
 			</div>
 		</div>
-		<div class="TurningPoint">
+		<div class="TurningPoint show-on-scroll-left">
 		<div class = "detailSection">
 			<h2> 10A Channel: <i>Coming Soon!</i></h2>
 		</div>
 		</div>
 	</div> <!-- End of second section for turning point -->
 	<div class = "secondSection"> <!-- Start of In the Zone Section-->
-		<div class = "buttonTopHolder">
+		<div class = "buttonTopHolder show-on-scroll-left">
 			<button id="Hide2">Exothermic Blaze (10B)</button>
 			<div class = "minusHolder">
 				<p id = "showMinus2" class = "horizontalMinus2">&minus;</p>
 				<p id = "hideMinus2" class = "verticalMinus2">&minus;</p>
 			</div>
 		</div>
-		<div class="theZone">
+		<div class="theZone show-on-scroll-left">
 		<div class = "detailSection">
 			<h2> 10B Channel: <a target = "_blank" href = "https://www.youtube.com/channel/UCDc5XB12UETfY24ax13Dm-Q/featured">https://tinyurl.com/exothermic-blaze</a></h2>
 		</div>
@@ -181,14 +185,14 @@ $(document).ready(function(){
 		</div>
 	</div> <!-- End of third section -->
 	<div class = "secondSection"> <!-- Start of Starstruck Section-->
-		<div class = "buttonTopHolder">
+		<div class = "buttonTopHolder show-on-scroll-left">
 			<button id="Hide3">Exothermic Creation (10C)</button>
 			<div class = "minusHolder">
 				<p id = "showMinus3" class = "horizontalMinus3">&minus;</p>
 				<p id = "hideMinus3" class = "verticalMinus3">&minus;</p>
 			</div>
 		</div>
-		<div class="starStruck">
+		<div class="starStruck show-on-scroll-left">
 		<div class = "detailSection">
 			<h2> 10C Channel: <a target = "_blank" href = "https://www.youtube.com/channel/UCNyF47H8QV_aMDNT8qZQsfA"> https://tinyurl.com/exothermic-creation</a></h2>
 			<p> Currently, 10C does not have any videos uploaded yet, but it'll be updated soon!</p>
@@ -196,14 +200,14 @@ $(document).ready(function(){
 		</div>
 	</div> <!-- End of fourth section -->
 	<div class = "secondSection"> <!-- Start of Nothing But Net Section-->
-		<div class = "buttonTopHolder">
+		<div class = "buttonTopHolder show-on-scroll-left">
 			<button id="Hide4">Exothermic Dusk (10D)</button>
 			<div class = "minusHolder">
 				<p id = "showMinus4" class = "horizontalMinus4">&minus;</p>
 				<p id = "hideMinus4" class = "verticalMinus4">&minus;</p>
 			</div>
 		</div>
-		<div class="net">
+		<div class="net show-on-scroll-left">
 		<div class = "detailSection">
 			<h2> 10D Channel: <a target = "_blank" href = "https://www.youtube.com/user/Exothermic10D/videos"> https://tinyurl.com/exothermic-dusk</a> </h2>
 		</div>
@@ -214,14 +218,14 @@ $(document).ready(function(){
 		</div>
 	</div> <!-- End of fifth section-->
 	<div class = "secondSection"> <!--Start of 10E Section-->
-		<div class = "buttonTopHolder">
+		<div class = "buttonTopHolder show-on-scroll-left">
 			<button id="Hide5">Exothermic Evolution (10E)</button>
 			<div class = "minusHolder">
 				<p id = "showMinus5" class = "horizontalMinus5">&minus;</p>
 				<p id = "hideMinus5" class = "verticalMinus5">&minus;</p>
 			</div>
 		</div>
-		<div class="evolution">
+		<div class="evolution show-on-scroll-left">
 		<div class = "detailSection">
 			<h2> 10E Channel: <a target = "_blank" href = "https://www.youtube.com/channel/UC57PWr_hakcq75peuf0tpyw"> https://tinyurl.com/exothermic-evolution</a> </h2>
 		</div>
@@ -232,21 +236,21 @@ $(document).ready(function(){
 		</div>
 	</div> <!-- End of 10E section-->
 	<div class = "secondSection"> <!--Start of 10F Section-->
-		<div class = "buttonTopHolder">
+		<div class = "buttonTopHolder show-on-scroll-left">
 			<button id="Hide6">Exothermic Fusion (10F)</button>
 			<div class = "minusHolder">
 				<p id = "showMinus6" class = "horizontalMinus6">&minus;</p>
 				<p id = "hideMinus6" class = "verticalMinus6">&minus;</p>
 			</div>
 		</div>
-		<div class="fusion">
+		<div class="fusion show-on-scroll-left">
 		<div class = "detailSection">
 			<h2> 10F Channel: <i>Coming Soon!</i></h2>
 		</div>
 		</div>
 	</div> <!-- End of 10F section-->
 	<div class = "secondSection"> <!--Start of 10N Section-->
-		<div class = "buttonTopHolder">
+		<div class = "buttonTopHolder show-on-scroll-left">
 			<button id="Hide7">Exothermic Ion (10N)</button>
 			<div class = "minusHolder">
 				<p id = "showMinus7" class = "horizontalMinus7">&minus;</p>
@@ -254,7 +258,7 @@ $(document).ready(function(){
 			</div>
 		</div>
 		<div class="neon">
-		<div class = "detailSection">
+		<div class = "detailSection show-on-scroll-left">
 			<h2> 10N Channel:  <a target = "_blank" href = "https://www.youtube.com/channel/UCfRA3Ms4o6O9keMI5PD9njg"> https://tinyurl.com/exothermic-neon</a></h2>
 		</div>
 		<div class = "youtubeVid">
@@ -263,14 +267,14 @@ $(document).ready(function(){
 		</div>
 	</div> <!-- End of 10N section-->
 	<div class = "secondSection"> <!--Start of 10X Section-->
-		<div class = "buttonTopHolder">
+		<div class = "buttonTopHolder show-on-scroll-left">
 			<button id="Hide8">Exothermic Excess (10X)</button>
 			<div class = "minusHolder">
 				<p id = "showMinus8" class = "horizontalMinus8">&minus;</p>
 				<p id = "hideMinus8" class = "verticalMinus8">&minus;</p>
 			</div>
 		</div>
-		<div class="excess">
+		<div class="excess show-on-scroll-left">
 		<div class = "detailSection">
 			<h2> 10X Channel: <i>Coming Soon!</i></h2>
 		</div>

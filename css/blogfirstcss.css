@@ -3,6 +3,7 @@
 	font-size: 30px;
 	letter-spacing: 1.5px;
 	margin-bottom: 10px;
+    font-weight: 500;
 }
 
 .blogHolder  h4 {
@@ -15,13 +16,13 @@
 }
 
 .firstSection a {
-	color: #626262;
+	color: #323232;
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
 }
 
 .firstSection a:hover {
-	color: rgb(96, 156, 14);
+	color: rgb(158, 163, 60);
 }
 
 .firstSection > h3 {
@@ -85,10 +86,10 @@
 }
 
 .firstSection {
-	background-color: #f0f0f0;	
+	background-color: white;	
 	padding: 8% 20% 8% 20%;
 	font-family: Roboto, sans-serif;
-	color: #626262;
+	color: #323232;
 }
 
 .firstSection h2 {
@@ -130,7 +131,7 @@
  }
  
  .blogHolder {
-	border-right: 1px solid #626262;
+	border-right: 1px solid #323232;
 	width: 78%;
  }
 
@@ -138,15 +139,16 @@
  .blogContainerActual {
 	display: flex;
 	justify-content: space-between;
-	color: #626262;
+	color: #323232;
 	padding-bottom: 3%;
 	padding-top: 3%;
-	border-bottom: 1px solid #626262;
+	border-bottom: 1px solid #323232;
  }
 
  
  .textSection p {
 	padding-right: 3%;
+    letter-spacing: 0.4px;
  }
 
  .imageHolder {
@@ -178,7 +180,7 @@
  }
  
  .postLog h3 {
-	font-weight: 300;
+	font-weight: 400;
  }
  
  .paginationHolder {
@@ -199,8 +201,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: #626262;
-	border-right: 1px solid #626262;
+	color: #323232;
+	border-right: 1px solid #323232;
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
  }
@@ -215,7 +217,7 @@
  }
  
  .firstNumber {
-	border-left: 1px solid #626262;
+	border-left: 1px solid #323232;
  }
  
  #activeBlog {
@@ -231,7 +233,7 @@
 	display: flex;
 	justify-content: space-between;
 	padding-bottom: 10%;
-	color: #626262;
+	color: #323232;
  }
  
  .recentPostHolder p {
@@ -240,7 +242,7 @@
  
  .recentPostOverall {
 	padding-top: 3%;
-	border-top: 1px dotted #626262;
+	border-top: 1px dotted #323232;
 	margin-top: 3%;
  }
  
@@ -249,7 +251,7 @@
  }
  
 #archiveLink a {
-	color: #626262;
+	color: #323232;
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
 }

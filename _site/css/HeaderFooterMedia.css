@@ -13,35 +13,25 @@
 }
 
 header {
-  width: 100%;
-  height: 60px;
+    width: 100%;
+    height: 60px;
 }
-
-.logo-box {
-  width: 20%;
+    
+.AGH {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+  
 
 .logoBox a img {
   height: 80%;
-  margin-left: 20%;
+  margin-left: 40%;
 }
 
-.second-box ul {
-  display: none !important;
-}
-
-.second-box ul li {
-  display: none !important;
-}
-
-.second-box li a {
-  display: none !important;
-}
-
-.second-box li button {
-  display: none !important;
-}
-
+    
 .DropDownContent {
   display: none;
 }
@@ -50,6 +40,9 @@ header {
   display: none !important;
 }
 
+.secondBox {
+    display: none !important;
+}
 
 
 .container {
@@ -76,6 +69,10 @@ header {
   transition: 0.5s;
   display: block !important;
 }
+    
+.hamLogo {
+    display: block !important;
+}
 
 .active {
   color: rgb(213,220,59) !important; 
@@ -83,7 +80,7 @@ header {
 
 .Hamburger  {
   position: fixed;
-  z-index: 50 !important;
+  z-index: 9999999999999 !important;
   color: white;
   height: 60px;
   margin-left: 80%;
@@ -150,6 +147,10 @@ header {
 
 .phoneDropdown a {
 	font-size: 18px !important;
+}
+    
+.evenSmaller a {
+    font-size: 16px !important;
 }
 
 
@@ -285,14 +286,13 @@ footer {
 }
 
 .footerLogoHolder img {
-	height: 121px;
 	width: 120px;
 }
     
 /* start of new hamburger menu */ 
     
 #hamburgerMenu {
-    z-index: 3;
+    z-index: 999999999999 !important;
     display: inline;
     cursor: pointer;
     position: fixed;
@@ -328,7 +328,7 @@ header nav ul {
     justify-content: center;
     align-items: center;
     position: fixed;
-    background-color: rgba(0,0,0, 0.7);
+    background-color: rgba(30,30,30, 1);
     height: 100%;
     width: 0%;
     top: 0;
@@ -350,6 +350,7 @@ header nav ul.openMenu {
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #navLinks li a {
@@ -365,6 +366,10 @@ header nav ul.openMenu {
     
 .minusHolder2 p {
 	font-size: 25px !important;
+}
+    
+.lilMinus p {
+    font-size: 20px !important;
 }
 
 .minusHolder2 {
@@ -385,17 +390,30 @@ header nav ul.openMenu {
     
 /* inner nav css */
 
+   
+#navLinks {
+    overflow: hidden;
+} 
+    
 .innerNav {
     top: 80px;
     width: 80%;
     padding-right: 10%;
     padding-left: 10%;
-    overflow: scroll;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+}
+    
+.innerNav::-webkit-scrollbar {
+  display: none;
 }
 
 .innerNav li {
     width: 100%;
 }
+    
+
 
 
 }	

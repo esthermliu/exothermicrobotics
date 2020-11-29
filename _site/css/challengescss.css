@@ -32,7 +32,7 @@
 	font-size: 24px;
 	text-transform: uppercase;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	color: white;
 	letter-spacing: 5px;
 	line-height: 42px;
@@ -48,12 +48,12 @@
 	text-transform: uppercase;
 }
 .overallSection {
-	background-color: #f0f0f0;
+	background-color: white;
 	padding-bottom: 8%;
 }
 
 .writtenSection {
-	padding-right: 30px;
+    padding-top: 8%;
 }
 
 .imageHolder {
@@ -74,36 +74,36 @@
 	margin: 0 25% 0 25%;
 	padding-top: 8%;
 	font-family: Roboto, sans-serif;
-	color: #626262;
-	line-height: 30px;
+	color: #323232;
 }
 
 .firstSection p, .TurningPoint p, .theZone p, .challenge11 p, .challenge12 p , .challenge14 p {
 	padding-bottom: 15px;
+    line-height: 30px;
+    letter-spacing: 0.4px;
 }
 
-.firstSection h1 {
+.firstSection h2 {
 	text-align: center;
-	padding-bottom: 8%;
 	font-family: Roboto, sans-serif;
-	font-weight: normal;
-	color: #626262;
-	font-size: 45px;
+	font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+	color: #323232;
+	font-size: 40px;
 }
 
-.writtenSection h2 {
-	font-weight: 300;
-	padding-bottom: 15px;
-}
 
 .detailSection h2 {
-	font-weight: 300;
+	font-weight: 400;
 	padding-bottom: 15px;
 	margin-top: 15px;
+    font-size: 20px !important;
 }
 
 .detailSection ul {
 	padding-left: 30px;
+    letter-spacing: 0.4px;
 }
 
 .scoringTableTower, th, td {
@@ -177,7 +177,7 @@ td {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	font-family: Roboto, sans-serif;
-	color: #626262;
+	color: #323232;
 	line-height: 30px;
 }
 
@@ -230,7 +230,9 @@ td {
 .pictureWebsite {
 	width: 100%;
 	height: 100%;
-    margin-top: 30px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
 }
 
 .writtenSection ul {
@@ -240,8 +242,18 @@ td {
 }
 
 .writtenSection ul li a {
-	color:  rgb(96, 156, 14) !important;
+	color:  rgb(158, 163, 60)  !important;
 	transition-duration: 0.2s;
+    letter-spacing: 0.4px;
+}
+
+.linkInside  {
+    color:  rgb(158, 163, 60)  !important;
+	transition-duration: 0.2s;
+}
+
+.linkInside:hover {
+    color: rgb(46, 74, 7) !important;
 }
 
 .writtenSection ul li a:hover {
@@ -268,4 +280,155 @@ td {
 }
 
 
+/* title after */
+.titleSection {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
 
+.titleSection h2:after   {
+	position: absolute;
+	content: '';
+	height: 3px;
+	bottom: -15px;
+	margin: 0 auto;
+	left: 0;
+    right: 0;
+	width: 10%;
+	background: rgb(213,220,59);
+}
+
+/* weird zoomy boxes */
+
+.learnMoreContainer {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+    padding: 3% 18% 3% 18%;
+}
+
+.competitionLink, .programsLink, .eventsLink {
+	height: 30vh;
+	width: 30%;
+	margin-right: 2%;
+	margin-bottom: 2.5%;
+}
+
+.competitionLink, .eventsLink, .programsLink {
+	background-image: url("/images/FillerPicture.jpg");
+	object-fit: cover;
+	transition: transform 0.2s;
+	background-position: center;
+}
+
+.competitionLink {
+	background-image: url("/images/Website2021.JPG");
+}
+
+.eventsLink {
+	background-image: url("/images/onlineChallengeBack.JPG");
+}
+
+.programsLink {
+	background-image: url("/images/SamsungChip.jpg");
+}
+
+#outreach {
+	background-image: url("/images/Field.JPG");
+}
+
+#advisors {
+	background-image: url("/images/StandOffChallenge.JPG");
+}
+
+#awards {
+	background-image: url("/images/TetraTumble.JPG");
+}
+
+#challenges {
+	background-image: url("/images/RingChallenge.JPG");
+}
+
+.competitionLink:hover, .eventsLink:hover, .programsLink:hover {
+	-ms-transform: scale(1.5); /* IE 9 */
+	-webkit-transform: scale(1.5); /* Safari 3-8 */
+	transform: scale(1.1); 
+	transition-duration: 0.3s;
+}
+
+.competitionLink:hover .Filter, .eventsLink:hover .Filter, .programsLink:hover .Filter {
+	background-color: rgba(51,51,51,0.1);
+	height: 25vh;
+	width: 85%;
+	border: 2px solid white;
+}
+
+.competition, .events, .programs {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+.Filter {
+	height: 30vh;
+	width: 100%;
+	background-color: rgba(51,51,51, 0.4);
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	transition-duration: 0.3s;
+}
+
+.Filter h4 {
+	font-family: "Roboto Condensed", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 2px;
+	line-height: 35px;
+	color: white;
+	padding: 15px;
+	text-transform: uppercase;
+}
+
+.website {
+    background-image: url("/images/WebsiteBack2.jpeg");
+}
+
+.smallerTitle {
+    font-size: 22px !important;
+    text-align: left !important;
+    padding-bottom: 15px !important;
+    text-transform: none !important;
+}
+
+.noPadding {
+    padding-top: 0 !important;
+}
+
+.backHurts {
+    background-image: url("/images/volunteering/Volunteering12.jpg");
+}
+
+.chip {
+    background-image: url("/images/Chip.jpg");
+}
+
+.clock {
+    background-image: url("/images/ClockBlock.JPG");
+}
+
+.standoff {
+    background-image: url("/images/StandoffPeople.png");
+}
+
+.tetra {
+    background-image: url("/images/TetraChallenge.JPG");
+}
+
+.drivetrain {
+    background-image: url("/images/DriveTrainChallenge.JPG");
+}
