@@ -138,3 +138,13 @@
     font-weight: 500;
     letter-spacing: 2px;
 }
+
+.writtenSection p a {
+	color: rgb(175, 181, 49);
+	transition-duration: 0.2s;
+	-webkit-transition-duration: 0.2s;
+}
+	
+.writtenSection p a:hover {
+	color: rgb(46, 74, 7);
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang = "eng">
 <head>
-	<title> President Announced for 2019 - 2020 Season </title>
+	<title> Exothermic Robotics Advisors </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
     <!-- header and footer css -->
@@ -25,11 +25,9 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
      
         
-        <link rel = "stylesheet" href = "/css/blogcss.css">
+        <link rel = "stylesheet" href = "/css/advisorscss.css">
         
-        <link rel = "stylesheet" href = "/css/blogMedia.css">
-        
-        <link rel = "stylesheet" href = "/css/blogfirstcss.css">
+        <link rel = "stylesheet" href = "/css/advisorsMedia.css">
         
     
 </head>
@@ -123,7 +121,7 @@
                     <div class = "test4">
                     <button class = "insideButtonAbout4 shorter fade-in" onclick="window.location.href = '/about/advisors/'"><a href = "/about/advisors/"  class = "name" > Advisors </a><a href = "/about/advisors/"><i id = "rightArrow" class="fa fa-angle-right"></i></a></button>
                         <div class = "dropDownInsideAbout4">
-                            <a href = "/about/advisors/current-advisors/"  class = "name2" id = "rllyLong" > Current Advisors </a>
+                            <a href = "/about/advisors/current-advisors/"  class = "active4"  > Current Advisors </a>
                             <a href = "/about/advisors/past-advisors/"  class = "name2" id = "rllyLong" > Past Advisors </a>
                         </div>
                     </div>
@@ -192,7 +190,7 @@
                 </div>
             </div>
             <div class = "dropDownMedia">
-                <button class = "dropButtonMedia" onclick="window.location.href = '/blog/'"><a href = "/blog/"  class = "active"  > Blog </a></button>
+                <button class = "dropButtonMedia" onclick="window.location.href = '/blog/'"><a href = "/blog/"  class = "otherwiseMedia" > Blog </a></button>
             </div>
             <div class = "dropDownMedia">
                 <button class = "dropButtonMedia" onclick="window.location.href = '/resources/'"><a href = "/resources/"  class = "otherwiseMedia" > Resources </a></button>
@@ -230,7 +228,7 @@
                     
                         <a href = "/about/outreach/" >Outreach</a>
                     
-                        <a href = "/about/advisors/" >Advisors</a>
+                        <a href = "/about/advisors/"  style = "color: rgb(213, 220, 59);" >Advisors</a>
                     
                         <a href = "/about/awards/" >Awards</a>
                     
@@ -262,7 +260,7 @@
                      
 				</div>
 			</div>
-			<li><a href = "/blog/"  style = "color: rgb(213,220,59) !important;"> Blog </a></li>
+			<li><a href = "/blog/" > Blog </a></li>
 			<div class = "dropDownMedia">
 				<button class = "dropButtonMedia" onclick="window.location.href = '/resources/'" > Resources </button>
 				<div class = "dropDownContentMedia">
@@ -306,7 +304,7 @@
             
                 <a href = "/about/outreach/" >Outreach</a>
             
-                <a href = "/about/advisors/" >Advisors</a>
+                <a href = "/about/advisors/"  style = "color: rgb(213, 220, 59);" >Advisors</a>
             
                 <a href = "/about/awards/" >Awards</a>
             
@@ -333,7 +331,7 @@
                 <a href = "/media/social/" >Social</a>
             
 		  </div>
-	<a href="/blog/"  style = "color: rgb(213,220,59) !important;" >Blog</a>
+	<a href="/blog/" >Blog</a>
 	<a href="/resources/" >Resources</a>
 		<div class="phoneDropdown">
 		    
@@ -386,11 +384,11 @@ function closeNav() {
             <li>
                 <a href="/about/" >About Us</a>
                 <div class = "minusHolder2">
-                    <p id = "plus6" class = "plus" >+</p>
-                    <p id = "minus6" class = "minus" >&#8211;</p>
+                    <p id = "plus6" class = "plus"  style = "display: none !important;" >+</p>
+                    <p id = "minus6" class = "minus"  style = "display: block !important;" >&#8211;</p>
                 </div>
             </li>
-                <div class="phoneDropdown" id = "phone1" >
+                <div class="phoneDropdown" id = "phone1"  style = "display: block !important;" >
                     <li> <!-- history dropdown -->
                         <a href="/about/history/" >History</a>
                         <div class = "minusHolder2 lilMinus">
@@ -586,11 +584,11 @@ function closeNav() {
                     <li> <!-- advisors dropdown -->
                         <a href="/about/advisors/" >Advisors</a>
                         <div class = "minusHolder2 lilMinus">
-                            <p id = "plus11" class = "plus" >+</p>
-                            <p id = "minus11" class = "minus" >&#8211;</p>
+                            <p id = "plus11" class = "plus"  style = "display: none !important;" >+</p>
+                            <p id = "minus11" class = "minus"  style = "display: block !important;" >&#8211;</p>
                         </div>
                     </li>
-                    <div class="phoneDropdown evenSmaller" id = "phone9" >
+                    <div class="phoneDropdown evenSmaller" id = "phone9"  style = "display: block !important;" >
                         
                             <li>
                                 <a href = "/about/advisors/past-advisors/" >Past Advisors</a>
@@ -653,7 +651,7 @@ function closeNav() {
                         </li>
                     
                         <li>
-                            <a href = "/about/advisors/" >Advisors</a>
+                            <a href = "/about/advisors/"  style = "color: rgb(213, 220, 59);" >Advisors</a>
                         </li>
                     
                         <li>
@@ -744,7 +742,7 @@ function closeNav() {
                     
                   </div>
             <li>
-                <a href="/blog/"  style = "color: rgb(213,220,59) !important;" >Blog</a>
+                <a href="/blog/" >Blog</a>
             </li>
             <li>
                 <a href="/resources/" >Resources</a>
@@ -806,6 +804,159 @@ function closeNav() {
 </nav>    
     
 </header>
+<!--<script>
+jQuery(document).ready(function($){
+	$('.navbar').css("background-color", "transparent");
+	if ($(this).scrollTop() < 270) {
+		$('.navbar').css("background-color", "transparent");
+		$('.dropDownContentAbout').css("background-color", "transparent");
+		$('.dropDownContentOverview').css("background-color", "transparent");
+		$('.dropDownContentMedia').css("background-color", "transparent");
+		
+		$('.dropDownContentAbout').css("box-shadow", "none");
+		$('.dropDownContentOverview').css("box-shadow", "none");
+		$('.dropDownContentMedia').css("box-shadow", "none");
+	} else {
+		$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+		$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+	}
+	$(window).scroll(function(){
+		if ($(this).scrollTop() < 270) {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+			
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		} else {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		}
+		
+		if ($(this).scrollTop() > 270) {
+			$('.navbar').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentAbout').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentOverview').css("background-color", "rgba(51,51,51,0.8)");
+			$('.dropDownContentMedia').css("background-color", "rgba(51,51,51,0.8)");
+		} else {
+			$('.navbar').css("background-color", "transparent");
+			$('.dropDownContentAbout').css("background-color", "transparent");
+			$('.dropDownContentOverview').css("background-color", "transparent");
+			$('.dropDownContentMedia').css("background-color", "transparent");
+	
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		}
+		
+
+	});
+});
+</script>-->
+<script>
+jQuery(document).ready(function($){
+	$('.navbar').css("background-color", "transparent");
+	if ($(this).scrollTop() < 190) {
+		$('.navbar').css("background-color", "transparent");
+        $('.navbar').css("height", "110px");
+        $('.navbar').css("box-shadow", "0 0px 0px 0px rgba(0,0,0,.6)");
+        $('.dropDownContentAbout').css("transform", "translate(0px, 0px)");
+        $('.dropDownContentOverview').css("transform", "translate(0px, 0px)");
+        $('.dropDownContentMedia').css("transform", "translate(0px, 0px)");
+        
+		$('.dropDownContentAbout').css("background-color", "rgb(54,54,54)");
+		$('.dropDownContentOverview').css("background-color", "rgb(54,54,54)");
+		$('.dropDownContentMedia').css("background-color", "rgb(54,54,54)");
+		
+		$('.dropDownContentAbout').css("box-shadow", "none");
+		$('.dropDownContentOverview').css("box-shadow", "none");
+		$('.dropDownContentMedia').css("box-shadow", "none");
+	} else {
+		$('.navbar').css("background-color", "rgb(50,50,50)");
+        $('.dropDownContentAbout').css("transform", "translate(0px, -13px)");
+        $('.dropDownContentOverview').css("transform", "translate(0px, -13px)");
+        $('.dropDownContentMedia').css("transform", "translate(0px, -13px)");
+        $('.navbar').css("height", "85px");
+        
+        $('.navbar').css("box-shadow", "0 4px 10px -10px rgba(0,0,0,.6)");
+        
+        $('.dropDownContentAbout').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+		$('.dropDownContentOverview').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+		$('.dropDownContentMedia').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+	}
+	$(window).scroll(function(){
+		if ($(this).scrollTop() < 190) {
+			$('.navbar').css("background-color", "transparent");
+            $('.navbar').css("height", "110px");
+            $('.navbar').css("box-shadow", "0 0px 0px 0px rgba(0,0,0,.6)");
+            $('.dropDownContentAbout').css("transform", "translate(0px, 0px)");
+            $('.dropDownContentOverview').css("transform", "translate(0px, 0px)");
+            $('.dropDownContentMedia').css("transform", "translate(0px, 0px)");
+            
+			$('.dropDownContentAbout').css("background-color", "rgb(54,54,54)");
+			$('.dropDownContentOverview').css("background-color", "rgb(54,54,54)");
+			$('.dropDownContentMedia').css("background-color", "rgb(54,54,54)");
+            
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		} else {
+			$('.navbar').css("background-color", "rgb(50,50,50)");
+            $('.navbar').css("height", "85px");
+            $('.dropDownContentAbout').css("transform", "translate(0px, -13px)");
+            $('.dropDownContentOverview').css("transform", "translate(0px, -13px)");
+            $('.dropDownContentMedia').css("transform", "translate(0px, -13px)");
+            
+            $('.navbar').css("box-shadow", "0 4px 10px -10px rgba(0,0,0,.6)");
+            
+            $('.dropDownContentAbout').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+		    $('.dropDownContentOverview').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+		    $('.dropDownContentMedia').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+		    
+			/*$('.dropDownContentAbout').css("background-color", "rgba(225, 225, 225, 1)");
+			$('.dropDownContentOverview').css("background-color", "rgba(225, 225, 225, 1)");
+			$('.dropDownContentMedia').css("background-color", "rgba(225, 225, 225, 1)");*/
+		}
+		
+		if ($(this).scrollTop() > 190) {
+			$('.navbar').css("background-color", "rgb(50,50,50)");
+            $('.navbar').css("height", "85px");
+            $('.dropDownContentAbout').css("transform", "translate(0px, -13px)");
+            $('.dropDownContentOverview').css("transform", "translate(0px, -13px)");
+            $('.dropDownContentMedia').css("transform", "translate(0px, -13px)");
+            
+            $('.navbar').css("box-shadow", "0 4px 10px -10px rgba(0,0,0,.6)");
+            
+            $('.dropDownContentAbout').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+		    $('.dropDownContentOverview').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+		    $('.dropDownContentMedia').css("box-shadow", "0 35px 80px -40px rgba(0,0,0,.45)");
+		} else {
+			$('.navbar').css("background-color", "transparent");
+            $('.navbar').css("height", "110px");
+            $('.navbar').css("box-shadow", "0 0px 0px 0px rgba(0,0,0,.6)");
+            $('.dropDownContentAbout').css("transform", "translate(0px, 0px)");
+            $('.dropDownContentOverview').css("transform", "translate(0px, 0px)");
+            $('.dropDownContentMedia').css("transform", "translate(0px, 0px)");
+            
+			$('.dropDownContentAbout').css("background-color", "rgb(54,54,54)");
+			$('.dropDownContentOverview').css("background-color", "rgb(54,54,54)");
+			$('.dropDownContentMedia').css("background-color", "rgb(54,54,54)");
+			
+			$('.dropDownContentAbout').css("box-shadow", "none");
+			$('.dropDownContentOverview').css("box-shadow", "none");
+			$('.dropDownContentMedia').css("box-shadow", "none");
+		}
+		
+
+	});
+});
+</script>
 <body>
     <a href="#" class="Scrolltotop"><button onclick="topFunction()" id="mybtn" class="button" title="Go to top"></button></a>
 <!--<script>
@@ -841,784 +992,133 @@ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 });
 </script>
 
-	<div class = "firstSection">
-	<h3><a id = "seeRest" onclick = window.history.back()><i>&#10229; Back</i></a></h3>
-	<div class = "overallContainer">
-		<div class = "blogHolder">
-		<h3>President Announced for 2019 - 2020 Season</h3>
-		<h4>June 17, 2019</h4>
+	<div class = "landing currentLand">
+	<div class = "landingBackground">
+		<div class = "titleHolder">
+			<img class = "show-on-scroll-down" src = "/images/EXOLogo.png" alt = "Exo logo">
+			<h1 class = "show-on-scroll-up">Current Advisors</h1>
+			<h2 class = "show-on-scroll-up"> Exothermic Robotics </h2>
+		</div>
+	</div>
+</div>
+<div class = "firstSection">
+	<div class = "sectionTitle show-on-scroll-up">
+	   <h2>Current Advisors</h2>
+    </div>
+	<p class = "sigh show-on-scroll-right">All of our current advisors/mentors are Exothermic Robotics alumni. Although they have already graduated, they continue to volunteer their time in helping current EXO members. As such, we would like to recognize and give them a huge shoutout for all their support and guidance! </p>
+	<div class = "mentorHolder">
+		<div class = "mentor show-on-scroll-left">
+			<div class = "imageHolder">
+				<img src = "/images/Vishwa.jpg"/>
+			</div>
 			<div class = "textSection">
-                <p>Hello everyone, we have had our elections for the new president this past weekend and the results are in. I am proud to announce the new president: Vishwa KN! Congratulations to Vishwa, the rest of the board will be announced soon as well as information in the end of the year EXO banquet. We are excited for everyone returning for the next season and to see some new faces as we recruit members!</p>
-
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                        <img id = "insideBlogPic"  src = "/images/Vishwa.jpg"/>
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
-                <div class = "imageHolderInsideBlog">
-                    
-                </div>
-                
+				<h4>Build Mentor</h4>
+				<h3>Vishwa KN</h3>
+				<p>Vishwa was a member of team 10E from the 2016 Starstruck season until the 2020 Tower Takeover season. In the 2019-2020 season, he served as the Exothermic Robotics President. Vishwa is currently a build mentor for EXO. </p>
 			</div>
 		</div>
-		<div class = "postLog">
-			<div class = "recentPosts">
-				<h3>Recent Posts</h3>
-				<div class = "recentPostOverall">
-                    
-                        <div class = "recentPostHolder">
-                            <a href = "/blog/2020/11/15/new-covid-19-restrictions/">	
-                                
-                                    <img src = "/images/EXOLogoBlack.png"/>
-                                
-                                <h3>New Covid-19 Restrictions</h3>
-                            </a>
-				        </div>
-                    
-                        <div class = "recentPostHolder">
-                            <a href = "/blog/2020/10/25/first-competition-of-the-virtual-season/">	
-                                
-                                    <img src = "/images/VirtualCompetition.jpg"/>
-                                
-                                <h3>First Competition of the [Virtual] Season!</h3>
-                            </a>
-				        </div>
-                    
-                        <div class = "recentPostHolder">
-                            <a href = "/blog/2020/09/20/introducing-new-teams-to-robot-house/">	
-                                
-                                    <img src = "/images/NewTeams.png"/>
-                                
-                                <h3>Introducing New Teams to Robot House</h3>
-                            </a>
-				        </div>
-                    
-                        <div class = "recentPostHolder">
-                            <a href = "/blog/2020/09/05/virtual-interest-meeting-held-over-zoom/">	
-                                
-                                    <img src = "/images/VirtualMeeting1.jpg"/>
-                                
-                                <h3>Virtual Interest Meeting Held Over Zoom</h3>
-                            </a>
-				        </div>
-                    
-                        <div class = "recentPostHolder">
-                            <a href = "/blog/2020/04/30/recruiting-for-2020-2021-has-started/">	
-                                
-                                    <img src = "/images/RecruitmentFlyer.jpg"/>
-                                
-                                <h3>Recruiting for 2020 - 2021 Has Started</h3>
-                            </a>
-				        </div>
-                    
-				</div>
+		<div class = "mentor show-on-scroll-right">
+			<div class = "imageHolder">
+				<img src = "/images/Thorsten.jpg"/>
 			</div>
-			<div class = "archive">
-				<h3>Archive</h3>
-				<div id = "archiveLink" class = "recentPostOverall">
-					<div class = "archiveHolder">
-                        
-                        
-                        
-
-                            
-                            
-
-                            
-                           <li><a href = "/blog/archive/2020"> 2020</a></li>
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            <li> <a href = "/blog/archive/2019"> 2019</a></li>          
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            <li> <a href = "/blog/archive/2018"> 2018</a></li>          
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            <li> <a href = "/blog/archive/2008"> 2008</a></li>          
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            <li> <a href = "/blog/archive/2007"> 2007</a></li>          
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            <li> <a href = "/blog/archive/2006"> 2006</a></li>          
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-
-                            
-                            
-
-                            
-
-                            
-                            
-                            
-                        
-					</div>
-				</div>
+			<div class = "textSection">
+				<h4>Programming Mentor</h4>
+				<h3>Thorsten Lannynd</h3>
+				<p>Thorsten was a member of team 10E from the 2017 In the Zone season until the 2020 Tower Takeover season. From 2018 till 2020, he was the Exothermic Robotics Programming Advisor. Thorsten is currently a programming mentor for Exo. </p>
+			</div>
+		</div>
+		<div id = "lastMentor" class = "mentor show-on-scroll-left">
+			<div id = "melinda" class = "imageHolder">
+				<img src = "/images/Tony.JPG"/>
+			</div>
+			<div class = "textSection">
+				<h4>Programming Mentor</h4>
+				<h3>Tony Li</h3>
+				<p>Tony was a member of Exothermic Robotics from the 2016 Starstruck season until the 2020 Tower Takeover season and competed on various Exo teams throughout the seasons. In his years at Exo, he has served as the Programming Advisor and Parts Manager. Tony is currently a programming mentor for Exo. </p>
 			</div>
 		</div>
 	</div>
 </div>
+
 </body>
+<script>
+var scroll = window.requestAnimationFrame ||
+             // IE Fallback
+             function(callback){ window.setTimeout(callback, 1000/60)};
+var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+var elementsToShowLeft = document.querySelectorAll('.show-on-scroll-left'); 
+var elementsToShowRight = document.querySelectorAll('.show-on-scroll-right'); 
+var elementsToShowUp = document.querySelectorAll('.show-on-scroll-up'); 
+var elementsToShowDown = document.querySelectorAll('.show-on-scroll-down'); 
+
+function loop() {
+
+    Array.prototype.forEach.call(elementsToShow, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('is-visible');
+      } //else {
+        //element.classList.remove('is-visible');
+      //}
+    });
+    
+    Array.prototype.forEach.call(elementsToShowLeft, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('fadeInLeft');
+      } //else {
+        //element.classList.remove('is-visible');
+      //}
+    });
+    
+    Array.prototype.forEach.call(elementsToShowRight, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('fadeInRight');
+      } //else {
+        //element.classList.remove('is-visible');
+      //}
+    });
+    
+    Array.prototype.forEach.call(elementsToShowUp, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('fadeInUp');
+      } //else {
+        //element.classList.remove('is-visible');
+      //}
+    });
+    
+    Array.prototype.forEach.call(elementsToShowDown, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('fadeInDown');
+      } //else {
+        //element.classList.remove('is-visible');
+      //}
+    });
+
+
+    scroll(loop);
+}
+
+// Call the loop for the first time
+loop();
+
+// Helper function from: http://stackoverflow.com/a/7557433/274826
+function isElementInViewport(el) {
+  // special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+  var rect = el.getBoundingClientRect();
+  return (
+    (rect.top <= 0
+      && rect.bottom >= 0)
+    ||
+    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+  );
+}
+</script>
 <footer>
 	<div class = "leftSection">
 		<div class = "leftTopSection">

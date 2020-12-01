@@ -14,5 +14,9 @@
 	.landing h2 {
 		line-height: 30px;
 	}
+    
+    .pdfRubric {
+        display: none !important;
+    }
 	
 }
