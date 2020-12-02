@@ -50,8 +50,8 @@
 
 .firstSection {
 	width: 100%;
-	background-color: rgb(232, 245, 225);
 	margin: 0;
+    background-color: rgb(232, 245, 225);
 }
 
 .memberSection {
@@ -63,7 +63,7 @@
 
 .titleSection h2 {
 	font-family: "Roboto", sans-serif;
-	color: #626262;
+	color: #323232;
 	font-weight: normal;
 	font-size: 45px;
 	letter-spacing: 2px;
@@ -125,7 +125,7 @@
 
 .statSection {
 	padding-top: 8%;
-	color: #626262;
+	color: #323232;
 	font-family: "Roboto", sans-serif;
 }
 
@@ -193,25 +193,36 @@
 }
 
 .eventButton button {
-  color: #dbb52f;
   text-transform: uppercase;
   background-color: rgba(25,25,25,0);
-  border: 2px solid white;
+  border: 2px solid #323232;
   z-index: 2;
-  padding: 15px 15px;
-  color: white;
+  padding: 20px 15px;
+  color: #323232;
     -webkit-transition-duration: 0.2s; 
   transition-duration: 0.2s;
   cursor: pointer;
   margin: 15px;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+}
+
+.activeStats button {
+    color: #bac600 !important;
+    border-color: #bac600 !important;
+}
+
+.moreBottom {
+    padding-bottom: 8%;
 }
 
 .eventButton:hover button {
-   color: rgb(213,220,59);
+   color: #bac600;
 }
 
 .eventButton:hover button {
-    border-color: rgb(213,220,59);
+    border-color: #bac600;
  }
 
  .toSectionButtons {
@@ -230,7 +241,7 @@
  }
 
 .eventList h3, .eventList h2, .rankingsList h3, .rankingsList h2, .rankingsList2 h3, .rankingsList2 h2, .skills h3, .skills h2, .turningList h3, .turningList h2 {
-	color: #626262;
+	color: #323232;
 	font-size: 18.72px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -269,10 +280,6 @@
 	color: white;
  }
  
- .towerSection {
-	background-color: rgb(232, 245, 225);
- }
- 
  .skills {
 	padding-bottom: 8%;
  }
@@ -288,7 +295,6 @@
  .insideButtonContainer {
 	display: flex;
 	justify-content: center;
-	background-color: rgba(51, 51, 51, 0.7);
 	width: 100%;
 	flex-wrap: wrap;
  }
@@ -312,7 +318,6 @@
  }
  
  .starSection, .skySection {
-	background-color: rgb(232, 245, 225);
 	padding-top: 8%;
  }	
  

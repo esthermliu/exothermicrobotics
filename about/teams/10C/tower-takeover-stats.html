@@ -1,0 +1,247 @@
+---
+layout: default 
+title: Exothermic Robotics 10C
+custom_css: 
+    - 10Ccss
+    - individualTeamsMedia
+---
+
+<div class = "landing">
+	<div class = "landingBackground">
+		<div class = "titleHolder">
+			<img class = "show-on-scroll-down" src = "{{ site.baseurl }}/images/EXOLogo.png" alt = "Exo logo">
+			<h1 class = "show-on-scroll-up"> 10C </h1>
+			<h2 class = "show-on-scroll-up"> 2019 - 2020 Stats </h2>
+		</div>
+	</div>
+</div>
+<div class = "secondSection">
+    <div class = "statSection">
+	<div class = "toSectionButtons">
+		<div class = "buttonContainer" id = "buttonContainer">
+		<div class = "insideButtonContainer">
+			<a href = "{{ site.baseurl }}/about/teams/10C/tower-takeover-stats/" class="eventButton activeStats"><button>Tower Takeover</button></a>
+			<a href = "{{ site.baseurl }}/about/teams/10C/in-the-zone-stats/" class="eventButton"><button>In The Zone</button></a>
+			<a href = "{{ site.baseurl }}/about/teams/10C/starstruck-stats/" class="eventButton"><button>Starstruck</button></a>
+			<a href = "{{ site.baseurl }}/about/teams/10C/gateway-stats/" class="eventButton"><button>Gateway</button></a>
+			</div>
+		</div>
+	</div>
+	<div class = "eventContainer">
+		<div id = "Tower" class = "towerSection">
+            <!-- script for api -->
+            <script src = "{{ site.baseurl }}/scripts/towertakeover_events_10C.js">
+            </script>
+            <!-- end of script -->
+			<div class = "eventList">
+			<h2>Tower Takeover</h2>
+				<h3> Event List </h3>
+            <div class = "statboxFirst2">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Event </p>
+					<p>Date</p>
+				</div>
+			</div>
+			<!--<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Washington State High School VRC Championship</p>
+					<p>2020-03-07</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Exothermic Winter Challenge VRC Tournament</p>
+					<p>2020-02-22</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">King of the Tower VRC League</p>
+					<p>2020-02-05</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Quantum Midseason Mayhem VRC Tournament</p>
+					<p>2020-01-18</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">MTHS VEX Tower Takeover</p>
+					<p>2019-12-07</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Lake Stevens Turkey Trot VRC Competition</p>
+					<p>2019-11-16</p>
+				</div>
+			</div>-->
+			</div>
+            <!-- start of api for rankings (original) -->
+            <script src = "{{ site.baseurl }}/scripts/towertakeover_rankings_10C.js">                
+                /*$.ajax({
+                    url: "https://api.vexdb.io/v1/get_events?program=VRC&country=United States&team=10C&season=Tower Takeover&status=all",
+                    dataType: "json",
+                    type: "get",
+                    cache: false,
+                    success: function(data) {
+                        $(data.result).each(function(index, value) {
+                            console.log(value.name);
+                            var name = data.result[index + 1].name; // index is increased by 1 bc we didn't go to CREATE. Change for others!!
+                           $.ajax({
+                                url: "https://api.vexdb.io/v1/get_rankings?team=10C&season=Tower Takeover",
+                                dataType: "json",
+                                type: "get",
+                                cache: false,
+                                success: function(data) {
+                                        console.log(data.result[index].rank);
+                                        $('#towerTakeoverRanking').append('<div class = "statbox"><div class = "rightSectionEventRanking"> <p class = "firstOfSection">' + name + '</p><p>' + data.result[index].rank + '</p><p>' + data.result[index].wins + '-' + data.result[index].losses + '-' + data.result[index].ties + '</p><p>' + data.result[index].wp + '/' + data.result[index].ap + '/' + data.result[index].sp + '</p><p>' + data.result[index].max_score + '</p></div></div>'); 
+                                }
+                            });
+                        });
+                    }
+                }); */
+                /*$.ajax({
+                    url: "https://api.vexdb.io/v1/get_rankings?team=10C&season=Tower Takeover",
+                    dataType: "json",
+                    type: "get",
+                    cache: false,
+                    success: function(data) {
+                        $(data.result).each(function(index, value) {
+                            console.log(value.rank);
+                            $('.rankingsList').append('<div class = "statbox"><div class = "rightSectionEventRanking"> <p class = "firstOfSection">' + value.sku + '</p><p>' + value.rank + '</p><p>' + value.wins + '-' + value.losses + '-' + value.ties + '</p><p>' + value.wp + '/' + value.ap + '/' + value.sp + '</p><p>' + value.max_score + '</p></div></div>'); 
+                        });
+                    }
+                });*/
+            </script>
+            <!-- end of script -->
+			<div id = "towerTakeoverRanking" class = "rankingsList">
+				<h3> Rankings </h3>
+			<div class = "statboxFirst2">
+				<div class = "rightSectionEventRankingTitle">
+					<p class = "firstOfSection">Event</p>
+					<p>Rank</p>
+					<p>W-L-T</p>
+					<p>WP/AP/SP</p>
+					<p>Max Score</p>
+				</div>
+			</div>
+			<!--<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">King of the Tower VRC Tournament</p>
+					<p>6</p>
+					<p>4-2-0</p>
+					<p>8/18/150</p>
+					<p>49</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">King of the Tower VRC League</p>
+					<p>2</p>
+					<p>6-2-0</p>
+					<p>12/42/114</p>
+					<p>9</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Cavelero Cup VRC Tournament</p>
+					<p>9</p>
+					<p>5-2-0</p>
+					<p>10/27/139</p>
+					<p>70</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Quantum Midseason Mayhem VRC Tournament</p>
+					<p>13</p>
+					<p>3-2-1</p>
+					<p>7/30/105</p>
+					<p>52</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">MTHS VEX Tower Takeover</p>
+					<p>10</p>
+					<p>3-2-1</p>
+					<p>7/24/76</p>
+					<p>51</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEventRanking">
+					<p class = "firstOfSection">Lake Stevens Turkey Trot VRC Competition</p>
+					<p>21</p>
+					<p>2-4-0</p>
+					<p>4/15/37</p>
+					<p>50</p>
+				</div>
+			</div>-->
+			</div>
+			<div id = "towerTakeoverSkills" class = "skills">			
+				<h3> Skills </h3>
+				<div class = "statboxFirst2">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Event</p>
+					<p>Rank</p>
+					<p>Score</p>
+				</div>
+			</div>
+                
+            <!-- start of script for skills (original2)-->
+            <script src = "{{ site.baseurl }}/scripts/towertakeover_skills_10C.js"></script>
+            <!-- end of script for skills -->
+                
+			<!--<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">King of the Tower VRC Tournament</p>
+					<p>1</p>
+					<p>84</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">King of the Tower VRC League</p>
+					<p>3</p>
+					<p>81</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Cavelero Cup VRC Tournament</p>
+					<p>5</p>
+					<p>78</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Quantum Midseason Mayhem VRC Tournament</p>
+					<p>8</p>
+					<p>40</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">MTHS VEX Tower Takeover</p>
+					<p>4</p>
+					<p>27</p>
+				</div>
+			</div>
+			<div class = "statbox">
+				<div class = "rightSectionEvent">
+					<p class = "firstOfSection">Lake Stevens Turkey Trot VRC Competition</p>
+					<p>8</p>
+					<p>25</p>
+				</div>
+			</div>-->
+			</div>
+		</div>
+</div>
+</div>
+
+

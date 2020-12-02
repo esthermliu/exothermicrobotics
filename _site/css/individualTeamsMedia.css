@@ -84,6 +84,10 @@
 .memberBox6 {
 	margin-bottom: 25%;
 }
+    
+.moreBottom {
+    padding-bottom: 25%;
+}
 
 #notLast {
     margin-bottom: 5% !important;
