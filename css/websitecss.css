@@ -251,5 +251,5 @@
 }
 
 .noHeight {
-    line-height: normal !important;
+    margin-bottom: 0 !important;
 }
