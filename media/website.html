@@ -5,7 +5,24 @@ custom_css:
     - websitecss
     - websiteMedia
 ---
+<script>
+$(document).ready(function(){
+  $("#Hide13").click(function(){ // When you click the words, it will toggle the actual text and the minus sign
+    $("#challenge16").toggle(500);
+	$("#hideMinus13").toggle(200);
+  });
+  $("#showMinus13").click(function(){ // When you click the minus sign, it will toggle actual text and the minus sign 
+    $("#challenge16").toggle(500);
+	$("#hideMinus13").toggle(200);
+  });
+ $("#hideMinus13").click(function(){ // When you click the vertical minus sign, it will toggle actual text and the minus sign
+    $("#challenge16").toggle(500);
+	$("#hideMinus13").toggle(200);
+  });
+  
+});
 
+</script>
 <div class = "landing">
 	<div class = "landingBackground">
 		<div class = "titleHolder">
@@ -17,32 +34,87 @@ custom_css:
 </div>
 <div class = "firstSection">
     <div class = "titleSection show-on-scroll-up">
-	   <h2>Starting From Scratch </h2>
+	   <h2>Maintaining Our Website </h2> 
     </div>
 	<div class = "wordSection">
-		<p class = "show-on-scroll-left"> Hi, I'm Esther, one of the members from team<a href = "/about/teams/10C/"> Exothermic Creation (10C)</a>, and I created the Exothermic Robotics website! My team members, Ann,    Aaryan, Bohan, Helena, and Thomas, as well 
-			as the rest of the club helped by gathering information and pictures. My team decided to enter into the Robotics Team Website Challenge sponsored by Dell not only because we 
-			wanted to compete in the Online Challenge, but also because Exothermic Robotics has never had a club website before, so we thought that our website could potentially become the official club website.
+		<p class = "show-on-scroll-left"> Hi, I'm Esther, one of the members from team<a href = "/about/teams/10C/"> Exothermic Creation (10C)</a>, and I created the Exothermic Robotics website completely from scratch! My team members, Ann, Aaryan, Bohan, Helena, and Thomas, as well 
+			as the rest of the club helped by updating information and pictures. 
 		</p>
-		<h3 class = "show-on-scroll-right">Research</h3>
-		<p class = "show-on-scroll-left">As mentioned before, since we did not have a previous website, there was very little to go off of. To collect information, my teammates and I interviewed the board members about our club's history and we dug deep into social media and news 
-		posts. Unfortunately, the information would often times be scattered and unorganized or nowhere to be found at all. Fortunately though, everyone was very supportive and responded to our questions as soon as possible. My team members 
-		would also direct me towards any resources they thought would be helpful! </p>
-		<h3 class = "show-on-scroll-right">Design</h3>
-		<p class = "show-on-scroll-left">I used a variety of colors, although the main theme that my teammates and I decided on was a <b class = "green">light green</b>, <b>gray/black</b>, and <b class = "red">red</b> combination since 
-		these are the colors of our T-shirts and logo.</p>
-		<h3 class = "show-on-scroll-right">Stock Photos</h3>
-		<p class = "show-on-scroll-left">For some of the pages, we used photos from Pexels, a website which provides free stock photos. Since the photographers that upload their images to Pexels know their images will be reused by others, there are no copyright conflicts by using them. </p>
-		<h3 class = "show-on-scroll-right">Actual Website Stuff</h3>
-		<p class = "show-on-scroll-left">I only had minimal experience regarding building websites, so building this website certainly seemed daunting at first. However, I decided to take on the challenge 
-		and instead of using premade templates from Bootstrap or utilizing website builders such as Wix or Squarespace, I chose to make the website completely from scratch. By watching 
-		online tutorials and utilizing other online resources, I was able to gain a better grip of the languages. This is what was used to make the website: </p>
+		<h3 class = "show-on-scroll-right">Content Changes</h3>
+        <ul>
+			<li class = "show-on-scroll-left">Updated Online Challenges page for 2021</li>
+			<li class = "show-on-scroll-left">New blog posts</li>
+			<li class = "show-on-scroll-left">Created an archive for the blog</li>
+			<li class = "show-on-scroll-left">New publicity posts</li>
+			<li class = "show-on-scroll-left">New history section added for the 2019 - 2020 season</li>
+			<li class = "show-on-scroll-left">New background video for the Change Up season</li>
+			<li class = "show-on-scroll-left">Added information about the new game for the 2020 - 2021 year under the competitions tab</li>
+			<li class = "show-on-scroll-left">Updated events list for the new season</li>
+			<li class = "show-on-scroll-left">Updated the board members and their information on the homepage</li>
+			<li class = "show-on-scroll-left">Updated information for teams (we have several new teams this year!)</li>
+			<li class = "show-on-scroll-left">Updated awards for the Change Up season</li>
+			<li class = "show-on-scroll-left">New advisors for this year! (We finally have advisors!)</li>
+			<li class = "show-on-scroll-left">Updated photos in the gallery for the 2019 - 2020 season</li>
+			<li class = "show-on-scroll-left">Updated rubrics and information under each of the pages in the "resources" section</li>
+			<li class = "show-on-scroll-left">New EXO FAQ page</li>
+			<li class = "show-on-scroll-left">...and much more!</li>
+		</ul>
+		<h3 class = "show-on-scroll-right">Design Changes</h3>
 		<ul>
+			<li class = "show-on-scroll-left">Changed the style of the header</li>
+			<li class = "show-on-scroll-left">Fonts are styled differently</li>
+			<li class = "show-on-scroll-left">Rearranged/organized pages</li>
+			<li class = "show-on-scroll-left">Added animations and transitions</li>
+			<li class = "show-on-scroll-left">...and more!</li>
+		</ul>
+        <h3 class = "show-on-scroll-right">Technical Changes</h3>
+		<p class = "show-on-scroll-left">Considering that I have more experience with web development than I did last year (the year when this website was first created), I decided to tackle one of the most frustrating problems I experienced with the website: repetition of code. Last year, since I was coding everything solely with plain HTML and CSS, every time I created a new page, I had to copy and paste multiple sections, including&#8212;but definitely not limited to&#8212;the header and footer for each page. This was not only incredibly tedious to accomplish, but it was also error-prone. Additionally, if I wanted to make a change to the header for instance, I had to go to every single individual page and make that change&#8212;no matter how minor&#8212;just to keep things consistent across the website. Updating the blog was nightmarish, to say the least. When I added a new blog post, I had to go into <i>every</i> single individual blog post (at the time, there were over 70 separate pages), and change the "recent posts" section. When the page limit of 5 posts was reached, I then had to change the pagination for all of the current pages again. I didn't even think about creating an archive, as these problems would only magnify if I did.  </p>
+        <p class = "show-on-scroll-left">Thus, going into my second year with this website, I knew that I would have to continue maintaining the site. But after examining the current system in place, I decided to turn to Jekyll. Jekyll is a "simple, blog-aware static site generator," but in other words, it just allows me to make my own HTMl templates. Now, for example, instead of copying and pasting my header and footer in <i>every</i> single page, I can just put my HTML for these parts into a separate file and include it in my own default template made using Liquid. Every other page I create then extends this default template. So now, if I make a change to the header, I only need to change one file, and everything else will be updated accordingly. For the blog we have, this is a crucial tool. In fact, everything about the blog is essentially already automated, from the pagination to the recent posts column to the archive. Now, if I want to make a new blog post, I only need to put the information in a simple Markdown file, making it much easier to maintain and update the blog. We've also been writing more blog posts just because it's so easy to do!</p>
+        <p class = "show-on-scroll-left">Here is what I used to make the website this year: </p>
+        <ul class = "show-on-scroll-left">
 			<li class = "show-on-scroll-left">HTML (HyperText Markup Language)</li>
 			<li class = "show-on-scroll-left">CSS (Cascading Style Sheets)</li>
 			<li class = "show-on-scroll-left">Javascript</li>
+			<li class = "show-on-scroll-left">Jekyll</li>
+			<li class = "show-on-scroll-left">Liquid</li>
+			<li class = "show-on-scroll-left">YAML</li>
 		</ul>
+		<h3 class = "show-on-scroll-right">Stock Photos</h3>
+		<p class = "show-on-scroll-left">For some of the pages, we used photos from Pexels, a website which provides free stock photos. Since the photographers that upload their images to Pexels know their images will be reused by others, there are no copyright conflicts by using them. </p>
+		
 	</div>
+        <div class = "EasterEgg show-on-scroll-left"> <!--Start of Section-->
+		<div class = "buttonTopHolder">
+			<button id="Hide13">Our 2019 - 2020 Message</button>
+			<div class = "minusHolder">
+				<p id = "showMinus13" class = "horizontalMinus13">&minus;</p>
+				<p id = "hideMinus13" class = "verticalMinus13">&minus;</p>
+			</div>
+		</div>
+        <div id = "challenge16" class = "wordSection">
+            <h3 class = "show-on-scroll-right">Starting from Scratch</h3>
+            <p class = "show-on-scroll-left"> Hi, I'm Esther, one of the members from team<a href = "/about/teams/10C/"> Exothermic Creation (10C)</a>, and I created the Exothermic Robotics website! My team members, Ann, Aaryan, Bohan, Helena, and Thomas, as well 
+                as the rest of the club helped by gathering information and pictures. My team decided to enter into the Robotics Team Website Challenge sponsored by Dell not only because we 
+                wanted to compete in the Online Challenge, but also because Exothermic Robotics has never had a club website before, so we thought that our website could potentially become the official club website.
+            </p>
+            <h3 class = "show-on-scroll-right">Research</h3>
+            <p class = "show-on-scroll-left">As mentioned before, since we did not have a previous website, there was very little to go off of. To collect information, my teammates and I interviewed the board members about our club's history and we dug deep into social media and news 
+            posts. Unfortunately, the information would often times be scattered and unorganized or nowhere to be found at all. Fortunately though, everyone was very supportive and responded to our questions as soon as possible. My team members 
+            would also direct me towards any resources they thought would be helpful! </p>
+            <h3 class = "show-on-scroll-right">Design</h3>
+            <p class = "show-on-scroll-left">I used a variety of colors, although the main theme that my teammates and I decided on was a <b class = "green">light green</b>, <b>gray/black</b>, and <b class = "red">red</b> combination since 
+            these are the colors of our T-shirts and logo.</p>
+            <h3 class = "show-on-scroll-right">Actual Website Stuff</h3>
+            <p class = "show-on-scroll-left">I only had minimal experience regarding building websites, so building this website certainly seemed daunting at first. However, I decided to take on the challenge 
+            and instead of using premade templates from Bootstrap or utilizing website builders such as Wix or Squarespace, I chose to make the website completely from scratch. By watching 
+            online tutorials and utilizing other online resources, I was able to gain a better grip of the languages. This is what was used to make the website: </p>
+            <ul class = "show-on-scroll-left">
+                <li class = "show-on-scroll-left">HTML (HyperText Markup Language)</li>
+                <li class = "show-on-scroll-left">CSS (Cascading Style Sheets)</li>
+                <li class = "show-on-scroll-left">Javascript</li>
+            </ul>
+        </div>
+	</div> <!-- End of section-->
 </div>
 <div class = "secondSection">
 <div class = "secondSectionColor">
