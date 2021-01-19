@@ -8,4 +8,6 @@ title: Exothermic Hosts Last Qualification Competition of the Season
 thumbnail: /images/Gallery132.JPG
 ---
 
-After the long anticipation, Team 10C is now a finalist for the Robotics Team Website Online Challenge! Congratulations to them! This means that they are now one of the 25 teams that have a chance of winning a spot to Worlds in April. The website, exothermicrobotics.org, showcases the long history of the Exothermic Robotics and is a representation of the current club and our goals for the future.
+Tomorrow, Exothermic Robotics will be hosting their annual Exothermic Winter Challenge. In order to ensure the event runs smoothly, volunteers met beforehand to split up roles and receive training for their positions.
+This afternoon, all Exo teams, parent volunteers, members from other local teams, as well as the Regional Support Manager met at Timberline Middle School to set up for the tournament. The afternoon was spent transporting competition equipment from Cavelero Mid High School, Blaze Education, and the Exothermic Robot House, as well as the collaboration of many people to arrange the competition venue before the tournament.
+We can’t wait to see all the amazing robots competing tomorrow!
