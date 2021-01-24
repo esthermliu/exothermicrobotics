@@ -381,6 +381,7 @@ header nav ul.openMenu {
 .plus, .minus {
     color: white;
     transition-duration: 0.2s;
+    cursor: pointer;
 }
 
 .minus {
